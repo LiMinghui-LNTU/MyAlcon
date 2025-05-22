@@ -1,0 +1,21 @@
+uuid: 472b8e13-0704-4848-86ea-00d74fc93f6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.primary-color
+    - cohesion_website_settings.cohesion_color.white
+label: Base-Button
+id: a58b8eee
+json_values: '{"preview":{"text":"<p><button class=\"coh-preview\" type=\"button\">Default content for ''Button''<\/button><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"button","class":"","combinator":"","pseudo":""},"31992dc1-97d3-4850-a239-f00227bac54c":{"settings":{"element":"","class":"","combinator":"","pseudo":":hover"},"styles":{"xl":{"color":{"value":{"value":{"hex":"#f8f5f5","rgba":"rgba(248, 245, 245, 1)"}}},"background-color":{"value":{"value":{"hex":"#353535","rgba":"rgba(53, 53, 53, 1)"}}}}}},"styles":{"xl":{"color":{"value":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true}},"background-color":{"value":{"link":true,"value":{"hex":"#000619","rgba":"rgba(0, 6, 25, 1)"},"wysiwyg":true,"name":"Primary-Color","uid":"primary-color","class":".coh-color-primary-color","variable":"$coh-color-primary-color","inuse":true}},"padding":{"padding-top":{"value":"6"},"padding-bottom":{"value":"6"},"padding-left":{"value":"12"},"padding-right":{"value":"12"}},"border-radius":{"value":"6"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Button","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]},{"formKey":"background","children":[{"formKey":"background-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"background-color","active":true}]}]},{"formKey":"layout","children":[{"formKey":"padding","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"padding-equal","active":false},{"name":"padding-top","active":true},{"name":"padding-bottom","active":true},{"name":"padding-left","active":true},{"name":"padding-right","active":true},{"name":"padding-block-start","active":false},{"name":"padding-block-end","active":false},{"name":"padding-inline-start","active":false},{"name":"padding-inline-end","active":false}]}]},{"formKey":"border-and-outline","children":[{"formKey":"border-radius","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"border-radius","active":true},{"name":"border-top-left-radius","active":true},{"name":"border-top-right-radius","active":true},{"name":"border-bottom-left-radius","active":true},{"name":"border-bottom-right-radius","active":true}]}]}],"items":[{"title":":hover","type":"container","items":[],"selectorType":"pseudo","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]},{"formKey":"background","children":[{"formKey":"background-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"background-color","active":true}]}]}],"form":null,"allowedTypes":["child","pseudo"],"uuid":"31992dc1-97d3-4850-a239-f00227bac54c"}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-base-button
+custom_style_type: button
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 152

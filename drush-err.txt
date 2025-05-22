@@ -1,0 +1,11 @@
+Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: INSERT INTO "cache_bootstrap" ("cid", "expire", "created", "tags", "checksum", "data", "serialized") VALUES (:db_insert_placeholder_0, :db_insert_placeholder_1, :db_insert_placeholder_2, :db_insert_placeholder_3, :db_insert_placeholder_4, :db_insert_placeholder_5, :db_insert_placeholder_6) ON DUPLICATE KEY UPDATE "cid" = VALUES("cid"), "expire" = VALUES("expire"), "created" = VALUES("created"), "tags" = VALUES("tags"), "checksum" = VALUES("checksum"), "data" = VALUES("data"), "serialized" = VALUES("serialized"); Array
+(
+    [:db_insert_placeholder_0] => module_implements
+    [:db_insert_placeholder_1] => -1
+    [:db_insert_placeholder_2] => 1734076972.782
+    [:db_insert_placeholder_3] => 
+    [:db_insert_placeholder_4] => 0
+    [:db_insert_placeholder_5] => a:7:{s:23:"module_implements_alter";a:13:{s:9:"ckeditor5";b:0;s:8:"cohesion";b:0;s:17:"cohesion_elements";b:0;s:18:"cohesion_templates";b:0;s:11:"field_group";b:0;s:14:"layout_builder";b:0;s:17:"layout_builder_st";b:0;s:18:"lightning_workflow";b:0;s:7:"metatag";b:0;s:7:"webform";b:0;s:18:"http_cache_control";b:0;s:19:"content_translation";b:0;s:10:"paragraphs";b:0;}s:31:"language_negotiation_info_alter";a:0:{}s:11:"entity_load";a:0:{}s:14:"user_role_load";a:0:{}s:17:"webform_help_info";a:2:{s:14:"webform_access";b:0;s:22:"webform_submission_log";b:0;}s:23:"webform_help_info_alter";a:0:{}s:20:"cohesion_usage_alter";a:0:{}}
+    [:db_insert_placeholder_6] => 1
+)
+ in Drupal\Core\Cache\DatabaseBackend->doSetMultiple() (line 283 of /var/www/html/core/lib/Drupal/Core/Cache/DatabaseBackend.php).

@@ -1,0 +1,4 @@
+# Do not crawl/index non-clean urls.
+Disallow: /index.php
+Disallow: /*/index.php
+

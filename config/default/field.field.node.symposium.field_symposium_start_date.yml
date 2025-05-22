@@ -1,0 +1,23 @@
+uuid: 5acf94c6-f9ec-4622-aa3b-1f58d657a23b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symposium_start_date
+    - node.type.symposium
+  module:
+    - datetime
+_core:
+  default_config_hash: pFHNsU8Aw4DTzmuSFGifYGYPfkwUwUbdo_PlWnaSqO0
+id: node.symposium.field_symposium_start_date
+field_name: field_symposium_start_date
+entity_type: node
+bundle: symposium
+label: 'Start date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

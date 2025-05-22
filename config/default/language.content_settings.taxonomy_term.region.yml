@@ -1,0 +1,18 @@
+uuid: 50eeee56-237f-4b24-aaf1-8222aa54f51f
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.region
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.region
+target_entity_type_id: taxonomy_term
+target_bundle: region
+default_langcode: site_default
+language_alterable: false

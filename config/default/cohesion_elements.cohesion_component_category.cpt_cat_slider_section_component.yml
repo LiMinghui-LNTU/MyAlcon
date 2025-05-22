@@ -1,0 +1,14 @@
+uuid: 6a28c64c-e3d5-4974-9748-3fc580442a2f
+langcode: en
+status: true
+dependencies: {  }
+label: 'Slider sections - Sections(UIKit)'
+id: cpt_cat_slider_section_component
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-9
+weight: -4

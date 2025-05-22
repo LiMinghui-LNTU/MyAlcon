@@ -1,0 +1,26 @@
+alcon_sitestudio_allpages:
+  version: 1.x
+  css:
+    theme:
+      css/alcon_sitestudio_allpages.css: {}
+  js:
+    js/alcon_sitestudio_allpages.js: {}
+
+alcon_sitestudio_iframe:
+  version: 1.x
+  js:
+    js/alcon_sitestudio_iframe.js: {}
+
+alcon_sitestudio_timeline:
+  version: 1.x
+  css:
+    theme:
+      css/timeline.css: {}
+      css/slick.css: {}
+  js:
+    https://code.jquery.com/jquery-1.11.0.min.js: { type: external, minified: true }
+    https://code.jquery.com/jquery-migrate-1.2.1.min.js: { type: external, minified: true }
+    js/slick.min.js: {}
+    js/timeline.js: {}
+
+    

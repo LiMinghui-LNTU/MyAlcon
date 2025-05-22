@@ -1,0 +1,465 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Symposia module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function symposia_theme_suggestions_views_infinite_scroll_pager_alter(array &$suggestions, array $variables, $hook) {
+  $view = $variables['view'];
+  $view_id = $view->id();
+  $view_display = $view->current_display;
+
+  $suggestions[] = $hook . '__' . $view_id;
+  $suggestions[] = $hook . '__' . $view_id . '__' . $view_display;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function symposia_theme() {
+  return [
+    'node__symposium__symposium_card_teaser' => [
+      'base hook' => 'node',
+    ],
+    'field__field_symposium_moderator' => [
+      'base hook' => 'field',
+    ],
+    'field__field_symposium_end_date' => [
+      'base hook' => 'field',
+    ],
+    'field__field_symposium_start_date' => [
+      'base hook' => 'field',
+    ],
+    'views_view__symposia' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view__symposia__upcoming_symposia_page_block' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view_unformatted__symposia__event_ref_symposia_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__symposia__recent_symposia_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__symposia__upcoming_symposia_page_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_infinite_scroll_pager__symposia__upcoming_symposia_page_block' => [
+      'base hook' => 'views_infinite_scroll_pager',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function symposia_form_VIEWS_EXPOSED_FORM_alter(&$form, FormStateInterface $form_state) {
+  $exposed_region_forms = [
+    'views-exposed-form-symposia-upcoming-symposia-page-block',
+  ];
+
+  if (in_array($form['#id'], $exposed_region_forms)) {
+    $display_region = \Drupal::state()->get('event_hub.display_region', TRUE);
+    if (!$display_region) {
+      unset($form['region']);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function symposia_preprocess_views_view_table(&$variables) {
+  if ($variables['view']->id() == 'symposia') {
+    if ($variables['view']->current_display == 'symposia_archive_block') {
+      foreach ($variables['rows'] as $row_key => $row) {
+        foreach ($row['columns'] as $col_key => $column) {
+          if (isset($variables['header'][$col_key]['content'])) {
+            $header = $variables['header'][$col_key]['content'];
+            $variables['rows'][$row_key]['columns'][$col_key]['attributes']
+              ->setAttribute('data-label', $header);
+          }
+        }
+        $node = $variables['result'][$row_key]->_entity;
+        $start_date = get_field_value($node, 'field_symposium_start_date');
+        $end_date = get_field_value($node, 'field_symposium_end_date');
+
+        if (!empty($start_date) && !empty($end_date)) {
+          $start_date = strtotime($start_date);
+          $end_date = strtotime($end_date);
+
+          if (!datetime_fields_have_same_day($node, 'field_symposium_start_date', 'field_symposium_end_date')) {
+            $variables['different_days'] = TRUE;
+            $formatter = Drupal::service('date.formatter');
+            $rendered_start_date = $formatter
+              ->format($start_date, 'custom', 'F d, Y');
+            $rendered_end_date = $formatter
+              ->format($end_date, 'custom', 'F d, Y');
+            $variables['rows'][$row_key]['columns']['field_symposium_start_date']['content'][0]['field_output']['#markup'] = t(
+              '@start_date to @end_date', [
+                '@start_date' => $rendered_start_date,
+                '@end_date' => $rendered_end_date,
+              ]
+            );
+          }
+        }
+        if (get_field_value($node, 'field_bypass_symposium_detail')) {
+          $uri = get_symposium_reg_watch_link($node);
+          if (!empty($uri)) {
+            $url = Url::fromUri($uri, ['absolute'=>TRUE]);
+
+            $variables['rows'][$row_key]['columns']['field_symposium_name']['content'][0]['field_output'] = [
+              '#markup' => Link::fromTextAndUrl(
+                get_field_value($node, 'field_symposium_name'),
+                $url
+              )->toString(),
+            ];
+          }
+          else {
+            $variables['rows'][$row_key]['columns']['field_symposium_name']['content'][0]['field_output'] = [
+              '#prefix' => '<span>',
+              '#markup' => get_field_value($node, 'field_symposium_name'),
+              '#suffix' => '</span>',
+            ];
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function symposia_token_info() {
+  $info['tokens']['node']['symposium_duration_time'] = [
+    'name' => t('Symposium duration time'),
+    'description' => t('Combines Symposium Start & End time'),
+  ];
+  $info['tokens']['node']['symposium_hero_date'] = [
+    'name' => t('Symposium Hero date'),
+    'description' => t('Symposium Start/End date for the Symposium Hero component'),
+  ];
+  $info['tokens']['node']['symposium_reg_watch_link_title'] = [
+    'name' => t('Symposium Register/Watch link title'),
+    'description' => t('Shows Symposium Registration or Watch link title'),
+  ];
+  $info['tokens']['node']['symposium_reg_watch_link_url'] = [
+    'name' => t('Symposium Register/Watch link URL'),
+    'description' => t('Shows Symposium Registration or Watch link URL'),
+  ];
+  $info['tokens']['node']['symposium_moderator_has_link'] = [
+    'name' => t('Symposium Moderator has link'),
+    'description' => t('Created for checking if Moderator is linked'),
+  ];
+
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function symposia_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+  $replacements = [];
+
+  if ($type == 'node' && !empty($data['node'])) {
+    if (!empty($tokens['symposium_duration_time'])) {
+      $original = $tokens['symposium_duration_time'];
+      $replacements[$original] = get_symposium_duration_time($data['node']);
+    }
+    if (!empty($tokens['symposium_hero_date'])) {
+      $original = $tokens['symposium_hero_date'];
+
+      $start_date = get_field_value($data['node'], 'field_symposium_start_date');
+      $end_date = get_field_value($data['node'], 'field_symposium_end_date');
+      if (datetime_fields_have_same_day($data['node'], 'field_symposium_start_date', 'field_symposium_end_date')) {
+        if (!empty($start_date)) {
+          $start_date = strtotime($start_date);
+          $current_time = strtotime('now');
+          if (timestamp_is_midnight($start_date)) {
+            $formatted_start_date = Drupal::service('date.formatter')
+              ->format($start_date, 'custom', 'l, F j, Y');
+          }
+          else {
+            $formatted_start_date = Drupal::service('date.formatter')
+              ->format($start_date, 'custom', 'l, F j, Y, H:i');
+          }
+          if (empty($end_date)) {
+            if ($start_date > $current_time) {
+              // Future
+              $replacements[$original] = $formatted_start_date;
+            }
+            else {
+              // Past
+              $replacements[$original] = t('Original air date: @date', [
+                '@date' => $formatted_start_date,
+              ]);
+            }
+          }
+          else {
+            $end_date = strtotime($end_date);
+            if (timestamp_is_midnight($end_date)) {
+              $formatted_date = $formatted_start_date;
+            }
+            else {
+              $formatted_end_time = Drupal::service('date.formatter')
+                ->format($end_date, 'custom', 'H:i');
+              $formatted_date = "$formatted_start_date - $formatted_end_time";
+            }
+            if ($end_date > $current_time) {
+              // Future
+              $replacements[$original] = $formatted_date;
+            }
+            else {
+              // Past
+              $replacements[$original] = t('Original air date: @date', [
+                '@date' => $formatted_date,
+              ]);
+            }
+          }
+        }
+        else {
+          $replacements[$original] = '';
+        }
+      }
+      else {
+        $start_date = strtotime($start_date);
+        $end_date = strtotime($end_date);
+
+        $date_formatter = Drupal::service('date.formatter');
+        $formatted_start_date = $date_formatter
+          ->format($start_date, 'custom', 'F j, Y');
+        $formatted_end_date = $date_formatter
+          ->format($end_date, 'custom', 'F j, Y');
+
+        if (timestamp_is_midnight($start_date) || timestamp_is_midnight($end_date)) {
+          $replacements[$original] = t('@start_date to @end_date', [
+            '@start_date' => $formatted_start_date,
+            '@end_date' => $formatted_end_date,
+          ]);
+        }
+        else {
+          $formatted_start_time = $date_formatter
+            ->format($start_date, 'custom', 'H:i');
+          $formatted_end_time = $date_formatter
+            ->format($end_date, 'custom', 'H:i');
+
+          $replacements[$original] = t('@start_date to @end_date between @start_time and @end_time', [
+            '@start_date' => $formatted_start_date,
+            '@end_date' => $formatted_end_date,
+            '@start_time' => $formatted_start_time,
+            '@end_time' => $formatted_end_time,
+          ]);
+        }
+      }
+    }
+    if (!empty($tokens['symposium_reg_watch_link_title'])) {
+      $original = $tokens['symposium_reg_watch_link_title'];
+      $title = get_symposium_reg_watch_link($data['node'], 'title');
+      $replacements[$original] = $title ?: '';
+    }
+    if (!empty($tokens['symposium_reg_watch_link_url'])) {
+      $original = $tokens['symposium_reg_watch_link_url'];
+      $uri = get_symposium_reg_watch_link($data['node']);
+      if (!empty($uri)) {
+        $url = Url::fromUri($uri, ['absolute'=>TRUE]);
+        if ($url->isRouted()) {
+          $path = $url->toString();
+        }
+        elseif ($url->isExternal()) {
+          $path = $uri;
+        }
+      }
+      if (isset($path)) {
+        $replacements[$original] = $path;
+      }
+      else {
+        $replacements[$original] = '';
+      }
+    }
+    if (!empty($tokens['symposium_moderator_has_link'])) {
+      $original = $tokens['symposium_moderator_has_link'];
+      $moderator = get_field_value($data['node'], 'field_symposium_moderator');
+
+      if (!empty($moderator)) {
+        $replacements[$original] = TRUE;
+        $moderator_uri = get_field_value($data['node'],
+          'field_symposium_moderator_link',
+          'uri'
+        );
+        if (!empty($moderator_uri)) {
+          $replacements[$original] = '';
+        }
+      }
+      else {
+        $replacements[$original] = '';
+      }
+    }
+  }
+
+  return $replacements;
+}
+
+/**
+ * Implements hook_preprocess_node_HOOK().
+ */
+function symposia_preprocess_node__SYMPOSIUM__SYMPOSIUM_CARD_TEASER(&$variables) {
+  $node = $variables['node'];
+  $referenced_event = $node->get('field_symposium_event_reference')->entity;
+  $start_date = get_field_value($node, 'field_symposium_start_date');
+  $end_date = get_field_value($node, 'field_symposium_end_date');
+
+  if (!empty($start_date) && !empty($end_date)) {
+    $start_date = strtotime($start_date);
+    $end_date = strtotime($end_date);
+    if (!(timestamp_is_midnight($start_date) || timestamp_is_midnight($end_date))) {
+      $variables['symposium_duration_time'] = get_symposium_duration_time($node);
+    }
+  }
+  if ($referenced_event instanceof Node) {
+    if (!$referenced_event->get('field_event_location')->isEmpty()) {
+      $location = $referenced_event->get('field_event_location')->entity;
+      if ($location instanceof Node) {
+        if (!$location->get('field_time_zone')->isEmpty()) {
+          $time_zone = $location->get('field_time_zone')->entity;
+          if ($time_zone instanceof Term) {
+            $variables['time_zone_name'] = $time_zone->getName();
+          }
+        }
+      }
+    }
+  }
+  if ($node->hasField('field_symposium_moderator_link')) {
+    if (!$node->get('field_symposium_moderator_link')->isEmpty()) {
+      if (!empty($node->get('field_symposium_moderator_link')->uri)) {
+        $mod_uri = $node->get('field_symposium_moderator_link')->uri;
+        $variables['moderator_url'] = Url::fromUri($mod_uri)
+          ->setAbsolute()
+          ->toString();
+      }
+    }
+  }
+  if (!datetime_fields_have_same_day($node, 'field_symposium_start_date', 'field_symposium_end_date')) {
+    $variables['different_days'] = TRUE;
+    $formatter = Drupal::service('date.formatter');
+    $variables['rendered_start_date'] = $formatter
+      ->format($start_date, 'custom', 'F d, Y');
+    $variables['rendered_end_date'] = $formatter
+      ->format($end_date, 'custom', 'F d, Y');
+  }
+
+  $variables['bypass_detail_page'] = (bool) get_field_value(
+    $node, 'field_bypass_symposium_detail');
+  if ($variables['bypass_detail_page']) {
+    $uri = get_symposium_reg_watch_link($node);
+    if (!empty($uri)) {
+      $url = Url::fromUri($uri, ['absolute'=>TRUE]);
+      if ($url->isRouted()) {
+        $variables['bypass_link_url'] = $url->toString();
+      }
+      elseif ($url->isExternal()) {
+        $variables['bypass_link_url'] = $uri;
+      }
+      if (isset($variables['bypass_link_url'])) {
+        $variables['bypass_link_title'] = get_symposium_reg_watch_link(
+          $node, 'title');
+      }
+    }
+  }
+
+  $moderation_state = $node->get('moderation_state')->getString();
+  $variables['state_' . $moderation_state] = TRUE;
+}
+
+/**
+ * Function that generates the correct format of Symposium duration
+ * based on Symposium's start & end dates.
+ *
+ * @param Node $node
+ *   Symposium node for processing.
+ *
+ * @return string
+ *   Symposium duration time in the correct format.
+ */
+function get_symposium_duration_time(Node $node) {
+  $result = '';
+
+  $start_date = get_field_value($node, 'field_symposium_start_date');
+  $end_date = get_field_value($node, 'field_symposium_end_date');
+
+  if (!empty($start_date)) {
+    $formatter = Drupal::service('date.formatter');
+    $start_date = strtotime($start_date);
+    $start_hours = $formatter->format($start_date, 'custom', 'G');
+    $start_mins = $formatter->format($start_date, 'custom', 'i');
+
+    if (!empty($end_date)) {
+      $end_date = strtotime($end_date);
+      $end_hours = $formatter->format($end_date, 'custom', 'G');
+      $end_mins = $formatter->format($end_date, 'custom', 'i');
+
+      if (($start_hours == $end_hours) && ($start_mins == $end_mins)) {
+        $result = "$start_hours:$start_mins";
+      }
+      else {
+        $result = "$start_hours:$start_mins - $end_hours:$end_mins";
+      }
+    }
+    else {
+      $result = "$start_hours:$start_mins";
+    }
+  }
+
+  return $result;
+}
+
+/**
+ * @param Node $node
+ *   Symposium node for processing.
+ *
+ * @param $element
+ * @return string
+ */
+function get_symposium_reg_watch_link(Node $node, $element = 'uri') {
+  $end_date = get_field_value($node, 'field_symposium_end_date');
+  $end_date = strtotime($end_date);
+  $current_time = strtotime('now');
+  if ($end_date > $current_time) {
+    // Not ended; output register link.
+    $result = get_field_value($node, 'field_symposium_register_link', $element);
+    if ($element == 'title') {
+      if (empty($result)) {
+        $result = t('Register now');
+      }
+    }
+  }
+  else {
+    // Ended; output watch link.
+    $result = get_field_value($node, 'field_symposium_watch_link', $element);
+    if ($element == 'title') {
+      if (empty($result)) {
+        $result = t('Watch recording');
+      }
+    }
+  }
+
+  return $result ?: '';
+}

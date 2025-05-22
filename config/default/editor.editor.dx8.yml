@@ -1,0 +1,28 @@
+uuid: 133cfded-5078-4d28-b871-121284684d9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.dx8
+  module:
+    - ckeditor5
+format: dx8
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    media_media:
+      allow_view_mode_override: false
+image_upload: {  }

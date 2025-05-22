@@ -1,0 +1,25 @@
+diff --git a/sweetalert2.install b/sweetalert2.install
+index 5fd17c8..c8d2464 100644
+--- a/sweetalert2.install
++++ b/sweetalert2.install
+@@ -14,7 +14,7 @@ function sweetalert2_requirements($phase) {
+   switch ($phase) {
+     case 'install':
+     case 'runtime':
+-      $file_exists = file_exists(DRUPAL_ROOT . '/libraries/sweetalert2/dist/sweetalert2.all.js');
++      $file_exists = file_exists(DRUPAL_ROOT . '/libraries/sweetalert2/sweetalert2.all.js');
+ 
+       if ($file_exists) {
+         $message = t('sweetalert2 plugin detected in %path.', ['%path' => '/libraries/sweetalert2']);
+diff --git a/sweetalert2.libraries.yml b/sweetalert2.libraries.yml
+index c92f6b8..f33bcaf 100644
+--- a/sweetalert2.libraries.yml
++++ b/sweetalert2.libraries.yml
+@@ -1,6 +1,6 @@
+ sweetalert2_js:
+   version: VERSION
+   js:
+-    /libraries/sweetalert2/dist/sweetalert2.all.js: {}
++    /libraries/sweetalert2/sweetalert2.all.js: {}
+   dependencies:
+     - core/drupal.ajax

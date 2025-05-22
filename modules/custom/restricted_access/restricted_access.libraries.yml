@@ -1,0 +1,10 @@
+restricted_access:
+  js:
+    js/restricted_access.js: {}
+  css:
+   theme:
+    css/restricted_access.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery

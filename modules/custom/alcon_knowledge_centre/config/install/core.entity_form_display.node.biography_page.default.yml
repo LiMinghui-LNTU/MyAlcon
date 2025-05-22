@@ -1,0 +1,171 @@
+status: true
+dependencies:
+  config:
+    - field.field.node.biography_page.field_article_authored_by
+    - field.field.node.biography_page.field_author_first_name
+    - field.field.node.biography_page.field_author_image_icon
+    - field.field.node.biography_page.field_biography
+    - field.field.node.biography_page.field_last_name
+    - image.style.large
+    - node.type.biography_page
+  module:
+    - content_moderation
+    - field_group
+    - focal_point
+    - imce
+    - lightning_media
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - title
+        - field_author_first_name
+        - field_last_name
+        - field_biography
+        - field_author_image_icon
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Content
+    group_article_details:
+      children:
+        - field_article_authored_by
+      parent_name: ''
+      weight: 1
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        weight: -9000
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Article Details'
+id: node.biography_page.default
+targetEntityType: node
+bundle: biography_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_authored_by:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_author_first_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_author_image_icon:
+    type: image_focal_point
+    weight: 5
+    settings:
+      preview_image_style: large
+      preview_link: true
+      offsets: '50,50'
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_biography:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_last_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 8
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

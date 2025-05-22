@@ -1,0 +1,12 @@
+uuid: f82a1654-8e8a-42c8-9ec5-3e91fd6caca0
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: boOxRvu533PdazqquOAQhGK6j7P-QrZ01_6rKpuO9XM
+id: text
+label: 文本
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Text</em> for adding a text.'
+behavior_plugins: {  }

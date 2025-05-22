@@ -1,0 +1,21 @@
+back_to_top:
+  version: 1.x
+  js:
+    js/lobby.js: {}
+    js/article.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+article_admin:
+  version: 1.2.1
+  js:
+    js/article_admin.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/once

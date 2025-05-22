@@ -1,0 +1,18 @@
+uuid: 1d977016-4271-4df1-b9fc-34185d94d4d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.field_weight
+id: taxonomy_term.field_weight.name
+field_name: name
+entity_type: taxonomy_term
+bundle: field_weight
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

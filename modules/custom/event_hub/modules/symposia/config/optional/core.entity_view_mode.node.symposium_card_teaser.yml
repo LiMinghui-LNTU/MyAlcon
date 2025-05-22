@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.symposium_card_teaser
+label: 'Symposium Card teaser'
+targetEntityType: node
+cache: true

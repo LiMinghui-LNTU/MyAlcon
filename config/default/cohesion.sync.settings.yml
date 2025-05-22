@@ -1,0 +1,22 @@
+langcode: zh-hans
+enabled_entity_types:
+  cohesion_base_styles: cohesion_base_styles
+  cohesion_color: cohesion_color
+  cohesion_component: '0'
+  cohesion_component_category: '0'
+  cohesion_content_templates: '0'
+  cohesion_custom_style: '0'
+  cohesion_font_library: '0'
+  cohesion_font_stack: '0'
+  cohesion_helper: '0'
+  cohesion_helper_category: '0'
+  cohesion_icon_library: '0'
+  cohesion_master_templates: '0'
+  cohesion_menu_templates: '0'
+  cohesion_scss_variable: '0'
+  cohesion_style_guide: '0'
+  cohesion_style_guide_manager: '0'
+  cohesion_style_helper: '0'
+  cohesion_sync_package: '0'
+  cohesion_view_templates: '0'
+  cohesion_website_settings: '0'

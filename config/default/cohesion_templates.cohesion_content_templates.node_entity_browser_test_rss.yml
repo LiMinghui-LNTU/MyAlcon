@@ -1,0 +1,18 @@
+uuid: 6f31e103-ae37-4fdf-b2a6-6b9d95122cb7
+langcode: en
+status: false
+dependencies: {  }
+label: 'RSS (Node, Entity browser test)'
+id: node_entity_browser_test_rss
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: entity_browser_test
+view_mode: rss
+master_template: ''

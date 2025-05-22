@@ -1,0 +1,18 @@
+uuid: cff77c52-635b-4df9-b9b4-5f3db2e77eb1
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full content (Media, Tweet)'
+id: media_tweet_full
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: tweet
+view_mode: full
+master_template: ''

@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Enabled":"Aktiviert","Disabled":"Deaktiviert"}},"pluralFormula":{"1":0,"default":1}};

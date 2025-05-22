@@ -1,0 +1,18 @@
+uuid: 8f7c2460-e91b-49d2-a13e-b689b31f524e
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - node.type.location
+id: node.location.changed
+field_name: changed
+entity_type: node
+bundle: location
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

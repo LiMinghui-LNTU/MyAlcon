@@ -1,0 +1,39 @@
+<article{{ attributes.addClass('coh-style-a-event-hero') }}>
+  <div{{ content_attributes.addClass('event-teaser-container') }}>
+    <div class="event-teaser-card white">
+      <div class="coh-row-inner">
+        <div class="coh-column image-col coh-col-xl">
+          {{ content.field_event_teaser_image }}
+        </div>
+        <div class="coh-column content-col coh-col-xl">
+          <h3 class="coh-wysiwyg event-name">
+            {{ event_full_name }}
+          </h3>
+          <div class="coh-wysiwyg event-description">
+            {{ content.field_event_description }}
+          </div>
+          {% if content.field_event_start_date|field_value %}
+            <div class="coh-wysiwyg event-duration">
+              {{ event_duration }}
+            </div>
+          {% endif %}
+          {% if location_region %}
+            <div class="coh-wysiwyg event-location-region">
+              {{ location_region }}
+            </div>
+          {% endif %}
+          {% if content.field_event_place|field_value %}
+            <div class="coh-wysiwyg event-location-name">
+              {{ content.field_event_place }}
+            </div>
+          {% endif %}
+          <a href="{{ url }}" class="coh-link register-link coh-style-a-button-primary">
+            {{ "See more"|t }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {{ content|without('field_event_teaser_image', 'field_event_short_name', 'field_event_extended_name', 'field_event_description', 'field_event_start_date', 'field_event_end_date', 'field_event_location', 'field_event_place') }}
+  </div>
+</article>

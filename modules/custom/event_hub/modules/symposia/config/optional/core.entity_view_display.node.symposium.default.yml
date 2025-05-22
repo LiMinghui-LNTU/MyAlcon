@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.symposium.field_bypass_symposium_detail
+    - field.field.node.symposium.field_layout_canvas_symposium
+    - field.field.node.symposium.field_symposium_end_date
+    - field.field.node.symposium.field_symposium_event_reference
+    - field.field.node.symposium.field_symposium_meta_tags
+    - field.field.node.symposium.field_symposium_moderator
+    - field.field.node.symposium.field_symposium_moderator_link
+    - field.field.node.symposium.field_symposium_name
+    - field.field.node.symposium.field_symposium_place
+    - field.field.node.symposium.field_symposium_register_link
+    - field.field.node.symposium.field_symposium_start_date
+    - field.field.node.symposium.field_symposium_teaser_image
+    - field.field.node.symposium.field_symposium_watch_link
+    - field.field.node.symposium.field_symposium_weight
+    - field.field.node.symposium.field_template_selector_symposiu
+    - node.type.symposium
+  module:
+    - cohesion_elements
+    - metatag
+    - user
+id: node.symposium.default
+targetEntityType: node
+bundle: symposium
+mode: default
+content:
+  field_layout_canvas_symposium:
+    type: cohesion_entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_symposium_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_bypass_symposium_detail: true
+  field_symposium_end_date: true
+  field_symposium_event_reference: true
+  field_symposium_moderator: true
+  field_symposium_moderator_link: true
+  field_symposium_name: true
+  field_symposium_place: true
+  field_symposium_register_link: true
+  field_symposium_start_date: true
+  field_symposium_teaser_image: true
+  field_symposium_watch_link: true
+  field_symposium_weight: true
+  field_template_selector_symposiu: true
+  langcode: true
+  search_api_excerpt: true

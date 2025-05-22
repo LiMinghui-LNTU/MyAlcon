@@ -1,0 +1,22 @@
+uuid: e4d26daa-4069-4a01-a82b-6e4849469430
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+id: node.virtualbooth.sticky
+field_name: sticky
+entity_type: node
+bundle: virtualbooth
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

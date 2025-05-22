@@ -1,0 +1,100 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Knowledge Center module.
+ */
+
+use Drupal\image\Entity\ImageStyle;
+use Drupal\node\Entity\NodeType;
+use Drupal\taxonomy\Entity\Vocabulary;
+
+/**
+ * Update module's configs.
+ */
+function alcon_knowledge_centre_update_102003() {
+  \Drupal::service('config.installer')
+    ->installDefaultConfig('module', 'alcon_knowledge_centre');
+  drupal_flush_all_caches();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function alcon_knowledge_centre_uninstall() {
+
+  $image_styles = [
+    'article_author_image_desktop',
+    'article_author_image_phone',
+    'article_feature_news',
+    'article_hero_laptop',
+    'article_teaser_desktop',
+    'article_teaser_feature_desktop',
+    'article_teaser_feature_laptop',
+    'article_teaser_feature_phone',
+    'article_teaser_feature_wide_desktop',
+    'article_teaser_laptop',
+    'article_teaser_phone',
+    'article_teaser_wide_desktop',
+    'article_teaser_news',
+    'desktop_3_col_4_3_',
+    'desktop_4_col_4_3_',
+    'laptop_3_col_4_3_',
+    'laptop_4_col_4_3_',
+    'phone_4_3_',
+    'phone_landscape_3_col_4_3_',
+    'phone_landscape_4_col_4_3_',
+    'tablet_3_col_4_3_',
+    'tablet_4_col_4_3_',
+    'wide_desktop_3_col_4_3_',
+    'wide_desktop_4_col_4_3_',
+  ];
+
+  foreach ($image_styles as $image_style_name) {
+    if ($image_style = ImageStyle::load($image_style_name)) {
+      $image_style->delete();
+    }
+  }
+
+  if ($node_type = NodeType::load('article')) {
+    $node_type->delete();
+  }
+  if ($node_type = NodeType::load('biography_page')) {
+    $node_type->delete();
+  }
+
+  $term_vocabularies_array = [
+    'article_category',
+    'article_category_professional',
+    'article_tag',
+    'article_tag_professional_',
+  ];
+  foreach ($term_vocabularies_array as $vocabulary_name) {
+    if ($vocabulary = Vocabulary::load($vocabulary_name)) {
+      $vocabulary->delete();
+    }
+  }
+
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.article_lobby')) {
+    $kc_view->delete();
+  }
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.article_lobby_professional')) {
+    $kc_view->delete();
+  }
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.article_page')) {
+    $kc_view->delete();
+  }
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.article_news_view_block')) {
+    $kc_view->delete();
+  }
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.kc_article_lobby_category')) {
+    $kc_view->delete();
+  }
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.kc_article_lobby_category_professional')) {
+    $kc_view->delete();
+  }
+  if ($kc_view = \Drupal::service('config.factory')->getEditable('views.view.knowledge_centre_related_article')) {
+    $kc_view->delete();
+  }
+  drupal_flush_all_caches();
+}

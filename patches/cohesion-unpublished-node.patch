@@ -1,0 +1,13 @@
+diff --git a/src/Entity/CohesionEntityAutocompleteMatcher.php b/src/Entity/CohesionEntityAutocompleteMatcher.php
+index dc85d4c..31dff6e 100644
+--- a/src/Entity/CohesionEntityAutocompleteMatcher.php
++++ b/src/Entity/CohesionEntityAutocompleteMatcher.php
+@@ -70,7 +70,7 @@ class CohesionEntityAutocompleteMatcher extends EntityAutocompleteMatcher {
+           $entity = $this->entityTypeManager->getStorage($target_type)->load($entity_id);
+           // Only show published content & account for entities that don't have
+           // an Entity published interface.
+-          if(($entity instanceof EntityPublishedInterface) && $entity->isPublished() || !($entity instanceof EntityPublishedInterface)) {
++          if(($entity instanceof EntityPublishedInterface) || !($entity instanceof EntityPublishedInterface)) {
+ 
+             $key = "$label ($entity_id)";
+             // Strip things like starting/trailing white spaces, line breaks and

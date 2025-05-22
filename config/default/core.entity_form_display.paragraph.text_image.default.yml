@@ -1,0 +1,22 @@
+uuid: f5884dc9-3364-4bb8-8c5f-04047383c0d2
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.text_image
+_core:
+  default_config_hash: TBS21Om1SajShO8TT2mb1WCLMQBo1-OsglfeuzzuFH8
+id: paragraph.text_image.default
+targetEntityType: paragraph
+bundle: text_image
+mode: default
+content:
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

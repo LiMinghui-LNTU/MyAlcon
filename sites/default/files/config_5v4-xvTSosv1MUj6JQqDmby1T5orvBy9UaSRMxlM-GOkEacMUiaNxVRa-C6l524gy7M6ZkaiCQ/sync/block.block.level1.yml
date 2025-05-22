@@ -1,0 +1,31 @@
+uuid: 169a952d-8bd9-468f-9da9-8f28ad47c8fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.level-1
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: level1
+theme: cohesion_theme
+region: dx8_hidden
+weight: 5
+provider: null
+plugin: 'system_menu_block:level-1'
+settings:
+  id: 'system_menu_block:level-1'
+  label: 'Level 1'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    context_mapping: {  }
+    using_master_template: 0

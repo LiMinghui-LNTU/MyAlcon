@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Hooks for Config Revision module.
+ */
+
+declare(strict_types=1);
+
+use Drupal\config_revision\EntityHooks;
+use Drupal\Core\Config\Entity\ConfigEntityInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function config_revision_entity_insert(EntityInterface $entity) {
+  if (!$entity instanceof ConfigEntityInterface) {
+    return;
+  }
+  \Drupal::classResolver(EntityHooks::class)
+    ->entityPostSave($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function config_revision_entity_update(EntityInterface $entity) {
+  if (!$entity instanceof ConfigEntityInterface) {
+    return;
+  }
+  \Drupal::classResolver(EntityHooks::class)
+    ->entityPostSave($entity);
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function config_revision_entity_delete(EntityInterface $entity) {
+  if (!$entity instanceof ConfigEntityInterface) {
+    return;
+  }
+  \Drupal::classResolver(EntityHooks::class)
+    ->entityPostDelete($entity);
+}

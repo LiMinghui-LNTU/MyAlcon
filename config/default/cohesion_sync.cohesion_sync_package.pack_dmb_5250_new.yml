@@ -1,0 +1,9 @@
+uuid: 85d0a034-3379-43a8-8a75-b5fa24f8c8d7
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5250_new
+label: 'DMB 5250 New'
+description: 'DMB 5250 New'
+excluded_entity_types: '[]'
+settings: '{"6721be4a-a5a3-4722-9e49-4d5cd94470df":{"type":"cohesion_custom_style","items":{"6721be4a-a5a3-4722-9e49-4d5cd94470df":{"type":"cohesion_custom_style"}},"checked":true},"ca67f574-14ec-44a8-9912-7447ff682004":{"type":"cohesion_custom_style","items":{"ca67f574-14ec-44a8-9912-7447ff682004":{"type":"cohesion_custom_style"}},"checked":true},"7831bb6d-2d21-4ec7-98dc-126b2e7edfcf":{"type":"cohesion_base_styles","items":{"7831bb6d-2d21-4ec7-98dc-126b2e7edfcf":{"type":"cohesion_base_styles"}},"checked":true}}'

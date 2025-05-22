@@ -1,0 +1,20 @@
+uuid: 612a9b04-79dd-4d3f-a786-7548c4f3d28d
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part3
+label: 'DMB-5789 new nb part3'
+description: 'DMB-5789 new nb part3(Hero M2 - Text with Background Image)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "d9dccdcb-1b4a-4132-9b57-acb59a397eef": {
+          "type": "cohesion_component",
+          "items": {
+              "d9dccdcb-1b4a-4132-9b57-acb59a397eef": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

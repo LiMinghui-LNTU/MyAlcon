@@ -1,0 +1,8 @@
+administer config_revision type:
+  title: 'administer config revision type'
+  restrict access: true
+administer config_revision:
+  title: 'administer config revision'
+  restrict access: true
+view config_revision:
+  title: 'View all config revision'

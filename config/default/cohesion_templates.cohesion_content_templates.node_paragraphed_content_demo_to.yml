@@ -1,0 +1,18 @@
+uuid: baec8b56-1fbe-4a3f-8b6f-684c87622bea
+langcode: zh-hans
+status: false
+dependencies: {  }
+label: 'Token (Node, Paragraphed article)'
+id: node_paragraphed_content_demo_to
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: paragraphed_content_demo
+view_mode: token
+master_template: ''

@@ -1,0 +1,14 @@
+uuid: 948607e2-8fc1-4699-b167-44c32594dfaf
+langcode: en
+status: true
+dependencies: {  }
+label: OTHER
+id: cpt_cat_other_0
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-8
+weight: -1

@@ -1,0 +1,24 @@
+uuid: 7ea869cc-8447-4507-ba1f-86ac02a0cc6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_place
+    - node.type.event
+  module:
+    - text
+_core:
+  default_config_hash: EYtA8Hjk46lt15xhoSJ57mwXhKt8NJBGaBjktjqYk3c
+id: node.event.field_event_place
+field_name: field_event_place
+entity_type: node
+bundle: event
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

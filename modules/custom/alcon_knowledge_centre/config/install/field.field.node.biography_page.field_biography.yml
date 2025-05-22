@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - node.type.biography_page
+  module:
+    - text
+id: node.biography_page.field_biography
+field_name: field_biography
+entity_type: node
+bundle: biography_page
+label: Biography
+description: 'Free text WYSIWYG field used to store a short biography of the article author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

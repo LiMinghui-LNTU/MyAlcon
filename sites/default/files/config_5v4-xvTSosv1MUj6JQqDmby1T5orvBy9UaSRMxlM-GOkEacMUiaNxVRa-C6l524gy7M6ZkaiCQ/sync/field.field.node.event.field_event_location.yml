@@ -1,0 +1,31 @@
+uuid: c6ca667b-012e-4f72-858e-c71cede34d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_location
+    - node.type.event
+    - node.type.location
+_core:
+  default_config_hash: zItv2-qgpc_V2tYnm9pCWdLZOsWlP6CRnZYap2L1Br0
+id: node.event.field_event_location
+field_name: field_event_location
+entity_type: node
+bundle: event
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

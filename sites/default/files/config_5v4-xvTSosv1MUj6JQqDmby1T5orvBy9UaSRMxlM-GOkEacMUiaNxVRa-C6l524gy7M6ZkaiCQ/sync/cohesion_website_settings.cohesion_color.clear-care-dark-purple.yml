@@ -1,0 +1,13 @@
+uuid: 49f460e8-31aa-4d53-bc39-3b2a67d0104d
+langcode: en
+status: true
+dependencies: {  }
+label: 'CLEAR CARE Dark Purple'
+id: clear-care-dark-purple
+json_values: '{"link":true,"name":"CLEAR CARE Dark Purple","uid":"clear-care-dark-purple","class":".coh-color-clear-care-dark-purple","variable":"$coh-color-clear-care-dark-purple","value":{"value":{"hex":"#552271","rgba":"rgba(85, 34, 113, 1)"}},"wysiwyg":true,"tags":[{"label":"clear-care","value":"clear-care"},{"label":"secondary","value":"secondary"}],"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 9

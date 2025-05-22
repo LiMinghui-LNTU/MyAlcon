@@ -1,0 +1,23 @@
+uuid: 8f9e3571-1d3e-447d-81e5-a98e015f45dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_selector_pp
+    - node.type.product_page
+  module:
+    - cohesion_templates
+id: node.product_page.field_template_selector_pp
+field_name: field_template_selector_pp
+entity_type: node
+bundle: product_page
+label: 'Template selector'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: __default__
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

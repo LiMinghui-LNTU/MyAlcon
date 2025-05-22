@@ -1,0 +1,31 @@
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.biography_page.field_article_authored_by
+    - field.field.node.biography_page.field_author_first_name
+    - field.field.node.biography_page.field_author_image_icon
+    - field.field.node.biography_page.field_biography
+    - field.field.node.biography_page.field_last_name
+    - node.type.biography_page
+  module:
+    - user
+id: node.biography_page.teaser
+targetEntityType: node
+bundle: biography_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  field_article_authored_by: true
+  field_author_first_name: true
+  field_author_image_icon: true
+  field_biography: true
+  field_last_name: true
+  langcode: true
+  search_api_excerpt: true

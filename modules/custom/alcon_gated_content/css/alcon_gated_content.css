@@ -1,0 +1,33 @@
+.hide-body-content-load {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 45;
+    background-color: #ffffff;
+}
+div#model-id-gated-content-form-standard {
+    pointer-events: auto;
+    overflow: auto;
+    padding: 15px 0px;
+}
+
+@media (min-width: 1200px) {
+    div#model-id-gated-content-form-standard {
+        align-items: center;
+    }
+}
+
+@media (min-height: 800px) {
+    div#model-id-gated-content-form-standard {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    div#model-id-gated-content-form-standard {
+        align-items: start;
+        -webkit-align-items: start;
+    }
+}

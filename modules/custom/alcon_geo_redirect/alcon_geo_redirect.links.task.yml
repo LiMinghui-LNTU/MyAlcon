@@ -1,0 +1,4 @@
+alcon_geo_redirect.admin:
+  route_name: alcon_geo_redirect.admin
+  title: 'Geo Redirect Script'
+  base_route: alcon_geo_redirect.admin

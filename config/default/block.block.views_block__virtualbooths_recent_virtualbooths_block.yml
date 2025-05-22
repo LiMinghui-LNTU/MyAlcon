@@ -1,0 +1,24 @@
+uuid: 3ab05bb0-5128-455f-b8f9-8ba5408d5a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.virtualbooths
+  module:
+    - views
+  theme:
+    - cohesion_theme
+id: views_block__virtualbooths_recent_virtualbooths_block
+theme: cohesion_theme
+region: dx8_hidden
+weight: 21
+provider: null
+plugin: 'views_block:virtualbooths-recent_virtualbooths_block'
+settings:
+  id: 'views_block:virtualbooths-recent_virtualbooths_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

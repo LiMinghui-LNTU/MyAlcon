@@ -1,0 +1,7 @@
+alcon_email_validation.settings:
+  title: 'Alcon Email Validation settings'
+  base_route_name: alcon_email_validation.admin
+  names:
+    - alcon_email_validation.settings
+  weight: 10
+  base_entity_type: 'config_translation_mapper'

@@ -1,0 +1,22 @@
+uuid: f75abd10-ca34-4085-8bc7-753aec6adac7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 4FniZIgsJ4RJ6c3tiUPPCROuYERGWmGrv5jzjqFDDC8
+id: node.field_symposium_place
+field_name: field_symposium_place
+entity_type: node
+type: text
+settings:
+  max_length: 60
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

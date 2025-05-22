@@ -1,0 +1,13 @@
+uuid: 78239290-ba23-4832-a9d2-d5d5f305517d
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Soft Blue'
+id: total-soft-blue
+json_values: '{"link":true,"name":"TOTAL Soft Blue","uid":"total-soft-blue","class":".coh-color-total-soft-blue","variable":"$coh-color-total-soft-blue","value":{"value":{"hex":"#b7dde1","rgba":"rgba(183, 221, 225, 1)"}},"inuse":true,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 18

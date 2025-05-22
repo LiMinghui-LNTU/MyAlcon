@@ -1,0 +1,25 @@
+{
+  "name": "acquia/blt-travis",
+  "description": "Travis CI integration for Acquia BLT",
+  "license": "GPL-2.0-or-later",
+  "authors":[
+    {
+      "name": "Acquia Engineering",
+      "homepage": "https://www.acquia.com",
+      "role": "Maintainer"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {},
+  "conflict": {
+    "acquia/blt": "<13.5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acquia\\BltTravis\\": "./src/"
+    },
+    "classmap":["src/Blt/Plugin/EnvironmentDetector/TravisDetector.php"]
+  }
+}

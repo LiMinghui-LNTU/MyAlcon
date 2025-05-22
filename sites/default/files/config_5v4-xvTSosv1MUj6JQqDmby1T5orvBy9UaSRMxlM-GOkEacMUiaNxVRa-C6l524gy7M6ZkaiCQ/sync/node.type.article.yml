@@ -1,0 +1,23 @@
+uuid: dfb98a2c-3272-4a62-96eb-da19724f16ad
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: psePqaHFYv5TS8Pv0VwVMh9KVzsJwMtn6rjztbJ_9cA
+name: 文章
+type: article
+description: 使用<em>文章</em>发布有关时间的内容，如消息，新闻或日志。
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

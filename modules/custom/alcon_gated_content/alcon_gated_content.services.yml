@@ -1,0 +1,13 @@
+services:
+  alcon_gated_content.cache_control_subscriber:
+    class: Drupal\alcon_gated_content\EventSubscriber\CacheControlSubscriber
+    arguments: ['@current_route_match']
+    tags:
+      - { name: event_subscriber }
+  alcon_gated_content.guzzle_service:
+      class: Drupal\alcon_gated_content\GuzzleService
+      arguments: ['@logger.factory']
+
+  alcon_gated_content.tealium_controller:
+    class: Drupal\alcon_gated_content\Controller\TealiumController
+    arguments: ['@path_alias.manager', '@entity_type.manager', '@request_stack', '@logger.factory', '@alcon_gated_content.guzzle_service', '@datetime.time']

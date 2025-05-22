@@ -1,0 +1,12 @@
+uuid: 692431d8-81bb-4eb2-97e4-412da6585b91
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RDCkFL0NDt75Gwioooxo1iuA1S50xTVsBOgX__c6wTw
+id: '403'
+label: '403 access denied'
+tags:
+  robots: noindex
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

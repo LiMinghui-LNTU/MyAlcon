@@ -1,0 +1,13 @@
+uuid: ad988ebf-63e8-471c-9c35-9c60b9a263d8
+langcode: en
+status: true
+dependencies: {  }
+label: 'OPTI-FREE Yellow'
+id: optifree-yellow
+json_values: '{"link":true,"name":"OPTI-FREE Yellow","uid":"optifree-yellow","class":".coh-color-optifree-yellow","variable":"$coh-color-optifree-yellow","value":{"value":{"hex":"#fff200","rgba":"rgba(255, 242, 0, 1)"}},"wysiwyg":false,"tags":[{"label":"opti-free","value":"opti-free"},{"label":"secondary","value":"secondary"}],"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 37

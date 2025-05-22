@@ -1,0 +1,20 @@
+uuid: e0e1709a-2962-4f78-a935-70032759e638
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part6
+label: 'DMB-5789 revert part6'
+description: 'DMB-5789 revert part6(Text with Background Image - M1 (cpt_a_txt_bkgrd_img_m1) '
+excluded_entity_types: '[]'
+settings: |
+  {
+      "496d854e-2710-4524-9faf-8a71ddb8d921": {
+          "type": "cohesion_component",
+          "items": {
+              "496d854e-2710-4524-9faf-8a71ddb8d921": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

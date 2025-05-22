@@ -1,0 +1,20 @@
+uuid: 1c9313cd-5cce-442b-9b99-05f6a1324173
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_font_stack.raleway
+label: brand-card-paragraph
+id: 5c5daa02
+json_values: '{"preview":{"text":"<p class=\"coh-preview\">Default content for ''Paragraph Your eyes are unique. And now you can show them off to the world with FRESHLOOK\u2122 COLORBLENDS\u2122, designed to enhance your eyes\u2019 natural radiance. Your eyes are unique. And now you can show them off to the world with FRESHLOOK\u2122 COLORBLENDS\u2122, designed to enhance your eyes\u2019 natural radiance. Your eyes are unique. And now you can show them off to the world with FRESHLOOK\u2122 COLORBLENDS\u2122, designed to enhance your eyes\u2019 natural radiance.''.<\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"p","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-raleway"},"font-weight":{"value":"400"},"font-size":{"value":"14px"},"line-height":{"value":"20px"},"text-align":{},"text-transform":{"value":"none"},"custom-css":[{"customCssProperty":{"value":"letter-spacing"},"customCss":{"value":"0.89px"}}],"min-height":{"value":"80px"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Paragraph","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":true},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]},{"formKey":"font-style-and-wrapping","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-style","active":true},{"name":"text-transform","active":true},{"name":"text-decoration","active":true},{"name":"word-wrap","active":true},{"name":"direction","active":true}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]},{"formKey":"height","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":true},{"name":"height","active":true}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-brand-card-paragraph
+custom_style_type: paragraph
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 247

@@ -1,0 +1,18 @@
+uuid: d5b9f322-a161-4b48-8ad8-6154390f2dd2
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Block_content, Banner)'
+id: block_content_banner_token
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: banner
+view_mode: token
+master_template: ''

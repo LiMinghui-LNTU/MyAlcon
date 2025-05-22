@@ -1,0 +1,12 @@
+diff --git a/core/modules/content_translation/content_translation.admin.js b/core/modules/content_translation/content_translation.admin.js
+--- a/core/modules/content_translation/content_translation.admin.js
++++ b/core/modules/content_translation/content_translation.admin.js
+@@ -89,7 +89,7 @@
+       ).forEach((input) => {
+         const $input = $(input);
+         const $bundleSettings = $input.closest('.bundle-settings');
+-        if (input.checked) {
++        if (!input.checked) {
+           $bundleSettings.nextUntil('.bundle-settings').hide();
+         } else {
+           $bundleSettings

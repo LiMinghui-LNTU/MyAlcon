@@ -1,0 +1,19 @@
+uuid: 6aba4f7d-529d-4739-b6bc-91cc0e5ffacb
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: T7JqWoW2NC8-upuv-CLjbZTL__aa5aDsiHxY5peO5V8
+name: course_teaser_desktop
+label: 'Course Teaser Desktop'
+effects:
+  473fba6f-df81-40f7-afa0-7f6161bc7e21:
+    uuid: 473fba6f-df81-40f7-afa0-7f6161bc7e21
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 215
+      crop_type: focal_point

@@ -1,0 +1,18 @@
+uuid: 392e8909-27af-4adf-83bb-0841e61a8854
+langcode: zh-hans
+status: false
+dependencies: {  }
+label: 'Token (Taxonomy_term, Article Category)'
+id: taxonomy_term_article_category_t
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: taxonomy_term
+bundle: article_category
+view_mode: token
+master_template: ''

@@ -1,0 +1,27 @@
+uuid: 80785d3f-796d-4fbf-b34e-8461470d1a5e
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - alcon_sitestudio_components
+    - cohesion
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: jJK8Y-0-kK_R_Bk1T-WmPyLsD6O7Sy6SlyialY_ma5o
+id: libraryrequierebyiframecomponent
+theme: cohesion_theme
+region: dx8_hidden
+weight: 11
+provider: null
+plugin: alcon_sitestudio_iframe_block
+settings:
+  id: alcon_sitestudio_iframe_block
+  label: 'Library requiere by iframe component'
+  label_display: '0'
+  provider: alcon_sitestudio_components
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

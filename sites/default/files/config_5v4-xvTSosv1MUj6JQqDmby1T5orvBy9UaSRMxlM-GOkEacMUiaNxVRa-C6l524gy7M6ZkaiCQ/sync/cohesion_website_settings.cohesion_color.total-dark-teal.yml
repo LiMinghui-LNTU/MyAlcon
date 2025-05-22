@@ -1,0 +1,13 @@
+uuid: ace09133-91bf-43a1-871a-decfb9b200ef
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Dark Teal'
+id: total-dark-teal
+json_values: '{"link":true,"name":"TOTAL Dark Teal","uid":"total-dark-teal","class":".coh-color-total-dark-teal","variable":"$coh-color-total-dark-teal","value":{"value":{"hex":"#005151","rgba":"rgba(0, 81, 81, 1)"}},"inuse":false,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 72

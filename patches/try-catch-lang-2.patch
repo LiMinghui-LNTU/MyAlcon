@@ -1,0 +1,28 @@
+Index: modules/cohesion_website_settings/cohesion_website_settings.module
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/modules/cohesion_website_settings/cohesion_website_settings.module b/modules/cohesion_website_settings/cohesion_website_settings.module
+--- a/modules/cohesion_website_settings/cohesion_website_settings.module	(revision 83ba28359bd05de5e040cc08cf09aa02c37a3efe)
++++ b/modules/cohesion_website_settings/cohesion_website_settings.module	(date 1631825851221)
+@@ -355,8 +355,17 @@
+     /** @var \Drupal\Core\Entity\RevisionableStorageInterface $storage */
+     $storage = \Drupal::service('entity_type.manager')->getStorage('cohesion_layout');
+     $latest_revision_id = $storage->getLatestRevisionId($entity->id());
+-    $latest_entity = $storage->loadRevision($latest_revision_id)->getTranslation($entity->language()->getId());
+-    _process_cohesion_layout_entity($latest_entity, $context, $verbose);
++    try {
++      $latest_entity = $storage->loadRevision($latest_revision_id)->getTranslation($entity->language()->getId());
++      _process_cohesion_layout_entity($latest_entity, $context, $verbose);
++    }
++    catch (\InvalidArgumentException $e) {
++      \Drupal::logger('sitestudio')
++        ->error("revision_id: %r - error: %e", [
++          '%n' => $latest_revision_id,
++          '%e' => $e->getMessage()
++        ]);
++    }
+   }
+ }
+ 

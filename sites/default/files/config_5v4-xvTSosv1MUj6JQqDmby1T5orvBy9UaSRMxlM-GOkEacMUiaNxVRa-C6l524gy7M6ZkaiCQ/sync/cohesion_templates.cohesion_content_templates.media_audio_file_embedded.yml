@@ -1,0 +1,18 @@
+uuid: e569482e-4910-4a2d-89ee-1ff107c2a013
+langcode: en
+status: false
+dependencies: {  }
+label: 'Embedded (Media, Audio file)'
+id: media_audio_file_embedded
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: audio_file
+view_mode: embedded
+master_template: ''

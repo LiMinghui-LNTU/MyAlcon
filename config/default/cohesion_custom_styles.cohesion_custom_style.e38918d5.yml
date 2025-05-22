@@ -1,0 +1,20 @@
+uuid: 4761a747-241c-4086-ba40-7fefeafcf6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.ded85486
+label: 'Medium vertical center align with background'
+id: e38918d5
+json_values: '{"preview":{"text":"","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"height":{"value":"220px"},"display":{"value":"flex"},"flex-container":{"justify-content":{"value":"center"},"align-items":{"value":"center"}},"margin":{"margin-left":{"value":"auto"},"margin-right":{"value":"auto"},"margin-bottom":{"value":""},"margin-top":{"value":"30px"}}},"xs":{"height":{"value":"220px"},"margin":{"margin-top":{"value":"20px"},"margin-bottom":{"value":""},"margin-left":{"value":"auto"},"margin-right":{"value":"auto"}}}},"6757f9d7-4d17-422a-bdc5-40e1a3d80a75":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"max-height":{"value":""},"height":{"value":"98%"},"width":{"value":"98%"},"max-width":{"value":"460px"}},"sm":{"width":{"value":"96%"},"max-width":{"value":"420px"}},"xs":{"width":{"value":"92%"},"height":{"value":"92%"},"max-height":{"value":""}}}}},"variableFields":[],"previewModel":{"styles":{"styles":{"xl":{"background-image-settings":[{"backgroundImage":{}}]}}}}}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":true},{"name":"height","active":true}]},{"formKey":"display","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"display","active":true},{"name":"visibility","active":true},{"name":"overflow","active":true},{"name":"overflow-x","active":true},{"name":"overflow-y","active":true}]},{"formKey":"flex-container","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"flex-direction","active":true},{"name":"flex-wrap","active":true},{"name":"justify-content","active":true},{"name":"justify-content-safety","active":true},{"name":"align-content","active":true},{"name":"align-content-safety","active":true},{"name":"align-items","active":true},{"name":"align-items-safety","active":true}]},{"formKey":"margin","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"items":[{"title":"img","type":"container","items":[],"form":null,"selectorType":"child","model":"img","uuid":"6757f9d7-4d17-422a-bdc5-40e1a3d80a75","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":true},{"name":"height","active":true}]},{"formKey":"width","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"min-width","active":true},{"name":"max-width","active":true},{"name":"width","active":true}]}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-medium-vertical-center-align-withbg
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-a-card-image-styling
+weight: 103

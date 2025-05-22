@@ -1,0 +1,9 @@
+uuid: 56080802-8c05-49e0-8ede-4b30028a059b
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5393_template
+label: 'DMB-5393 Template'
+description: ''
+excluded_entity_types: '[]'
+settings: '{"4fe1fce4-44eb-44da-9596-62d6ec0cf31c":{"type":"cohesion_content_templates","items":{"4fe1fce4-44eb-44da-9596-62d6ec0cf31c":{"type":"cohesion_content_templates"}},"checked":true}}'

@@ -1,0 +1,22 @@
+uuid: 35a42229-6e49-4fa7-b054-5fa0cb7f88a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio_file
+id: media.audio_file.status
+field_name: status
+entity_type: media
+bundle: audio_file
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: c963631a-b524-4305-8226-04b6b83b7f6a
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part19
+label: 'DMB-5789 new nb part19'
+description: 'DMB-5789 new nb part19(Video List Card for VB)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "05448edb-228b-43d9-adf0-e16b79e24c7b": {
+          "type": "cohesion_component",
+          "items": {
+              "05448edb-228b-43d9-adf0-e16b79e24c7b": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

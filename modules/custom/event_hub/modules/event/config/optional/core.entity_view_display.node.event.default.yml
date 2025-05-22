@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_event_description
+    - field.field.node.event.field_event_end_date
+    - field.field.node.event.field_event_extended_name
+    - field.field.node.event.field_event_featured
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_meta_tags
+    - field.field.node.event.field_event_place
+    - field.field.node.event.field_event_register_link
+    - field.field.node.event.field_event_short_name
+    - field.field.node.event.field_event_start_date
+    - field.field.node.event.field_event_teaser_image
+    - field.field.node.event.field_event_weight
+    - field.field.node.event.field_layout_canvas_event_page
+    - field.field.node.event.field_template_selector_event
+    - node.type.event
+  module:
+    - cohesion_elements
+    - metatag
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_event_meta_tags:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_layout_canvas_event_page:
+    type: cohesion_entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_event_description: true
+  field_event_end_date: true
+  field_event_extended_name: true
+  field_event_featured: true
+  field_event_location: true
+  field_event_place: true
+  field_event_register_link: true
+  field_event_short_name: true
+  field_event_start_date: true
+  field_event_teaser_image: true
+  field_event_weight: true
+  field_template_selector_event: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,27 @@
+uuid: dfa02e82-fa7e-480d-8714-5edd7930bf27
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.29f72bc6
+    - cohesion_custom_styles.cohesion_custom_style.53659dab
+    - cohesion_custom_styles.cohesion_custom_style.bd5d0455
+    - cohesion_custom_styles.cohesion_custom_style.bfa16fca
+    - cohesion_elements.cohesion_component.cpt_a_hero_m1_txt_bkgrd_img
+    - cohesion_elements.cohesion_helper_category.hlp_cat_general_helpers
+  content:
+    - 'file:file:22140ee7-faa9-4e96-8a5b-8fdb66523b5e'
+    - 'file:file:efe8966c-3a6d-4b18-8375-9013c89f06af'
+label: 'FAQs component helper'
+id: hlp_faqs_component_helper
+json_values: '{"canvas":[{"uid":"cpt_a_hero_m1_txt_bkgrd_img","type":"component","title":"Hero M1 - Text with Background Image","enabled":true,"category":"category-1","componentId":"cpt_a_hero_m1_txt_bkgrd_img","componentType":"container","uuid":"0c71bf93-00d6-416e-85e9-07b6bb76f529","parentUid":"root","status":{},"children":[]}],"mapper":{"0c71bf93-00d6-416e-85e9-07b6bb76f529":{}},"model":{"0c71bf93-00d6-416e-85e9-07b6bb76f529":{"settings":{"title":"Hero M1 - Alcon Experience Academy"},"ba2ccfef-05db-4e04-a813-8021cd1f0031":{"text":"<div>\n<h2 class=\"text-align-right\"><span class=\"coh-color-white\">Alcon Experience Academy<\/span><\/h2>\n\n<p class=\"text-align-right\">&nbsp;<\/p>\n\n<p class=\"text-align-right\"><span class=\"coh-color-white\">For relevant training content from industry thought leaders<\/span><\/p>\n<\/div>\n","textFormat":"cohesion"},"aa32f338-0dd8-4def-ba41-dc83fd47f101":{"text":"","textFormat":"cohesion"},"8de35a71-15d6-48c3-8b4a-52cc19e108c0":"Button Left","8629a8d4-56e8-42d8-baa4-bb9d8f6fab42":"_self","7e4b567d-b0d7-43fa-ae04-7ace6fd6d192":"","714a1a11-0852-4103-99b9-c4c6582efb03":"","b6062003-4bca-44c2-ae63-793a2d9ec3f7":"","659ac605-dbce-43d3-8855-da0538f4a768":"Visit AEA Portal","41798e91-337f-48a3-bf42-65b2da4b5440":"_blank","40c3b822-744e-469f-948b-cced105020d3":"https:\/\/www.alconexperienceacademy.com\/","aadd6b54-8985-4d12-85c6-8831a7f6ea9d":"","8def705f-38a0-4f30-8ef0-0dfe090fc7b5":"","ba6cf312-cc5b-449b-98b1-fdb8702139d5":"[media-reference:file:efe8966c-3a6d-4b18-8375-9013c89f06af]","1f93e490-a796-444c-85f6-873b0a381281":"Person in a white-striped shirt seated at a white desk,\u202fwriting in a notebook with a\u202flaptop and cellphone in front of them.","7ccb4916-ec51-4aa4-974c-03c9a7d78579":"[media-reference:file:22140ee7-faa9-4e96-8a5b-8fdb66523b5e]","6b229834-12d3-459f-a59d-3417a7406830":"coh-style-a-hero-height-short","71b2d39b-eba2-4eeb-954b-e075c3ee4c61":"60%","968918d2-01e2-484f-891f-3eda6b2c2695":"coh-style-a-hero-alignment-right","ec9d174b-2a50-4f94-9e62-864e4bf5b637":"center","d724510b-344b-438a-9564-f03edd87b3e0":"coh-style-a-button-primary","85b4cdbe-215b-47ca-807a-c95bf2fa2b73":"coh-style-a-button-primary","5434fcb5-c947-4214-8603-22c584b0fee8":"Right","0d270cb9-0c3e-42b6-9421-5efc590e5817":{"value":{"hex":"#f5f5f5","rgba":"rgba(245, 245, 245, 0.097)"}},"53db68b4-e945-4245-9728-038c9f3ad3ad":{"value":{"hex":"#fafafa","rgba":"rgba(250, 250, 250, 0.108)"}},"c1f79b49-7c87-4b49-b3c8-18ff18218af1":"","467f75ed-517e-4c19-b87f-97cd298023d9":"","e24be338-2acc-4335-8f51-763142148874":"","bafb82c4-2d5a-447b-b688-07468a9cecd8":"","5ae26751-330e-40d8-920c-75ed7772c514":"","e88775ce-5066-48ff-a23c-591defc45db4":"","ba688780-c124-44ae-85f6-776398acce40":"","9ddc8046-21ab-4bc7-833f-43028dc57e54":"coh-style-a-padding-right-medium","f0cbac1f-e5a3-437a-a021-dccce1ff33bd":false,"e20ee81e-9708-4e2a-980d-5c87013130dd":false}},"previewModel":{},"variableFields":{}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_general_helpers
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

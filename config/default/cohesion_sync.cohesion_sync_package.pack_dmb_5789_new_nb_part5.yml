@@ -1,0 +1,20 @@
+uuid: 8c20e91e-ef76-49ce-b6a9-22df8a8b8b09
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part5
+label: 'DMB-5789 new nb part5'
+description: 'DMB-5789 new nb part5(Buttons)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "2206d1d4-c297-45a4-92e2-9ea4010f5250": {
+          "type": "cohesion_component",
+          "items": {
+              "2206d1d4-c297-45a4-92e2-9ea4010f5250": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

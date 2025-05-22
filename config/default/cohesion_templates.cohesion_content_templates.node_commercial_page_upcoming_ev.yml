@@ -1,0 +1,18 @@
+uuid: 2f15faae-be4c-4062-b66b-f69b199adf81
+langcode: en
+status: false
+dependencies: {  }
+label: 'Upcoming Event teaser (Node, Commercial Page)'
+id: node_commercial_page_upcoming_ev
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: commercial_page
+view_mode: upcoming_event_teaser
+master_template: ''

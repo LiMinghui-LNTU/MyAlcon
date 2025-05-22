@@ -1,0 +1,31 @@
+uuid: 6c4048f0-7ca7-4e96-ad29-95c98887d489
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.location
+    - taxonomy.vocabulary.region
+_core:
+  default_config_hash: NXLcv0g0NZb92zpR_gVtCBYAfleZVpd2GM71zWt205g
+id: node.location.field_region
+field_name: field_region
+entity_type: node
+bundle: location
+label: 区域
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 0a95c763-22de-43b7-ae8f-28feb1c699f4
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 首页
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

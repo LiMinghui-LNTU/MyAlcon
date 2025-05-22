@@ -1,0 +1,22 @@
+uuid: 351e9eb3-ed21-44a1-86e4-81e33e89311a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Z3PpD1Yq7oqbzEbAa1cBuRU1sEtt_cJxbHvsoZf1M4w
+id: node.field_symposium_weight
+field_name: field_symposium_weight
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

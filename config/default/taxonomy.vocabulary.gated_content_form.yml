@@ -1,0 +1,8 @@
+uuid: a52c6d2b-235b-43f5-af67-baa89efd0ea5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gated Content Form'
+vid: gated_content_form
+description: ''
+weight: 0

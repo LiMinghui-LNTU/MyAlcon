@@ -1,0 +1,20 @@
+uuid: 899ddf0e-004f-41c0-b6c6-45b16acf0bdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+  module:
+    - path
+id: node.virtualbooth.path
+field_name: path
+entity_type: node
+bundle: virtualbooth
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

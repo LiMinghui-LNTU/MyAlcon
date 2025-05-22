@@ -1,0 +1,19 @@
+uuid: 33e53801-a7dd-4252-873c-3e5d9361caf5
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: Sh0WjccVSsomyABE3t9YcXMeNsLvAAuMqZW2PRh8nMg
+name: article_hero_phone
+label: 'Article Hero - Phone'
+effects:
+  19068717-ac8e-4d14-ac3a-3f3213fa6175:
+    uuid: 19068717-ac8e-4d14-ac3a-3f3213fa6175
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 250
+      crop_type: focal_point

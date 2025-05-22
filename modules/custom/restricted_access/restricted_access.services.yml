@@ -1,0 +1,6 @@
+services:
+  restricted_access.restricted_access_event_subscriber:
+    class: Drupal\restricted_access\EventSubscriber\RestrictedAccessEventSubscriber
+    tags:
+      - { name: 'event_subscriber' }
+    arguments: ['@config.factory', '@current_route_match', '@path.current', '@path_alias.manager', '@logger.factory']

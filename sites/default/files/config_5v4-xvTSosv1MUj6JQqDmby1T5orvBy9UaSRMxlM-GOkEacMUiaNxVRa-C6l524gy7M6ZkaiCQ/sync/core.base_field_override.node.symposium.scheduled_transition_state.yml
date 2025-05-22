@@ -1,0 +1,18 @@
+uuid: 8e835990-7092-48ad-ad1e-5b028cd79b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.symposium
+id: node.symposium.scheduled_transition_state
+field_name: scheduled_transition_state
+entity_type: node
+bundle: symposium
+label: 'Scheduled transition state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 22f9dcbf-b2f1-4cd7-9f91-eb449a1cc49c
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part4
+label: 'DMB-5789 new nb part4'
+description: 'DMB-5789 new nb part4(Hero Text and Image)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "4d735478-b1a5-4b26-8462-5fb82e44c4d1": {
+          "type": "cohesion_component",
+          "items": {
+              "4d735478-b1a5-4b26-8462-5fb82e44c4d1": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

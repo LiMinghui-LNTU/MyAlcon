@@ -1,0 +1,20 @@
+uuid: 8e0d10bd-4206-4344-8410-cee8800b6768
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.tweet
+  module:
+    - metatag
+id: media.tweet.metatag
+field_name: metatag
+entity_type: media
+bundle: tweet
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

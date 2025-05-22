@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignoreWords": [
+    "Holovachek",
+    "Kulichkin",
+    "Maksim",
+    "Martín",
+    "Pappu",
+    "SAVEL",
+    "Viktor",
+    "mgzrobles",
+    "pappuksingh"
+  ]
+}

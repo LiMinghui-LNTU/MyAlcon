@@ -1,0 +1,18 @@
+uuid: 61e2190f-5430-430d-8a7c-093d191d29aa
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Block_content, Slideshow)'
+id: block_content_media_slideshow_to
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: media_slideshow
+view_mode: token
+master_template: ''

@@ -1,0 +1,6 @@
+name: 'Navigation Bar Customizations'
+type: module
+description: 'Redirects admin users on specific flush paths to a custom domain.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Alcon
+dependencies: []

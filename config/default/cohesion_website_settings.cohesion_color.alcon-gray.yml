@@ -1,0 +1,13 @@
+uuid: 2643a9dd-e5b2-4508-b27c-25cf9ba29086
+langcode: en
+status: true
+dependencies: {  }
+label: 'Alcon Gray'
+id: alcon-gray
+json_values: '{"link":true,"name":"Alcon Gray","uid":"alcon-gray","class":".coh-color-alcon-gray","variable":"$coh-color-alcon-gray","value":{"value":{"hex":"#818181","rgba":"rgba(129, 129, 129, 1)"}},"inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 6

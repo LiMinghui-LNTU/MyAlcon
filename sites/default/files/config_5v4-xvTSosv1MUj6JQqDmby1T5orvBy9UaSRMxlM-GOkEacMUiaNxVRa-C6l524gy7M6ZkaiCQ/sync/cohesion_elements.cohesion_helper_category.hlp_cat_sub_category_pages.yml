@@ -1,0 +1,13 @@
+uuid: 00670b41-62aa-4458-b849-1e36413d2892
+langcode: en
+status: true
+dependencies: {  }
+label: 'VC SUB-CATEGORY PAGES'
+id: hlp_cat_sub_category_pages
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: true
+class: category-14
+weight: -5

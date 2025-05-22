@@ -1,0 +1,20 @@
+uuid: 61049f16-206e-4039-a70a-dfd01627af74
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part4
+label: 'DMB-5789 revert part4'
+description: 'DMB-5789 revert part4(Hero Text and Image (cpt_a_hero_text_and_image))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "4d735478-b1a5-4b26-8462-5fb82e44c4d1": {
+          "type": "cohesion_component",
+          "items": {
+              "4d735478-b1a5-4b26-8462-5fb82e44c4d1": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

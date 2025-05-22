@@ -1,0 +1,9 @@
+uuid: 6c66b3fa-913a-4753-928c-cd4847f3ca35
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5224
+label: DMB_5224
+description: 'Symposium hero'
+excluded_entity_types: '[]'
+settings: '{"2257ed73-7c25-4533-bbc4-5c5e412aa86d":{"type":"cohesion_component","items":{"2257ed73-7c25-4533-bbc4-5c5e412aa86d":{"type":"cohesion_component"},"43fc06f9-36b8-4bb5-b6a2-69246bda7f3d":{"type":"cohesion_component_category"},"9fa403c6-5576-4c92-b951-5d288a040336":{"type":"cohesion_custom_style"}},"checked":true}}'

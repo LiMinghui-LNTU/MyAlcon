@@ -1,0 +1,24 @@
+uuid: a45ae448-2883-483c-b9d7-9e28306787b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_extended_name
+    - node.type.event
+  module:
+    - text
+_core:
+  default_config_hash: PDZLELHaWaj_UzlvDZRowyDPCQIvJVjOaoTaN7R6hc8
+id: node.event.field_event_extended_name
+field_name: field_event_extended_name
+entity_type: node
+bundle: event
+label: 'Extended name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

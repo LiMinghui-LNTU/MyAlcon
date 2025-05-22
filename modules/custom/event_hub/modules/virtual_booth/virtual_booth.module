@@ -1,0 +1,334 @@
+<?php
+
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\Plugin\Field\FieldType\FileItem;
+use Drupal\file\Plugin\Field\FieldType\FileFieldItemList;
+use Drupal\media\Entity\Media;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * @file
+ * Primary module hooks for Virtual Booth module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function virtual_booth_theme() {
+  return [
+    'field__media__field_document__document' => [
+      'base hook' => 'field',
+    ],
+    'media__document__document_url' => [
+      'base hook' => 'media',
+    ],
+    'node__virtualbooth__full' => [
+      'base hook' => 'node',
+    ],
+    'node__virtualbooth__virtualbooth_card_teaser' => [
+      'base hook' => 'node',
+    ],
+    'views_view__virtualbooths' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view__virtualbooths__upcoming_virtualbooths_page_block' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view_unformatted__virtualbooths__recent_virtualbooths_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__virtualbooths__upcoming_virtualbooths_page_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_infinite_scroll_pager__virtualbooths__recent_virtualbooths_block' => [
+      'base hook' => 'views_infinite_scroll_pager',
+    ],
+    'views_infinite_scroll_pager__virtualbooths__upcoming_virtualbooths_page_block' => [
+      'base hook' => 'views_infinite_scroll_pager',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function virtual_booth_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if ($node->getType() == 'virtualbooth') {
+    $variables['#attached']['library'][] = 'virtual_booth/vb_scripts';
+  }
+}
+
+/**
+ * Implements hook_preprocess_node_HOOK().
+ */
+function virtual_booth_preprocess_node__VIRTUALBOOTH__VIRTUALBOOTH_CARD_TEASER(&$variables) {
+  $node = $variables['node'];
+  $variables['virtualbooth_duration'] = get_virtualbooth_duration_date($node);
+  $variables['virtualbooth_location'] = get_virtualbooth_location($node);
+  $moderation_state = $node->get('moderation_state')->getString();
+  $variables['state_' . $moderation_state] = TRUE;
+
+  if ($node->hasField('field_virtualbooth_end_date')) {
+    if (!$node->get('field_virtualbooth_end_date')->isEmpty()) {
+      $date = new DateTime($node->get('field_virtualbooth_end_date')->value);
+      $current_date = new Datetime();
+      if ($date < $current_date) {
+        $variables['past_virtualbooth'] = TRUE;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function virtual_booth_preprocess_file_link(&$variables) {
+  $file = $variables['file'];
+
+  if ($file->_referringItem instanceof FileItem) {
+    $parent = $file->_referringItem->getParent();
+    if ($parent instanceof FileFieldItemList) {
+      if ($parent->getName() == 'field_document') {
+        $entity = $parent->getEntity();
+        if ($entity instanceof Media) {
+          if ($entity->get('bundle')->target_id == 'document') {
+            $variables['link']['#attributes']['target'] = '_blank';
+            $variables['link']['#attributes']['download'] = '';
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Implements hook_token_info().
+ */
+function virtual_booth_token_info() {
+  $info['tokens']['node']['virtualbooth_hero_name'] = [
+    'name' => t('Virtual Booth Hero name'),
+    'description' => t("Shows Virtual Booth name or referenced Event's name"),
+  ];
+  $info['tokens']['node']['virtualbooth_duration_date'] = [
+    'name' => t('Virtual Booth duration date'),
+    'description' => t('Shows Virtual Booth or Event duration'),
+  ];
+  $info['tokens']['node']['virtualbooth_location'] = [
+    'name' => t('Virtual Booth full location'),
+    'description' => t('Shows Virtual Booth location data'),
+  ];
+
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function virtual_booth_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+  $replacements = [];
+
+  if ($type == 'node' && !empty($data['node'])) {
+    if (!empty($tokens['virtualbooth_hero_name'])) {
+      $original = $tokens['virtualbooth_hero_name'];
+      $replacements[$original] = get_virtualbooth_hero_name($data['node']);
+    }
+    if (!empty($tokens['virtualbooth_duration_date'])) {
+      $original = $tokens['virtualbooth_duration_date'];
+      $replacements[$original] = get_virtualbooth_duration_date($data['node']);
+    }
+    if (!empty($tokens['virtualbooth_location'])) {
+      $original = $tokens['virtualbooth_location'];
+      $replacements[$original] = get_virtualbooth_location($data['node']);
+    }
+  }
+
+  return $replacements;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function virtual_booth_form_NODE_VIRTUALBOOTH_EDIT_FORM_alter(&$form, FormStateInterface $form_state) {
+  $form['#validate'][] = 'virtual_booth_custom_validation';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function virtual_booth_form_NODE_VIRTUALBOOTH_FORM_alter(&$form, FormStateInterface $form_state) {
+  $form['#validate'][] = 'virtual_booth_custom_validation';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function virtual_booth_form_NODE_VIRTUALBOOTH_QUICK_NODE_CLONE_FORM_alter(&$form, FormStateInterface $form_state) {
+  $form['#validate'][] = 'virtual_booth_custom_validation';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function virtual_booth_form_VIEWS_EXPOSED_FORM_alter(&$form, FormStateInterface $form_state) {
+  $exposed_region_forms = [
+    'views-exposed-form-virtualbooths-upcoming-virtualbooths-page-block',
+  ];
+
+  if (in_array($form['#id'], $exposed_region_forms)) {
+    $display_region = \Drupal::state()->get('event_hub.display_region', TRUE);
+    if (!$display_region) {
+      unset($form['region']);
+    }
+  }
+}
+
+/**
+ * Custom form validation which checks the existence of Virtual Booths
+ * with relation to the same Event as in the current form.
+ */
+function virtual_booth_custom_validation(&$form, FormStateInterface $form_state) {
+  $node = $form_state->getFormObject()->getEntity();
+  $vb_event_ref = $form_state->getValue('field_vb_event_reference');
+
+  if (!empty($vb_event_ref)) {
+    if (!empty($vb_event_ref[0]['target_id'])) {
+      $entity_query = \Drupal::entityQuery('node')
+        ->condition('type', 'virtualbooth')
+        ->condition('field_vb_event_reference', $vb_event_ref[0]['target_id']);
+
+      if (!empty($node->id())) {
+        $entity_query->condition('nid', $node->id(), '<>');
+      }
+      $entity_query->accessCheck();
+      $virtual_booths = $entity_query->execute();
+      if (!empty($virtual_booths)) {
+        $error_message = t('Virtual Booth with the reference to this Event is already exists.');
+        $form_state->setErrorByName('field_vb_event_reference', $error_message);
+      }
+    }
+  }
+}
+
+/**
+ * Function that returns name for the Virtual Booth Hero component.
+ * Returns Virtual Booth name. If empty - returns extended name
+ * of the referenced Event.
+ *
+ * @param Node $node
+ *   Node object of the Virtual Booth content type.
+ *
+ * @return string
+ *   Hero name of the Virtual Booth.
+ */
+function get_virtualbooth_hero_name($node) {
+  $result = '';
+
+  $vb_name = get_field_value($node, 'field_virtualbooth_name');
+  if (!empty($vb_name)) {
+    $result = $vb_name;
+  }
+  else {
+    $event_id = get_field_value($node, 'field_vb_event_reference', 'target_id');
+    $event = Node::load($event_id);
+    if ($event instanceof Node) {
+      $event_name = get_field_value($event, 'field_event_extended_name');
+      if (!empty($event_name)) {
+        $result = $event_name;
+      }
+    }
+  }
+
+  return $result;
+}
+
+/**
+ * Function that returns duration date for the Virtual Booth Hero component.
+ * Returns Virtual Booth duration date only if referenced Event is present.
+ * Otherwise, returns an empty string.
+ * If a referenced Event is present but VB's start/end fields are empty -
+ * returns duration date based on referenced EVent's start/end fields.
+ *
+ * @param Node $node
+ *   Node object of the Virtual Booth content type.
+ *
+ * @return string
+ *   Hero name of the Virtual Booth.
+ */
+function get_virtualbooth_duration_date($node) {
+  $vb_duration_date = '';
+
+  $event_id = get_field_value(
+    $node,
+    'field_vb_event_reference',
+    'target_id'
+  );
+  if (!empty($event_id)) {
+    $event = Node::load($event_id);
+    if ($event instanceof Node) {
+      $vb_duration_date = get_entity_duration_date(
+        $node,
+        'field_virtualbooth_start_date',
+        'field_virtualbooth_end_date'
+      );
+      if (empty($vb_duration_date)) {
+        $vb_duration_date = get_entity_duration_date($event);
+      }
+    }
+  }
+
+  return $vb_duration_date;
+}
+
+/**
+ * Function that returns location for the Virtual Booth Hero component.
+ * Returns Virtual Booth location only if referenced Event is present
+ * and has a reference to a Location node.
+ * Otherwise, returns an empty string.
+ * If a Virtual Booth contains value for the Place field -
+ * its value is added to Event's location.
+ *
+ * @param Node $node
+ *   Node object of the Virtual Booth content type.
+ *
+ * @return string
+ *   Hero name of the Virtual Booth.
+ */
+function get_virtualbooth_location($node) {
+  $vb_location = '';
+
+  if ($node->hasField('field_vb_event_reference')) {
+    if (!$node->get('field_vb_event_reference')->isEmpty()) {
+      $event_id = $node->get('field_vb_event_reference')->target_id;
+      $event = Node::load($event_id);
+
+      if ($event instanceof Node) {
+        if ($event->hasField('field_event_location')) {
+          if (!$event->get('field_event_location')->isEmpty()) {
+            $location_id = $event->get('field_event_location')->target_id;
+            $location = Node::load($location_id);
+
+            if ($location instanceof Node) {
+              $vb_location = get_location_region_country($location);
+
+              if ($node->hasField('field_virtualbooth_place')) {
+                if (!$node->get('field_virtualbooth_place')->isEmpty()) {
+                  $vb_place = $node->get('field_virtualbooth_place')->value;
+                  $vb_location .= ", $vb_place";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return $vb_location;
+}

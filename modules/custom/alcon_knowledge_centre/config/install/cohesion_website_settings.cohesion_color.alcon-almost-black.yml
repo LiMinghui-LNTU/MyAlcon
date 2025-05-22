@@ -1,0 +1,28 @@
+uuid: a0b09e5a-6764-4c8c-9ff8-28ca89eeafdc
+langcode: en
+status: true
+dependencies: {  }
+label: 'ALCON Almost Black'
+id: alcon-almost-black
+json_values: |
+  {
+      "link": true,
+      "name": "Alcon Almost Black",
+      "uid": "alcon-almost-black",
+      "class": ".coh-color-alcon-almost-black",
+      "variable": "$coh-color-alcon-almost-black",
+      "value": {
+          "value": {
+              "hex": "#232323",
+              "rgba": "rgba(35, 35, 35, 1)"
+          }
+      },
+      "inuse": true,
+      "wysiwyg": true
+  }
+json_mapper: '{}'
+last_entity_update: entityupdate_0042
+locked: false
+modified: true
+selectable: true
+weight: 4

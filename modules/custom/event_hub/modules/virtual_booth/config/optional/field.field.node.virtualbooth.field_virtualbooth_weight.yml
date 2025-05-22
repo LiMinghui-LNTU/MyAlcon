@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_weight
+    - node.type.virtualbooth
+id: node.virtualbooth.field_virtualbooth_weight
+field_name: field_virtualbooth_weight
+entity_type: node
+bundle: virtualbooth
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

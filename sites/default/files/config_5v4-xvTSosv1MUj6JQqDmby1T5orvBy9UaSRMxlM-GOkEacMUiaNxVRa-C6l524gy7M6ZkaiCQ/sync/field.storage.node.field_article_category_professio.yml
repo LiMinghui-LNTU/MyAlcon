@@ -1,0 +1,24 @@
+uuid: f85187ae-4048-4f2f-99e3-2cf641e1fd81
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_article_category_professio
+field_name: field_article_category_professio
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

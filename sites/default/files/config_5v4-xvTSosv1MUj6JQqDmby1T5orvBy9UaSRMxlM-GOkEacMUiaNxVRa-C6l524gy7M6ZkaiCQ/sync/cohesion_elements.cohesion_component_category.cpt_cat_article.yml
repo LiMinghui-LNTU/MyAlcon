@@ -1,0 +1,14 @@
+uuid: 84c86af9-4a31-4170-8ded-d23481542475
+langcode: en
+status: true
+dependencies: {  }
+label: ARTICLE
+id: cpt_cat_article
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-12
+weight: 3

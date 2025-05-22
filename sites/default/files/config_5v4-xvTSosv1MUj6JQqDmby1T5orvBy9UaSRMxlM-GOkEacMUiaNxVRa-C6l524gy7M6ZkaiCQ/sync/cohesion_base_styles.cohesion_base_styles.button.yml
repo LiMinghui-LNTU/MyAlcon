@@ -1,0 +1,13 @@
+uuid: 52839b9c-3458-40db-897f-28969c2eca33
+langcode: en
+status: false
+dependencies: {  }
+label: Button
+id: button
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: false
+custom: null

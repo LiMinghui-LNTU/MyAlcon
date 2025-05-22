@@ -1,0 +1,21 @@
+uuid: b191471a-0249-4cc0-8269-06f120975397
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+name: 'Product page'
+type: product_page
+description: 'A combination of structured and un-structured content used to create various types of products.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

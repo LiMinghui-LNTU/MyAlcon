@@ -1,0 +1,8 @@
+uuid: 186693ef-7639-4862-bfbc-210c230c3578
+langcode: en
+status: true
+dependencies: {  }
+id: brand-menu---luxor
+label: 'Brand Menu - Luxor'
+description: ''
+locked: false

@@ -1,0 +1,13 @@
+uuid: 513ec4f0-261d-48d3-9e69-2422b9c3482f
+langcode: en
+status: true
+dependencies: {  }
+label: 'Neutral 0 (White)'
+id: neutral-0-white
+json_values: '{"link":true,"value":{"value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"}},"name":"Neutral 0 White","uid":"neutral-0-white","class":".coh-color-neutral-0-white","variable":"$coh-color-neutral-0-white","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 42

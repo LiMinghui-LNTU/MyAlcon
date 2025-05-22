@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_selector_symposiu
+    - node.type.symposium
+  module:
+    - cohesion_templates
+id: node.symposium.field_template_selector_symposiu
+field_name: field_template_selector_symposiu
+entity_type: node
+bundle: symposium
+label: 'Template selector'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: ctn_tpl_blank_template_symposium
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

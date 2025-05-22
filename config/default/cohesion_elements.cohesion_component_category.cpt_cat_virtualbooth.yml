@@ -1,0 +1,14 @@
+uuid: 7f41b031-0e39-4ed6-a65a-6eb51b27c9ee
+langcode: en
+status: true
+dependencies: {  }
+label: 'VIRTUAL BOOTH'
+id: cpt_cat_virtualbooth
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-8
+weight: 6

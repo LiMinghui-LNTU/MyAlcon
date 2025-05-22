@@ -1,0 +1,18 @@
+uuid: c45fb9e0-afc4-47f0-828b-60896044d170
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search index (Node, Article page)'
+id: node_article_search_index
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: article
+view_mode: search_index
+master_template: ''

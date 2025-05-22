@@ -1,0 +1,18 @@
+uuid: 49853bf8-8079-47ee-8fd3-b431ba71f54d
+langcode: en
+status: true
+dependencies: {  }
+label: image-fit-boxed
+id: ebc63955
+json_values: '{"preview":{"text":"<p><img alt=\"\" data-entity-type=\"file\" data-entity-uuid=\"39475d45-0ce1-4db0-bc6e-f8ee02c30199\" height=\"657\" src=\"\/sites\/g\/files\/rbvwei5001591dev\/files\/2020-09\/im1.PNG\" width=\"674\" \/><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"vertical-align":{"verticalAlignType":{"value":"middle"}},"custom-css":[{"customCssProperty":{"value":"object-position"},"customCss":{"value":"center"}},{"customCssProperty":{"value":"object-fit"},"customCss":{"value":"contain"}}],"max-height":{"value":"100%"},"height":{"value":"100%"},"max-width":{"value":"100%"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-height","active":false},{"name":"max-height","active":true},{"name":"height","active":true}]},{"formKey":"width","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":true},{"name":"width","active":false}]},{"formKey":"vertical-alignment","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"verticalAlignType","active":true},{"name":"verticalAlignLength","active":true}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-image-fit-boxed
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 32

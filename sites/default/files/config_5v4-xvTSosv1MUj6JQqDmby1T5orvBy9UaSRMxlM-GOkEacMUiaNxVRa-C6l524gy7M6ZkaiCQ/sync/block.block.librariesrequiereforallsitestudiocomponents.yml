@@ -1,0 +1,27 @@
+uuid: 4b2aabc2-556e-4769-a17b-78681fb6e34f
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - alcon_sitestudio_components
+    - cohesion
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: i0cc3uFUW1pf6GjLSg1Vz9gKF6iAqrfmyUSuw3N4zy0
+id: librariesrequiereforallsitestudiocomponents
+theme: cohesion_theme
+region: content
+weight: -7
+provider: null
+plugin: alcon_sitestudio_allpages_block
+settings:
+  id: alcon_sitestudio_allpages_block
+  label: 'Libraries requiere for all sitestudio components'
+  label_display: '0'
+  provider: alcon_sitestudio_components
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: 0
+    using_master_template: 0

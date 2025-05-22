@@ -1,0 +1,16 @@
+uuid: 92a4ca96-393a-4f8c-96d5-7f28757eb954
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: d3CfnRpmlgNvbjTXs3RhWWmyBv4OhRuaJAvD4Cy14ns
+label: EVENT
+id: cpt_cat_event
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-5
+weight: 4

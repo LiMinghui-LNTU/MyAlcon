@@ -1,0 +1,14 @@
+uuid: 7f40ef1e-0326-4d8c-8c6a-7d3b8b10f660
+langcode: en
+status: true
+dependencies: {  }
+label: 'ACCORDION CONTAINER AND ITEMS'
+id: cpt_cat_accordion
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-3
+weight: -8

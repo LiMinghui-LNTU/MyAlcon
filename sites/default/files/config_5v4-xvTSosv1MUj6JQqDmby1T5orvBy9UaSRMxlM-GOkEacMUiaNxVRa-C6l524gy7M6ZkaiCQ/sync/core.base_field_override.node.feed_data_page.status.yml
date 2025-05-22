@@ -1,0 +1,22 @@
+uuid: db6acd49-41f7-40a9-b691-fa602a9d83af
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.feed_data_page
+id: node.feed_data_page.status
+field_name: status
+entity_type: node
+bundle: feed_data_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

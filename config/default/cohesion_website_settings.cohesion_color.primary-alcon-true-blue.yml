@@ -1,0 +1,13 @@
+uuid: 8bba44d4-8d29-4d00-a15b-46a3fad0f8c9
+langcode: zh-hans
+status: true
+dependencies: {  }
+label: 'Primary / Alcon True Blue'
+id: primary-alcon-true-blue
+json_values: '{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"}},"inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 2

@@ -1,0 +1,20 @@
+uuid: 9b9c100e-4647-4ffb-b3cf-9bf0d2fb481d
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.black
+label: 'Large Body Text'
+id: 18f36444
+json_values: '{"preview":{"text":"<p class=\"coh-preview\">Default content for ''Paragraph''.<\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"p","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-size":{"value":"26"},"color":{"value":{"value":{"hex":"#000000","rgba":"rgba(0, 0, 0, 1)"},"name":"Black","uid":"black","class":".coh-color-black","variable":"$coh-color-black","wysiwyg":true,"inuse":true,"link":true,"tags":["Primary"]}}},"ps":{"font-size":{"value":"16"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Paragraph","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"ps"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":false},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]},{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-large-body-text
+custom_style_type: paragraph
+available_in_wysiwyg: true
+available_in_wysiwyg_inline: true
+parent: null
+weight: 45

@@ -1,0 +1,9 @@
+uuid: a72d6927-6564-475b-a6fd-fcd6c9e004ad
+langcode: en
+status: true
+dependencies: {  }
+id: pack_event_hub_sprint_2
+label: 'Event Hub - Sprint 2'
+description: ''
+excluded_entity_types: '[]'
+settings: '{"05448edb-228b-43d9-adf0-e16b79e24c7b":{"type":"cohesion_component","items":{"05448edb-228b-43d9-adf0-e16b79e24c7b":{"type":"cohesion_component"},"ea0f90ed-18bd-4eb3-9a3d-441e752f1834":{"type":"cohesion_custom_style"}},"checked":true},"dd593799-575f-43b3-ad45-fd1bda073306":{"type":"cohesion_component","items":{"dd593799-575f-43b3-ad45-fd1bda073306":{"type":"cohesion_component"},"9670e079-6f35-4482-8975-d48c55cf1de3":{"type":"cohesion_custom_style"}},"checked":true},"2257ed73-7c25-4533-bbc4-5c5e412aa86d":{"type":"cohesion_component","items":{"2257ed73-7c25-4533-bbc4-5c5e412aa86d":{"type":"cohesion_component"},"9fa403c6-5576-4c92-b951-5d288a040336":{"type":"cohesion_custom_style"}},"checked":true},"ae6c04c5-1531-4155-9f18-b8072745c586":{"type":"cohesion_custom_style","items":{"ae6c04c5-1531-4155-9f18-b8072745c586":{"type":"cohesion_custom_style"}},"checked":true},"2c8749b0-c88a-4bdb-b809-f9b5c9d115d5":{"type":"cohesion_custom_style","items":{"2c8749b0-c88a-4bdb-b809-f9b5c9d115d5":{"type":"cohesion_custom_style"}},"checked":true},"ea0f90ed-18bd-4eb3-9a3d-441e752f1834":{"type":"cohesion_custom_style","items":{"ea0f90ed-18bd-4eb3-9a3d-441e752f1834":{"type":"cohesion_custom_style"}},"checked":true}}'

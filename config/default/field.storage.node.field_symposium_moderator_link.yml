@@ -1,0 +1,21 @@
+uuid: e73ea489-9e55-41f1-b9dd-6316d9d9471f
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: EvdfUTcz1pQLPgSdEZ4ohK5onTMG65x9laXK_NxghFM
+id: node.field_symposium_moderator_link
+field_name: field_symposium_moderator_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

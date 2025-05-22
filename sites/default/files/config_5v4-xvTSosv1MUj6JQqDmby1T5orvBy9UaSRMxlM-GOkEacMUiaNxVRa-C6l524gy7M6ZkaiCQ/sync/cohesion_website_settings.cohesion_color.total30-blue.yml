@@ -1,0 +1,13 @@
+uuid: 778f45b1-49ca-418b-af70-454eb823d9eb
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL30 Blue'
+id: total30-blue
+json_values: '{"link":true,"name":"TOTAL30 Blue","uid":"total30-blue","class":".coh-color-total30-blue","variable":"$coh-color-total30-blue","value":{"value":{"hex":"#003087","rgba":"rgba(0, 48, 135, 1)"}},"inuse":true,"wysiwyg":true,"tags":[{"label":"total","value":"total"},{"label":"primary","value":"primary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 19

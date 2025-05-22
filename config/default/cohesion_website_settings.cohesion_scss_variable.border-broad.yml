@@ -1,0 +1,13 @@
+uuid: d3add3de-6035-4874-8403-afbf4af30851
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: border-broad
+json_values: '{"uid":"border-broad","value":"6","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 2

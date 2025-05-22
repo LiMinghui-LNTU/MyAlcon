@@ -1,0 +1,13 @@
+uuid: 7b383c09-d698-4c30-8036-f822056494e7
+langcode: en
+status: true
+dependencies: {  }
+label: 'Smart Value Light Yellow'
+id: smart-value-light-yellow
+json_values: '{"link":true,"name":"Smart Value Light Yellow","uid":"smart-value-light-yellow","class":".coh-color-smart-value-light-yellow","variable":"$coh-color-smart-value-light-yellow","value":{"value":{"hex":"#fae0ac","rgba":"rgba(250, 224, 172, 1)"}},"tags":[{"label":"smart","value":"smart"},{"label":"secondary","value":"secondary"}],"inuse":false,"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 47

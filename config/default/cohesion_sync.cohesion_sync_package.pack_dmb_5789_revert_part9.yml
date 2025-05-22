@@ -1,0 +1,20 @@
+uuid: ab18ee8d-d930-4f74-a7a0-bc8721b68bf2
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part9
+label: 'DMB-5789 revert part9'
+description: 'DMB-5789 revert part9(Text with Background Image - M2 (cpt_a_txt_bkgrd_img_m2))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "8a9cfce2-a8fd-4e04-b4da-35e9c207481d": {
+          "type": "cohesion_component",
+          "items": {
+              "8a9cfce2-a8fd-4e04-b4da-35e9c207481d": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

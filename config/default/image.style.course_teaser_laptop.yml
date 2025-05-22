@@ -1,0 +1,19 @@
+uuid: 4d75a6e1-03fd-4607-85ef-b30e8f9f71c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: Ui9Z7fLjV5iX4QXNK_hcGUpmwAibfGsChytwg-mwmxo
+name: course_teaser_laptop
+label: 'Course Teaser Laptop'
+effects:
+  126d6682-9682-44cf-82f0-f86d2fd621b4:
+    uuid: 126d6682-9682-44cf-82f0-f86d2fd621b4
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 215
+      crop_type: focal_point

@@ -1,0 +1,29 @@
+uuid: 3fe69cd7-4b14-4b8f-a1e6-14d054b8e6c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sfcd_campaign_id
+    - node.type.symposium
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+id: node.symposium.field_sfcd_campaign_id
+field_name: field_sfcd_campaign_id
+entity_type: node
+bundle: symposium
+label: 'SFCD Campaign Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gated_content_sfdc_campaign: gated_content_sfdc_campaign
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

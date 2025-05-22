@@ -1,0 +1,18 @@
+uuid: 9ddff5aa-93f5-4b01-81f2-ca96bb79f13a
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_style_guide.cohesion_style_guide.typograhy
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+    - cohesion_website_settings.cohesion_color.total30-blue
+label: 'Typograhy Site Studio minimal'
+id: 03d72a6d-07cf-4b03-b89b-207ed8444e03cohesion_theme
+json_values: '{"model":{"03d72a6d-07cf-4b03-b89b-207ed8444e03":{"1021e896-bee2-4d8d-8f2a-8754157741ff":56,"434ac0e1-7629-4be2-8a96-68e6e65716ec":1.05,"6cc5e3b9-05e6-4251-91e9-73eb76318403":40,"8000f72f-717e-45ec-a49e-8406e7ee7350":1.05,"79c94520-cdda-482c-8b47-f4d7a66c8192":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"ecf5aaff-7835-460e-b8e1-f32bff3e3e5c":36,"c5c78718-20e1-40e0-aacc-c0d7ab0126b0":1.05,"5c2aa5e0-35c8-406a-bcee-8c50acc53a1e":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"9b9062c5-d9fb-448d-b3e6-6fc4d941a288":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"5c55ea21-d065-45b3-aeca-312d93ef89fd":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"46b0b6f4-3cff-4ece-bb94-8520ded5afbb":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"aea18d05-392f-4b8d-a550-7b5c54d0550c":{"link":true,"name":"TOTAL30 Blue","uid":"total30-blue","class":".coh-color-total30-blue","variable":"$coh-color-total30-blue","value":{"hex":"#003087","rgba":"rgba(0, 48, 135, 1)"},"inuse":true,"wysiwyg":true,"tags":["total","primary"]}}},"changedFields":["model.03d72a6d-07cf-4b03-b89b-207ed8444e03.1021e896-bee2-4d8d-8f2a-8754157741ff","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.434ac0e1-7629-4be2-8a96-68e6e65716ec","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.6cc5e3b9-05e6-4251-91e9-73eb76318403","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.8000f72f-717e-45ec-a49e-8406e7ee7350","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.79c94520-cdda-482c-8b47-f4d7a66c8192","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.ecf5aaff-7835-460e-b8e1-f32bff3e3e5c","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.c5c78718-20e1-40e0-aacc-c0d7ab0126b0","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.5c2aa5e0-35c8-406a-bcee-8c50acc53a1e","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.9b9062c5-d9fb-448d-b3e6-6fc4d941a288","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.5c55ea21-d065-45b3-aeca-312d93ef89fd","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.46b0b6f4-3cff-4ece-bb94-8520ded5afbb","model.03d72a6d-07cf-4b03-b89b-207ed8444e03.aea18d05-392f-4b8d-a550-7b5c54d0550c"]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+theme: cohesion_theme
+style_guide_uuid: 03d72a6d-07cf-4b03-b89b-207ed8444e03

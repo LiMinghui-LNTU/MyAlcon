@@ -1,0 +1,6 @@
+status: true
+dependencies: {  }
+name: 'Article Category'
+vid: article_category
+description: ''
+weight: 0

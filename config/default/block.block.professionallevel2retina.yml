@@ -1,0 +1,30 @@
+uuid: 0135dfc1-c746-4b68-987c-e56f2851e64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.professional-level-2---retina
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: professionallevel2retina
+theme: cohesion_theme
+region: dx8_hidden
+weight: 18
+provider: null
+plugin: 'system_menu_block:professional-level-2---retina'
+settings:
+  id: 'system_menu_block:professional-level-2---retina'
+  label: 'Professional Level 2 - Retina'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

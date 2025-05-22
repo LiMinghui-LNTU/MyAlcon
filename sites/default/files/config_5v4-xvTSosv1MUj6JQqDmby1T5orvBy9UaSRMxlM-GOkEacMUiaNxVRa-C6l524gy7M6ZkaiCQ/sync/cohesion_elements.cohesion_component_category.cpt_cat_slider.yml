@@ -1,0 +1,14 @@
+uuid: 52d9a419-dfb8-4989-b5c8-55d06c39e5e8
+langcode: en
+status: true
+dependencies: {  }
+label: 'SLIDE CONTAINER AND SLIDES'
+id: cpt_cat_slider
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-5
+weight: -6

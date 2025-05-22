@@ -1,0 +1,18 @@
+uuid: dfeae799-7a4d-4754-84f9-ea710b553651
+langcode: en
+status: false
+dependencies: {  }
+label: 'Slideshow (Media, Remote video)'
+id: media_remote_video_slideshow
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: remote_video
+view_mode: slideshow
+master_template: ''

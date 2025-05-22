@@ -1,0 +1,13 @@
+uuid: 6648b22b-0246-4a4f-bb0e-f90d8fedca3f
+langcode: en
+status: true
+dependencies: {  }
+label: 'OPTI-FREE Green'
+id: optifree-green
+json_values: '{"link":true,"name":"OPTI-FREE Green","uid":"optifree-green","class":".coh-color-optifree-green","variable":"$coh-color-optifree-green","value":{"value":{"hex":"#009f4d","rgba":"rgba(0, 159, 77, 1)"}},"wysiwyg":false,"tags":[{"label":"opti-free","value":"opti-free"},{"label":"primary","value":"primary"}],"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 34

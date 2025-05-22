@@ -1,0 +1,13 @@
+uuid: 9e573962-3616-4add-a2bd-a1cfcb22f7fd
+langcode: en
+status: true
+dependencies: {  }
+label: 'SYSTANE Green'
+id: systane-green
+json_values: '{"link":true,"name":"SYSTANE Green","uid":"systane-green","class":".coh-color-systane-green","variable":"$coh-color-systane-green","value":{"value":{"hex":"#008655","rgba":"rgba(0, 134, 85, 1)"}},"wysiwyg":true,"inuse":true,"tags":[{"label":"systane","value":"systane"},{"label":"primary","value":"primary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 68

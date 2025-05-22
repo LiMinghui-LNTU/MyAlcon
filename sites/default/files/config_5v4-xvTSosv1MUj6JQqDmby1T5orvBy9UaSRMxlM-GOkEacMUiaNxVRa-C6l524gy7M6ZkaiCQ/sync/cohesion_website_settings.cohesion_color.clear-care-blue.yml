@@ -1,0 +1,13 @@
+uuid: f0371e6f-af4c-4817-b528-54bddd382d5d
+langcode: en
+status: true
+dependencies: {  }
+label: 'CLEAR CARE Blue'
+id: clear-care-blue
+json_values: '{"link":true,"name":"CLEAR CARE Blue","uid":"clear-care-blue","class":".coh-color-clear-care-blue","variable":"$coh-color-clear-care-blue","value":{"value":{"hex":"#00a5e4","rgba":"rgba(0, 165, 228, 1)"}},"wysiwyg":true,"tags":[{"label":"clear-care","value":"clear-care"},{"label":"secondary","value":"secondary"}],"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 9

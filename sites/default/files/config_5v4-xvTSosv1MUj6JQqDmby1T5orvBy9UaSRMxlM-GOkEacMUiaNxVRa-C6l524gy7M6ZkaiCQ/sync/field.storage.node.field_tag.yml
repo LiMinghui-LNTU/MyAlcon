@@ -1,0 +1,20 @@
+uuid: 4e2a2f97-069e-4c13-8307-231f333bc63e
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tag
+field_name: field_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

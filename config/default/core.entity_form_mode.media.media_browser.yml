@@ -1,0 +1,13 @@
+uuid: 145a21ed-c622-4619-a3b4-34c70396394d
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: Za3bpBmZC2rMLheOZt4ssBRyDcnsxvBb5-66MAoDSU4
+id: media.media_browser
+label: 媒体浏览器
+description: ''
+targetEntityType: media
+cache: true

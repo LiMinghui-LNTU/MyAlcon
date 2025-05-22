@@ -1,0 +1,4 @@
+services:
+  logger.channel.config_revision:
+    parent: logger.channel_base
+    arguments: ['config_revision']

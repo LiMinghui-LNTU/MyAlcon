@@ -1,0 +1,13 @@
+uuid: aa9115bb-f4f2-4b92-8662-6c476c461967
+langcode: en
+status: true
+dependencies: {  }
+label: 'OPTI-FREE Blue'
+id: opti-free-blue
+json_values: '{"link":true,"name":"OPTI-FREE Blue","uid":"opti-free-blue","class":".coh-color-opti-free-blue","variable":"$coh-color-opti-free-blue","value":{"value":{"hex":"#409fdf","rgba":"rgba(64, 159, 223, 1)"}},"wysiwyg":false,"tags":[{"label":"opti-free","value":"opti-free"},{"label":"secondary","value":"secondary"}],"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 32

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: upcoming_event_teaser
+label: 'Upcoming Event Teaser'
+effects:
+  79a18ebd-ce81-4d9d-a827-30dd63b68eaf:
+    uuid: 79a18ebd-ce81-4d9d-a827-30dd63b68eaf
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 260
+      anchor: center-center

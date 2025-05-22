@@ -1,0 +1,55 @@
+{% set coh_instance_class %}{{ coh_instanceid() }}{% endset %}{{ attach_library('cohesion/global_libraries.responsiveJs') }} {{ attach_library('cohesion/global_libraries.windowscroll') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/global_libraries.matchHeight') }} {{ attach_library('cohesion/global_libraries.parallax_scrolling') }} {{ attach_library('cohesion/global_libraries.cohMatchHeights') }} {{ attach_library('cohesion/element_templates.drupal-menu') }} {{ attach_library('cohesion/element_templates.image') }} {{ attach_library('cohesion/element_templates.row-for-columns') }} {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container ssa-component coh-component ssa-component-instance-{{componentUuid}} coh-component-instance-{{componentUuid}} coh-style-footer coh-style-a-font-footer {{ coh_instance_class }} coh-ce-cpt_a_supernav_footer_legal-b1005d4e" > <div class="coh-row coh-row-xl coh-row-visible-xl" data-coh-row-match-heights="{&quot;xl&quot;:{&quot;target&quot;:&quot;none&quot;}}"> <div class="coh-row-inner"> <div class="coh-column lang-box coh-ce-cpt_a_supernav_footer_legal-e30a9eed coh-visible-sm coh-col-sm-12 coh-col-xl-auto" > {{ attach_library('cohesion/coh_element_link') }} <a href="{% set href %}{{ getComponentFieldValue("2dceb6ca-8e9a-4cd2-afa1-2886e14efe2d") | raw }}{% endset %}{{ escape_url(href) }}" class="coh-link lang-btn {{ coh_instance_class }} coh-ce-cpt_a_supernav_footer_legal-5de59d76" {% if getComponentFieldValue('90e43efe-878e-4624-a3f7-e4289ce04107') == '' %}{% else %}title="{{ getComponentFieldValue("90e43efe-878e-4624-a3f7-e4289ce04107") | raw }}"{% endif %} target="_self" > {{ getComponentFieldValue("5b1a33c4-4a21-4b3c-9d04-77ed635154aa") | raw }}    </a> </div> <div class="coh-column coh-ce-cpt_a_supernav_footer_legal-cc4e4a17 coh-visible-sm coh-col-sm-6 coh-col-xl" > {{ attach_library('cohesion/coh_element_drupal_menu') }} {{ render_menu('footer-legal-links', '', false, 1) }} </div> <div class="coh-column coh-ce-cpt_a_supernav_footer_legal-3e7687c1 coh-visible-sm coh-col-sm-12 coh-col-xl-auto" > {{ attach_library('cohesion/coh_element_image') }} <picture> <source srcset="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" media="(min-width: 1600px)" type="{{ cohesion_image_mime_type(src, imagestyle) }}"> <source srcset="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" media="(min-width: 1170px) and (max-width: 1599px)" type="{{ cohesion_image_mime_type(src, imagestyle) }}"> <source srcset="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" media="(min-width: 1024px) and (max-width: 1169px)" type="{{ cohesion_image_mime_type(src, imagestyle) }}"> <source srcset="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" media="(min-width: 768px) and (max-width: 1023px)" type="{{ cohesion_image_mime_type(src, imagestyle) }}"> <source srcset="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" media="(min-width: 565px) and (max-width: 767px)" type="{{ cohesion_image_mime_type(src, imagestyle) }}"> <source srcset="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" media="(min-width: 0px) and (max-width: 564px)" type="{{ cohesion_image_mime_type(src, imagestyle) }}"> <img class="coh-image coh-ce-cpt_a_supernav_footer_legal-201608de coh-image-responsive-xl" src="{% set src %}{{ getComponentFieldValue("674c8446-7c39-48a2-8d84-311ab1ce4458") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" {% if getComponentFieldValue('2d7d4bfe-ffa4-4369-b388-d4383a1a2542') == '' %}alt{% else %}alt="{{ getComponentFieldValue("2d7d4bfe-ffa4-4369-b388-d4383a1a2542") | raw }}"{% endif %} /> </picture> </div> </div> </div> </div> 
+{% set compiledCSS %}<style>{% if getComponentFieldValue("6f313c00-e803-45ab-898f-7bd9a4b651b1") is not empty or getComponentFieldValue("75cc52d7-4fa2-4649-8c4d-389696dcf6ef") is not empty %}.{{ coh_instance_class }}.coh-ce-cpt_a_supernav_footer_legal-b1005d4e {
+{% if getComponentFieldValue("6f313c00-e803-45ab-898f-7bd9a4b651b1") is not empty %}   {% if getComponentFieldValue("6f313c00-e803-45ab-898f-7bd9a4b651b1") is not empty %} background-color: {{ getComponentFieldValue("6f313c00-e803-45ab-898f-7bd9a4b651b1") | raw }};{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_supernav_footer_legal-b1005d4e .menu .menu-item a {
+{% if getComponentFieldValue("75cc52d7-4fa2-4649-8c4d-389696dcf6ef") is not empty %}   {% if getComponentFieldValue("75cc52d7-4fa2-4649-8c4d-389696dcf6ef") is not empty %} color: {{ getComponentFieldValue("75cc52d7-4fa2-4649-8c4d-389696dcf6ef") | raw }};{% endif %}{% endif %}
+}{% endif %}
+.{{ coh_instance_class }}.coh-ce-cpt_a_supernav_footer_legal-5de59d76 {
+  font-weight: 400;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+{% if getComponentFieldValue("8759fe5d-cfa9-45cc-99d9-cdb4461dd068") is not empty %}   {% if getComponentFieldValue("8759fe5d-cfa9-45cc-99d9-cdb4461dd068") is not empty %} color: {{ getComponentFieldValue("8759fe5d-cfa9-45cc-99d9-cdb4461dd068") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("481f53f4-dfb1-42b6-9433-76d41647eb5e") is not empty %}   {% if getComponentFieldValue("481f53f4-dfb1-42b6-9433-76d41647eb5e") is not empty %} background-color: {{ getComponentFieldValue("481f53f4-dfb1-42b6-9433-76d41647eb5e") | raw }};{% endif %}{% endif %}
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_supernav_footer_legal-5de59d76 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_supernav_footer_legal-5de59d76:before {
+{% if getComponentFieldValue("ba8ec78f-44ec-448c-9198-5ad86e3f6a3c") is not empty %}   {% if getComponentFieldValue("ba8ec78f-44ec-448c-9198-5ad86e3f6a3c") is not empty %} background-image: url("{% set src %}{{ getComponentFieldValue("ba8ec78f-44ec-448c-9198-5ad86e3f6a3c") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle)}}");{% endif %}{% endif %}
+  background-position: left top;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  max-height: 20px;
+  height: 20px;
+  max-width: 20px;
+  width: 20px;
+  padding-right: 5px;
+  float: left;
+  display: inline-block;
+  content: "";
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_supernav_footer_legal-5de59d76:before {
+    max-height: 20px;
+    height: 20px;
+    max-width: 20px;
+    width: 20px;
+  }
+}
+</style>{% endset %}{{ renderInlineStyle(compiledCSS) | raw }}

@@ -1,0 +1,18 @@
+uuid: 28e65f20-a391-467e-9be0-d85d91e9f331
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search result highlighting input (Node, Entity browser test)'
+id: node_entity_browser_test_searc_0
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: entity_browser_test
+view_mode: search_result
+master_template: ''

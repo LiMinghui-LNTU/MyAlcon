@@ -1,0 +1,5 @@
+vb_scripts:
+  js:
+    js/vb_scripts.js: {}
+  dependencies:
+    - core/jquery

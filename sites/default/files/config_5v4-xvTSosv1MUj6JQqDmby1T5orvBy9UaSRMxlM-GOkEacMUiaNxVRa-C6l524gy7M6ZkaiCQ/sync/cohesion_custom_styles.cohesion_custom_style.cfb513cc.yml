@@ -1,0 +1,20 @@
+uuid: 9b7d4928-c8ac-4f2b-b7ae-af573a3f0915
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.ded85486
+label: 'Medium full width'
+id: cfb513cc
+json_values: '{"preview":{"text":"","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"5322979b-f0ad-4cd5-8a3a-c7bcc6744842":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"custom-css":[{"customCssProperty":{"value":"object-fit"},"customCss":{"value":"cover"}}],"height":{"value":"45vh"},"width":{"value":"auto"},"max-width":{"value":"100%"},"max-height":{"value":""}},"xs":{"max-width":{"value":"380px"},"width":{"value":"auto"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[],"items":[{"title":"img","type":"container","items":[],"form":null,"selectorType":"child","model":"img","uuid":"5322979b-f0ad-4cd5-8a3a-c7bcc6744842","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]},{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-height","active":false},{"name":"max-height","active":true},{"name":"height","active":true}]},{"formKey":"width","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":true},{"name":"width","active":true}]}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-card-medium-full
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-a-card-image-styling
+weight: 236

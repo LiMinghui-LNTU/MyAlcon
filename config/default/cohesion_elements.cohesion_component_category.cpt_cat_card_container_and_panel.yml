@@ -1,0 +1,14 @@
+uuid: 54a28d14-3992-4e92-af1f-be8fc7ab1b0d
+langcode: en
+status: true
+dependencies: {  }
+label: 'CARD CONTAINER AND CARDS'
+id: cpt_cat_card_container_and_panel
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-4
+weight: -7

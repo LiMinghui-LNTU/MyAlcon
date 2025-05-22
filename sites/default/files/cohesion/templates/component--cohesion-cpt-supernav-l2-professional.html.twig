@@ -1,0 +1,109 @@
+{% set coh_instance_class %}{{ coh_instanceid() }}{% endset %}{{ attach_library('cohesion/global_libraries.responsiveJs') }} {{ attach_library('cohesion/global_libraries.windowscroll') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/global_libraries.matchHeight') }} {{ attach_library('cohesion/global_libraries.parallax_scrolling') }} {{ attach_library('cohesion/global_libraries.cohMatchHeights') }} {{ attach_library('cohesion/element_templates.drupal-menu') }} {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container ssa-component coh-component ssa-component-instance-{{componentUuid}} coh-component-instance-{{componentUuid}} coh-ce-cpt_supernav_l2_professional-b3380b9b" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-style-supernavl2-sub-menu {{ coh_instance_class }} coh-ce-cpt_supernav_l2_professional-d5e5bef6" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button explore-btn {{ coh_instance_class }} coh-ce-cpt_supernav_l2_professional-b1a1f4df coh-interaction" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;toggle-modifier-accessible-collapsed&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.explore-btn&quot;,&quot;modifierName&quot;:&quot;brandmenu-visible&quot;},{&quot;modifierType&quot;:&quot;toggle-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;modifierName&quot;:&quot;mobile-menu-close mobile-menu-open&quot;,&quot;interactionTarget&quot;:&quot;.supernavl2-navigation&quot;}]" aria-haspopup="true" aria-expanded="false" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}EXPLORE{% endtrans -%}</button> {% set inlineElementContent %}{{ getComponentFieldValue("9c957213-4e90-4f23-9fc1-4e4b9f094240") | raw }}{% endset %} <span class="coh-inline-element subpageHeading {{ coh_instance_class }} coh-ce-cpt_supernav_l2_professional-9794e486"> {{- inlineElementContent -}} </span> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container supernavL2" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container supernavl2-navigation mobile-menu-close {{ coh_instance_class }} coh-ce-cpt_supernav_l2_professional-e7387d4" > {{ attach_library('cohesion/coh_element_drupal_menu') }} {{ render_menu('professional-level-1', '', 1, 2) }} </div> </div> </div> </div> 
+{% set compiledCSS %}<style>{% if getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") is not empty %}.{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-d5e5bef6 {
+{% if getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") is not empty %}   {% if getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") is not empty %} background-color: {{ getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") | raw }};{% endif %}{% endif %}
+}{% endif %}
+{% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty or getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty or getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty or getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty or getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty or getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty or getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty or getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty or getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty or getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty or getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty or getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %}@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-b1a1f4df {
+{% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %}     {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} color: {{ getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
+{% if getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty %} {% if getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty %} {% if getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty %}     {% if getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty %} background-color: {{ getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}
+{% if getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty %} {% if getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty %} {% if getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty %}     {% if getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty %} border-color: {{ getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-b1a1f4df {
+    {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} color: {{ getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") | raw }};{% endif %}
+    {% if getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty %} background-color: {{ getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") | raw }};{% endif %}
+    {% if getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty %} border-color: {{ getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") | raw }};{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-b1a1f4df {
+    {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} color: {{ getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") | raw }};{% endif %}
+    {% if getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") is not empty %} background-color: {{ getComponentFieldValue("13e42248-f32e-457d-a58e-7de0d5ffb8fd") | raw }};{% endif %}
+    {% if getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") is not empty %} border-color: {{ getComponentFieldValue("6a8d0243-ee67-4089-b2da-bea1d194e400") | raw }};{% endif %}
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-b1a1f4df:before {
+    {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} color: {{ getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") | raw }};{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-b1a1f4df:before {
+    {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} color: {{ getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") | raw }};{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-b1a1f4df:before {
+    {% if getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") is not empty %} color: {{ getComponentFieldValue("b998b700-abe8-4426-9850-9bd924eb1ffa") | raw }};{% endif %}
+  }
+}{% endif %}
+{% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %}.{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-9794e486 {
+{% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %}   {% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %} color: {{ getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") | raw }};{% endif %}{% endif %}
+}{% endif %}
+.{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-e7387d4 {
+{% if getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") is not empty %}   {% if getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") is not empty %} background-color: {{ getComponentFieldValue("4d80ddd0-5a72-42d2-87b5-d3d69f75c20d") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("5ea5a72e-9770-4966-8c13-a11a57b25901") is not empty %}   {% if getComponentFieldValue("5ea5a72e-9770-4966-8c13-a11a57b25901") is not empty %} font-weight: {{ getComponentFieldValue("5ea5a72e-9770-4966-8c13-a11a57b25901") | raw }};{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-e7387d4 .menu .menu-item a {
+{% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %}   {% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %} color: {{ getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") | raw }};{% endif %}{% endif %}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-e7387d4 .menu .menu-item a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-e7387d4 .menu .menu-item a:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+{% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %} {% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %}   {% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %} border-bottom-color: {{ getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") | raw }};{% endif %}{% endif %}{% endif %}
+  text-shadow: 0 0 1px rgb(44 86 151), 0 0 1px rgb(44 86 151);;
+  padding-top: 1.075rem;
+  padding-bottom: 0.825rem;
+}
+.{{ coh_instance_class }}.coh-ce-cpt_supernav_l2_professional-e7387d4 .is-active {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  {% if getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") is not empty %} border-bottom-color: {{ getComponentFieldValue("5e25a956-d406-42a8-aab3-9c4b82106fed") | raw }};{% endif %}
+  padding-top: 1.075rem;
+  padding-bottom: 0.825rem;
+  text-shadow: 0 0 0.01px rgb(44 86 151), 0 0 0.01px rgb(44 86 151);;
+  border-bottom-color: rgba(44, 86, 151, 1) !important;
+}
+</style>{% endset %}{{ renderInlineStyle(compiledCSS) | raw }}

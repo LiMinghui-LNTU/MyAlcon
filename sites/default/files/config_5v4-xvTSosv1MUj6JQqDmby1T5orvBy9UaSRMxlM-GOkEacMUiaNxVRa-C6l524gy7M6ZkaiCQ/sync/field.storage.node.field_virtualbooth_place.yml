@@ -1,0 +1,22 @@
+uuid: 63e4824c-4286-47f4-8d93-c0f841dd255c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: VAKaTWn2JkI0nxv7gn0fZfm4mIoSOXZxHHXhdiMismY
+id: node.field_virtualbooth_place
+field_name: field_virtualbooth_place
+entity_type: node
+type: text
+settings:
+  max_length: 100
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

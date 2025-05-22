@@ -1,0 +1,10 @@
+uuid: f82279bb-342b-48cf-bec0-1f6326da516b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XDwaNWREPCa6f2hYcFhVXseLl3siFl0boumXxQ2VcxM
+name: 'Course Category'
+vid: course_category
+description: 'Course Category'
+weight: 0

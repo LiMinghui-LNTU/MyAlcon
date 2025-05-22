@@ -1,0 +1,10 @@
+uuid: 18ebcf61-2710-43f9-b8e2-f12759343914
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5VpawMrKPEPCkoO4YpPa0TDFO2dgiIHfTziJtwlmUxc
+id: html_yearless_date
+label: 'HTML 无年份日期'
+locked: true
+pattern: m-d

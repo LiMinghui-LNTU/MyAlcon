@@ -1,0 +1,20 @@
+uuid: c68e0dbc-be0a-4073-aa24-6db2ae9e5faf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: nb_cPUs4dvoXeLvPMQYwg1oWcQ5-nE7TcwKGs_VsiHg
+name: 'Commercial Page'
+type: commercial_page
+description: 'An unstructured content type that provides unique commercial pages.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

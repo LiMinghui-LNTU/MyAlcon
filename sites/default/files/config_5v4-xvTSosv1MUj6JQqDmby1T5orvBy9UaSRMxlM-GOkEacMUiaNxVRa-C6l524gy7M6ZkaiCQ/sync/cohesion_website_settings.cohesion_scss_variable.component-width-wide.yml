@@ -1,0 +1,13 @@
+uuid: 683e88af-bf2a-431b-8587-8310e81ab53c
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: component-width-wide
+json_values: '{"value":"100%","uid":"component-width-wide","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 11

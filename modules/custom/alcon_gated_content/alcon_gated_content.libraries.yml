@@ -1,0 +1,10 @@
+alcon_gated_content:
+  js:
+    js/alcon_gated_content.js: {}
+  css:
+   theme:
+    css/alcon_gated_content.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery

@@ -1,0 +1,18 @@
+uuid: de5dfcbe-1668-46c5-b5dd-b53d5c727c40
+langcode: en
+status: true
+dependencies: {  }
+label: 'Background Image Component Height Large'
+id: f2b6e001
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"min-height":{"value":"750"}},"sm":{"min-height":{"value":"620"},"padding":{"padding-top":{"value":"70"}}},"ps":{"min-height":{"value":"620"}},"xs":{"min-height":{"value":"750"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":false},{"name":"height","active":false}]},{"formKey":"padding","breakpoints":[{"name":"sm"}],"activeFields":[{"name":"padding-equal","active":false},{"name":"padding-top","active":true},{"name":"padding-bottom","active":false},{"name":"padding-left","active":false},{"name":"padding-right","active":false},{"name":"padding-block-start","active":false},{"name":"padding-block-end","active":false},{"name":"padding-inline-start","active":false},{"name":"padding-inline-end","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-background-image-component-height-large
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 165

@@ -1,0 +1,18 @@
+uuid: 1f51d037-4e91-4d6d-aa78-357c2ce9d202
+langcode: en
+status: true
+dependencies: {  }
+label: 'Tab design Three'
+id: 50998a52
+json_values: '{"preview":{"text":"<ul>\n\t<li class=\"coh-preview\"><a href=\"javascript:;\">Accordion tabs navigation (Default)<\/a><\/li>\n\t<li class=\"coh-preview is-active\"><a href=\"javascript:;\">Accordion tabs navigation (Active)<\/a><\/li>\n\t<li class=\"coh-preview is-disabled\"><a href=\"javascript:;\">Accordion tabs navigation (Disable)<\/a><\/li>\n<\/ul>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"ed99b2b7-6710-4a4c-8734-c4eb1dc56d55":{"settings":{"element":".coh-accordion-tabs-nav","class":"","combinator":"","pseudo":""},"styles":{}},"688c0518-4dbc-449d-bfda-3bc9bf58048f":{"settings":{"element":"li","class":"","combinator":"","pseudo":""},"styles":{}},"a69a12d3-1cfe-45bb-942a-37ad9b23db92":{"settings":{"element":"a","class":"","combinator":"","pseudo":""},"styles":{}},"69607d6b-30d5-43b0-bcd8-4ca56a7aca2e":{"settings":{"element":"","class":"","combinator":"","pseudo":":hover"},"styles":{}},"c8914b01-374e-47a1-b9e8-274ac9555597":{"settings":{"element":".is-active","class":"","combinator":"","pseudo":""},"styles":{}},"2819907f-1834-41a6-be4e-f3cfe82ceada":{"settings":{"element":"a","class":"","combinator":"","pseudo":""},"styles":{}},"80a90823-163a-4209-90af-b07d7da41772":{"settings":{"element":"button","class":"","combinator":"","pseudo":""},"styles":{}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Accordion and Tabs","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":false},{"name":"color","active":false}]}]}],"items":[{"title":".coh-accordion-tabs-nav","type":"container","items":[{"title":"li","type":"container","items":[{"title":"a","type":"container","items":[{"title":":hover","type":"container","items":[],"form":null,"selectorType":"pseudo","uuid":"69607d6b-30d5-43b0-bcd8-4ca56a7aca2e","allowedTypes":["child","pseudo"],"formDefinition":[]}],"form":null,"selectorType":"child","model":"a","uuid":"a69a12d3-1cfe-45bb-942a-37ad9b23db92","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]}],"form":null,"selectorType":"child","model":"li","uuid":"688c0518-4dbc-449d-bfda-3bc9bf58048f","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]},{"title":".is-active","type":"container","items":[{"title":"a","type":"container","items":[],"form":null,"selectorType":"child","model":"a","uuid":"2819907f-1834-41a6-be4e-f3cfe82ceada","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]}],"form":null,"selectorType":"child","model":".is-active","uuid":"c8914b01-374e-47a1-b9e8-274ac9555597","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]}],"form":null,"selectorType":"child","model":".coh-accordion-tabs-nav","uuid":"ed99b2b7-6710-4a4c-8734-c4eb1dc56d55","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]},{"title":"button","type":"container","items":[],"form":null,"selectorType":"child","model":"button","uuid":"80a90823-163a-4209-90af-b07d7da41772","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-tab-design-three
+custom_style_type: accordion-tabs
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 66

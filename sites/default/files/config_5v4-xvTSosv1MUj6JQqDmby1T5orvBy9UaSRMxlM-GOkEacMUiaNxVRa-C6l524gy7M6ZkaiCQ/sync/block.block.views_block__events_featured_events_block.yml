@@ -1,0 +1,24 @@
+uuid: 12dad6cc-0c16-4b88-9265-246127251455
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - views
+  theme:
+    - cohesion_theme
+id: views_block__events_featured_events_block
+theme: cohesion_theme
+region: dx8_hidden
+weight: -6
+provider: null
+plugin: 'views_block:events-featured_events_block'
+settings:
+  id: 'views_block:events-featured_events_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

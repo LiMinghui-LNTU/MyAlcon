@@ -1,0 +1,6 @@
+name: 'VBO bulk edit customization'
+type: module
+description: 'Views bulk operation and Views bulk edit modules combinely used for bulk edit and this module is used for customization.'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+package: 'User Management'

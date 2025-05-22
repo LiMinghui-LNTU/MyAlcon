@@ -1,0 +1,10 @@
+alcon_email_validation.admin:
+  route_name: alcon_email_validation.admin
+  title: 'Settings'
+  base_route: alcon_email_validation.admin
+ 
+alcon_email_validation.translate:
+  route_name: alcon_email_validation.translate
+  title: 'Translate'
+  base_route: alcon_email_validation.admin
+  weight: 100

@@ -1,0 +1,20 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_category_font_color
+    - taxonomy.vocabulary.article_category_professional
+  module:
+    - color_field
+id: taxonomy_term.article_category_professional.field_category_font_color
+field_name: field_category_font_color
+entity_type: taxonomy_term
+bundle: article_category_professional
+label: 'Category Font Color'
+description: 'Color field used to store the Category name Font color code.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

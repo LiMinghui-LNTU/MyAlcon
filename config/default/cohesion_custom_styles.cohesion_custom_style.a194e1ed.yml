@@ -1,0 +1,18 @@
+uuid: be328f08-e8f4-4c26-a8e7-e8a9343dd10e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Horizontal Position - center'
+id: a194e1ed
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"flex-container":{"justify-content":{}},"position":{"value":"absolute"},"left":{"value":"50%"},"transform":{"transformTranslateX":{"value":"-50%"},"transformTranslateY":{"value":""}},"transitions":[null]}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"display","breakpoints":[],"activeFields":[]},{"formKey":"flex-container","breakpoints":[],"activeFields":[]},{"formKey":"position","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"position","active":true},{"name":"top","active":true},{"name":"bottom","active":true},{"name":"left","active":true},{"name":"right","active":true},{"name":"z-index","active":true}]}]},{"formKey":"transform-and-transition","children":[{"formKey":"transform","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"transformRotateX","active":true},{"name":"transformRotateY","active":true},{"name":"transformRotateZ","active":true},{"name":"transformTranslateX","active":true},{"name":"transformTranslateY","active":true},{"name":"transformScaleX","active":true},{"name":"transformScaleY","active":true},{"name":"transformSkewX","active":true},{"name":"transformSkewY","active":true},{"name":"transformOriginX","active":true},{"name":"transformOriginY","active":true}]},{"formKey":"transition","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"transitions","active":true},{"name":"transitionProperty","active":true},{"name":"transitionCustomProperty","active":true},{"name":"transitionDuration","active":true},{"name":"transitionTimingFunction","active":true},{"name":"transitionDelay","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-horizontal-position---center
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 96

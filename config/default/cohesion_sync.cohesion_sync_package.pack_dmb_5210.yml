@@ -1,0 +1,9 @@
+uuid: 629dd523-9c1f-406d-9360-dd614a355f35
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5210
+label: DMB-5210
+description: 'MyAlcon | International | Identify and resolve all the configuration based Accessibility issues.'
+excluded_entity_types: '[]'
+settings: '{"d04d9823-3897-41f5-8164-097c490a9f5e":{"type":"cohesion_component","items":{"d04d9823-3897-41f5-8164-097c490a9f5e":{"type":"cohesion_component"},"a28c329c-cc0a-4ecc-81d1-04cbf9843a25":{"type":"cohesion_component_category"}},"checked":true},"4b22ccad-bbb8-4162-8b9d-ce334f1ffcd5":{"type":"cohesion_master_templates","items":{"4b22ccad-bbb8-4162-8b9d-ce334f1ffcd5":{"type":"cohesion_master_templates"}},"checked":true}}'

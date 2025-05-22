@@ -1,0 +1,4 @@
+administer trailing slash:
+  title: 'Administer trailing slash configuration'
+  description: 'Grants access to administer trailing_slash configuration options.'
+  restrict access: TRUE

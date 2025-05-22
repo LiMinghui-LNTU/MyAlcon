@@ -1,0 +1,15 @@
+name: 'GlobalLink Connect for Drupal'
+description: 'GlobalLink service plugin for TMGMT. Sign up at <a href="http://translations.com/">translations.com</a>!'
+package: 'Translation Management'
+# core: 8.x
+configure: globallink.admin
+dependencies:
+  - tmgmt:tmgmt
+  - tmgmt:tmgmt_file
+type: module
+core_version_requirement: ^8.8 || ^9 || ^10 || ^11
+
+# Information added by Drupal.org packaging script on 2025-02-12
+version: '8.x-2.7'
+project: 'globallink'
+datestamp: 1739370621

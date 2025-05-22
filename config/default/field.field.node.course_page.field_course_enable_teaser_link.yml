@@ -1,0 +1,23 @@
+uuid: 3f58e7ed-8dae-4fbc-8b18-3873697d9f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_enable_teaser_link
+    - node.type.course_page
+_core:
+  default_config_hash: ada3kcT4wlplWYkdM9ghD5fK-sE2FLEBPEGi43dbBpY
+id: node.course_page.field_course_enable_teaser_link
+field_name: field_course_enable_teaser_link
+entity_type: node
+bundle: course_page
+label: 'Enable Teaser link'
+description: 'A Boolean field indicating whether the link/button is active on the teaser card.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+name: Alcon Site Studio
+type: module
+description: This module is used to manage JavaScript and CSS modification that cannot be controlled directly by Site Studio or within a Component.
+core_version_requirement: ^8 || ^9 || ^10
+version: 0.8
+package: Alcon
+dependencies:
+  - drupal:block

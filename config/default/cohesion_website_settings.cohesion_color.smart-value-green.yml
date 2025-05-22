@@ -1,0 +1,13 @@
+uuid: 6d94c80c-0aaa-464a-93d9-53f749032dcd
+langcode: en
+status: true
+dependencies: {  }
+label: 'Smart Value Green'
+id: smart-value-green
+json_values: '{"link":true,"name":"Smart Value Green","uid":"smart-value-green","class":".coh-color-smart-value-green","variable":"$coh-color-smart-value-green","value":{"value":{"hex":"#80bb00","rgba":"rgba(128, 187, 0, 1)"}},"tags":[{"label":"smart","value":"smart"},{"label":"secondary","value":"secondary"}],"inuse":false,"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 45

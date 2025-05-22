@@ -1,0 +1,20 @@
+uuid: 766072c6-d39d-43e9-9e01-1d36081d19a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.feed_data_page
+  module:
+    - path
+id: node.feed_data_page.path
+field_name: path
+entity_type: node
+bundle: feed_data_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

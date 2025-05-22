@@ -1,0 +1,12 @@
+uuid: 008e9da2-8aa2-47cb-b5ca-a082a8553841
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DGb4aV39gpvoK2px2xeeK4MOLA2FxH4Leq0UZ0en9Fo
+id: images
+label: 图像
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Images</em> for adding one or multiple images.'
+behavior_plugins: {  }

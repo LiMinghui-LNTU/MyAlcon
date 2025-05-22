@@ -1,0 +1,8 @@
+uuid: 738c001e-8e8b-463b-bd72-8f6592e8d186
+langcode: en
+status: true
+dependencies: {  }
+id: professional-level-1
+label: 'Level 1(Professional)'
+description: 'This provides the ability to add menu to the level one of Supernav for Professional Site.'
+locked: false

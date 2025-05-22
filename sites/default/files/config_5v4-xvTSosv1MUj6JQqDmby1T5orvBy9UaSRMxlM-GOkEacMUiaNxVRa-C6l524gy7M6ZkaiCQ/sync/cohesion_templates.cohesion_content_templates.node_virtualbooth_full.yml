@@ -1,0 +1,18 @@
+uuid: 6e69accf-09b6-4a91-8bc8-cd4215539c10
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full content (Node, Virtual Booth page)'
+id: node_virtualbooth_full
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: virtualbooth
+view_mode: full
+master_template: ''

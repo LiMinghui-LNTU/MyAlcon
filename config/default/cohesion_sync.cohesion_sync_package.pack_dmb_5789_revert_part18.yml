@@ -1,0 +1,20 @@
+uuid: 654bcd9c-fbd9-4089-a615-c3132f9e9b5f
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part18
+label: 'DMB-5789 revert part18'
+description: 'DMB-5789 revert part18(Text with Buttons (Restricted Access) (cpt_a_text_with_buttons_ra_1))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "3deb5696-20ad-4beb-ba88-52042c233328": {
+          "type": "cohesion_component",
+          "items": {
+              "3deb5696-20ad-4beb-ba88-52042c233328": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

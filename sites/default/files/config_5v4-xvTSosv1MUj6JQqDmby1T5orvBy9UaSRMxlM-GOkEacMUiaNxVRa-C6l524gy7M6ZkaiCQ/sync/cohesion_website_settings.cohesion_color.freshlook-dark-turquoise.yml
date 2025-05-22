@@ -1,0 +1,13 @@
+uuid: 1029efdd-eca7-498f-b7bc-ce02c16029a6
+langcode: en
+status: true
+dependencies: {  }
+label: 'Freshlook Dark Turquoise'
+id: freshlook-dark-turquoise
+json_values: '{"link":true,"name":"Freshlook Dark Turquoise","uid":"freshlook-dark-turquoise","class":".coh-color-freshlook-dark-turquoise","variable":"$coh-color-freshlook-dark-turquoise","wysiwyg":false,"value":{"value":{"hex":"#09828b","rgba":"rgba(9, 130, 139, 1)"}},"locked":true,"inuse":true,"tags":[{"label":"freshlook","value":"freshlook"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: true
+modified: true
+selectable: true
+weight: 24

@@ -1,0 +1,8 @@
+uuid: 6a55fb87-e8c4-46cd-a013-b30b7131e7ff
+langcode: en
+status: true
+dependencies: {  }
+id: professional-footer-legal-links
+label: 'Footer legal Links(Professional)'
+description: ''
+locked: false

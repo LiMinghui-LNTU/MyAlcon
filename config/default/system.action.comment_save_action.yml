@@ -1,0 +1,13 @@
+uuid: 35bbc1ad-1ca1-4d3a-bc47-e6e541086d71
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
+id: comment_save_action
+label: 保存评论
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

@@ -1,0 +1,13 @@
+uuid: 9c4f3268-ea42-4231-a5ee-81dbab087397
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: heading-color-font
+json_values: '{"uid":"heading-color-font","value":"#003595","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 5

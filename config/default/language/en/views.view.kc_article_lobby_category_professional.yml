@@ -1,0 +1,22 @@
+label: 'KC Article Lobby Category Professional'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'KC Article Lobby Category professional'
+      fields:
+        name:
+          alter:
+            text: '<a>{{ name }}</a>'
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+  block_1:
+    display_title: 'KC Article Lobby Filter Block professional'
+    display_options:
+      block_description: 'KC Article Lobby Filter Block professional'

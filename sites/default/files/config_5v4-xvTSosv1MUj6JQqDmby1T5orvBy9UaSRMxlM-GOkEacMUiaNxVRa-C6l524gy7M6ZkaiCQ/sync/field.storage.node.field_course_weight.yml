@@ -1,0 +1,26 @@
+uuid: 5bb28611-a3aa-4395-904d-a850f035faa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: Td5TxRamnkFdYk9L-_FyDljZVZWSbrN9uWIHffI9dis
+id: node.field_course_weight
+field_name: field_course_weight
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

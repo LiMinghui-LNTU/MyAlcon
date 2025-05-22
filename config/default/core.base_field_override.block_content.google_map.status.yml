@@ -1,0 +1,22 @@
+uuid: 9c3b742f-88bb-43f7-b7c2-d79c883a9ae3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.google_map
+id: block_content.google_map.status
+field_name: status
+entity_type: block_content
+bundle: google_map
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

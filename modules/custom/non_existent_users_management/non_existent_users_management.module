@@ -1,0 +1,209 @@
+<?php
+
+/**
+ * @file
+ * Contains non_existent_users_management.module.
+ */
+
+use Drupal\Component\Serialization\Json;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\language\Entity\ConfigurableLanguage;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for node entities.
+ *
+ * Automatically enable the Metatag Robot noindex and nofollow on page creation.
+ *
+ * @ref: DMB-4785.
+ */
+function non_existent_users_management_node_presave(EntityInterface $node) {
+  $type = $node->getType();
+  $metatagModuleEnabled = \Drupal::service('module_handler')->moduleExists('metatag');
+  if ($metatagModuleEnabled) {
+    if ($node->isNew()) {
+      if ($type == 'product_page') {
+        $verify = $node->hasField('field_meta');
+        if ($verify) {
+          $meta_tag = Json::decode($node->field_meta->value);
+          $meta_tag['robots'] = 'noindex, nofollow';
+          $node->field_meta->value = Json::encode($meta_tag);
+        }
+        else {
+          if ($node->hasField('field_meta_tags_pp')) {
+            $meta_tag = Json::decode($node->field_meta_tags_pp->value);
+            $meta_tag['robots'] = 'noindex, nofollow';
+            $node->field_meta_tags_pp->value = Json::encode($meta_tag);
+          }
+        }
+      }
+      elseif ($type == 'blog_article') {
+        if ($node->hasField('field_meta')) {
+          $meta_tag = Json::decode($node->field_meta->value);
+          $meta_tag['robots'] = 'noindex, nofollow';
+          $node->field_meta->value = Json::encode($meta_tag);
+        }
+      }
+      elseif ($type == 'event') {
+        if ($node->hasField('field_event_meta_tags')) {
+          $meta_tag = Json::decode($node->field_event_meta_tags->value);
+          $meta_tag['robots'] = 'noindex, nofollow';
+          $node->field_event_meta_tags->value = Json::encode($meta_tag);
+        }
+      }
+      elseif ($type == 'virtualbooth') {
+        if ($node->hasField('field_vb_meta_tags')) {
+          $meta_tag = Json::decode($node->field_vb_meta_tags->value);
+          $meta_tag['robots'] = 'noindex, nofollow';
+          $node->field_vb_meta_tags->value = Json::encode($meta_tag);
+        }
+      }
+      elseif ($type == 'symposium') {
+        if ($node->hasField('field_symposium_meta_tags')) {
+          $meta_tag = Json::decode($node->field_symposium_meta_tags->value);
+          $meta_tag['robots'] = 'noindex, nofollow';
+          $node->field_symposium_meta_tags->value = Json::encode($meta_tag);
+        }
+      }
+      else {
+        if ($node->hasField('field_meta_tags')) {
+          $meta_tag = Json::decode($node->field_meta_tags->value);
+          $meta_tag['robots'] = 'noindex, nofollow';
+          $node->field_meta_tags->value = Json::encode($meta_tag);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function non_existent_users_management_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Check if the form is for editing a configurable language.
+  if ($form_id == 'language_admin_edit_form') {
+    // Log the form ID to ensure this hook is being called.
+    // Add a custom submit handler before the existing ones.
+    $form['actions']['submit']['#submit'][] = 'non_existent_users_management_language_admin_edit_form_submit';
+  }
+
+  // GDMOC-7009 warnings for scheduler.
+  if (strpos($form_id, 'node_') === 0 && $form_id != 'node_preview_form_select') {
+    $form['#attached']['library'][] = 'non_existent_users_management/node_form_tweaks';
+    $roles = \Drupal::currentUser()->getRoles();
+    if (in_array('administrator', $roles) || in_array('content_editor', $roles)
+       || in_array('site_builder', $roles)) {
+      // Set yellow warning banner.
+      $form_object = $form_state->getFormObject();
+      if (method_exists($form_object, 'getEntity')) {
+        $node = $form_state->getFormObject()->getEntity();
+        if ($node->hasField('scheduled_transition_date')) {
+          if ($node->get('scheduled_transition_date')->value) {
+            $form['transition_warning'] = [
+              '#prefix' => '<div class="form-scheduler-warning">',
+              '#markup' => t('<strong>Warning:</strong> This Page has a scheduled state change.'),
+              '#suffix' => '</div>',
+              '#weight' => -99,
+            ];
+          }
+        }
+      }
+    }
+    if (isset($form['moderation_state']) && isset($form['moderation_state']['widget'][0]['scheduled_transitions'])) {
+      $scheduler_warning_message = t('<strong>Warning:</strong> Time shown below is your local time, if you are publishing a page
+        in a market that is not your current location or you are using VPN, you must adjust for the time 
+        difference.');
+
+      $array = $form['moderation_state']['widget'][0];
+      $index = array_search('#element_validate', array_keys($array));
+      $data = [
+        '#prefix' => '<div class="scheduler-field-warning">',
+        '#markup' => $scheduler_warning_message,
+        '#suffix' => '</div>',
+
+      ];
+      $array = array_slice($array, 0, $index + 1) + ['warning' => $data] + $array;
+      $form['moderation_state']['widget'][0] = $array;
+    }
+  }
+}
+
+/**
+ * Custom submit handler to check if the language is being disabled.
+ */
+function non_existent_users_management_language_admin_edit_form_submit(array &$form, FormStateInterface $form_state) {
+  // Check if the language is being disabled.
+  $current_disabled = $form_state->getValue('disable');
+
+  // If the "disable" field is checked (TRUE),
+  // update users with that language code.
+  if ($current_disabled) {
+    // Get the language entity being edited.
+    $entity = $form_state->getFormObject()->getEntity();
+    if (!$entity instanceof ConfigurableLanguage) {
+      return;
+    }
+
+    $langcode = $entity->id();
+
+    // Get the default language code.
+    $default_langcode = \Drupal::languageManager()->getDefaultLanguage()->getId();
+
+    // Load active users.
+    $storage = \Drupal::entityTypeManager()->getStorage('user');
+    $query = $storage->getQuery()
+      ->condition('status', 1)
+      ->accessCheck(TRUE);
+    $uids = $query->execute();
+    $active_users = $storage->loadMultiple($uids);
+
+    foreach ($active_users as $active_user) {
+      $user_langcode = $active_user->get('langcode')->value;
+      $user_preferred_langcode = $active_user->get('preferred_langcode')->value;
+
+      // Check both langcode and preferred_langcode
+      // against the disabled language code.
+      if ($user_langcode == $langcode || $user_preferred_langcode == $langcode) {
+        // Update langcode and preferred_langcode for the user entity.
+        $active_user->set('langcode', $default_langcode);
+        $active_user->set('preferred_langcode', $default_langcode);
+        $active_user->save();
+
+        // Ensure language change propagates to related tables.
+        \Drupal::entityTypeManager()->getStorage('user')->resetCache([$active_user->id()]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function non_existent_users_management_preprocess_node(&$variables) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name == 'entity.node.canonical') {
+    $roles = \Drupal::currentUser()->getRoles();
+    if (in_array('administrator', $roles) || in_array('content_editor', $roles)
+      || in_array('site_builder', $roles)) {
+      if (isset($variables['node'])) {
+        $node = $variables['node'];
+        if ($node->hasField('scheduled_transition_date')) {
+          // Get latest revision of node.
+          $latest_vid = \Drupal::entityTypeManager()->getStorage('node')
+            ->getLatestRevisionId($node->id());
+          // Load latest revision of node.
+          $latest_revision = \Drupal::entityTypeManager()->getStorage('node')
+            ->loadRevision($latest_vid);
+          if ($latest_revision->get('scheduled_transition_date')->value) {
+            $variables['#attached']['drupalSettings']['non_existent_users_management'] = [
+              'scheduler_warning' => [
+                'message' => t('<strong>Warning:</strong> This Page has a scheduled state change.'),
+              ],
+            ];
+            $variables['#attached']['library'][] = 'non_existent_users_management/node_form_tweaks';
+          }
+        }
+      }
+    }
+  }
+}

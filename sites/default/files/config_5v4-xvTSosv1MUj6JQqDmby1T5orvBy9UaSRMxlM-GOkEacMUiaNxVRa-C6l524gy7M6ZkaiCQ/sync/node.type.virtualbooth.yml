@@ -1,0 +1,23 @@
+uuid: 7a065df1-749d-496c-bbfb-a74fab65f29b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: QSjfzG1IltfN2fPxWAkyG74TEHZhtSzl3lPzU49e4xM
+name: 'Virtual Booth page'
+type: virtualbooth
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

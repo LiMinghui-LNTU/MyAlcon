@@ -1,0 +1,10 @@
+uuid: a1f026e0-9edc-4de7-a548-fcac8cc51d36
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WFHcqm3CAHejqGh0788Xkokc9wOb5QVDbOBKvjwPe9U
+name: 'Time Zone'
+vid: time_zone
+description: ''
+weight: 0

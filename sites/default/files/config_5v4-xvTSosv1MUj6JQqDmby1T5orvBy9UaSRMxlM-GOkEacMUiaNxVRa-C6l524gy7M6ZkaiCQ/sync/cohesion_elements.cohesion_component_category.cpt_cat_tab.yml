@@ -1,0 +1,14 @@
+uuid: 68dabb0a-13fb-4c46-b64b-066bdc26f852
+langcode: en
+status: true
+dependencies: {  }
+label: 'TAB CONTAINER AND TABS'
+id: cpt_cat_tab
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-6
+weight: -5

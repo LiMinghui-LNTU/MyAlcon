@@ -1,0 +1,20 @@
+uuid: 17b0b188-d7bd-4802-b025-27e64f77b8dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.2d67a45d
+label: 'Gradient None'
+id: c36cf1ac
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"background-image-settings":[{"backgroundLayerType":{"value":"none"},"backgroundImageOrigin":{},"backgroundImageClip":{}}]}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"background","children":[{"formKey":"background-image-and-gradient","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"background-image-settings","active":true},{"name":"backgroundLayerType","active":true},{"name":"backgroundImage","active":true},{"name":"backgroundImageGradient","active":true},{"name":"imageStyle","active":true},{"name":"backgroundImageSize","active":true},{"name":"backgroundImageWidth","active":true},{"name":"backgroundImageHeight","active":true},{"name":"backgroundImageRepeat","active":true},{"name":"backgroundImageAttachment","active":true},{"name":"backgroundImagePositionX","active":true},{"name":"backgroundImagePositionXOffset","active":true},{"name":"backgroundImagePositionY","active":true},{"name":"backgroundImagePositionYOffset","active":true},{"name":"backgroundImageOrigin","active":false},{"name":"backgroundImageClip","active":false}]},{"formKey":"background-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"background-color","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-gradient-none
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-primary-gradient
+weight: 296

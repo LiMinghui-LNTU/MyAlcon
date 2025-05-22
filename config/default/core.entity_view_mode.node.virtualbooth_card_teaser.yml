@@ -1,0 +1,17 @@
+uuid: dc526557-e9be-48bf-a067-509b3b0e8523
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: V8WDG27UClqXfDvfEY9M3ARf7elyhONrv-P_dgiDwCw
+id: node.virtualbooth_card_teaser
+label: 'Virtual Booth Card teaser'
+description: ''
+targetEntityType: node
+cache: true

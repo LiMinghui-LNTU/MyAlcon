@@ -1,0 +1,18 @@
+uuid: da773133-ac10-42b9-a5c9-4fa5cd103dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.scheduled_transition_state
+field_name: scheduled_transition_state
+entity_type: node
+bundle: page
+label: 'Scheduled transition state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

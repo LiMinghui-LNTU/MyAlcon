@@ -1,0 +1,20 @@
+uuid: 5c80cd82-b971-4096-a91a-76f553a596f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_scss_variable.border-medium
+label: 'Border top medium'
+id: '01945343'
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Generic''.<\/div>\n\n<div class=\"coh-preview\">&nbsp;<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"border-top-width":{"value":"$border-medium"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"border-and-outline","children":[{"formKey":"border-width","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"border-width","active":false},{"name":"border-top-width","active":true},{"name":"border-bottom-width","active":false},{"name":"border-left-width","active":false},{"name":"border-right-width","active":false},{"name":"border-block-start-width","active":false},{"name":"border-block-end-width","active":false},{"name":"border-inline-start-width","active":false},{"name":"border-inline-end-width","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-border-top-medium
+custom_style_type: generic
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 219

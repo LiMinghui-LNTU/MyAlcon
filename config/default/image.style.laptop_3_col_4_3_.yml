@@ -1,0 +1,19 @@
+uuid: ec92be7a-0856-4871-821f-245bb753a573
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: uMRPkzrSun7gKKIT50LL1O10MHudK2NefETDXpbdy50
+name: laptop_3_col_4_3_
+label: 'Laptop 3 Col (4:3)'
+effects:
+  68cd3aca-738c-457e-a292-9d4852d10db5:
+    uuid: 68cd3aca-738c-457e-a292-9d4852d10db5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 216
+      height: 162
+      crop_type: focal_point

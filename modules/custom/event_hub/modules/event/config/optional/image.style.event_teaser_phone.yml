@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: event_teaser_phone
+label: 'Event Teaser Phone'
+effects:
+  97097450-fd9f-46a5-b840-2531f1ffac3b:
+    uuid: 97097450-fd9f-46a5-b840-2531f1ffac3b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 500
+      crop_type: focal_point

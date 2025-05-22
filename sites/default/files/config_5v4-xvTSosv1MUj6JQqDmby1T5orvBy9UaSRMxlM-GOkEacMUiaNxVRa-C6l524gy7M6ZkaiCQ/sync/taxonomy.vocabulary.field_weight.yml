@@ -1,0 +1,8 @@
+uuid: d8fa1e46-b190-42ea-a201-f792ca8d9329
+langcode: en
+status: true
+dependencies: {  }
+name: field_weight
+vid: field_weight
+description: ''
+weight: 0

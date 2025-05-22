@@ -1,0 +1,13 @@
+uuid: a7a09350-d8aa-43d8-83ec-ab768cb75783
+langcode: en
+status: true
+dependencies: {  }
+label: 'Freshlook Deep Purple'
+id: freshlook-deep-purple
+json_values: '{"link":true,"name":"Freshlook Deep Purple","uid":"freshlook-deep-purple","class":".coh-color-freshlook-deep-purple","variable":"$coh-color-freshlook-deep-purple","value":{"value":{"hex":"#640096","rgba":"rgba(100, 0, 150, 1)"}},"wysiwyg":false,"locked":true,"inuse":true,"tags":[{"label":"freshlook","value":"freshlook"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: true
+modified: true
+selectable: true
+weight: 25

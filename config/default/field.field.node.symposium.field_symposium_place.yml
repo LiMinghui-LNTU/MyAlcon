@@ -1,0 +1,24 @@
+uuid: e3321069-a05a-4cc5-8312-6cabdce2dd5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symposium_place
+    - node.type.symposium
+  module:
+    - text
+_core:
+  default_config_hash: fLbFI8yl4KMf8zrjBHnLhVhulYNh8ypoQ0NW5dtz1nE
+id: node.symposium.field_symposium_place
+field_name: field_symposium_place
+entity_type: node
+bundle: symposium
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

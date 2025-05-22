@@ -1,0 +1,55 @@
+uuid: ec7a75b6-5bd5-4838-b0c4-c0c0213bb997
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - filter.format.cohesion
+    - filter.format.dx8
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - filter
+    - layout_builder
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
+id: content_editor
+label: 内容编辑
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'configure any layout'
+  - 'create and edit custom blocks'
+  - 'create article content'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own files'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'use text format cohesion'
+  - 'use text format dx8'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

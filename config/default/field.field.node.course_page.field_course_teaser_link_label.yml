@@ -1,0 +1,24 @@
+uuid: 0e07cd05-d221-41a2-91d7-2107030d383f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_teaser_link_label
+    - node.type.course_page
+  module:
+    - text
+_core:
+  default_config_hash: SGh3yyAr7WigrQNogYb10tAUJ7Qaj_CYoRw9h3UEz44
+id: node.course_page.field_course_teaser_link_label
+field_name: field_course_teaser_link_label
+entity_type: node
+bundle: course_page
+label: 'Teaser link label'
+description: 'Text will display as View more button text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

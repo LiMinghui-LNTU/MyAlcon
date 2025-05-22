@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_place
+    - node.type.virtualbooth
+  module:
+    - text
+id: node.virtualbooth.field_virtualbooth_place
+field_name: field_virtualbooth_place
+entity_type: node
+bundle: virtualbooth
+label: Place
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

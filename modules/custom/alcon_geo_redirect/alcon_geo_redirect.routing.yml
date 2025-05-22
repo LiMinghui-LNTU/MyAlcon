@@ -1,0 +1,7 @@
+alcon_geo_redirect.admin:
+  path: '/admin/config/development/geo-redirect-script'
+  defaults:
+    _form: '\Drupal\alcon_geo_redirect\Form\HeaderForm'
+    _title: 'Geo Redirect Script Settings'
+  requirements:
+    _permission: 'alcon_geo_redirect_settings'

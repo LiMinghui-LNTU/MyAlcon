@@ -1,0 +1,20 @@
+uuid: a4196100-8bca-4c5e-b758-1e4cb15fc078
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part1
+label: 'DMB 5789 revert part1'
+description: 'DMB 5789 revert part1(cpt_a_hero_m1_txt_bkgrd_img)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "a5f65d6d-b415-40fa-8e66-fe74f6069679": {
+          "type": "cohesion_component",
+          "items": {
+              "a5f65d6d-b415-40fa-8e66-fe74f6069679": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

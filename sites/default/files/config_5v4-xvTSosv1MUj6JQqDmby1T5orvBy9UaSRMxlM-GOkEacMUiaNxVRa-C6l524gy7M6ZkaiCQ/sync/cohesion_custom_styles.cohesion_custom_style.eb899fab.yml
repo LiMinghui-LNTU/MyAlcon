@@ -1,0 +1,18 @@
+uuid: 6cd7e4f0-f5bc-43a6-9337-074330c2dc56
+langcode: en
+status: true
+dependencies: {  }
+label: 'Horizontal Position -left'
+id: eb899fab
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"flex-container":{"justify-content":{}},"position":{"value":"absolute"},"left":{"value":"10px"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"display","breakpoints":[],"activeFields":[]},{"formKey":"flex-container","breakpoints":[],"activeFields":[]},{"formKey":"position","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"position","active":true},{"name":"top","active":true},{"name":"bottom","active":true},{"name":"left","active":true},{"name":"right","active":true},{"name":"z-index","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-horizontal-position--left
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 98

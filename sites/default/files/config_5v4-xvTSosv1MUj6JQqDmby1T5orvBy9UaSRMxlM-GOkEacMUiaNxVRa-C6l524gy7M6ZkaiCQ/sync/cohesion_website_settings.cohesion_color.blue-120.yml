@@ -1,0 +1,13 @@
+uuid: d6b5c998-618d-4b3f-a7d4-e7cfce51a565
+langcode: en
+status: true
+dependencies: {  }
+label: 'Blue 120'
+id: blue-120
+json_values: '{"link":true,"value":{"value":{"hex":"#002362","rgba":"rgba(0, 35, 98, 1)"}},"name":"Blue 120","uid":"blue-120","class":".coh-color-blue-120","variable":"$coh-color-blue-120","inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 9

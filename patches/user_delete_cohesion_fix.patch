@@ -1,0 +1,22 @@
+diff --git a/modules/cohesion_elements/cohesion_elements.module b/modules/cohesion_elements/cohesion_elements.module
+index 5512152..6461603 100644
+--- a/modules/cohesion_elements/cohesion_elements.module
++++ b/modules/cohesion_elements/cohesion_elements.module
+@@ -630,7 +630,7 @@ function cohesion_elements_user_cancel($edit, $account, $method) {
+ 
+       // Unpublish component contents (current revisions).
+       \Drupal::moduleHandler()
+-        ->loadInclude('inc', 'cohesion_elements', 'cohesion_elements.admin');
++        ->loadInclude('cohesion_elements', 'inc', 'cohesion_elements.admin');
+       $component_content = \Drupal::entityQuery('component_content')
+         ->accessCheck(TRUE)
+         ->condition('uid', $account->id())
+@@ -644,7 +644,7 @@ function cohesion_elements_user_cancel($edit, $account, $method) {
+ 
+       // Anonymize component content (current revisions).
+       \Drupal::moduleHandler()
+-        ->loadInclude('inc', 'cohesion_elements', 'cohesion_elements.admin');
++        ->loadInclude('cohesion_elements', 'inc', 'cohesion_elements.admin');
+       $component_content = \Drupal::entityQuery('component_content')
+         ->accessCheck(TRUE)
+         ->condition('uid', $account->id())

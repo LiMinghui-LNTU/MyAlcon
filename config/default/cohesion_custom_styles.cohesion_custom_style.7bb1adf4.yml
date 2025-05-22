@@ -1,0 +1,20 @@
+uuid: caff8aad-e15c-4a7b-85dc-92a4bebeaca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_scss_variable.component-width-wide
+label: 'Max width - wide'
+id: 7bb1adf4
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"max-width":{"value":"100vw"},"min-width":{},"width":{"value":"$component-width-wide"}}},"41c24bfb-3749-4495-b327-6ab10c33d744":{"settings":{"element":".coh-row-xl","class":"","combinator":"","pseudo":""},"styles":{}},"da26fa58-97f5-43fb-9218-5f76ab6cf900":{"settings":{"element":".coh-row-inner","class":"","combinator":"","pseudo":""},"styles":{"xl":{"min-width":{"value":"80vw"}},"md":{"min-width":{"value":"78vw"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":".coh-row-xl","type":"container","items":[{"title":".coh-row-inner","type":"container","items":[],"form":null,"selectorType":"child","model":".coh-row-inner","uuid":"da26fa58-97f5-43fb-9218-5f76ab6cf900","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"layout","children":[{"formKey":"width","breakpoints":[{"name":"xl"},{"name":"md"}],"activeFields":[{"name":"min-width","active":true},{"name":"max-width","active":false},{"name":"width","active":false}]}]}]}],"form":null,"selectorType":"child","model":".coh-row-xl","uuid":"41c24bfb-3749-4495-b327-6ab10c33d744","allowedTypes":["child","pseudo","modifier"],"formDefinition":[]}],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"width","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":true},{"name":"width","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-max-width-wide
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 260

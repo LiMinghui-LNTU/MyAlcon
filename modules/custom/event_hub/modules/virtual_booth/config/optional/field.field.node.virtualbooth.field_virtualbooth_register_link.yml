@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_register_link
+    - node.type.virtualbooth
+  module:
+    - link
+id: node.virtualbooth.field_virtualbooth_register_link
+field_name: field_virtualbooth_register_link
+entity_type: node
+bundle: virtualbooth
+label: 'Register link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

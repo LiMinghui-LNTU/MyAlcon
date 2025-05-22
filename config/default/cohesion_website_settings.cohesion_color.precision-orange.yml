@@ -1,0 +1,13 @@
+uuid: 7d3c54f4-130a-4d94-9eb8-f097926c41e8
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Orange'
+id: precision-orange
+json_values: '{"link":true,"name":"PRECISION Orange","uid":"precision-orange","class":".coh-color-precision-orange","variable":"$coh-color-precision-orange","value":{"value":{"hex":"#db8a06","rgba":"rgba(219, 138, 6, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"secondary","value":"secondary"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 39

@@ -1,0 +1,22 @@
+uuid: d5364a9d-653b-4b1c-a1a2-6943163e1aaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: w9QP1W75wqxu5ArCS_4bu9RERak12Ybu-V8k3QTOflU
+id: node.field_symposium_moderator
+field_name: field_symposium_moderator
+entity_type: node
+type: text
+settings:
+  max_length: 60
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

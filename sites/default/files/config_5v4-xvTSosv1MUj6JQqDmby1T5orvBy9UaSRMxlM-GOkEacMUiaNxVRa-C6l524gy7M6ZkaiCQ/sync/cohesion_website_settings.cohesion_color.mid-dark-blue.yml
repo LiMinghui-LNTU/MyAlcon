@@ -1,0 +1,13 @@
+uuid: 95ed18d4-6b02-4261-8c20-f3c99849fb86
+langcode: en
+status: true
+dependencies: {  }
+label: 'Mid-Dark Blue'
+id: mid-dark-blue
+json_values: '{"link":true,"name":"Mid-Dark Blue","uid":"mid-dark-blue","class":".coh-color-mid-dark-blue","variable":"$coh-color-mid-dark-blue","value":{"value":{"hex":"#315798","rgba":"rgba(49, 87, 152, 1)"}},"wysiwyg":false,"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 61

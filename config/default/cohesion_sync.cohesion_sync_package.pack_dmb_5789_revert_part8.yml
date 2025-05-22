@@ -1,0 +1,20 @@
+uuid: 7a445225-b8cb-41ff-b83d-6dad04f27a28
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part8
+label: 'DMB-5789 revert part8'
+description: 'DMB-5789 revert part8(Text and Text (cpt_a_text_and_text))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "37ba5c02-798c-4ffe-bda8-0229a05bbf45": {
+          "type": "cohesion_component",
+          "items": {
+              "37ba5c02-798c-4ffe-bda8-0229a05bbf45": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

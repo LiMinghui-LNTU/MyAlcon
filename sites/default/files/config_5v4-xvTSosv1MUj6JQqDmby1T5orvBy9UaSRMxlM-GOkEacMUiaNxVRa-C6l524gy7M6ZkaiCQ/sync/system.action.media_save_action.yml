@@ -1,0 +1,13 @@
+uuid: 8d610c80-08c5-45a9-bf75-369d5227726d
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: VVyUA6PIaVeGtcIbgEWqJ6SYDiJdReBeojFswURFpKs
+id: media_save_action
+label: 保存媒体
+type: media
+plugin: 'entity:save_action:media'
+configuration: {  }

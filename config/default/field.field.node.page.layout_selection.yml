@@ -1,0 +1,21 @@
+uuid: 5915e643-5d89-4165-b9e9-0a696442e01f
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_selection
+    - node.type.page
+id: node.page.layout_selection
+field_name: layout_selection
+entity_type: node
+bundle: page
+label: 布局
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

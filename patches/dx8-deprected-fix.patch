@@ -1,0 +1,51 @@
+diff --git a/modules/cohesion_elements/src/Plugin/Field/FieldWidget/CohesionLayoutBuilderWidget.php b/modules/cohesion_elements/src/Plugin/Field/FieldWidget/CohesionLayoutBuilderWidget.php
+index d5c195e..71d140d 100644
+--- a/modules/cohesion_elements/src/Plugin/Field/FieldWidget/CohesionLayoutBuilderWidget.php
++++ b/modules/cohesion_elements/src/Plugin/Field/FieldWidget/CohesionLayoutBuilderWidget.php
+@@ -207,8 +207,8 @@ class CohesionLayoutBuilderWidget extends WidgetBase implements ContainerFactory
+     $element['target_id']['#canvas_name'] = $items->getName() . '_' . $delta;
+ 
+     $element['target_id'] += [
+-      '#json_values' => mb_strlen($layout_entity->json_values->value) ? $layout_entity->json_values->value : '{}',
+-      '#styles' => mb_strlen($layout_entity->styles->value) ? $layout_entity->styles->value : '/* */',
++      '#json_values' => ((!is_null($layout_entity->json_values->value)) && (mb_strlen($layout_entity->json_values->value))) ? $layout_entity->json_values->value : '{}',
++      '#styles' => ((!is_null($layout_entity->styles->value)) && (mb_strlen($layout_entity->styles->value))) ? $layout_entity->styles->value : '/* */',
+       '#template' => $layout_entity->template->value,
+       '#entity' => $layout_entity,
+       '#cohFormGroup' => $cohFormGroupId,
+diff --git a/src/LayoutCanvas/Element.php b/src/LayoutCanvas/Element.php
+index 7c04580..24263ac 100644
+--- a/src/LayoutCanvas/Element.php
++++ b/src/LayoutCanvas/Element.php
+@@ -281,6 +281,7 @@ class Element implements LayoutCanvasElementInterface, \JsonSerializable {
+   /**
+    * {@inheritdoc}
+    */
++  #[\ReturnTypeWillChange]
+   public function jsonSerialize() {
+     $json_obj = new \stdClass();
+     foreach ($this->element as $property_name => $property_value) {
+diff --git a/src/LayoutCanvas/ElementModel.php b/src/LayoutCanvas/ElementModel.php
+index c96500c..3b275cc 100644
+--- a/src/LayoutCanvas/ElementModel.php
++++ b/src/LayoutCanvas/ElementModel.php
+@@ -388,6 +388,7 @@ class ElementModel implements \JsonSerializable {
+   /**
+    * @inheritdoc
+    */
++  #[\ReturnTypeWillChange]
+   public function jsonSerialize() {
+     return $this->model;
+   }
+diff --git a/src/LayoutCanvas/LayoutCanvas.php b/src/LayoutCanvas/LayoutCanvas.php
+index fc956d1..3309cec 100644
+--- a/src/LayoutCanvas/LayoutCanvas.php
++++ b/src/LayoutCanvas/LayoutCanvas.php
+@@ -431,6 +431,7 @@ class LayoutCanvas implements LayoutCanvasElementInterface, \JsonSerializable {
+   /**
+    * @return array|\Drupal\cohesion\LayoutCanvas\Element[]|mixed
+    */
++  #[\ReturnTypeWillChange]
+   public function jsonSerialize() {
+     $canvas = ['canvas' => $this->canvasElements];
+     if (!is_null($this->componentFormElements)) {

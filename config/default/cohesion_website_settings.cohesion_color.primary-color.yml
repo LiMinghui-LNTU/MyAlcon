@@ -1,0 +1,13 @@
+uuid: f71be417-8a6c-4e35-8fcb-8d2e45a4a695
+langcode: en
+status: true
+dependencies: {  }
+label: Primary-Color
+id: primary-color
+json_values: '{"link":true,"value":{"value":{"hex":"#000619","rgba":"rgba(0, 6, 25, 1)"}},"wysiwyg":false,"name":"Primary-Color","uid":"primary-color","class":".coh-color-primary-color","variable":"$coh-color-primary-color","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 64

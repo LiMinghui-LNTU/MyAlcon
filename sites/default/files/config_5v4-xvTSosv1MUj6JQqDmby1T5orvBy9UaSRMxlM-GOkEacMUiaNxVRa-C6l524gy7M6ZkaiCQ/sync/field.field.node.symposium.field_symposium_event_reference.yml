@@ -1,0 +1,31 @@
+uuid: f6d15f7e-4c40-4b3d-9894-fe3869b115ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symposium_event_reference
+    - node.type.event
+    - node.type.symposium
+_core:
+  default_config_hash: 3c6UcDrKWN9uGMFRS65Wu573tBm97OYCg21h0dIOnb8
+id: node.symposium.field_symposium_event_reference
+field_name: field_symposium_event_reference
+entity_type: node
+bundle: symposium
+label: 'Event reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 304d6072-e3ce-44cc-8555-057eee0fb547
+langcode: zh-hans
+status: false
+dependencies: {  }
+label: '搜索结果高亮输入 (Node, Paragraphed article)'
+id: node_paragraphed_content_demo__0
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: paragraphed_content_demo
+view_mode: search_result
+master_template: ''

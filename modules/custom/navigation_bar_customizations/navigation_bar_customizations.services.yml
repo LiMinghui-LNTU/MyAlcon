@@ -1,0 +1,6 @@
+services:
+  navigation_bar_customizations.event_subscriber:
+    class: Drupal\navigation_bar_customizations\EventSubscriber\NavigationRedirectSubscriber
+    arguments: ['@current_user', '@module_handler']
+    tags:
+      - { name: event_subscriber }

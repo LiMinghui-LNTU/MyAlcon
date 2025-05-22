@@ -1,0 +1,4 @@
+alcon_geo_redirect_settings:
+  title: 'Add Geo Redirect Script all over the site'
+  description: 'Users who have this permission can add and remove the script from the site.'
+  restrict access: TRUE

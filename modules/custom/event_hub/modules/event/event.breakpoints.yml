@@ -1,0 +1,42 @@
+site_studio.event_hub.images.ps:
+  label: Phone images
+  mediaQuery: '(min-width: 320px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: site_studio.event_hub.images
+site_studio.event_hub.images.sm:
+  label: Phone Landscape images
+  mediaQuery: '(min-width: 560px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: site_studio.event_hub.images
+site_studio.event_hub.images.md:
+  label: Tablet images
+  mediaQuery: '(min-width: 768px)'
+  weight: 3
+  multipliers:
+    - 1x
+  group: site_studio.event_hub.images
+site_studio.event_hub.images.ls:
+  label: Laptop images
+  mediaQuery: '(min-width: 1024px)'
+  weight: 4
+  multipliers:
+    - 1x
+  group: site_studio.event_hub.images
+site_studio.event_hub.images.lg:
+  label: Desktop images
+  mediaQuery: '(min-width: 1170px)'
+  weight: 5
+  multipliers:
+    - 1x
+  group: site_studio.event_hub.images
+site_studio.event_hub.images.xl:
+  label: Wide Desktop images
+  mediaQuery: '(min-width: 1600px)'
+  weight: 6
+  multipliers:
+    - 1x
+  group: site_studio.event_hub.images

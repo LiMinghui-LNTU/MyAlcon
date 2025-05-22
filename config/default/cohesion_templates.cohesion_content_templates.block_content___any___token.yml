@@ -1,0 +1,18 @@
+uuid: 393999a5-473b-48ce-ba14-322ccce0acac
+langcode: en
+status: false
+dependencies: {  }
+label: 'Token (Block_content)'
+id: block_content___any___token
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: block_content
+bundle: __any__
+view_mode: token
+master_template: ''

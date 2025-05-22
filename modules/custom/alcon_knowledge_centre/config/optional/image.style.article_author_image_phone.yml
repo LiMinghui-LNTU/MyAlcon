@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_author_image_phone
+label: 'Article Author Image - Phone'
+effects:
+  f51651b8-cc65-4a7f-a210-8a9a6837a007:
+    uuid: f51651b8-cc65-4a7f-a210-8a9a6837a007
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 96
+      height: 96
+      crop_type: focal_point

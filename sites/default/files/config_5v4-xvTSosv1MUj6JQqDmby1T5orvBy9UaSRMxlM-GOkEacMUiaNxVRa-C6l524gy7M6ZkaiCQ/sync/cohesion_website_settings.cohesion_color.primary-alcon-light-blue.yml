@@ -1,0 +1,13 @@
+uuid: 798d2bb5-07bd-42ce-a2da-bcf79eb86076
+langcode: en
+status: true
+dependencies: {  }
+label: 'Primary / Alcon Light Blue'
+id: primary-alcon-light-blue
+json_values: '{"link":true,"name":"Primary \/ Alcon Light Blue","uid":"primary-alcon-light-blue","class":".coh-color-primary-alcon-light-blue","variable":"$coh-color-primary-alcon-light-blue","value":{"value":{"hex":"#e5f5ff","rgba":"rgba(229, 245, 255, 1)"}},"inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 3

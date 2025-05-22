@@ -1,0 +1,9 @@
+uuid: 070159a7-b515-4359-ae8f-04a3505da0e7
+langcode: en
+status: true
+dependencies: {  }
+id: pack_event_hub_sprint_2_helpers
+label: 'Event Hub - Sprint 2 Helpers'
+description: ''
+excluded_entity_types: '[]'
+settings: '{"766af584-5361-4c4d-a918-0d4508d911c5":{"type":"cohesion_helper","items":{"766af584-5361-4c4d-a918-0d4508d911c5":{"type":"cohesion_helper"},"b6f838b6-8f57-4428-91f3-7d5c4c855f18":{"type":"file"},"4016bdab-dbc4-414a-9f56-0c20e7c29f9c":{"type":"file"}},"checked":true},"8cedec74-9f12-4273-972f-8ee8d7a4db09":{"type":"cohesion_helper","items":{"8cedec74-9f12-4273-972f-8ee8d7a4db09":{"type":"cohesion_helper"},"4016bdab-dbc4-414a-9f56-0c20e7c29f9c":{"type":"file"},"b6f838b6-8f57-4428-91f3-7d5c4c855f18":{"type":"file"}},"checked":true}}'

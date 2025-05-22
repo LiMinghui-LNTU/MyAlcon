@@ -1,0 +1,22 @@
+uuid: 7e5bc694-e8c7-4c74-97c7-21eac58235d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: ka-_y68SiQ0gV7GXwjxFdkr5XnSdKF3M_SsJg9UrCGc
+id: node.field_event_place
+field_name: field_event_place
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

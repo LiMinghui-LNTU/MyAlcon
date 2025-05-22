@@ -1,0 +1,30 @@
+uuid: fb4bde5d-14fb-462d-b206-9621d77922a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.level1-events-
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: level1events
+theme: cohesion_theme
+region: dx8_hidden
+weight: 10
+provider: null
+plugin: 'system_menu_block:level1-events-'
+settings:
+  id: 'system_menu_block:level1-events-'
+  label: 'Level1 (Events)'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

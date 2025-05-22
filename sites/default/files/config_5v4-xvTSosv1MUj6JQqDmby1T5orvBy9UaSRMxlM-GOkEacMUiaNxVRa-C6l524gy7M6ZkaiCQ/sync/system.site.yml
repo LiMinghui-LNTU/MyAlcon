@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: zh-hans
+uuid: fa7e9c29-f5b1-44d9-a122-722e80b99aa9
+name: Myalcon
+mail: yuntao.qi@alcon.cn
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1622
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: zh-hans
+mail_notification: ''

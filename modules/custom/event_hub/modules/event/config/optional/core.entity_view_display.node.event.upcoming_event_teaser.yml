@@ -1,0 +1,106 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.upcoming_event_teaser
+    - field.field.node.event.field_event_description
+    - field.field.node.event.field_event_end_date
+    - field.field.node.event.field_event_extended_name
+    - field.field.node.event.field_event_featured
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_meta_tags
+    - field.field.node.event.field_event_place
+    - field.field.node.event.field_event_register_link
+    - field.field.node.event.field_event_short_name
+    - field.field.node.event.field_event_start_date
+    - field.field.node.event.field_event_teaser_image
+    - field.field.node.event.field_event_weight
+    - field.field.node.event.field_layout_canvas_event_page
+    - field.field.node.event.field_template_selector_event
+    - image.style.upcoming_event_teaser
+    - node.type.event
+  module:
+    - datetime
+    - layout_builder
+    - link
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.event.upcoming_event_teaser
+targetEntityType: node
+bundle: event
+mode: upcoming_event_teaser
+content:
+  field_event_location:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_event_place:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_event_register_link:
+    type: link
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_event_short_name:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_event_start_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_event_teaser_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: upcoming_event_teaser
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_event_description: true
+  field_event_end_date: true
+  field_event_extended_name: true
+  field_event_featured: true
+  field_event_meta_tags: true
+  field_event_weight: true
+  field_layout_canvas_event_page: true
+  field_template_selector_event: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

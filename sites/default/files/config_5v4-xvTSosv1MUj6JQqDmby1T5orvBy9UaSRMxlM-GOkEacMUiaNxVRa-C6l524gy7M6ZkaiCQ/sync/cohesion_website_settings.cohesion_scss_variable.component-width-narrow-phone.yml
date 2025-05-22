@@ -1,0 +1,13 @@
+uuid: e758de83-88fe-4c2b-aa53-c602688efe85
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: component-width-narrow-phone
+json_values: '{"uid":"component-width-narrow-phone","value":"100%","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 11

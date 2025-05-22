@@ -1,0 +1,14 @@
+uuid: fa3ecd29-27a3-4a9c-b65f-fb07f09ff252
+langcode: zh-hans
+status: true
+dependencies:
+  enforced:
+    module:
+      - entity_browser_example
+name: 'Entity browser test'
+type: entity_browser_test
+description: 'Testing entity browser.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

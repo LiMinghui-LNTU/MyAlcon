@@ -1,0 +1,12 @@
+elements: |
+  FIRSTNAME:
+    '#title': 名
+    '#placeholder': 请输入
+  LASTNAME:
+    '#title': 姓
+    '#placeholder': 请输入
+  email:
+    '#title': 邮箱
+    '#placeholder': 请输入
+  country:
+    '#title': 国家

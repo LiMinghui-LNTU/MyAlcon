@@ -1,0 +1,33 @@
+uuid: 4bbc2157-a5c8-474a-b53f-b1a96346ae1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_elements.cohesion_component.cpt_a_header_nav_country_lan
+    - cohesion_elements.cohesion_component.cpt_a_header_nav_country_lan_sel
+    - cohesion_elements.cohesion_component.cpt_a_header_supernav_l1
+    - cohesion_elements.cohesion_component.cpt_a_text_and_text
+    - cohesion_elements.cohesion_component_category.cpt_cat_template
+    - cohesion_website_settings.cohesion_color.freshlook-off-white
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+    - cohesion_website_settings.cohesion_color.white
+  content:
+    - 'component_content:component_content:07c0e402-9238-4256-aac9-bc8dbd38835f'
+    - 'component_content:component_content:35f2e047-2b9e-4f0a-b113-00cd4159021d'
+    - 'component_content:component_content:ba322260-fa66-4036-b401-402b20582869'
+    - 'file:file:5703a486-dc7a-43fb-9c18-258de911e6d4'
+label: 'Template - header(Professional)'
+id: cpt_template_header_professional
+json_values: '{"canvas":[{"uid":"cc_07c0e402-9238-4256-aac9-bc8dbd38835f","type":"component","title":"New Supernav L1 & Supernav L! (Proffesional)-Test","enabled":true,"category":"category-10","componentId":"cpt_a_header_supernav_l1","componentType":"container","parentUid":"root","uuid":"a8a16ebb-0ce8-4692-94ba-7e81ca5c885f","componentContentId":"cc_07c0e402-9238-4256-aac9-bc8dbd38835f","url":"\/admin\/cohesion\/components\/component_contents\/146","children":[]},{"uid":"cc_35f2e047-2b9e-4f0a-b113-00cd4159021d","type":"component","title":"Header Super Nav - Country & language prompt","enabled":true,"category":"category-10","componentId":"cpt_a_header_nav_country_lan","componentType":"container","uuid":"929ea0a8-8143-4bf9-99c0-f8f5da8c013b","parentUid":"root","componentContentId":"cc_35f2e047-2b9e-4f0a-b113-00cd4159021d","url":"\/admin\/cohesion\/components\/component_contents\/151","children":[]},{"uid":"cpt_a_header_nav_country_lan_sel","type":"component","title":"Header  Super Nav - Country & language selector","enabled":true,"category":"category-10","componentId":"cpt_a_header_nav_country_lan_sel","componentType":"container","uuid":"aee50257-2678-47a6-842e-feb2a311197b","parentUid":"root","status":{"collapsed":false},"children":[{"type":"container","uid":"component-drop-zone","mimicParent":true,"parentUid":"cpt_a_header_nav_country_lan_sel","title":"Component drop zone","selected":false,"status":{"collapsed":false,"disabled":false},"uuid":"eaac7f88-9d4b-496d-9350-626df05e8489","dropzoneId":"6de6ba1c-ab87-4263-8f18-839176f8ae18","children":[{"uid":"cc_ba322260-fa66-4036-b401-402b20582869","type":"component","title":"Text and Text","enabled":true,"category":"category-2","componentId":"cpt_a_text_and_text","componentType":"container","uuid":"a6cf8586-ee92-465d-8536-8003792aeba2","parentUid":"component-drop-zone","componentContentId":"cc_ba322260-fa66-4036-b401-402b20582869","url":"\/admin\/cohesion\/components\/component_contents\/156","children":[]}]}]}],"componentForm":[],"mapper":{},"model":{"aee50257-2678-47a6-842e-feb2a311197b":{"9c25b20b-3a56-4000-ad89-71c98177439d":"MyAlcon | Country","54cf0e56-8ddc-4a0b-a6f9-3b0b3a5a1e97":"This page is available in English. Select below for other countries.","8855a66b-5501-4a9d-84b3-0e5267d63fcd":{"value":{"hex":"#232323","rgba":"rgba(35, 35, 35, 1)"}},"1bbfd502-aae8-4c5f-9f07-5acc66ecde7a":{"value":{"hex":"#232323","rgba":"rgba(35, 35, 35, 1)"}},"46ed7ecc-38ab-46aa-83ab-787f96855a55":{"link":true,"name":"Freshlook Off White","uid":"freshlook-off-white","class":".coh-color-freshlook-off-white","variable":"$coh-color-freshlook-off-white","value":{"hex":"#f8f6f0","rgba":"rgba(248, 246, 240, 1)"},"wysiwyg":true,"locked":true,"inuse":true,"tags":["Freshlook"]},"c3d0bb35-2a40-4a91-9b2e-5e566f34d29d":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"4644cb3d-22af-453c-b514-5403d1b91ae2":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true},"0bdca0a5-6473-4c87-a36e-e2619be6e948":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true},"be0a92c4-28df-41f8-907e-8c720e40717e":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"d367b7fe-43d1-46a4-9d25-3b5c40a41d1a":{"value":{"hex":"#e5f5ff","rgba":"rgba(229, 245, 255, 1)"}},"settings":{"title":"Header  Super Nav - Country & language selector"}},"eaac7f88-9d4b-496d-9350-626df05e8489":{"settings":{"title":"Country Site Details (Use Text o& Text and Text Component","dropzoneHideSelector":""}}},"previewModel":{"a8a16ebb-0ce8-4692-94ba-7e81ca5c885f":{},"929ea0a8-8143-4bf9-99c0-f8f5da8c013b":{},"aee50257-2678-47a6-842e-feb2a311197b":{},"a6cf8586-ee92-465d-8536-8003792aeba2":{}},"variableFields":{"a8a16ebb-0ce8-4692-94ba-7e81ca5c885f":[],"929ea0a8-8143-4bf9-99c0-f8f5da8c013b":[],"aee50257-2678-47a6-842e-feb2a311197b":[],"a6cf8586-ee92-465d-8536-8003792aeba2":[]},"meta":{"fieldHistory":[]}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: cpt_cat_template
+preview_image: 'public://cohesion/element-preview-images/Template - header.png'
+has_quick_edit: false
+entity_type_access: {  }
+bundle_access: {  }
+twig_template: component--cohesion-cpt-template-header-professional
+weight: 49

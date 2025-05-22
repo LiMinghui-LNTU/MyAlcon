@@ -1,0 +1,25 @@
+uuid: 8a2bd0bd-41c3-4eae-89db-8cebf0b0f4bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_selector_event
+    - node.type.event
+  module:
+    - cohesion_templates
+_core:
+  default_config_hash: NpIhOeQapaJ_lVeM_55x57UThjDZ48x7cEJ6dFEWIMI
+id: node.event.field_template_selector_event
+field_name: field_template_selector_event
+entity_type: node
+bundle: event
+label: 'Template Selector'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: ctn_tpl_blank_template_event
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

@@ -1,0 +1,18 @@
+uuid: 899915f0-f6d2-4003-b37f-9abbcf8809b0
+langcode: en
+status: true
+dependencies: {  }
+label: 'AVS Blue'
+id: e72ec61f
+json_values: '{"preview":{"text":"<p class=\"coh-preview\">Default content for ''Paragraph''.<\/p>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"p"},"styles":{"xl":{"color":{"value":{"value":{"hex":"#0432f0","rgba":"rgba(4, 50, 240, 1)"}}}}}},"previewModel":{},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Default","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]}],"items":[]}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-avs-blue
+custom_style_type: paragraph
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: true
+parent: null
+weight: 0

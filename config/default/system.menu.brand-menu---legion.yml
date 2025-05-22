@@ -1,0 +1,8 @@
+uuid: 0ffcd2ed-3627-4a6c-9b6c-a8e70baad849
+langcode: en
+status: true
+dependencies: {  }
+id: brand-menu---legion
+label: 'Brand Menu - Legion'
+description: ''
+locked: false

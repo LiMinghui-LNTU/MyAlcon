@@ -1,0 +1,123 @@
+{% set coh_instance_class %}{{ coh_instanceid() }}{% endset %}{{ attach_library('cohesion/global_libraries.responsiveJs') }} {{ attach_library('cohesion/global_libraries.windowscroll') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/global_libraries.matchHeight') }} {{ attach_library('cohesion/global_libraries.parallax_scrolling') }} {{ attach_library('cohesion/global_libraries.cohMatchHeights') }} {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container ssa-component coh-component ssa-component-instance-{{componentUuid}} coh-component-instance-{{componentUuid}} coh-style-a-other-country-selector" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container other-country-selector-BG language-prompt-close" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container other-country-selector-box {{ coh_instance_class }} coh-ce-cpt_a_header_nav_country_lan_sel-e4a595a2" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button coh-ce-cpt_a_header_nav_country_lan_sel-fa2daa6c coh-interaction" title="Close window" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;toggle-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;modifierName&quot;:&quot;language-prompt-close language-prompt-open&quot;,&quot;interactionTarget&quot;:&quot;.other-country-selector-BG&quot;}]" aria-label="Close window" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> </button> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_a_header_nav_country_lan_sel-37983608" > <h2 class="coh-heading site-name {{ coh_instance_class }} coh-ce-cpt_a_header_nav_country_lan_sel-76d79a45" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('9c25b20b-3a56-4000-ad89-71c98177439d', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("9c25b20b-3a56-4000-ad89-71c98177439d") | raw }} </h2> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container {{ coh_instance_class }} coh-ce-cpt_a_header_nav_country_lan_sel-aa66a739" > {% set inlineElementContent %}{{ getComponentFieldValue("54cf0e56-8ddc-4a0b-a6f9-3b0b3a5a1e97") | raw }}{% endset %} <span class="coh-inline-element language-text {{ coh_instance_class }} coh-ce-cpt_a_header_nav_country_lan_sel-8acef525"> {{- inlineElementContent -}} </span> {% set block_name %}languageswitcher_2{% endset %} <div class="coh-block {{ coh_instance_class }} coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d"> {{ drupal_block(block_name) }} </div> </div> </div> {{ getComponentFieldValue("6de6ba1c-ab87-4263-8f18-839176f8ae18") }} </div> </div> </div> 
+{% set compiledCSS %}<style>{% if getComponentFieldValue("46ed7ecc-38ab-46aa-83ab-787f96855a55") is not empty %}.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-e4a595a2 {
+{% if getComponentFieldValue("46ed7ecc-38ab-46aa-83ab-787f96855a55") is not empty %}   {% if getComponentFieldValue("46ed7ecc-38ab-46aa-83ab-787f96855a55") is not empty %} background-color: {{ getComponentFieldValue("46ed7ecc-38ab-46aa-83ab-787f96855a55") | raw }};{% endif %}{% endif %}
+}{% endif %}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-76d79a45 {
+  max-width: 50%;
+  width: 50%;
+  height: auto;
+{% if getComponentFieldValue("8855a66b-5501-4a9d-84b3-0e5267d63fcd") is not empty %}   {% if getComponentFieldValue("8855a66b-5501-4a9d-84b3-0e5267d63fcd") is not empty %} color: {{ getComponentFieldValue("8855a66b-5501-4a9d-84b3-0e5267d63fcd") | raw }};{% endif %}{% endif %}
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-76d79a45 {
+    max-width: 40%;
+    width: 40%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-76d79a45 {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-aa66a739 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 50%;
+  width: 50%;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+{% if getComponentFieldValue("d367b7fe-43d1-46a4-9d25-3b5c40a41d1a") is not empty %}   {% if getComponentFieldValue("d367b7fe-43d1-46a4-9d25-3b5c40a41d1a") is not empty %} background-color: {{ getComponentFieldValue("d367b7fe-43d1-46a4-9d25-3b5c40a41d1a") | raw }};{% endif %}{% endif %}
+  padding: 20px;
+  height: auto;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-aa66a739 {
+    padding: 10px;
+    max-width: 60%;
+    width: 60%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-aa66a739 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    margin-top: 10px;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-8acef525 {
+{% if getComponentFieldValue("1bbfd502-aae8-4c5f-9f07-5acc66ecde7a") is not empty %}   {% if getComponentFieldValue("1bbfd502-aae8-4c5f-9f07-5acc66ecde7a") is not empty %} color: {{ getComponentFieldValue("1bbfd502-aae8-4c5f-9f07-5acc66ecde7a") | raw }};{% endif %}{% endif %}
+  max-width: 40%;
+  width: 40%;
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-8acef525 {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d {
+  max-width: 60%;
+  width: 60%;
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d .links .language-link {
+{% if getComponentFieldValue("c3d0bb35-2a40-4a91-9b2e-5e566f34d29d") is not empty %}   {% if getComponentFieldValue("c3d0bb35-2a40-4a91-9b2e-5e566f34d29d") is not empty %} color: {{ getComponentFieldValue("c3d0bb35-2a40-4a91-9b2e-5e566f34d29d") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("4644cb3d-22af-453c-b514-5403d1b91ae2") is not empty %}   {% if getComponentFieldValue("4644cb3d-22af-453c-b514-5403d1b91ae2") is not empty %} background-color: {{ getComponentFieldValue("4644cb3d-22af-453c-b514-5403d1b91ae2") | raw }};{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d .links .language-link:hover {
+{% if getComponentFieldValue("0bdca0a5-6473-4c87-a36e-e2619be6e948") is not empty %} {% if getComponentFieldValue("0bdca0a5-6473-4c87-a36e-e2619be6e948") is not empty %}   {% if getComponentFieldValue("0bdca0a5-6473-4c87-a36e-e2619be6e948") is not empty %} color: {{ getComponentFieldValue("0bdca0a5-6473-4c87-a36e-e2619be6e948") | raw }};{% endif %}{% endif %}{% endif %}
+{% if getComponentFieldValue("be0a92c4-28df-41f8-907e-8c720e40717e") is not empty %} {% if getComponentFieldValue("be0a92c4-28df-41f8-907e-8c720e40717e") is not empty %}   {% if getComponentFieldValue("be0a92c4-28df-41f8-907e-8c720e40717e") is not empty %} background-color: {{ getComponentFieldValue("be0a92c4-28df-41f8-907e-8c720e40717e") | raw }};{% endif %}{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d .links li {
+  margin-right: 10px;
+  margin-left: 10px;
+  list-style-type: none;
+  list-style-type: none;
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d .links li {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_a_header_nav_country_lan_sel-21eb0a0d .links .is-active {
+  {% if getComponentFieldValue("0bdca0a5-6473-4c87-a36e-e2619be6e948") is not empty %} color: {{ getComponentFieldValue("0bdca0a5-6473-4c87-a36e-e2619be6e948") | raw }};{% endif %}
+  {% if getComponentFieldValue("be0a92c4-28df-41f8-907e-8c720e40717e") is not empty %} background-color: {{ getComponentFieldValue("be0a92c4-28df-41f8-907e-8c720e40717e") | raw }};{% endif %}
+}
+</style>{% endset %}{{ renderInlineStyle(compiledCSS) | raw }}

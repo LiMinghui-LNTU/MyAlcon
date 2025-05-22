@@ -1,0 +1,20 @@
+uuid: 9e4ac464-f72a-4137-9856-b5f45f0791a1
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - color_field
+    - taxonomy
+id: taxonomy_term.field_category_color
+field_name: field_category_color
+entity_type: taxonomy_term
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

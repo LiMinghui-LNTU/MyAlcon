@@ -1,0 +1,13 @@
+uuid: b260d11a-cd91-4543-86d3-382eb6e23428
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2B9uF8NL5gutNKSdPRAhhAsDWFZZG1PJOBmx0aBGd_0
+id: node_publish_action
+label: 发布内容
+type: node
+plugin: 'entity:publish_action:node'
+configuration: {  }

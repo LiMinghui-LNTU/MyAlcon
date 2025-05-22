@@ -1,0 +1,25 @@
+uuid: 157d88c2-0369-4dc3-a2ac-b573d24bcd9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_template_selector
+    - node.type.course_page
+  module:
+    - cohesion_templates
+_core:
+  default_config_hash: 0PSUY7WmylSLVOnVNeHuGr4PCHg635DkhAIDECA40p0
+id: node.course_page.field_course_template_selector
+field_name: field_course_template_selector
+entity_type: node
+bundle: course_page
+label: 'Template selector'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: __default__
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

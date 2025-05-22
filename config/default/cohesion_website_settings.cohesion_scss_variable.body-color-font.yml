@@ -1,0 +1,13 @@
+uuid: d9e5d838-821f-45ee-932b-ae7c7fdb2334
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: body-color-font
+json_values: '{"uid":"body-color-font","value":"#003595","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 3

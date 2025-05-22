@@ -1,0 +1,206 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Event module.
+ */
+
+use Drupal\node\Entity\NodeType;
+use Drupal\Core\Entity\Entity\EntityViewMode;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\responsive_image\Entity\ResponsiveImageStyle;
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_install().
+ */
+function event_install() {
+  // Remove user roles.
+  $user_roles_removal_array = [
+    'event_creator',
+    'event_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create event content',
+      'delete any event content',
+      'delete own event content',
+      'delete event revisions',
+      'edit any event content',
+      'edit own event content',
+      'revert event revisions',
+      'view event revisions',
+      'translate event node',
+      'use text format mini_rich_text',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+    'content_editor' => [
+      'translate event node',
+      'use text format mini_rich_text',
+      'edit any event content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+  ];
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+
+  $block_ids_array = [
+    'views_block__events_featured_events_block' => 'views_block:events-featured_events_block',
+    'views_block__events_upcoming_events_hp_block' => 'views_block:events-upcoming_events_hp_block',
+    'views_block__events_upcoming_events_page_block' => 'views_block:events-upcoming_events_page_block',
+    'views_block__events_recent_events_block' => 'views_block:events-recent_events_block',
+    'views_block__events_browse_past_events_block' => 'views_block:events-browse_past_events_block',
+  ];
+  place_view_blocks($block_ids_array);
+}
+
+/**
+ * Update module's configs, user permissions.
+ */
+function event_update_9001() {
+  update_module_configs('event');
+  // Remove user roles.
+  $user_roles_removal_array = [
+    'event_creator',
+    'event_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create event content',
+      'delete any event content',
+      'delete own event content',
+      'delete event revisions',
+      'edit any event content',
+      'edit own event content',
+      'revert event revisions',
+      'view event revisions',
+      'translate event node',
+      'use text format mini_rich_text',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+    'content_editor' => [
+      'translate event node',
+      'use text format mini_rich_text',
+      'edit any event content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+  ];
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+
+  $block_ids_array = [
+    'views_block__events_featured_events_block' => 'views_block:events-featured_events_block',
+    'views_block__events_upcoming_events_hp_block' => 'views_block:events-upcoming_events_hp_block',
+    'views_block__events_upcoming_events_page_block' => 'views_block:events-upcoming_events_page_block',
+    'views_block__events_recent_events_block' => 'views_block:events-recent_events_block',
+    'views_block__events_browse_past_events_block' => 'views_block:events-browse_past_events_block',
+  ];
+  place_view_blocks($block_ids_array);
+}
+
+/**
+ * Update module's configs.
+ */
+function event_update_9002() {
+  update_module_configs('event');
+}
+
+/**
+ * Update module's configs.
+ */
+function event_update_9003() {
+  update_module_configs('event');
+}
+
+/**
+ * Update Events View.
+ */
+function event_update_9004() {
+  update_module_configs('event');
+}
+
+/**
+ * Added filter by date for Featured Events view.
+ */
+function event_update_9005() {
+  update_module_configs('event');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function event_uninstall() {
+  // Remove Event page node type.
+  if ($event_node_type = NodeType::load('event')) {
+    $event_node_type->delete();
+  }
+
+  // Remove Events view.
+  if ($events_view = \Drupal::service('config.factory')->getEditable('views.view.events')) {
+    $events_view->delete();
+  }
+
+  // Remove View Mode.
+  if ($view_mode = EntityViewMode::load('node.upcoming_event_teaser')) {
+    $view_mode->delete();
+  }
+
+  // Remove Image Styles.
+  $image_styles = [
+    'upcoming_event_teaser',
+    'event_teaser_desktop',
+    'event_teaser_phone',
+  ];
+  foreach ($image_styles as $image_style_name) {
+    if ($image_style = ImageStyle::load($image_style_name)) {
+      $image_style->delete();
+    }
+  }
+
+  // Remove Responsive Image Styles.
+  $responsive_image_styles = [
+    'event_teaser_image_style',
+  ];
+  foreach ($responsive_image_styles as $ris_name) {
+    if ($responsive_image_style = ResponsiveImageStyle::load($ris_name)) {
+      $responsive_image_style->delete();
+    }
+  }
+}

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bypass_symposium_detail
+    - node.type.symposium
+id: node.symposium.field_bypass_symposium_detail
+field_name: field_bypass_symposium_detail
+entity_type: node
+bundle: symposium
+label: 'Bypass Symposium detail page'
+description: 'When checked, the Symposium teaser will show the Register/Watch link instead of the link to the Symposium detail page.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

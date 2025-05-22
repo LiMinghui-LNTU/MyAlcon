@@ -1,0 +1,18 @@
+uuid: 99fdb97d-4d24-486d-b7d5-45b308abe023
+langcode: en
+status: false
+dependencies: {  }
+label: 'Embedded (Media, Instagram)'
+id: media_instagram_embedded
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: instagram
+view_mode: embedded
+master_template: ''

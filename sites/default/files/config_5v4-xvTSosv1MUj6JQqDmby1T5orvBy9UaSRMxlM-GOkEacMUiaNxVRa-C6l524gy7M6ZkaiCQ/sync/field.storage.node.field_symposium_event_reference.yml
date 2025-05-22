@@ -1,0 +1,21 @@
+uuid: 1dec94c5-4270-4d03-a8ad-3d3d8efdbc0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: f0IZDHzSeqTkEQwMXpGE7jzL2tlObmG5NqfYVorkpmk
+id: node.field_symposium_event_reference
+field_name: field_symposium_event_reference
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+salesforce_integration.admin_config_salesforce:
+  title: Salesforce
+  route_name: salesforce_integration.settings
+  parent: system.admin_config
+  description: 'Manage salesforce API settings'
+  weight: 6
+  
+salesforce_integration.settings:
+  title: 'Salesforce Configuration'
+  parent: salesforce.admin_config_salesforce
+  description: 'Configure Salesforce API settings'
+  route_name: salesforce_integration.settings
+
+webtocase_integration.admin_config_salesforce:
+  title: webtocase
+  route_name: webtocase_integration.settings
+  parent: system.admin_config
+  description: 'Manage webtocase salesforce API settings'
+  weight: 7
+
+marketingcloud_integration.admin_config_salesforce:
+  title: Marketing Cloud configuration
+  route_name: marketingcloud_integration.settings
+  parent: system.admin_config
+  description: 'Manage marketing cloud API settings'
+  weight: 8

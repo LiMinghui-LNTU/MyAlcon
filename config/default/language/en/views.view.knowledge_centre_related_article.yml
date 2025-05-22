@@ -1,0 +1,79 @@
+label: 'Knowledge Centre Related Article'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Related Article'
+      fields:
+        field_teaser_image:
+          separator: ', '
+        tid:
+          separator: ', '
+        field_category:
+          separator: ', '
+        field_category_color:
+          settings:
+            selector: 'body .related-article--category-[term:tid]'
+            property: background-color
+          separator: ', '
+        field_category_font_color:
+          alter:
+            text: '{{ field_category_font_color__color }}'
+          settings:
+            selector: 'body .related-article--category-[term:tid]'
+            property: color
+          separator: ', '
+        tid_1:
+          separator: ', '
+        field_article_category_professio:
+          separator: ', '
+        field_category_color_1:
+          settings:
+            selector: 'body .related-article--prof-category-[term:tid]'
+            property: background-color
+          separator: ', '
+        field_category_font_color_1:
+          settings:
+            selector: 'body .related-article--prof-category-[term:tid]'
+            property: color
+          separator: ', '
+        field_article_title:
+          alter:
+            text: '<h3 class="related-article--title">{{ field_article_title }}</h3>'
+          separator: ', '
+        field_article_authored_by:
+          separator: ', '
+        field_article_authored_on:
+          alter:
+            text: '<div class="related-article--author">{{ field_article_authored_by }} . {{ field_article_authored_on }}</div>'
+          settings:
+            date_format: 'F j, Y'
+          separator: ', '
+        field_time_to_read:
+          alter:
+            text: '<div class="related-article--read-time">{{ field_time_to_read }}</div>'
+          separator: ', '
+        nothing:
+          alter:
+            text: "<div class=\"article--inner-container\">\r\n  {{ field_article_title }}\r\n  {{ field_article_authored_on }}\r\n  {{ field_time_to_read }} \r\n</div>"
+        view_node:
+          text: 'Read More'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      arguments:
+        nid:
+          exception:
+            title: All
+      header:
+        area:
+          content:
+            value: ' <h3 class="lobby-related-article--title">Related Articles<h3>'
+  kc_related_article:
+    display_title: 'KC Related Article Block'
+    display_options:
+      block_description: 'KC Related Article Block'

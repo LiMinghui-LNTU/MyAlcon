@@ -1,0 +1,715 @@
+uuid: 34170368-1b23-412f-8c19-0a401f0a260b
+langcode: en
+status: open
+dependencies:
+  module:
+    - salesforce_integration
+weight: 0
+open: null
+close: null
+uid: 556
+template: false
+archive: false
+id: aec_registration_form
+title: 'AEC Registration form'
+description: ''
+categories:
+  - 'Marketing cloud'
+elements: |-
+  processed_text:
+    '#type': processed_text
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    '#text': '<h2>YOUR CONTACT INFORMATION</h2>'
+    '#format': cohesion
+  FIRSTNAME:
+    '#type': textfield
+    '#title': 'First Name'
+    '#title_display': before
+    '#maxlength': 50
+    '#size': 50
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  LASTNAME:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#title_display': before
+    '#maxlength': 50
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  Email:
+    '#type': email
+    '#title': Email
+    '#title_display': before
+    '#maxlength': 254
+    '#required': true
+    '#required_error': 'This is a required field'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  PHONE:
+    '#type': tel
+    '#title': 'Phone Number'
+    '#maxlength': 50
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  country:
+    '#type': webform_address
+    '#title': Country
+    '#required': true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    '#address__access': false
+    '#address_2__access': false
+    '#city__access': false
+    '#state_province__access': false
+    '#postal_code__access': false
+    '#country__title_display': before
+    '#country__required': true
+  CLINIC_PRACTICE:
+    '#type': textfield
+    '#title': 'Clinic / Practice Name'
+    '#title_display': before
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  ADDRESS:
+    '#type': textfield
+    '#title': Address
+    '#title_display': before
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  City:
+    '#type': textfield
+    '#title': City
+    '#title_display': before
+    '#maxlength': 50
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    '#required': true
+  MAIN_SPECIALITY:
+    '#type': select
+    '#title': 'Main Specialty'
+    '#title_display': before
+    '#options':
+      'Ophthalmologist - Cataract Surgeon': 'Ophthalmologist - Cataract Surgeon'
+      'Ophthalmologist - General Practice': 'Ophthalmologist - General Practice'
+      'Ophthalmologist - Glaucoma Surgeon': 'Ophthalmologist - Glaucoma Surgeon'
+      'Ophthalmologist - Refractive Surgeon': 'Ophthalmologist - Refractive Surgeon'
+      'Ophthalmologist - Vitreoretinal Surgeon': 'Ophthalmologist - Vitreoretinal Surgeon'
+      'Optician / Orthoptist': 'Optician / Orthoptist'
+      Optometrist: Optometrist
+      Other: Other
+      Pharmacist: Pharmacist
+      'Pharmacy Staff': 'Pharmacy Staff'
+      'Resident - Ophthalmology': 'Resident - Ophthalmology'
+      'Staff - Contact Lens Technician / Optical': 'Staff - Contact Lens Technician / Optical'
+      'Staff - Nurse / Surgical Technician': 'Staff - Nurse / Surgical Technician'
+      'Staff - Ophthalmology Office': 'Staff - Ophthalmology Office'
+      'Student - Nurse / Technician': 'Student - Nurse / Technician'
+      'Student - Ophthalmology': 'Student - Ophthalmology'
+      'Student - Optometry/ Orthoptist / Optician': 'Student - Optometry/ Orthoptist / Optician'
+    '#empty_option': 'Select a speciality'
+    '#required_error': 'This field is required.'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    '#required': true
+  COUNTRY:
+    '#type': hidden
+    '#title': COUNTRY
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  COURSE:
+    '#type': checkboxes
+    '#title': 'COURSE INTEREST * (SELECT ALL THAT APPLY)'
+    '#options':
+      'Basic Cataract': 'Basic Cataract'
+      'Basic Biometry': 'Basic Biometry'
+      'Complication and Challenging Cataracts Management': 'Complication and Challenging Cataracts Management'
+      'Basic Surgical Retina': 'Basic Surgical Retina'
+      Other: Other
+    '#required': true
+    '#required_error': 'Please select a course.'
+    '#attributes':
+      class:
+        - edit-course
+    '#format': custom
+    '#format_html': '{{ item.value }}'
+    '#format_text': '{{ item.value }}'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  COURSE_OTHER:
+    '#type': textfield
+    '#title': COURSE_OTHER
+    '#title_display': invisible
+    '#maxlength': 150
+    '#states':
+      visible:
+        ':input[name="COURSE[Other]"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    '#required': true
+  ADDITIONAL_COMMENT:
+    '#type': textarea
+    '#title': 'Please add any additional comments'
+    '#maxlength': 1500
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  agree:
+    '#type': checkbox
+    '#title': "By accepting through ticking the box, you consent to join our mailing list to receive information and news from Alcon on promotional and product Information, events and trainings, the Alcon Newsletter(s) and the Alcon Experience Academy. You can opt out of receiving these messages from Alcon at any time through clicking on the unsubscribe link included in emails. If you would like more information on Alcon and our approach to privacy please see our privacy policy,\_here."
+    '#description': '<p>By ticking the box, I consent to receive promotional and educational content, news and information from Alcon regarding its products and services. [If I provided my mobile number (not required), I also agree to the SMS Terms and Conditions and that Alcon can text such information to my mobile device or contact me via other channels of communication utilizing my mobile number. Message frequency may vary, and message and data rates may apply.] I can opt out of receiving these messages from Alcon at any time by clicking on the unsubscribe link included in the communication. [or by replying “STOP” to the text message, as applicable].</p><p>&nbsp;</p><p>By clicking Submit, I confirm, I am at least 18 years old, am a Healthcare Professional, and have read and agree to Alcon’s <a href="https://preferences.myalcon.com/privacy-notice/?hidebanner=true">Privacy Notice</a> and <a href="https://www.alcon.com/terms-use">Terms of Use</a>.</p>'
+    '#title_display': invisible
+    '#description_display': after
+    '#wrapper_attributes':
+      class:
+        - consent--checkbox-wrapper
+    '#attributes':
+      class:
+        - consent--checkbox
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  CONSENT:
+    '#type': hidden
+    '#title': CONSENT
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  URL:
+    '#type': hidden
+    '#title': URL
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  COURSE_INTEREST:
+    '#type': hidden
+    '#title': 'COURSE INTEREST'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  EventDefinitionKey:
+    '#type': hidden
+    '#title': EventDefinitionKey
+    '#default_value': APIEvent-6cada05f-3b85-762e-0c79-d88548113969
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  retURL:
+    '#type': hidden
+    '#title': retURL
+    '#default_value': 'https://www.myalcon.com/international/professional/education/aec/courses/register/thank-you/'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+css: ".form-item-course-other{\r\n    margin-top: -3%;\r\n    margin-left: 9%;\r\n    width: 37%;\r\n}\r\n.form-required::after{\r\ncolor:red;\r\n}\r\n\r\n.form-item-course-other.form-no-label{\r\n   margin-top: -3%;\r\n    margin-left: 9%;\r\n    width: 37%;\r\n}\r\n\r\n.form-item-additional-comment{\r\nfloat: left;\r\n  border-width: 0.0625rem;\r\n    -webkit-border-radius: 1rem;\r\n    border-radius: 1rem;\r\n    border-style: solid;\r\n    border-color: rgb(213, 213, 213);\r\n    width: 100%;\r\n    padding-top: 0.875rem;\r\n    padding-right: 1.5625rem;\r\n    padding-bottom: 0.875rem;\r\n    padding-left: 1.5625rem;\r\n    background-color: rgb(255, 255, 255);\r\n    clear: both;\r\n\r\n}\r\n.form-item-additional-comment #edit-additional-comment{\r\n  border:none;\r\n  width:100%\r\n}"
+javascript: "jQuery(document).ready(function($){ \r\n  var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1);\r\n  if(hashes != window.location.href){\r\n    $(\"input[name=URL]\").val(hashes);\r\n  }\r\n  $(\"input[name='agree']\").click(function(){\r\n    var con = $(\"input:checkbox[name=agree]:checked\").val();\r\n    if(con == 1) {\r\n      $(\"input[name=CONSENT]\").val('TRUE');\r\n    }else{\r\n      $(\"input[name=CONSENT]\").val('FALSE');\r\n    }\r\n  });\r\n  $(\"select[name='country[country]']\").change(function(){\r\n    var country = $('#edit-country-country').val();\r\n    if (country.length > 0) {\r\n      $(\"input[name=COUNTRY]\").val(country);\r\n    }\r\n  });\r\n  $(\"input[value='Submit']\").click(function(){\r\n    // Country Field Value.\r\n    var country = $('#edit-country-country').val();\r\n    if (country.length > 0) {\r\n      $(\"input[name=COUNTRY]\").val(country);\r\n    }    \r\n\r\n    // Reason Field Value.\r\n    var rsn = [];\r\n    $(\".edit-reason input:checkbox:checked\").map(function(){\r\n      rsn.push($(this).val());\r\n    });\r\n    $(\"input[name=REASON_CONTACT]\").val(rsn.join(\", \"));\r\n    \r\n    // Course Field Value.\r\n    var course = [];\r\n    $(\".edit-course input:checkbox:checked\").map(function(){\r\n      course.push($(this).val());\r\n    });\r\n    $(\"input[name=COURSE_INTEREST]\").val(course.join(\", \"));\r\n\r\n    // Consent Field Value.\r\n    var con = $(\"input:checkbox[name=agree]:checked\").val();\r\n    if(con == 1) {\r\n      $(\"input[name=CONSENT]\").val('TRUE');\r\n    }else{\r\n      $(\"input[name=CONSENT]\").val('FALSE');\r\n    }\r\n  });                                 \r\n  $('form.webform-submission-lead-gen-sx-modal-form').on('submit',function(e){ \r\n    // Prevent form submission.\r\n    e.preventDefault();\r\n    // Country Field Value.\r\n    var country = $('#edit-country-country').val()\r\n    if (country.length > 0) {\r\n      $(\"input[name=COUNTRY]\").val(country);\r\n    }\r\n    \r\n    // Reason Field Value.\r\n    var rsn = [];\r\n    $(\".edit-reason  input:checkbox:checked\").map(function(){\r\n      rsn.push($(this).val());\r\n    });\r\n    $(\"input[name=REASON_CONTACT]\").val(rsn.join(\", \"));\r\n    \r\n    // Course Field Value.\r\n    var course = [];\r\n    $(\".edit-course input:checkbox:checked\").map(function(){\r\n      course.push($(this).val());\r\n    });\r\n    $(\"input[name=COURSE_INTEREST]\").val(course.join(\", \"));\r\n\r\n    // Consent Field Value.\r\n    var con = $(\"input:checkbox[name=agree]:checked\").val();\r\n    if(con == 1) {\r\n      $(\"input[name=CONSENT]\").val('TRUE');\r\n    }else{\r\n      $(\"input[name=CONSENT]\").val('FALSE');\r\n    }\r\n    // Submit the form.\r\n    //e.currentTarget.submit();\r\n  });\r\n});\r\n\r\njQuery(document).ajaxComplete(function () {\r\n jQuery(\"input[name='agree']\").click(function(){\r\n    var con = jQuery(\"input:checkbox[name=agree]:checked\").val();\r\n    if(con == 1) {\r\n      jQuery(\"input[name=CONSENT]\").val('TRUE');\r\n    }else{\r\n      jQuery(\"input[name=CONSENT]\").val('FALSE');\r\n    }\r\n  });\r\n});\r\n"
+settings:
+  ajax: false
+  ajax_scroll_top: page
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes:
+    class:
+      - coh-style-a-lead-management-modal-popup
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: none
+  confirmation_url: international/professional/education/aec/courses/register/thank-you/
+  confirmation_title: ''
+  confirmation_message: '<h4>Thank you for submitting the form!&nbsp;</h4><p>We will get back to you soon.</p>'
+  confirmation_attributes:
+    class:
+      - coh-style-a-lead-generation-webform-thank-you-style
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: true
+  results_disabled_ignore: true
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  salesforce_integration_webform_handler:
+    id: salesforce_webform_handler
+    handler_id: salesforce_integration_webform_handler
+    label: 'Salesforce Integration Webform Handler'
+    notes: ''
+    status: false
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        EMAILADDRESS: EMAILADDRESS
+        country: country
+      custom_data: ''
+      custom_options: ''
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: ''
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
+  salesforce_marketing_cloud_integration_webform_handler:
+    id: salesforce_marketing_cloud_webform_handler
+    handler_id: salesforce_marketing_cloud_integration_webform_handler
+    label: 'Salesforce Marketing Cloud Integration Webform Handler'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        country: country
+        reason: reason
+        agree: agree
+      custom_data: ''
+      custom_options: ''
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: ''
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
+  marketing_cloud_integration_webform_handler:
+    id: marketingcloud_webform_handler
+    handler_id: marketing_cloud_integration_webform_handler
+    label: 'Marketing cloud Integration Webform Handler'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        metatag: metatag
+        country: country
+        COURSE: COURSE
+        agree: agree
+        CONSENT: CONSENT
+        URL: URL
+      custom_data: ''
+      custom_options: ''
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: ''
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
+variants: {  }

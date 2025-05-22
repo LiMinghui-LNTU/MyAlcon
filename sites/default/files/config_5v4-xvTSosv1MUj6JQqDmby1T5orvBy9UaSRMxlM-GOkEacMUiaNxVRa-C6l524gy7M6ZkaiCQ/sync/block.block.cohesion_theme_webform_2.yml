@@ -1,0 +1,31 @@
+uuid: aa14ee66-4a84-45b0-b29b-4d75ef7bb9ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.aec_registration_form
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: cohesion_theme_webform_2
+theme: cohesion_theme
+region: dx8_hidden
+weight: -39
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Aec Leadgen Webform'
+  label_display: '0'
+  provider: webform
+  webform_id: aec_registration_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

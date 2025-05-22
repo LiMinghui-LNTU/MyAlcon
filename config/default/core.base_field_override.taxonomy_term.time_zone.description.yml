@@ -1,0 +1,21 @@
+uuid: ac4c0efa-af64-4415-bbbd-8f3165e37cdd
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_zone
+  module:
+    - text
+id: taxonomy_term.time_zone.description
+field_name: description
+entity_type: taxonomy_term
+bundle: time_zone
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

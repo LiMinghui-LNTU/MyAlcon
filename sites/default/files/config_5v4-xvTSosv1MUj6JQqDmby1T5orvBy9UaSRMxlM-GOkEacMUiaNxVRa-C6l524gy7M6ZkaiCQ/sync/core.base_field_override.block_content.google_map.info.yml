@@ -1,0 +1,18 @@
+uuid: 67a643ac-08be-4ce5-8307-a086f8540a9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.google_map
+id: block_content.google_map.info
+field_name: info
+entity_type: block_content
+bundle: google_map
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

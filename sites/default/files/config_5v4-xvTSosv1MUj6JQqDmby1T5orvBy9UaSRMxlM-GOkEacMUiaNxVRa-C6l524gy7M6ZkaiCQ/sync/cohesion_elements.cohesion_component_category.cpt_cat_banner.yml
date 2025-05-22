@@ -1,0 +1,14 @@
+uuid: e2e9efb5-9789-4a9e-a21d-9489b036a934
+langcode: en
+status: true
+dependencies: {  }
+label: HERO
+id: cpt_cat_banner
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-1
+weight: -10

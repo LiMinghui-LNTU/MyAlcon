@@ -1,0 +1,5 @@
+alcon_geo_redirect.admin:
+  title: 'Geo Redirect Script'
+  description: 'Allow to add Geo redirect script from the frontend at the start of body tag.'
+  parent: system.admin_config_development
+  route_name: alcon_geo_redirect.admin

@@ -1,0 +1,18 @@
+uuid: 91aa00a3-331a-4d43-a9a7-207f646d9eeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.commercial_page
+id: node.commercial_page.title
+field_name: title
+entity_type: node
+bundle: commercial_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

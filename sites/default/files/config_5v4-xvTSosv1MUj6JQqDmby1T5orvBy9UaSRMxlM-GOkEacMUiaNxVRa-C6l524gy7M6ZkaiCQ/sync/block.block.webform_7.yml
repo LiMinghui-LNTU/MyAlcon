@@ -1,0 +1,32 @@
+uuid: 44be2f4d-1a74-4f05-a26c-65b84c0d2c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.sales_force_form_page_2
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: webform_7
+theme: cohesion_theme
+region: dx8_hidden
+weight: 23
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Sales Force Form Page 2'
+  label_display: '0'
+  provider: webform
+  webform_id: sales_force_form_page_2
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    context_mapping: {  }
+    using_master_template: 0

@@ -1,0 +1,9 @@
+.form-scheduler-warning {
+    background: yellow;
+    padding: 8px;
+    margin-top: -32px;
+}
+
+.scheduler-field-warning {
+    display: none;
+}

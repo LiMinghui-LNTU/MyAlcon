@@ -1,0 +1,21 @@
+uuid: ca512e99-939a-4d22-b60d-74889ef5441a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_form
+  module:
+    - text
+id: taxonomy_term.gated_content_form.description
+field_name: description
+entity_type: taxonomy_term
+bundle: gated_content_form
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

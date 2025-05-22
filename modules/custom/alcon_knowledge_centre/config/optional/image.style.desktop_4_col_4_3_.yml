@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: desktop_4_col_4_3_
+label: 'Desktop 4 Col (4:3)'
+effects:
+  09376e7f-a7a0-40d9-983c-0314a4d0976e:
+    uuid: 09376e7f-a7a0-40d9-983c-0314a4d0976e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 312
+      crop_type: focal_point

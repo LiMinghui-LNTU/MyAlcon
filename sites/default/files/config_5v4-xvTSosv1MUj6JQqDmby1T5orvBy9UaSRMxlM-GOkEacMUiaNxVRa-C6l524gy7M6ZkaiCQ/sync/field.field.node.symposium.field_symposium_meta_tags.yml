@@ -1,0 +1,23 @@
+uuid: d96d7ef0-b18a-419e-b149-ad6b1bc944ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symposium_meta_tags
+    - node.type.symposium
+  module:
+    - metatag
+_core:
+  default_config_hash: o-bz2qQCRaZ2K-at82D8PJv4EcdtmHMhZCQypTO1Nbk
+id: node.symposium.field_symposium_meta_tags
+field_name: field_symposium_meta_tags
+entity_type: node
+bundle: symposium
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

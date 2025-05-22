@@ -1,0 +1,25 @@
+uuid: e172aa94-91e2-4ba5-ba46-4676c1a9f1f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_elements.cohesion_component.cpt_a_supernav_footer_profession
+    - cohesion_elements.cohesion_component_category.cpt_cat_template
+  content:
+    - 'component_content:component_content:a24645a0-f4e0-4122-9092-d2bea9a86e8f'
+    - 'file:file:92479066-d003-44f1-9a78-a5612f9d9750'
+label: 'Template - footer(Professional)'
+id: cpt_template_footer_professional
+json_values: '{"canvas":[{"uid":"cc_a24645a0-f4e0-4122-9092-d2bea9a86e8f","type":"component","title":"Supernav - Footer(Professional)","enabled":true,"category":"category-10","componentId":"cpt_a_supernav_footer_profession","componentType":"container","parentUid":"root","uuid":"ee0f5496-4299-41c3-afa9-72d29fd12b40","componentContentId":"cc_a24645a0-f4e0-4122-9092-d2bea9a86e8f","url":"\/admin\/cohesion\/components\/component_contents\/136","children":[]}],"componentForm":[],"mapper":{},"model":[],"previewModel":{"ee0f5496-4299-41c3-afa9-72d29fd12b40":{}},"variableFields":{"ee0f5496-4299-41c3-afa9-72d29fd12b40":[]},"meta":{"fieldHistory":[]}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: cpt_cat_template
+preview_image: 'public://cohesion/element-preview-images/Template - footer.png'
+has_quick_edit: false
+entity_type_access: {  }
+bundle_access: {  }
+twig_template: component--cohesion-cpt-template-footer-professional
+weight: 51

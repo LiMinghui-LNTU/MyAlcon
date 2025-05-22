@@ -1,0 +1,9 @@
+uuid: 22bf2d40-ba19-452a-a444-e4fce7278493
+langcode: en
+status: true
+dependencies: {  }
+id: pack_helper_move_sx_part_9
+label: 'Helper Move - Sx - Part 9'
+description: "*** DO NOT DELETE THIS PACKAGE ***\r\nThe purpose of this Package is to support the movement of all SX helpers.  The movement is spit over multiple packages to reduce the risk.\r\nPages 8.4  (SX SUB-CATEGORY PAGES)"
+excluded_entity_types: '{"cohesion_base_styles":true,"cohesion_color":true,"cohesion_component":true,"cohesion_component_category":true,"cohesion_content_templates":true,"cohesion_custom_style":true,"cohesion_font_library":true,"cohesion_font_stack":true,"cohesion_icon_library":true,"cohesion_master_templates":true,"cohesion_menu_templates":true,"cohesion_scss_variable":true,"cohesion_style_guide":true,"cohesion_style_guide_manager":true,"cohesion_style_helper":true,"cohesion_view_templates":true,"cohesion_website_settings":true,"image_style":true,"view":true}'
+settings: '{"7ef79c42-7eb7-4664-aa12-aa96cfddbd0d":{"type":"cohesion_helper","items":{"7ef79c42-7eb7-4664-aa12-aa96cfddbd0d":{"type":"cohesion_helper"},"590e053d-a6f9-456c-9139-63ec47da50ae":{"type":"cohesion_helper_category"},"1c2321aa-af3d-41a5-896a-fba881394e1b":{"type":"file"},"41ccb7c2-0d2b-4800-8048-da7a4de70e37":{"type":"file"},"719c7a87-0913-4122-b8d5-ae7666f24193":{"type":"file"},"75471d47-b684-4006-bdc6-1dae7c07bd9b":{"type":"file"},"7d0ce2a8-92ef-4abf-80bf-675cf676a44e":{"type":"file"},"9d2f3755-fe32-4760-ba31-ce173addd754":{"type":"file"},"a3b1d8ca-5de3-4103-89c1-77cea09a72d5":{"type":"file"},"a5ef359c-0073-4ceb-b182-b87040a4eb08":{"type":"file"},"c77059ec-544a-41e5-adbd-641bb9ba08d9":{"type":"file"},"f53f8c98-b8bb-41b8-858b-31b05789c62f":{"type":"file"}},"checked":true}}'

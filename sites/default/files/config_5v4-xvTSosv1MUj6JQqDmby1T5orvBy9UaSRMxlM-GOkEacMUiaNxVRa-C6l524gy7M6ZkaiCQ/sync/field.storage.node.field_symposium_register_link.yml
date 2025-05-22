@@ -1,0 +1,21 @@
+uuid: fe699e4c-b67f-4634-b8bf-2f142d9cd95d
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: zY9d5zsIiKjzUxV1rAW4mCxLIJPKN0fe2eFBaSYb9hY
+id: node.field_symposium_register_link
+field_name: field_symposium_register_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: d4784c4a-846a-4678-8248-c7141cb49675
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part17
+label: 'DMB-5789 revert part17'
+description: 'DMB-5789 revert part17(Video List Card for VB (cpt_a_virtualbooth_videos))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "05448edb-228b-43d9-adf0-e16b79e24c7b": {
+          "type": "cohesion_component",
+          "items": {
+              "05448edb-228b-43d9-adf0-e16b79e24c7b": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

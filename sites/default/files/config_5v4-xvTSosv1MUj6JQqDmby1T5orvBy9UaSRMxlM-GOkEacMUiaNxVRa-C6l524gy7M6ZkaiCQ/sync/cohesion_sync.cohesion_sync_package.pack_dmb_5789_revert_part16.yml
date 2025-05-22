@@ -1,0 +1,20 @@
+uuid: 62950693-073b-4d20-b8a8-8066d6afb4ba
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part16
+label: 'DMB-5789 revert part16'
+description: 'DMB-5789 revert part16(Panel List Card for VB (cpt_a_virtualbooth_panelists))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "4940b63f-3014-45ae-b9f1-e0f87b1c5fb5": {
+          "type": "cohesion_component",
+          "items": {
+              "4940b63f-3014-45ae-b9f1-e0f87b1c5fb5": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

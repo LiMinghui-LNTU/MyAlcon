@@ -1,0 +1,8 @@
+uuid: 7d86f339-2776-4699-a663-ffc05cf67b96
+langcode: en
+status: true
+dependencies: {  }
+id: level1-events-
+label: 'Level1 (Events)'
+description: 'This provides the ability to add menu to the level one of Supernav for Event pages.'
+locked: false

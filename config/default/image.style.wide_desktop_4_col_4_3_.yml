@@ -1,0 +1,19 @@
+uuid: 83f7bacc-6c72-469c-86b3-6bac87dadf3a
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: i3IBO1vJbRwC5FPD845ze3DTemKgVt4WXrnsr_IrHjU
+name: wide_desktop_4_col_4_3_
+label: 'Wide Desktop 4 Col (4:3)'
+effects:
+  38dba127-c5a3-4e69-b779-26a3e35424cc:
+    uuid: 38dba127-c5a3-4e69-b779-26a3e35424cc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 512
+      height: 384
+      crop_type: focal_point

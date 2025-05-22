@@ -1,0 +1,43 @@
+uuid: 2469f7b3-4158-4c23-a5ec-915638357dc8
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - views.view.article_lobby_professional
+  module:
+    - cohesion
+    - context
+    - views
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: UyM2w96UEn2NoQn5ZLOibU_7NdqulwNW58BZA65QGk8
+id: views_block__article_lobby_professional_article_lobby
+theme: cohesion_theme
+region: dx8_hidden
+weight: -37
+provider: null
+plugin: 'views_block:article_lobby_professional-article_lobby'
+settings:
+  id: 'views_block:article_lobby_professional-article_lobby'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

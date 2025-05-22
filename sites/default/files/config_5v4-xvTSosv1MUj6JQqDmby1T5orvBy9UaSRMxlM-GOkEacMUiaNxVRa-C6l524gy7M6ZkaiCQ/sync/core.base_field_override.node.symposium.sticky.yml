@@ -1,0 +1,22 @@
+uuid: 80eba62e-9188-4b2b-84de-944a4b921102
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.symposium
+id: node.symposium.sticky
+field_name: sticky
+entity_type: node
+bundle: symposium
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

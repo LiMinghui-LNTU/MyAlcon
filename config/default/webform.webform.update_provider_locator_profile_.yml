@@ -1,0 +1,433 @@
+uuid: 4395e8dc-0732-436a-a57d-2a03287f0f05
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 166
+template: false
+archive: false
+id: update_provider_locator_profile_
+title: 'Update provider locator profile form 2'
+description: ''
+categories:
+  - 'Contact Processor Form'
+elements: |-
+  referring_page:
+    '#type': hidden
+    '#title': referring-page
+    '#default_value': 'http://sitestudioreference.dev-alconacsf.acsitefactory.com/test-forms'
+  step_1:
+    '#type': webform_wizard_page
+    '#title': 'Start by selecting request and provider type'
+    form_header_1:
+      '#type': processed_text
+      '#text': |
+        <h2>Start by selecting request and provider type</h2>
+        
+      '#format': rich_text
+    your_request:
+      '#type': select
+      '#title': 'Your request'
+      '#options':
+        Add: Add
+        Change: Change
+        Remove: Remove
+      '#empty_option': 'Select your change request'
+      '#required': true
+      '#wrapper_attributes':
+        class:
+          - contact-processor-Frmselect
+    your_provider_type:
+      '#type': select
+      '#title': 'Your provider type'
+      '#options':
+        Ophthalmologist: Ophthalmologist
+        Optometrist: Optometrist
+        Optician: Optician
+        Other: Other
+      '#empty_option': 'Select provider type'
+      '#required': true
+    your_locator:
+      '#type': select
+      '#title': 'Select your locator'
+      '#options':
+        'Acrysof IQ PanOptix TriFocal IOL': 'Acrysof IQ PanOptix TriFocal IOL'
+        'Contoura Vision': 'Contoura Vision'
+        Wavelight: Wavelight
+      '#empty_option': 'Select your locator'
+      '#required': true
+  step_2:
+    '#type': webform_wizard_page
+    '#title': 'Request form; New listing - Ophthalmologist'
+    form_header_2_1:
+      '#type': processed_text
+      '#text': |
+        <h2>Request form; New listing - [webform_submission:values:your_provider_type]</h2>
+        
+        <p>Please complete this form for each listing you would like to include<br />
+        &nbsp;</p>
+        
+      '#format': rich_text
+    full_name:
+      '#type': textfield
+      '#title': 'Full name'
+      '#placeholder': 'Example:'
+      '#required': true
+    email:
+      '#type': email
+      '#title': E-mail
+      '#placeholder': 'Example:'
+      '#pattern': '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
+      '#pattern_error': 'Please enter valid email format.'
+      '#format_items': comma
+    practice_name:
+      '#type': textfield
+      '#title': 'Practice name'
+      '#placeholder': 'Example:'
+      '#required': true
+    apin:
+      '#type': textfield
+      '#title': 'APIN (Alcon Physician Identification Number)'
+      '#placeholder': 'Example:'
+      '#required': true
+    address:
+      '#type': webform_address
+      '#title': Address
+      '#address__title': 'Office Address (for listing)'
+      '#address__placeholder': 'Example:'
+      '#address__required': true
+      '#address_2__access': false
+      '#city__title': City
+      '#city__placeholder': 'Example:'
+      '#city__title_display': before
+      '#city__required': true
+      '#state_province__title': State
+      '#state_province__placeholder': 'Example:'
+      '#state_province__title_display': before
+      '#state_province__required': true
+      '#postal_code__title': 'ZIP / Postal Code'
+      '#postal_code__placeholder': 'Example:'
+      '#postal_code__title_display': before
+      '#postal_code__required': true
+      '#country__placeholder': 'Select your country'
+      '#country__title_display': before
+      '#country__required': true
+    form_header_2_2:
+      '#type': processed_text
+      '#text': |
+        <h2 class="margin-top">Your practice information</h2>
+        
+      '#format': rich_text
+    email_contact:
+      '#type': email
+      '#title': 'Email Address for Patient Contact'
+    phone:
+      '#type': tel
+      '#title': Phone
+      '#minlength': 10
+      '#maxlength': 10
+      '#size': 10
+      '#autocomplete': 'off'
+      '#required': true
+      '#pattern': '^(0|[1-9][0-9]*)$'
+      '#pattern_error': 'Please provide valid value.'
+      '#format_items': comma
+    practice_website_url:
+      '#type': url
+      '#title': 'Practice Website URL'
+    appointment_scheduling_url:
+      '#type': url
+      '#title': 'Appointment Scheduling URL'
+      '#attributes':
+        class:
+          - no-margin-bottom
+    form_header_2_3:
+      '#type': processed_text
+      '#text': |
+        <h2 class="margin-top">Privacy Policy</h2>
+        
+        <p>Alcon will use this information to respond to your request. Please read our Privacy Policy for more information.</p>
+        
+      '#format': rich_text
+    i_have_read_agreed:
+      '#type': checkbox
+      '#title': 'I have read and agreed on Alcon Privacy Policy'
+      '#required': true
+      '#required_error': '"I have read and agreed" field is required.'
+    i_understand:
+      '#type': checkbox
+      '#title': 'I understand that changes requested to my Provider Locator listing are not connected with my Alcon account information, which must be managed separately with Alcon Customer Service. All requested changes to the Provider Locator profile are subject to verification and approval.'
+      '#required': true
+      '#required_error': '"I understand that changes requested" field is required.'
+  antispam:
+    '#type': hidden
+    '#title': antiSpam
+    '#default_value': '999'
+  body:
+    '#type': textfield
+    '#title': Body
+    '#title_display': none
+    '#autocomplete': 'off'
+    '#attributes':
+      style: 'display:none;'
+  response_page:
+    '#type': hidden
+    '#title': Response-Page
+    '#default_value': 'https://sitestudioreference.dev-alconacsf.acsitefactory.com/thank-you'
+  case:
+    '#type': hidden
+    '#title': Case
+    '#default_value': providerlocatorupdate.dev
+  form:
+    '#type': hidden
+    '#title': Form
+    '#default_value': 'Update Provide Locator'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__attributes':
+      class:
+        - btn
+    '#wizard_prev_hide': true
+    '#wizard_next__label': Next
+    '#wizard_next__attributes':
+      class:
+        - btn
+css: ''
+javascript: "setTimeout(function() { \r\n  var x = document.getElementsByName(\"antispam\");\r\n  var y = document.getElementsByName(\"response_page\");\r\n  var z = document.getElementsByName(\"referring_page\");\r\n  var a = x[0]['name'];\r\n  var b = y[0]['name'];\r\nif (a == \"antispam\") { \r\n  x[0]['name'] = \"antiSpam\";\r\n  y[0]['name'] = \"response-page\";\r\n  z[0]['name'] = \"referring-page\";\r\n  }  \r\n  }, 100);"
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: false
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: true
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: url
+  confirmation_url: thank-you
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: true
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  remote_post:
+    id: remote_post
+    handler_id: remote_post
+    label: 'Remote post'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: 'response-page: http://sitestudioreference.dev-alconacsf.acsitefactory.com/thank-you'
+      custom_options: ''
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: 'https://scontent.alcon.com/contact_processor/contact_processor.aspx'
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
+variants: {  }

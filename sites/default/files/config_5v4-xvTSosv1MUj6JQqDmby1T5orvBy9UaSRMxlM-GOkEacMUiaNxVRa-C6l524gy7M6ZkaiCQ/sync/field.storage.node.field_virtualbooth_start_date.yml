@@ -1,0 +1,22 @@
+uuid: eab07a38-5331-4732-ad7f-1e52b44566d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: R5n1xbQoikrxPAJLFowmYdB0GAZFfOXkzOk0hXcvHiI
+id: node.field_virtualbooth_start_date
+field_name: field_virtualbooth_start_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

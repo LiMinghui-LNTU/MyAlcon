@@ -1,0 +1,9 @@
+uuid: 57346d00-ee61-4b75-93a7-eebfdc96c187
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5393_package
+label: DMB-5393-package
+description: ''
+excluded_entity_types: '[]'
+settings: '{"5a9f5d8e-aade-4328-85eb-6e326668219e":{"type":"cohesion_custom_style","items":{"5a9f5d8e-aade-4328-85eb-6e326668219e":{"type":"cohesion_custom_style"}},"checked":true},"b386b7e1-9bd3-4559-b474-f935b5b16c88":{"type":"cohesion_custom_style","items":{"b386b7e1-9bd3-4559-b474-f935b5b16c88":{"type":"cohesion_custom_style"}},"checked":true},"90460ef4-0cd5-4ccf-be83-fe4037606213":{"type":"cohesion_custom_style","items":{"90460ef4-0cd5-4ccf-be83-fe4037606213":{"type":"cohesion_custom_style"}},"checked":true},"6863ac14-4e07-4a98-9ff2-0dc90ce36682":{"type":"cohesion_custom_style","items":{"6863ac14-4e07-4a98-9ff2-0dc90ce36682":{"type":"cohesion_custom_style"}},"checked":true}}'

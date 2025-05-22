@@ -1,0 +1,13 @@
+uuid: f9e4fea9-3df3-4433-b068-c1f7ed22b57f
+langcode: en
+status: true
+dependencies: {  }
+label: 'SYSTANE Yellow'
+id: systane-yellow
+json_values: '{"link":true,"name":"SYSTANE Yellow","uid":"systane-yellow","class":".coh-color-systane-yellow","variable":"$coh-color-systane-yellow","value":{"value":{"hex":"#f9dc00","rgba":"rgba(249, 220, 0, 1)"}},"wysiwyg":false,"inuse":false,"tags":[{"label":"systane","value":"systane"},{"label":"secondary","value":"secondary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 71

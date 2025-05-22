@@ -1,0 +1,18 @@
+uuid: 1beeb386-b364-478e-90f9-bd0c78811080
+langcode: en
+status: false
+dependencies: {  }
+label: 'Taxonomy term page (Taxonomy_term, Product SubType)'
+id: taxonomy_term_product_subtype_fu
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: taxonomy_term
+bundle: product_subtype
+view_mode: full
+master_template: ''

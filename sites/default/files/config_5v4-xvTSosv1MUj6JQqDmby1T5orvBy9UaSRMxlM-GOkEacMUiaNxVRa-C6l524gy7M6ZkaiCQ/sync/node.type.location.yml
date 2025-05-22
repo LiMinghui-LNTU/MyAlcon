@@ -1,0 +1,19 @@
+uuid: d4e904f3-a864-44c7-91be-eb367b761946
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: JK0CknllOT1sZ45J0x3KyjoY8_iq_jvC4826OWUtEBg
+name: 'Location page'
+type: location
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

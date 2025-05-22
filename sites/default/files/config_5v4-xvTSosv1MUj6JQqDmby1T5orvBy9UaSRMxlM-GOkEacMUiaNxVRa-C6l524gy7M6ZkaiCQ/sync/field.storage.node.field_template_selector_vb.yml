@@ -1,0 +1,21 @@
+uuid: 3a6fd834-5fdf-41e1-ba0e-d9d387671b8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion_templates
+    - node
+_core:
+  default_config_hash: TS4jCXG57QagdSqHqhywhaGPYNNsqxcSTkZxiVVB888
+id: node.field_template_selector_vb
+field_name: field_template_selector_vb
+entity_type: node
+type: cohesion_template_selector
+settings: {  }
+module: cohesion_templates
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

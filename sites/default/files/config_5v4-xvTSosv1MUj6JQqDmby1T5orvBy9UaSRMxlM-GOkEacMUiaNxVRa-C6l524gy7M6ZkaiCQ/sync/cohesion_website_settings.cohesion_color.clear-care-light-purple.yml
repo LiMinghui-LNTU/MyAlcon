@@ -1,0 +1,13 @@
+uuid: 65eda9fe-7a50-480e-9b04-3e09b5556fc0
+langcode: en
+status: true
+dependencies: {  }
+label: 'CLEAR CARE Light Purple'
+id: clear-care-light-purple
+json_values: '{"link":true,"name":"CLEAR CARE Light Purple","uid":"clear-care-light-purple","class":".coh-color-clear-care-light-purple","variable":"$coh-color-clear-care-light-purple","value":{"value":{"hex":"#ac4fc6","rgba":"rgba(172, 79, 198, 1)"}},"wysiwyg":false,"tags":[{"label":"clear-care","value":"clear-care"},{"label":"secondary","value":"secondary"}],"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 12

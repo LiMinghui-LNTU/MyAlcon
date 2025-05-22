@@ -1,0 +1,14 @@
+name: Tealium iQ Context
+description: Provides Context integration for Tealium iQ Tag Management
+type: module
+package: Tealium
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - tealiumiq:tealiumiq
+  - context:context
+  - token:token
+
+# Information added by Drupal.org packaging script on 2024-07-11
+version: '8.x-1.5'
+project: 'tealiumiq'
+datestamp: 1720730704

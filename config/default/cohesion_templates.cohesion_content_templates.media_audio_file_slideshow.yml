@@ -1,0 +1,18 @@
+uuid: d03d53fd-a0fd-40b3-8625-419ea83efc8a
+langcode: en
+status: false
+dependencies: {  }
+label: 'Slideshow (Media, Audio file)'
+id: media_audio_file_slideshow
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: audio_file
+view_mode: slideshow
+master_template: ''

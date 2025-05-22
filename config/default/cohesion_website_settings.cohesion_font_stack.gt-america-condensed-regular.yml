@@ -1,0 +1,13 @@
+uuid: 99611469-7858-45d4-9b3c-a40638607644
+langcode: en
+status: true
+dependencies: {  }
+label: 'GT-America Condensed Regular'
+id: gt-america-condensed-regular
+json_values: '{"inuse":true,"systemfont":false,"link":true,"name":"GT-America Condensed Regular","uid":"gt-america-condensed-regular","class":".coh-font-gt-america-condensed-regular","variable":"$coh-font-gt-america-condensed-regular","fontStack":"GT-America-Condensed-Regular","smoothing":{"firefox":true,"webkit":true}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fontStacks

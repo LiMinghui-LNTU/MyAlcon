@@ -1,0 +1,22 @@
+uuid: 629b807d-58c6-4561-bf74-e64db4553615
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.468eec42
+    - cohesion_custom_styles.cohesion_custom_style.7bb1adf4
+    - cohesion_custom_styles.cohesion_custom_style.99af5511
+    - cohesion_elements.cohesion_component.cpt_a_text
+label: 'Medical affairs title'
+id: hlp_medical_affairs_title
+json_values: '{"canvas":[{"uid":"cpt_a_text","type":"component","title":"Text","enabled":true,"category":"category-2","componentId":"cpt_a_text","componentType":"container","uuid":"c5aae146-9c4c-4a5c-98af-88823b0472b9","parentUid":"root","children":[]}],"mapper":{},"model":{"c5aae146-9c4c-4a5c-98af-88823b0472b9":{"settings":{"title":"Medical Affairs"},"af01cd7a-833a-40fd-a8a9-f0656db075f5":{"text":"<h4 class=\"coh-style-weight-100 text-align-center\">Medical Affairs<\/h4><p>&nbsp;<\/p><p class=\"text-align-center\">The APAC Medical Affairs team is committed to Alcon\u2019s mission to help people see brilliantly.<\/p>","textFormat":"cohesion"},"897abae5-303a-4eef-943f-75b9f65132ab":"coh-style-a-max-width-wide","952f179d-b4d8-4e69-9894-e4a39346e86f":"coh-style-a-text-columns-one","9e834c9f-566d-43dd-b88d-0373b95ed01c":"","d2594a1b-6a3d-4af0-9cb4-311ce9b4cf8c":"","9620d4bd-3fc5-4f33-9a51-fe67c153963f":"","9869a998-5018-4552-9803-f16cee818fb0":"","7a56a305-cbd2-4329-b33d-fcba595e9ec4":"","1949e1e4-60b2-4705-8135-c15502fec433":"coh-style-a-padding-top-large","961f68d1-8502-4adc-8da1-90d9bfbacf48":"","3d4f5794-16e1-4740-879f-0176e682ed18":"","8e115952-554a-4d94-b630-00bb025ba7e5":""}},"previewModel":{},"variableFields":{}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_homepages
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

@@ -1,0 +1,22 @@
+uuid: fc8c1559-86bd-4442-8dc0-7fbb465d1463
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nested_paragraph
+_core:
+  default_config_hash: koYYwlW52xb05AiGtIbUHVvueeTQi6lKOx4z8s2umt0
+id: paragraph.nested_paragraph.default
+targetEntityType: paragraph
+bundle: nested_paragraph
+mode: default
+content:
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,24 @@
+uuid: baec3f1f-bdde-427a-80b8-ce1048d5339b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_short_name
+    - node.type.event
+  module:
+    - text
+_core:
+  default_config_hash: bSkKto-POMgViLIxjusXWuvaK4C3iwfq8zw017PSMGY
+id: node.event.field_event_short_name
+field_name: field_event_short_name
+entity_type: node
+bundle: event
+label: 'Short name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

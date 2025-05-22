@@ -1,0 +1,14 @@
+uuid: d259d0b6-8006-457c-bdfd-6c3ef72df395
+langcode: en
+status: true
+dependencies: {  }
+label: BASEMENT
+id: cpt_cat_uncategorized
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-11
+weight: 2

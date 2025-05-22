@@ -1,0 +1,110 @@
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_article_author_biography
+    - field.field.node.article.field_article_authored_on
+    - field.field.node.article.field_article_category_professio
+    - field.field.node.article.field_article_title
+    - field.field.node.article.field_article_type
+    - field.field.node.article.field_category
+    - field.field.node.article.field_featured
+    - field.field.node.article.field_hero_image
+    - field.field.node.article.field_layout_canvas
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_related_article
+    - field.field.node.article.field_short_description
+    - field.field.node.article.field_tag
+    - field.field.node.article.field_tag_professional
+    - field.field.node.article.field_teaser_image
+    - field.field.node.article.field_template_selector_article
+    - field.field.node.article.field_time_to_read
+    - field.field.node.article.field_weight
+    - node.type.article
+  module:
+    - svg_image
+    - text
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_article_author_biography:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: token
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_category:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: token
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_teaser_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_time_to_read:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_article_authored: true
+  field_article_authored_on: true
+  field_article_category_professio: true
+  field_article_sub_category: true
+  field_article_title: true
+  field_article_type: true
+  field_author_biography: true
+  field_author_image: true
+  field_featured: true
+  field_hero_image: true
+  field_layout_canvas: true
+  field_meta_tags: true
+  field_related_article: true
+  field_short_description: true
+  field_tag: true
+  field_tag_professional: true
+  field_template_selector_article: true
+  field_weight: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: cb07c4ca-ac43-4612-b9ad-77367d333c8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_form
+id: taxonomy_term.gated_content_form.name
+field_name: name
+entity_type: taxonomy_term
+bundle: gated_content_form
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

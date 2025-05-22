@@ -1,0 +1,18 @@
+uuid: de49099d-0d8e-435d-814b-f0b6ab5cb6d2
+langcode: en
+status: true
+dependencies: {  }
+label: Height--auto
+id: b9a6f065
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"lg":{"margin":{"margin-bottom":{}}},"sm":{"margin":{"margin-bottom":{}}},"xs":{"margin":{"margin-bottom":{}}},"xl":{"height":{"value":""},"min-height":{"value":"auto"},"max-height":{"value":"100%"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":true},{"name":"height","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-height--auto
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 106

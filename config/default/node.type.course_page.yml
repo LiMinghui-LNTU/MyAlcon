@@ -1,0 +1,23 @@
+uuid: 3c4e9b93-f647-4079-add1-b79e1027145e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: bZCUdZolE3VKjUpL5henzKJMMBU_IT8foNSxYVi5VTc
+name: 'Course Page'
+type: course_page
+description: 'Items for“Course Catalog” view and Course Pages'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

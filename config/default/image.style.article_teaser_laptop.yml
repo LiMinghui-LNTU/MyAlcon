@@ -1,0 +1,19 @@
+uuid: 89a3e180-265a-4cd7-83a5-a252fcb71c23
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: IhSfetH-1VmKmDazFUE5zLuFXkjIsbcZxmGp3NWyjIY
+name: article_teaser_laptop
+label: 'Article Teaser Laptop'
+effects:
+  2bab782b-228a-41f3-bd37-02053212fd1b:
+    uuid: 2bab782b-228a-41f3-bd37-02053212fd1b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 215
+      crop_type: focal_point

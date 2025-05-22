@@ -1,0 +1,18 @@
+uuid: c7b4c77b-d76a-4b0c-a5d0-657f9171f7d5
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_zone
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.time_zone
+target_entity_type_id: taxonomy_term
+target_bundle: time_zone
+default_langcode: site_default
+language_alterable: false

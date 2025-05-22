@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Event Hub module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\block\Entity\Block;
+
+/**
+ * Custom function for implementing configs from module's config/install folder.
+ *
+ * @param string $module_name
+ *   Machine name of a module.
+ */
+function update_module_configs($module_name) {
+  \Drupal::service('config.installer')
+    ->installDefaultConfig('module', $module_name);
+  drupal_flush_all_caches();
+}
+
+/**
+ * Custom function for placing View blocks into dx8_hidden region.
+ *
+ * @param array $block_ids_array
+ *   Associated array of Block IDs.
+ *   Key is a block ID, and value is a plugin ID.
+ */
+function place_view_blocks($block_ids_array) {
+  foreach ($block_ids_array as $id => $plugin) {
+    $block_array = [
+      'plugin' => $plugin,
+      'id' => $id,
+      'settings' => [
+        'id' => $plugin,
+        'provider' => 'views',
+        'label' => '',
+        'label_display' => 0,
+        'items_per_page' => 'none',
+      ],
+      'region' => 'dx8_hidden',
+      'theme' => 'cohesion_theme',
+      'weight' => 0,
+      'status' => TRUE,
+    ];
+
+    $existing_blocks = \Drupal::entityTypeManager()
+      ->getStorage('block')
+      ->loadByProperties([
+        'region' => 'dx8_hidden',
+        'theme' => 'cohesion_theme',
+        'plugin' => $plugin
+      ]);
+
+    if (empty($existing_blocks)) {
+
+      $block_entity = Block::create($block_array);
+      $block_entity->save();
+    }
+  }
+}

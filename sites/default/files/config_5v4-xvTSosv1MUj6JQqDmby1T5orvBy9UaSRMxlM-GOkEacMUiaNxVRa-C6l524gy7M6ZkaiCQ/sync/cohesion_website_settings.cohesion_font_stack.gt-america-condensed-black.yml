@@ -1,0 +1,13 @@
+uuid: 5cbf9384-bb50-4a5f-9342-2b01a32908e6
+langcode: en
+status: true
+dependencies: {  }
+label: 'GT-America Condensed Black'
+id: gt-america-condensed-black
+json_values: '{"inuse":true,"systemfont":false,"link":true,"name":"GT-America Condensed Black","uid":"gt-america-condensed-black","class":".coh-font-gt-america-condensed-black","variable":"$coh-font-gt-america-condensed-black","fontStack":"GT-America-Condensed-Black","smoothing":{"firefox":true,"webkit":true}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fontStacks

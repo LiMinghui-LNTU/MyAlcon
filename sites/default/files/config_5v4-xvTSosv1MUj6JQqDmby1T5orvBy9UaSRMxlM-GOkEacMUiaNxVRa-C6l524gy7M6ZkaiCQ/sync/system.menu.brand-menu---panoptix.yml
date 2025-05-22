@@ -1,0 +1,8 @@
+uuid: 5385f261-69be-4a9e-8434-24b15cd1518d
+langcode: en
+status: true
+dependencies: {  }
+id: brand-menu---panoptix
+label: 'Brand Menu - Panoptix'
+description: ''
+locked: false

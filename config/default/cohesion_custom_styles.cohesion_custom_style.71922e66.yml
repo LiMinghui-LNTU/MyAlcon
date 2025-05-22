@@ -1,0 +1,21 @@
+uuid: 7223a821-7495-4cfb-a1bc-9997f10e514f
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.6546d6fc
+    - cohesion_website_settings.cohesion_icon_library.icomoon
+label: 'Slider Style Right Nav Alternative 2'
+id: '71922e66'
+json_values: '{"preview":{"text":"<p><button class=\"coh-preview\" type=\"button\">Default content for ''Button''<\/button><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"button","class":"","combinator":"","pseudo":""},"8b9318dc-d1bd-45c5-9878-4c23a53e4cee":{"settings":{"element":"","class":"","combinator":"","pseudo":":before"},"styles":{"xl":{"content-icon":{"contentIcon":{"value":{"iconName":"61524","fontFamily":"icomoon"}}}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Button","selectorType":"topLevel","formDefinition":[],"items":[{"title":":before","type":"container","items":[],"form":null,"selectorType":"pseudo","uuid":"8b9318dc-d1bd-45c5-9878-4c23a53e4cee","allowedTypes":["child","pseudo"],"formDefinition":[]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-slider-style-right-nav-alternative-2
+custom_style_type: button
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-a-slider-style-left-nav-alternative-2
+weight: 347

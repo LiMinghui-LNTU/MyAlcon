@@ -1,0 +1,18 @@
+uuid: 51fbd514-9584-4afb-a606-e815fd3a5429
+langcode: en
+status: true
+dependencies: {  }
+label: 'Article Text'
+id: eb1ed379
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"06b10479-d51c-4fd6-ac48-5f5a6114b238":{"settings":{"element":".article-text-column","class":"","combinator":"","pseudo":""},"styles":{"xl":{"margin":{"margin-top":{"value":"0"},"margin-bottom":{"value":"0"},"margin-left":{"value":"auto"},"margin-right":{"value":"auto"}},"padding":{"padding-left":{"value":"0"},"padding-right":{"value":"0"}}},"sm":{"padding":{"padding-left":{"value":"14"},"padding-right":{"value":"14"}}},"ps":{"padding":{"padding-left":{"value":"24"},"padding-right":{"value":"24"}}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[],"items":[{"title":".article-text-column","type":"container","items":[],"form":null,"selectorType":"child","model":".article-text-column","uuid":"06b10479-d51c-4fd6-ac48-5f5a6114b238","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]},{"formKey":"padding","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"ps"}],"activeFields":[{"name":"padding-equal","active":false},{"name":"padding-top","active":false},{"name":"padding-bottom","active":false},{"name":"padding-left","active":true},{"name":"padding-right","active":true},{"name":"padding-block-start","active":false},{"name":"padding-block-end","active":false},{"name":"padding-inline-start","active":false},{"name":"padding-inline-end","active":false}]}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-article-text
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 0

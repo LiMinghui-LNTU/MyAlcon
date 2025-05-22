@@ -1,0 +1,10 @@
+uuid: e1a89792-704d-4e82-ad62-31326da02e72
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _vONQY2JWmxFwuosXALNGuNYy6INd0y8AY8lxCqSDKc
+name: 区域
+vid: region
+description: ''
+weight: 0

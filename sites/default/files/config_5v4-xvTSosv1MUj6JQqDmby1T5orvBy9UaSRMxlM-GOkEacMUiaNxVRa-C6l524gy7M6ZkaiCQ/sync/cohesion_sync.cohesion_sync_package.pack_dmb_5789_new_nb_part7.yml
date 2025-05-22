@@ -1,0 +1,20 @@
+uuid: 108fd5fb-0b3b-4835-ba5c-d66fbe9a391f
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part7
+label: 'DMB-5789 new nb part7'
+description: 'DMB-5789 new nb part7(Text with Buttons (Restricted Access))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "ba4fb07f-9977-44ed-9890-e7c0e78b8faa": {
+          "type": "cohesion_component",
+          "items": {
+              "ba4fb07f-9977-44ed-9890-e7c0e78b8faa": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

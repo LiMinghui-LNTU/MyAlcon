@@ -1,0 +1,16 @@
+uuid: 981322bf-8595-42f0-81b8-087390c9a50d
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6Qope5wG7HUpV0tPOBMtDI_GZkHFcF1Xj4hgD9Cu_hM
+id: image
+label: 图像
+description: 使用本地图片作为可重用媒体。
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

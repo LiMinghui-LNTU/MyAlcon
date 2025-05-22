@@ -1,0 +1,8 @@
+uuid: 33c060ce-e8eb-42b9-9408-fd812991d115
+langcode: en
+status: true
+dependencies: {  }
+id: professional-footer-column-1
+label: 'Footer Column 1(Professional)'
+description: ''
+locked: false

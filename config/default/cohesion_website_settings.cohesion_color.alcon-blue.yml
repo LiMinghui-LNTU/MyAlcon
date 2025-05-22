@@ -1,0 +1,13 @@
+uuid: 8d26f59b-d1e5-4c9f-926f-efccb8899f69
+langcode: en
+status: true
+dependencies: {  }
+label: 'Alcon Blue'
+id: alcon-blue
+json_values: '{"link":true,"name":"Alcon Blue","uid":"alcon-blue","class":".coh-color-alcon-blue","variable":"$coh-color-alcon-blue","value":{"value":{"hex":"#2c5697","rgba":"rgba(44, 86, 151, 1)"}},"wysiwyg":true,"inuse":true,"tags":[{"label":"primary","value":"primary"},{"label":"secondary","value":"secondary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 2

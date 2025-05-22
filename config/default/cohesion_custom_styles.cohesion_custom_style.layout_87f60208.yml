@@ -1,0 +1,18 @@
+uuid: 28d943cf-6e56-423d-b3a0-0e793c851343
+langcode: en
+status: true
+dependencies: {  }
+label: 'Padding left right - medium'
+id: layout_87f60208
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"padding":{"padding-bottom":{},"padding-top":{},"padding-left":{"value":"64"},"padding-right":{"value":"64"}}},"lg":{"padding":{"padding-bottom":{},"padding-top":{}}},"sm":{"padding":{"padding-bottom":{},"padding-top":{}}},"ps":{"padding":{"padding-bottom":{},"padding-top":{},"padding-left":{"value":"40"},"padding-right":{"value":"40"}}},"md":{"padding":{"padding-top":{},"padding-bottom":{},"padding-left":{"value":"48"},"padding-right":{"value":"48"}}}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"padding","breakpoints":[{"name":"xl"},{"name":"md"},{"name":"ps"}],"activeFields":[{"name":"padding-equal","active":false},{"name":"padding-top","active":false},{"name":"padding-bottom","active":false},{"name":"padding-left","active":true},{"name":"padding-right","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-padding-left-right---medium
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 143

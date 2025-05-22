@@ -1,0 +1,13 @@
+uuid: 72d5a25a-5b8c-419e-9029-89c246e3e3ae
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Solid Gold'
+id: total-solid-gold
+json_values: '{"link":true,"name":"TOTAL Solid Gold","uid":"total-solid-gold","class":".coh-color-total-solid-gold","variable":"$coh-color-total-solid-gold","value":{"value":{"hex":"#dcb751","rgba":"rgba(220, 183, 81, 1)"}},"inuse":false,"wysiwyg":false,"tags":[{"label":"total","value":"total"},{"label":"primary","value":"primary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 75

@@ -1,0 +1,18 @@
+uuid: 38470c19-424f-4006-b111-43e7ebe0f5b3
+langcode: en
+status: false
+dependencies: {  }
+label: 'Upcoming Event teaser (Node, Virtual Booth page)'
+id: node_virtualbooth_upcoming_event
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: virtualbooth
+view_mode: upcoming_event_teaser
+master_template: ''

@@ -1,0 +1,23 @@
+uuid: 54ab4664-81f9-4d65-94eb-1d7b905f78b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_start_date
+    - node.type.virtualbooth
+  module:
+    - datetime
+_core:
+  default_config_hash: ZT9yaDZHelu3cpO16NHl2krRjkaA71DAl0GUHr5WmuI
+id: node.virtualbooth.field_virtualbooth_start_date
+field_name: field_virtualbooth_start_date
+entity_type: node
+bundle: virtualbooth
+label: 'Start Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

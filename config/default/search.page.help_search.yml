@@ -1,0 +1,14 @@
+uuid: 7998c914-bd9f-4086-824a-25b7afa00c2b
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - help
+_core:
+  default_config_hash: RZ-bcSekNSsAbIPLW7Gmyd3uUjIOSrPvnb8RCCZYJm8
+id: help_search
+label: 帮助
+path: help
+weight: 0
+plugin: help_search
+configuration: {  }

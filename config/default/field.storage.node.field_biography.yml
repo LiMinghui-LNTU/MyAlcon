@@ -1,0 +1,19 @@
+uuid: 75b59080-126f-4aa9-a4fa-6a54b06fc7fd
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_biography
+field_name: field_biography
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

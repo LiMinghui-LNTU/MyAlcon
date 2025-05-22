@@ -1,0 +1,29 @@
+uuid: 7e5ebcf4-04c4-4e0a-b1a3-4d5cc3509edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gated_content_form
+    - node.type.symposium
+    - taxonomy.vocabulary.gated_content_form
+id: node.symposium.field_gated_content_form
+field_name: field_gated_content_form
+entity_type: node
+bundle: symposium
+label: 'Gated Content Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gated_content_form: gated_content_form
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: gated_content_form
+field_type: entity_reference

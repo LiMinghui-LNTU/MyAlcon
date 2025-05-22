@@ -1,0 +1,22 @@
+uuid: a1069b3c-b74b-4fc4-b608-4369c1f718ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+id: node.virtualbooth.promote
+field_name: promote
+entity_type: node
+bundle: virtualbooth
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

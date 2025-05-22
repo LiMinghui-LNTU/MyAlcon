@@ -1,0 +1,20 @@
+uuid: 43fdf927-1b1d-4ea8-aed2-779dd7241ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.ded85486
+label: 'Small fixed width'
+id: d1c19bae
+json_values: '{"preview":{"text":"","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"height":{"value":"150"},"display":{"value":"flex"},"flex-container":{"justify-content":{"value":"center"},"align-items":{"value":"center"}}}},"738cdcf6-d7dd-46e9-b76d-73fec8149428":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"height":{"value":"105"},"width":{"value":"auto"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-height","active":false},{"name":"max-height","active":false},{"name":"height","active":true}]},{"formKey":"display","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"display","active":true},{"name":"visibility","active":false},{"name":"overflow","active":false},{"name":"overflow-x","active":false},{"name":"overflow-y","active":false}]},{"formKey":"flex-container","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"flex-direction","active":false},{"name":"flex-wrap","active":false},{"name":"justify-content","active":true},{"name":"justify-content-safety","active":true},{"name":"align-content","active":false},{"name":"align-content-safety","active":true},{"name":"align-items","active":true},{"name":"align-items-safety","active":true}]}]}],"items":[{"title":"img","type":"container","items":[],"form":null,"selectorType":"child","model":"img","uuid":"738cdcf6-d7dd-46e9-b76d-73fec8149428","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-height","active":false},{"name":"max-height","active":false},{"name":"height","active":true}]},{"formKey":"width","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":false},{"name":"width","active":true}]}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-extended-small-fixed-width
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-a-card-image-styling
+weight: 237

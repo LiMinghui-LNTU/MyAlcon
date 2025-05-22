@@ -1,0 +1,18 @@
+uuid: 9fb25c6a-9bc1-4c18-a19c-8fdb0b584992
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.gated_content_sfdc_campaign
+target_entity_type_id: taxonomy_term
+target_bundle: gated_content_sfdc_campaign
+default_langcode: site_default
+language_alterable: false

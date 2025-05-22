@@ -1,0 +1,47 @@
+status: true
+dependencies:
+  config:
+    - views.view.kc_article_lobby_category
+  module:
+    - cohesion
+    - context
+    - views
+  theme:
+    - cohesion_theme
+id: views_block__kc_article_lobby_category_block_1
+theme: cohesion_theme
+region: dx8_hidden
+weight: 0
+provider: null
+plugin: 'views_block:kc_article_lobby_category-block_1'
+settings:
+  id: 'views_block:kc_article_lobby_category-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    using_master_template: 0
+    negate: false
+  context_all:
+    id: context_all
+    values: ''
+    negate: null
+  context:
+    id: context
+    values: ''
+    negate: null
+  user_status:
+    id: user_status
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

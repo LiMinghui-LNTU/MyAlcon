@@ -1,0 +1,10 @@
+name: Views Extras (Session/Cookie/Token Support)
+type: module
+description: Views Arguments based on session, cookie or token.
+core_version_requirement: ^9.3 || ^10
+package: Views
+
+# Information added by Drupal.org packaging script on 2023-12-07
+version: '3.0.0'
+project: 'views_extras'
+datestamp: 1701975584

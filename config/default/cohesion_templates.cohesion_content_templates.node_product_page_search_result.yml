@@ -1,0 +1,18 @@
+uuid: 53fea90f-599a-4d2e-bae7-4c1efe4b26e8
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search result highlighting input (Node, Product page)'
+id: node_product_page_search_result
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: product_page
+view_mode: search_result
+master_template: ''

@@ -1,0 +1,13 @@
+uuid: d1924012-0983-481b-b1c5-e26a4eeb4167
+langcode: en
+status: true
+dependencies: {  }
+label: 'Blue 120 (Pressed state(¿)'
+id: blue-120-pressed-state
+json_values: '{"link":true,"value":{"value":{"hex":"#002362","rgba":"rgba(0, 35, 98, 1)"}},"name":"Blue 120 (Pressed state(\u00bf)","uid":"blue-120-pressed-state","class":".coh-color-blue-120-pressed-state","variable":"$coh-color-blue-120-pressed-state","inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 9

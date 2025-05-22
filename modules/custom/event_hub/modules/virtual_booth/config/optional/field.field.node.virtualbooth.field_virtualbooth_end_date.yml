@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_end_date
+    - node.type.virtualbooth
+  module:
+    - datetime
+id: node.virtualbooth.field_virtualbooth_end_date
+field_name: field_virtualbooth_end_date
+entity_type: node
+bundle: virtualbooth
+label: 'End Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

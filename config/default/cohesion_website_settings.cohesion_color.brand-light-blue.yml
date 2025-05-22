@@ -1,0 +1,13 @@
+uuid: 914e4443-ad3a-4e5c-85b2-a251a84c4862
+langcode: en
+status: true
+dependencies: {  }
+label: 'Brand - Light Blue'
+id: brand-light-blue
+json_values: '{"link":true,"name":"Brand - Light Blue","uid":"brand-light-blue","class":".coh-color-brand-light-blue","variable":"$coh-color-brand-light-blue","value":{"value":{"hex":"#7fc6e5","rgba":"rgba(127, 198, 229, 1)"}},"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 20

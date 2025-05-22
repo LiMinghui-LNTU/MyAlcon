@@ -1,0 +1,9 @@
+uuid: c9850f1e-8521-4e02-bf92-38c4e3165fdb
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5511_style
+label: DMB-5511-style
+description: ''
+excluded_entity_types: '[]'
+settings: '{"6a3b5b9a-b3a4-45a4-8489-07242752d0d6":{"type":"cohesion_custom_style","items":{"6a3b5b9a-b3a4-45a4-8489-07242752d0d6":{"type":"cohesion_custom_style"}},"checked":true}}'

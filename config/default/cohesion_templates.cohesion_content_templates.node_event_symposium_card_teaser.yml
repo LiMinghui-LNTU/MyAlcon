@@ -1,0 +1,18 @@
+uuid: b127a5c1-cf21-4a0e-b7c0-8aa0745c8179
+langcode: en
+status: false
+dependencies: {  }
+label: 'Symposium Card teaser (Node, Event page)'
+id: node_event_symposium_card_teaser
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: event
+view_mode: symposium_card_teaser
+master_template: ''

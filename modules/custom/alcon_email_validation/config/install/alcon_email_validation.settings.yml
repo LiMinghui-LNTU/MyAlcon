@@ -1,0 +1,6 @@
+api_key: ''
+error_checkbox: TRUE
+generic_error: 'Please add a valid email address.'
+address_invalid_error: 'Email address is not valid.'
+domain_invalid_error: 'Email domain is not valid.'
+account_invalid_error: 'Email account is not valid.'

@@ -1,0 +1,27 @@
+name: Event
+type: module
+description: Event Hub submodule for Event content type.
+package: Event Hub
+core_version_requirement: ^8 || ^9 || ^10
+'interface translation project': event
+'interface translation server pattern':
+  modules/custom/event_hub/modules/event/translations/event.po
+dependencies:
+  - event_hub
+  - cohesion_custom_styles
+  - datetime
+  - image
+  - file
+  - focal_point
+  - link
+  - metatag
+  - text
+  - content_translation
+  - entity_reference_revisions
+  - user
+  - svg_image
+  - twig_field_value
+  - views
+  - slick
+  - responsive_image
+  - better_exposed_filters

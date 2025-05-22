@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_name
+    - node.type.biography_page
+  module:
+    - text
+id: node.biography_page.field_last_name
+field_name: field_last_name
+entity_type: node
+bundle: biography_page
+label: 'Last Name'
+description: "Plain text field used to store the Last Name of the Biographer\r\n\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

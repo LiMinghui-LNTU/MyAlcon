@@ -1,0 +1,42 @@
+uuid: 7eb9b522-0271-4e20-914e-179908545bde
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.brand-menu---constellation
+  module:
+    - cohesion
+    - context
+    - system
+  theme:
+    - cohesion_theme
+id: brandmenuconstellation
+theme: cohesion_theme
+region: dx8_hidden
+weight: -28
+provider: null
+plugin: 'system_menu_block:brand-menu---constellation'
+settings:
+  id: 'system_menu_block:brand-menu---constellation'
+  label: 'Brand Menu - Constellation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

@@ -1,0 +1,10 @@
+uuid: f2b2d209-bd3f-487d-8eb5-4858b4ae3610
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: suZA23B-ek_MGDarc-4vJqP5W4GHCvgC7v2UJH5VBM4
+name: 'Article Category Professional'
+vid: article_category_professional
+description: ''
+weight: 0

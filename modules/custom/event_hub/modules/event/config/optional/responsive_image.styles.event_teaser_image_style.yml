@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.event_teaser_desktop
+    - image.style.event_teaser_phone
+  module:
+    - event
+id: event_teaser_image_style
+label: 'Event Teaser Image Style'
+image_style_mappings:
+  -
+    breakpoint_id: site_studio.event_hub.images.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_teaser_desktop
+  -
+    breakpoint_id: site_studio.event_hub.images.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_teaser_desktop
+  -
+    breakpoint_id: site_studio.event_hub.images.ls
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_teaser_desktop
+  -
+    breakpoint_id: site_studio.event_hub.images.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_teaser_desktop
+  -
+    breakpoint_id: site_studio.event_hub.images.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_teaser_desktop
+  -
+    breakpoint_id: site_studio.event_hub.images.ps
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: event_teaser_phone
+breakpoint_group: site_studio.event_hub.images
+fallback_image_style: event_teaser_desktop

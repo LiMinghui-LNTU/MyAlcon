@@ -1,0 +1,13 @@
+uuid: f8c0fc5a-dc9c-45b8-8f4b-333698a1c220
+langcode: en
+status: true
+dependencies: {  }
+label: 'VC PRODUCT PAGES'
+id: hlp_cat_product_pages
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: true
+class: category-15
+weight: -4

@@ -1,0 +1,4 @@
+alcon_gated_content.admin:
+  route_name: alcon_gated_content.admin
+  title: 'Alcon Gated Content'
+  base_route: alcon_gated_content.admin

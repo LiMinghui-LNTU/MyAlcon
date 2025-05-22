@@ -1,0 +1,13 @@
+uuid: edf5d400-a36f-48e7-9263-fad0ca06f5d5
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: t43OqwzP3CTbcAagSsWKNy6KwMm_zShXo3c4-So6rQg
+id: node_delete_action
+label: 删除内容
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

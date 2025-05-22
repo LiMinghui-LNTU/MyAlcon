@@ -1,0 +1,13 @@
+uuid: 9b6860e7-213d-4555-ae77-baaf1722ef24
+langcode: en
+status: true
+dependencies: {  }
+label: 'Global Directory Gray'
+id: global-directory-gray
+json_values: '{"link":true,"value":{"value":{"hex":"#6b6b6b","rgba":"rgba(107, 107, 107, 1)"}},"name":"Global Directory Gray","uid":"global-directory-gray","class":".coh-color-global-directory-gray","variable":"$coh-color-global-directory-gray","inuse":false,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 84

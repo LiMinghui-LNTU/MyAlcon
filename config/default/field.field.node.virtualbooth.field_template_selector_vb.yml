@@ -1,0 +1,25 @@
+uuid: 4bda20c6-6ab4-4deb-95da-28ab1c54c54b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_selector_vb
+    - node.type.virtualbooth
+  module:
+    - cohesion_templates
+_core:
+  default_config_hash: t3sC_ZDcss8sEgBRfAKwBTEEPrDHtWgeQpB9u-v8L58
+id: node.virtualbooth.field_template_selector_vb
+field_name: field_template_selector_vb
+entity_type: node
+bundle: virtualbooth
+label: 'Template selector'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: __default__
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

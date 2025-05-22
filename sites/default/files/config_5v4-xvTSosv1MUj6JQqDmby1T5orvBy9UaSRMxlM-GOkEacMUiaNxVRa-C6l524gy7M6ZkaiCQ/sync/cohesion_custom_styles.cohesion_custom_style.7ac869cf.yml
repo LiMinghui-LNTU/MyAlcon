@@ -1,0 +1,21 @@
+uuid: 233c4eb1-e457-4718-bc68-986f7aed5b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.freshllook-rich-black
+    - cohesion_website_settings.cohesion_font_stack.raleway
+label: brand-card-subtitle
+id: 7ac869cf
+json_values: '{"preview":{"text":"<h1 class=\"coh-preview\">Default content for ''Heading''.<\/h1>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h1","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-raleway"},"font-size":{"value":"16px"},"font-weight":{"value":"400"},"text-align":{},"line-height":{"value":"30px"},"text-transform":{"value":"uppercase"},"font-style":{"value":"italic"},"color":{"value":{"link":true,"name":"Freshllook Rich Black","uid":"freshllook-rich-black","class":".coh-color-freshllook-rich-black","variable":"$coh-color-freshllook-rich-black","value":{"hex":"#1c0634","rgba":"rgba(28, 6, 52, 1)"},"wysiwyg":true,"locked":true,"inuse":true,"tags":["Freshlook"]}},"margin":{"margin-top":{"value":"0px"},"margin-bottom":{"value":"0px"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":true},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]},{"formKey":"font-style-and-wrapping","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-style","active":true},{"name":"text-transform","active":true},{"name":"text-decoration","active":true},{"name":"word-wrap","active":true},{"name":"direction","active":true}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-duplicate-of-brand-card-subtitle
+custom_style_type: heading
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 230

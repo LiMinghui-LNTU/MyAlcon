@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template_selector_event
+    - node.type.event
+  module:
+    - cohesion_templates
+id: node.event.field_template_selector_event
+field_name: field_template_selector_event
+entity_type: node
+bundle: event
+label: 'Template Selector'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    selected_template: ctn_tpl_blank_template_event
+default_value_callback: ''
+settings: {  }
+field_type: cohesion_template_selector

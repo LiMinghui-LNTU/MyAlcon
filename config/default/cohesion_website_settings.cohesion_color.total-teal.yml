@@ -1,0 +1,13 @@
+uuid: d27e9c8c-de9a-4e0f-a10f-30d180076688
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Teal'
+id: total-teal
+json_values: '{"link":true,"name":"TOTAL Teal","uid":"total-teal","class":".coh-color-total-teal","variable":"$coh-color-total-teal","value":{"value":{"hex":"#00968f","rgba":"rgba(0, 150, 143, 1)"}},"inuse":true,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 78

@@ -1,0 +1,13 @@
+uuid: a2be5b37-09d9-4a96-918f-a439f2fa04e2
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Medium Blue'
+id: total-medium-blue
+json_values: '{"link":true,"name":"TOTAL Medium Blue","uid":"total-medium-blue","class":".coh-color-total-medium-blue","variable":"$coh-color-total-medium-blue","value":{"value":{"hex":"#0057b7","rgba":"rgba(0, 87, 183, 1)"}},"inuse":false,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 74

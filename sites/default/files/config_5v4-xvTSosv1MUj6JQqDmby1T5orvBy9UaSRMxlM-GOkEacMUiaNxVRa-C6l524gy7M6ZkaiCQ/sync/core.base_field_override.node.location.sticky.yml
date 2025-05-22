@@ -1,0 +1,22 @@
+uuid: f46b5348-836b-44d8-aca1-810f16817f8f
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - node.type.location
+id: node.location.sticky
+field_name: sticky
+entity_type: node
+bundle: location
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

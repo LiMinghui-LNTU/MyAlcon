@@ -1,0 +1,22 @@
+uuid: c2d1b514-105d-4fd1-82a5-7679197d361b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+id: taxonomy_term.gated_content_sfdc_campaign.status
+field_name: status
+entity_type: taxonomy_term
+bundle: gated_content_sfdc_campaign
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

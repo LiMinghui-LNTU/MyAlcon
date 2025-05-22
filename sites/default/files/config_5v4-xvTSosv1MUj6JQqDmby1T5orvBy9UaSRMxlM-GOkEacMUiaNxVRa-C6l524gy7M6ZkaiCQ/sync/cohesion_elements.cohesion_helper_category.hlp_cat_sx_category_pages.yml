@@ -1,0 +1,13 @@
+uuid: 7cd34c50-9d6d-4445-85ba-b386725ae3a8
+langcode: en
+status: true
+dependencies: {  }
+label: 'SX CATEGORY PAGES'
+id: hlp_cat_sx_category_pages
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: true
+class: category-3
+weight: -8

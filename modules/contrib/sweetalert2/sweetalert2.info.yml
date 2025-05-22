@@ -1,0 +1,10 @@
+name: SweetAlert2
+type: module
+description: "Convert your Javascript alerts into something modern!"
+package: Other
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+
+# Information added by Drupal.org packaging script on 2024-05-30
+version: '10.2.0'
+project: 'sweetalert2'
+datestamp: 1717087073

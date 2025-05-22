@@ -1,0 +1,124 @@
+uuid: 3d5e001d-d4f1-4cc6-829c-44ea60e8668b
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - blazy
+    - editor
+    - media
+    - slick
+_core:
+  default_config_hash: VXOM2nH1ZNBMl2lrZAoi56iaVUSRDwA4OYxZRhwYuyg
+name: 'Site Studio'
+format: cohesion
+weight: -10
+filters:
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
+    status: false
+    weight: 3
+    settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_media_style: ''
+      box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
+      use_data_uri: '0'
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<span class="example-class coh-style-a-tick-li-white coh-style-a-tick-list-item-blue coh-style-large-body-text coh-style-a-body-text-xtra-small coh-style-a-tick-list-inline coh-style-a-desired-unordered-list-complete coh-style-article-lobby-banner-heading coh-style-weight-100 coh-style-patient-cataract-h1 coh-style-a-link-white coh-style-basic-numbered-list coh-style-a-body-text-medium coh-style-a-cross-list-blue coh-style-a-link-text-small coh-style-a-body-text-small coh-style-patient-cataract-h3 coh-style-a-body-text-xtra-large coh-style-turquoise coh-style-a-link-text-medium coh-style-half-width coh-style-a-bullet-tick-blue coh-style-avs-blue coh-style-a-body-text-large coh-style-mice-type coh-style-a-link-text-large coh-style-a-bullet-tick-white coh-style-patient-cataract-h2 coh-style-text-align-center-break-left coh-style-heading-2-size coh-color-black coh-color-brand-color coh-color-alcon-blue coh-color-alcon-almost-black coh-color-primary-alcon-light-blue coh-color-alcon-floral-white coh-color-alcon-gray coh-color-alcon-gray-medium coh-color-alcon-white-smoke coh-color-blue-100-brand-blue coh-color-blue-120 coh-color-blue-120-pressed-state coh-color-clear-care-blue coh-color-clear-care-dark-purple coh-color-clear-care-yellow coh-color-dailies-total1-plum coh-color-opti-free-gray coh-color-opti-free-green-contrast-std coh-color-precision-light-blue coh-color-primary-alcon-true-blue coh-color-systane-blue coh-color-systane-green coh-color-global-directory-black coh-color-global-directory-gray coh-color-total-ivory coh-color-total-soft-blue coh-color-total30-blue coh-color-white"> <p class="coh-style-large-body-text coh-style-a-body-text-xtra-small coh-style-weight-100 coh-style-a-body-text-medium coh-style-a-body-text-small coh-style-a-body-text-xtra-large coh-style-half-width coh-style-a-body-text-large coh-style-mice-type"> <ul class="coh-style-a-desired-unordered-list-complete coh-style-basic-numbered-list coh-style-a-cross-list-blue coh-style-a-bullet-tick-blue coh-style-tick-list---blue coh-style-a-bullet-tick-white"> <ol class="coh-style-a-desired-unordered-list-complete coh-style-basic-numbered-list coh-style-a-cross-list-blue coh-style-a-bullet-tick-blue coh-style-tick-list---blue coh-style-a-bullet-tick-white"> <dl class="coh-style-a-desired-unordered-list-complete coh-style-basic-numbered-list coh-style-a-cross-list-blue coh-style-a-bullet-tick-blue coh-style-tick-list---blue coh-style-a-bullet-tick-white"> <h1 class="coh-style-patient-cataract-h1 coh-style-patient-cataract-h3 coh-style-patient-cataract-h2 coh-style-heading-2-size"> <h2 class="coh-style-patient-cataract-h1 coh-style-patient-cataract-h3 coh-style-patient-cataract-h2 coh-style-heading-2-size"> <h3 class="coh-style-patient-cataract-h1 coh-style-patient-cataract-h3 coh-style-patient-cataract-h2 coh-style-heading-2-size"> <h4 class="coh-style-patient-cataract-h1 coh-style-patient-cataract-h3 coh-style-patient-cataract-h2 coh-style-heading-2-size"> <h5 class="coh-style-patient-cataract-h1 coh-style-patient-cataract-h3 coh-style-patient-cataract-h2 coh-style-heading-2-size"> <h6 class="coh-style-patient-cataract-h1 coh-style-patient-cataract-h3 coh-style-patient-cataract-h2 coh-style-heading-2-size"> <a class="coh-style-a-link-white coh-style-a-link-text-small coh-style-a-link-text-medium coh-style-a-link-text-large">'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: 15
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types:
+        document: document
+        image: image
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: default
+      layout: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      skin: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      preserve_keys: false
+      visible_items: null

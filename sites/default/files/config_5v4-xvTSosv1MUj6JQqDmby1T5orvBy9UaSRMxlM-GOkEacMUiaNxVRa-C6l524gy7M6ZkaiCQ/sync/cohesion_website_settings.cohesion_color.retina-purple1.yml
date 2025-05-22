@@ -1,0 +1,13 @@
+uuid: bf1c2bd7-0b21-446f-bb9e-4e29c8738a35
+langcode: en
+status: true
+dependencies: {  }
+label: 'Retina Purple1'
+id: retina-purple1
+json_values: '{"link":true,"name":"Retina Purple1","uid":"retina-purple1","class":".coh-color-retina-purple1","variable":"$coh-color-retina-purple1","inuse":false,"value":{"value":{"hex":"#743082","rgba":"rgba(116, 48, 130, 1)"}}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: null

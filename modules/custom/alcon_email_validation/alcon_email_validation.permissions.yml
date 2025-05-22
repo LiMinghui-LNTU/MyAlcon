@@ -1,0 +1,4 @@
+alcon_email_validation_settings:
+  title: 'Email Validation Settings'
+  description: 'Users who have this permission can update email validation settings.'
+  restrict access: TRUE

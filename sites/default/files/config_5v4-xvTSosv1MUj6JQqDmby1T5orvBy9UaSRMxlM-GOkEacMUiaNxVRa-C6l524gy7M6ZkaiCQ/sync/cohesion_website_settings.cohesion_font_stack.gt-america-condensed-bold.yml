@@ -1,0 +1,13 @@
+uuid: acc98d4d-4383-47f5-8dad-b598711af973
+langcode: en
+status: true
+dependencies: {  }
+label: 'GT-America Condensed Bold'
+id: gt-america-condensed-bold
+json_values: '{"inuse":true,"systemfont":false,"link":true,"name":"GT-America Condensed Bold","uid":"gt-america-condensed-bold","class":".coh-font-gt-america-condensed-bold","variable":"$coh-font-gt-america-condensed-bold","fontStack":"GT-America Condensed Bold","smoothing":{"firefox":true,"webkit":true}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fontStacks

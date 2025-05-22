@@ -1,0 +1,13 @@
+uuid: 89110f39-c9d8-40fc-addd-ec7c4e473b7a
+langcode: en
+status: true
+dependencies: {  }
+label: 'Light 2'
+id: light-2
+json_values: '{"value":{"value":{"hex":"#e6e8ee","rgba":"rgba(230, 232, 238, 1)"}},"name":"Light 2","uid":"light-2","class":".coh-color-light-2","variable":"$coh-color-light-2","wysiwyg":false,"inuse":true,"link":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 58

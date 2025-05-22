@@ -1,0 +1,8 @@
+uuid: 6b157d61-3acd-4a53-8212-6ab451d9e0f9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gated Content SFDC Campaign'
+vid: gated_content_sfdc_campaign
+description: ''
+weight: 0

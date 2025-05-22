@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_teaser_wide_desktop
+label: 'Article Teaser Wide Desktop'
+effects:
+  71fddd2c-5a72-4efe-bddc-ddf721ec1153:
+    uuid: 71fddd2c-5a72-4efe-bddc-ddf721ec1153
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 215
+      crop_type: focal_point

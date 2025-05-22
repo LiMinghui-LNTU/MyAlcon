@@ -1,0 +1,20 @@
+uuid: a176efec-a915-4a31-887f-bda06388cc9d
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_weight
+field_name: field_weight
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

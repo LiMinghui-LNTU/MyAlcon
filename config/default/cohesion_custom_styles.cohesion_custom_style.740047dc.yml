@@ -1,0 +1,18 @@
+uuid: cd388d7a-ab22-4068-bc00-ca9e757712bf
+langcode: en
+status: true
+dependencies: {  }
+label: 'Webform pop-up with close button content'
+id: 740047dc
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"custom-css":[{"customCssProperty":{"value":"justify-content"},"customCss":{"value":"center"}},{"customCssProperty":{"value":"display"},"customCss":{"value":"flex"}},{"customCssProperty":{"value":"overflow"},"customCss":{"value":"auto"}},{"customCssProperty":{"value":"height"},"customCss":{"value":"900px"}}]},"lg":{"custom-css":[{}]}}},"variableFields":[],"previewModel":{}}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"iconName":"television","name":"xl"},{"name":"lg"}],"activeFields":[{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-webform-pop-up-with-close-button-content
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 9

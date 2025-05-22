@@ -1,0 +1,42 @@
+uuid: e14cccb3-ae0d-438c-90f6-6780f725f02f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.brand-menu---clareon-monofocal
+  module:
+    - cohesion
+    - context
+    - system
+  theme:
+    - cohesion_theme
+id: brandmenuclareonmonofocal
+theme: cohesion_theme
+region: dx8_hidden
+weight: -29
+provider: null
+plugin: 'system_menu_block:brand-menu---clareon-monofocal'
+settings:
+  id: 'system_menu_block:brand-menu---clareon-monofocal'
+  label: 'Brand Menu - Clareon Monofocal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

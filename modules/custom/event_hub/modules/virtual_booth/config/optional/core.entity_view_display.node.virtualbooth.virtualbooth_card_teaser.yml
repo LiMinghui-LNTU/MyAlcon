@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.virtualbooth_card_teaser
+    - field.field.node.virtualbooth.field_layout_canvas_virtualbooth
+    - field.field.node.virtualbooth.field_template_selector_vb
+    - field.field.node.virtualbooth.field_vb_event_reference
+    - field.field.node.virtualbooth.field_vb_meta_tags
+    - field.field.node.virtualbooth.field_virtualbooth_description
+    - field.field.node.virtualbooth.field_virtualbooth_end_date
+    - field.field.node.virtualbooth.field_virtualbooth_name
+    - field.field.node.virtualbooth.field_virtualbooth_place
+    - field.field.node.virtualbooth.field_virtualbooth_register_link
+    - field.field.node.virtualbooth.field_virtualbooth_start_date
+    - field.field.node.virtualbooth.field_virtualbooth_teaser_image
+    - field.field.node.virtualbooth.field_virtualbooth_weight
+    - image.style.upcoming_event_teaser
+    - node.type.virtualbooth
+  module:
+    - datetime
+    - layout_builder
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.virtualbooth.virtualbooth_card_teaser
+targetEntityType: node
+bundle: virtualbooth
+mode: virtualbooth_card_teaser
+content:
+  field_virtualbooth_name:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_virtualbooth_place:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_virtualbooth_start_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_virtualbooth_teaser_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: upcoming_event_teaser
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_layout_canvas_virtualbooth: true
+  field_template_selector_vb: true
+  field_vb_event_reference: true
+  field_vb_meta_tags: true
+  field_virtualbooth_description: true
+  field_virtualbooth_end_date: true
+  field_virtualbooth_register_link: true
+  field_virtualbooth_weight: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

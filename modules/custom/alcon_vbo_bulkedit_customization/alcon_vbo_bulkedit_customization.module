@@ -1,0 +1,185 @@
+<?php
+
+/**
+ * @file
+ * Views bulk edit customizations module.
+ */
+
+use Drupal\Component\Serialization\Json;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function alcon_vbo_bulkedit_customization_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  $storage = $form_state->getStorage();
+
+  if ($form_id == 'bulk_edit_form' || $form_id == 'views_bulk_operations_configure_action') {
+    if (!empty($storage && array_key_exists('node', $form))) {
+      foreach ($form['node'] as $type_key => $type_value) {
+        if (strpos($type_key, '#') == '') {
+          // Getting field id of meta tag field in the content type.
+          $field_id = alcon_vbo_bulkedit_customization_get_metatag_fieldid($type_key);
+          if ($field_id != '') {
+            foreach ($form['node'][$type_key][$field_id]['widget']['0'] as $key => $field) {
+
+              $name_array = ['advanced'];
+              if (!in_array($key, $name_array)) {
+                unset($form['node'][$type_key][$field_id]['widget']['0'][$key]);
+              }
+              else {
+                foreach ($form['node'][$type_key][$field_id]['widget']['0']['advanced'] as $key => $field) {
+                  $name_array = ['robots'];
+                  if (!in_array($key, $name_array)) {
+                    unset($form['node'][$type_key][$field_id]['widget']['0']['advanced'][$key]);
+                  }
+                  else {
+                    foreach ($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots'] as $key => $field) {
+                      $name_array = ['robots'];
+                      if (!in_array($key, $name_array)) {
+                        unset($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots'][$key]);
+                      }
+                      else {
+                        foreach ($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots']['robots'] as $key => $field) {
+                          $name_array = ['index', 'follow'];
+                          if (in_array($key, $name_array)) {
+                            unset($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots']['robots'][$key]);
+                          }
+                        }
+
+                        foreach ($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots']['robots']['#options'] as $key => $field) {
+                          $name_array = ['noindex', 'nofollow'];
+                          if (!in_array($key, $name_array)) {
+                            unset($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots']['robots']['#options'][$key]);
+                          }
+                        }
+
+                        unset($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots']['robots']['index']);
+                        unset($form['node'][$type_key][$field_id]['widget']['0']['advanced']['robots']['robots']['follow']);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      array_unshift($form['#submit'], 'alcon_vbo_bulkedit_customization_bulk_edit_form_submit');
+    }
+  }
+
+}
+
+/**
+ * Custom form submit function.
+ */
+function alcon_vbo_bulkedit_customization_bulk_edit_form_submit(array &$form, FormStateInterface $form_state) {
+  $meta_data_array = [];
+  $storage = $form_state->getStorage();
+  if ($storage['views_bulk_operations']['action_id'] == 'views_bulk_edit') {
+    $node_data_array = $form_state->getValue('node');
+    $views_bulk_operations_data = $storage['views_bulk_operations'];
+
+    // Creating an array to connect the node ids and bundles.
+    $node_array = [];
+    foreach ($views_bulk_operations_data['list'] as $nodeid) {
+      $node_data = \Drupal::entityTypeManager()->getStorage('node')->load($nodeid[0]);
+      $node_array[$node_data->bundle()][$nodeid[0]][] = $nodeid[1];
+    }
+
+    foreach ($node_data_array as $bundle_name => $node_data_value) {
+      // Get content type id.
+      $field_id = alcon_vbo_bulkedit_customization_get_metatag_fieldid($bundle_name);
+      $field_selector = $node_data_array[$bundle_name]['_field_selector'];
+      if (array_key_exists($field_id, $field_selector)) {
+        // If meta tag checkbox is checked for a content type.
+        if ($field_selector[$field_id] == 1) {
+          $field_data = $form_state->getValue(['node', $bundle_name]);
+          $modify = array_filter($field_data['_field_selector']);
+          if (!empty($modify)) {
+            $node_ids = $node_array[$bundle_name];
+
+            // Creating robots string from bulk submitted data.
+            $robot_string = '';
+            foreach ($field_data[$field_id]['0']['advanced']['robots']['robots'] as $robot_value) {
+              if ($robot_value != 0) {
+                if ($robot_string == '') {
+                  $robot_string = $robot_value;
+                }
+                else {
+                  $robot_string .= ", " . $robot_value;
+                }
+              }
+            }
+
+            foreach ($node_ids as $nid_to_update => $lang_code_array) {
+              foreach ($lang_code_array as $lang_code) {
+
+                // Saving node with robots value.
+                $node = \Drupal::entityTypeManager()->getStorage('node')->load($nid_to_update);
+                if ($node->hasTranslation($lang_code)) {
+                  $node = $node->getTranslation($lang_code);
+                }
+                $meta_tag = alcon_vbo_bulkedit_customization_metatag_data_decode($node->$field_id->value);
+                $meta_tag['robots'] = $robot_string;
+                $serialize_meta = Json::encode($meta_tag);
+                $meta_data_array[$nid_to_update]['lang_code'][$lang_code] = $serialize_meta;
+                $meta_data_array[$nid_to_update]['field_id'] = $field_id;
+              }
+            }
+          }
+        }
+        $node_data_array[$bundle_name]['_field_selector'][$field_id] = 0;
+      }
+    }
+
+    $form_state->setValue('node', $node_data_array);
+    $store = \Drupal::service('tempstore.private')->get('alcon_vbo_bulkedit_customization');
+    $store->set('meta_data_array', $meta_data_array);
+  }
+}
+
+/**
+ * Decode the different versions of encoded values supported by Metatag.
+ *
+ * Metatag v1 stored data in serialized arrays. Metatag v2 stores data in
+ * JSON-encoded strings.
+ *
+ * @param string $string
+ *   The string to decode.
+ *
+ * @return array
+ *   A Metatag values array.
+ */
+function alcon_vbo_bulkedit_customization_metatag_data_decode($string): array {
+  $data = [];
+  // Serialized arrays from Metatag v1.
+  if (substr($string, 0, 2) === 'a:') {
+    $data = @unserialize($string, ['allowed_classes' => FALSE]);
+  }
+  // Encoded JSON from Metatag v2.
+  elseif (substr($string, 0, 2) === '{"') {
+    // @todo Handle non-array responses.
+    $data = Json::decode($string);
+  }
+  // This is expected to be an array, so if it isn't then convert it to one.
+  if (!is_array($data)) {
+    $data = [];
+  }
+  return $data;
+}
+
+/**
+ * Get field id of a metatag field in a content type.
+ */
+function alcon_vbo_bulkedit_customization_get_metatag_fieldid($content_type) {
+  $entityFieldManager = \Drupal::service('entity_field.manager');
+  $fields = $entityFieldManager->getFieldDefinitions('node', $content_type);
+  foreach ($fields as $field) {
+    if ($field->getType() == 'metatag') {
+      return $field->getName();
+    }
+  }
+}

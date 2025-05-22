@@ -1,0 +1,14 @@
+uuid: 7f64c9b7-40ae-40cd-bbcf-eb0557b72e9d
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - user.role.seoguan_li_yuan
+  module:
+    - user
+id: user_add_role_action.seoguan_li_yuan
+label: '为选择的用户添加 SEO管理员 角色'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: seoguan_li_yuan

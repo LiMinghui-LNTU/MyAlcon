@@ -1,0 +1,18 @@
+uuid: f674d55f-339b-4fde-abfe-8e7878a36e81
+langcode: en
+status: false
+dependencies: {  }
+label: 'Symposium Card teaser (Node, Webform)'
+id: node_webform_symposium_card_teas
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: webform
+view_mode: symposium_card_teaser
+master_template: ''

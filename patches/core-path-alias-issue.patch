@@ -1,0 +1,14 @@
+diff --git a/core/modules/path_alias/path_alias.post_update.php b/core/modules/path_alias/path_alias.post_update.php
+index 2675142e..86522eab 100644
+--- a/core/modules/path_alias/path_alias.post_update.php
++++ b/core/modules/path_alias/path_alias.post_update.php
+@@ -11,6 +11,7 @@
+ function path_alias_post_update_drop_path_alias_status_index(): void {
+   /** @var \Drupal\Core\Entity\EntityDefinitionUpdateManagerInterface $update_manager */
+   $update_manager = \Drupal::service('entity.definition_update_manager');
+-  $entity_type = $update_manager->getEntityType('path_alias');
+-  $update_manager->updateEntityType($entity_type);
++  if ($entity_type = $update_manager->getEntityType('path_alias')) {
++    $update_manager->updateEntityType($entity_type);
++  }
+ }

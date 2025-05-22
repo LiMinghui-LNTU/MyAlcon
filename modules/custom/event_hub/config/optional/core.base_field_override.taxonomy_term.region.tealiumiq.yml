@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.region
+id: taxonomy_term.region.tealiumiq
+field_name: tealiumiq
+entity_type: taxonomy_term
+bundle: region
+label: 'Tealium Tags'
+description: 'The Tealium tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

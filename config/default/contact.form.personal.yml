@@ -1,0 +1,13 @@
+uuid: 72b263f3-6888-4f8d-b8d6-c2549511d65c
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 个人联络表单
+recipients: {  }
+reply: ''
+weight: 0
+message: 您的信息已被送出。
+redirect: ''

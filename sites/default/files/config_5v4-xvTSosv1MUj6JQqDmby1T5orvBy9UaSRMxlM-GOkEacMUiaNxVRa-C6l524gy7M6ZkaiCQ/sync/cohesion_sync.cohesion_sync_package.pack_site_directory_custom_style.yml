@@ -1,0 +1,9 @@
+uuid: 96df6b1c-3790-464d-895c-ee03ad3e4501
+langcode: en
+status: true
+dependencies: {  }
+id: pack_site_directory_custom_style
+label: 'Site Directory Custom Styles'
+description: '*****DO NOT DELETE*****'
+excluded_entity_types: '[]'
+settings: '{"63b0e865-d3c7-4a5f-9772-5615bc25123a":{"type":"cohesion_custom_style","items":{"63b0e865-d3c7-4a5f-9772-5615bc25123a":{"type":"cohesion_custom_style"}},"checked":true},"9db97ec0-5895-4e6c-b6bc-ce6a85582d8b":{"type":"cohesion_custom_style","items":{"9db97ec0-5895-4e6c-b6bc-ce6a85582d8b":{"type":"cohesion_custom_style"}},"checked":true},"402bea4e-c849-41cd-8c76-dd86c4051881":{"type":"cohesion_color","items":{"402bea4e-c849-41cd-8c76-dd86c4051881":{"type":"cohesion_color"}},"checked":true},"9b6860e7-213d-4555-ae77-baaf1722ef24":{"type":"cohesion_color","items":{"9b6860e7-213d-4555-ae77-baaf1722ef24":{"type":"cohesion_color"}},"checked":true}}'

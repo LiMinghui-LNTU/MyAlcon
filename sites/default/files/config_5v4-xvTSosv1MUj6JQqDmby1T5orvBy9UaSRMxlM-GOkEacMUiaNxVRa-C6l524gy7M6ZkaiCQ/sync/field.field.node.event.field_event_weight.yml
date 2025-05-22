@@ -1,0 +1,25 @@
+uuid: 96d162db-a8c4-4c86-b1f4-523fad4803a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_weight
+    - node.type.event
+_core:
+  default_config_hash: jBnulAz80ZXE_0vQi4I9-pOC2Cv2NRKpcKqr5Q0naX4
+id: node.event.field_event_weight
+field_name: field_event_weight
+entity_type: node
+bundle: event
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

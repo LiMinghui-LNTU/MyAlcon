@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Hook functions for Restricted access module.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function restricted_access_preprocess_page(&$variables) {
+  global $base_url;
+  $config = \Drupal::config('restricted_access.url_settings');
+  $restricted_access_page = $config->get('restricted_access_page');
+  $variables['#attached']['library'][] = 'restricted_access/restricted_access';
+  $restrictedAction = $config->get('restricted_access_action');
+  $display = "";
+
+  $current_path = \Drupal::service('path.current')->getPath();
+  $redirectPath = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  $display_path = restricted_access_get_restricted_access_urls();
+
+  if ($restrictedAction == 'restrictedPopup') {
+    $popupExpiry = 0;
+    if (isset($_COOKIE['accessPageExpiry'])) {
+      $popupExpiry = 1;
+    }
+
+    if ($popupExpiry == 0) {
+      if (in_array($redirectPath, $display_path)) {
+        print("<div class='hide-body-content-load'></div>");
+        print("<div data-modal-open='modal-id-restricted-access' id='openPopup'>click</div>");
+        $display = 'yes';
+        $variables['#cache']['max-age'] = 0;
+        $variables['#cache']['contexts'][] = 'cookies:accessPageExpiry';
+      }
+      else {
+        $display = 'no';
+      }
+    }
+    else {
+      $display = 'no';
+    }
+  }
+  $variables['#attached']['drupalSettings']['restricted_access'] = [
+    'restricted_access_js' => [
+      'baseUrls' => $base_url,
+      'restrictedAction' => $restrictedAction,
+      'display' => $display,
+    ],
+  ];
+}
+
+/**
+ * Implements hook_restricted_access_get_restricted_access_urls().
+ */
+function restricted_access_get_restricted_access_urls() {
+  // Getting restricted access url path from admin config section.
+  $config = \Drupal::config('restricted_access.url_settings');
+  $restricted_access_urls = $config->get('url_settings');
+  $restricted_access_urls_arr = [];
+  if (!empty($restricted_access_urls)) {
+    $textAr = explode("\n", $restricted_access_urls);
+    $node_arr = array_filter($textAr, 'trim');
+    foreach ($node_arr as $item) {
+      $restricted_access_urls_arr[] = trim($item);
+    }
+  }
+  return $restricted_access_urls_arr;
+}

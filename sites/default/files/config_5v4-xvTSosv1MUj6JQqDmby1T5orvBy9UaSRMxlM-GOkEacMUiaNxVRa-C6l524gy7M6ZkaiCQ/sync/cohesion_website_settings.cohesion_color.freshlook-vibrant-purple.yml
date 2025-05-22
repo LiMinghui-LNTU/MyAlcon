@@ -1,0 +1,13 @@
+uuid: f48cb90f-4e46-4c66-8c5f-825934d89bcb
+langcode: en
+status: true
+dependencies: {  }
+label: 'Freshlook Vibrant Purple'
+id: freshlook-vibrant-purple
+json_values: '{"link":true,"name":"Freshlook Vibrant Purple","uid":"freshlook-vibrant-purple","class":".coh-color-freshlook-vibrant-purple","variable":"$coh-color-freshlook-vibrant-purple","value":{"value":{"hex":"#7526f4","rgba":"rgba(117, 38, 244, 1)"}},"wysiwyg":false,"locked":true,"inuse":true,"tags":[{"label":"freshlook","value":"freshlook"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: true
+modified: true
+selectable: true
+weight: 28

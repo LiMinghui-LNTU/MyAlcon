@@ -1,0 +1,18 @@
+uuid: 74245aec-6366-4af2-88af-d151fe744540
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.commercial_page
+id: node.commercial_page.created
+field_name: created
+entity_type: node
+bundle: commercial_page
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

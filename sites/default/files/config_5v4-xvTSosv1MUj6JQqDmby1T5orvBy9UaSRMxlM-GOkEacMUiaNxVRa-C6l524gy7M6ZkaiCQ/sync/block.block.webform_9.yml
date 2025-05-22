@@ -1,0 +1,31 @@
+uuid: 7699fac3-5fc2-4647-bba9-b0fe685421e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.lead_gen_sx_modal
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: webform_9
+theme: cohesion_theme
+region: dx8_hidden
+weight: 34
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform : Lead Gen -  Sx -Modal'
+  label_display: '0'
+  provider: webform
+  webform_id: lead_gen_sx_modal
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

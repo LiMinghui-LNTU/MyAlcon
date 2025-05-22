@@ -1,0 +1,25 @@
+uuid: b9145a0a-dda2-44e1-b5a9-01d157864510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_register_link
+    - node.type.virtualbooth
+  module:
+    - link
+_core:
+  default_config_hash: 2yH5PKkvOUNFX0TNlfaCuuaPKYw4bFla_citQQ4uOfc
+id: node.virtualbooth.field_virtualbooth_register_link
+field_name: field_virtualbooth_register_link
+entity_type: node
+bundle: virtualbooth
+label: 'Register link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

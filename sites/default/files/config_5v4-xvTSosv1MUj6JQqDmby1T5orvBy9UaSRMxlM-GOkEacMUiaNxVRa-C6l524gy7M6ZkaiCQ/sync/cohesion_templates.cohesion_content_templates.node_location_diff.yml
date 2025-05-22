@@ -1,0 +1,18 @@
+uuid: 3d93a1e7-e896-431d-ac8b-2f93c9d3b353
+langcode: en
+status: false
+dependencies: {  }
+label: 'Revision comparison (Node, Location page)'
+id: node_location_diff
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: location
+view_mode: diff
+master_template: ''

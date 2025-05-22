@@ -1,0 +1,23 @@
+uuid: cf99967c-c523-474b-b992-bc2e1e9b63f1
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part13
+label: 'DMB-5789 revert part13'
+description: 'DMB-5789 revert part13(Card with uStudio Text Button (cpt_a_card_ustudio_txt_btn_1))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "17ce3665-ea87-4e92-86f0-a2de3aa01023": {
+          "type": "cohesion_component",
+          "items": {
+              "17ce3665-ea87-4e92-86f0-a2de3aa01023": {
+                  "type": "cohesion_component"
+              },
+              "54a28d14-3992-4e92-af1f-be8fc7ab1b0d": {
+                  "type": "cohesion_component_category"
+              }
+          },
+          "checked": true
+      }
+  }

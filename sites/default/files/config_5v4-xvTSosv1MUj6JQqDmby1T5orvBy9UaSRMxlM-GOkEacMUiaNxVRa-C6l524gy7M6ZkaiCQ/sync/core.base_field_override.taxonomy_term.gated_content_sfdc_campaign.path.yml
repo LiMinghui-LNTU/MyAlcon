@@ -1,0 +1,20 @@
+uuid: 258709d9-649a-40f7-9eec-149f93b45126
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+  module:
+    - path
+id: taxonomy_term.gated_content_sfdc_campaign.path
+field_name: path
+entity_type: taxonomy_term
+bundle: gated_content_sfdc_campaign
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

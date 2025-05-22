@@ -1,0 +1,29 @@
+uuid: 0f77413e-d46d-4d77-aae7-3005fd12ba3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sfcd_campaign_id
+    - node.type.virtualbooth
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+id: node.virtualbooth.field_sfcd_campaign_id
+field_name: field_sfcd_campaign_id
+entity_type: node
+bundle: virtualbooth
+label: 'SFCD Campaign Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gated_content_sfdc_campaign: gated_content_sfdc_campaign
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

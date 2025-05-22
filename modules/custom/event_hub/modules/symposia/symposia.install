@@ -1,0 +1,191 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Symposia module.
+ */
+
+use Drupal\node\Entity\NodeType;
+use Drupal\Core\Entity\Entity\EntityViewMode;
+use Drupal\Core\Datetime\Entity\DateFormat;
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_install().
+ */
+function symposia_install() {
+  // Remove user roles.
+  $user_roles_removal_array = [
+    'symposium_creator',
+    'symposium_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create symposium content',
+      'delete any symposium content',
+      'delete own symposium content',
+      'delete symposium revisions',
+      'edit any symposium content',
+      'edit own symposium content',
+      'revert symposium revisions',
+      'view symposium revisions',
+      'translate symposium node',
+      'use text format mini_rich_text',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_symposia cohesion_component_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+    'content_editor' => [
+      'translate symposium node',
+      'use text format mini_rich_text',
+      'edit any symposium content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_symposia cohesion_component_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+  ];
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+
+  $block_ids_array = [
+    'views_block__symposia_event_ref_symposia_block' => 'views_block:symposia-event_ref_symposia_block',
+    'views_block__symposia_upcoming_symposia_page_block' => 'views_block:symposia-upcoming_symposia_page_block',
+    'views_block__symposia_recent_symposia_block' => 'views_block:symposia-recent_symposia_block',
+    'views_block__symposia_symposia_archive_block' => 'views_block:symposia-symposia_archive_block',
+  ];
+  place_view_blocks($block_ids_array);
+}
+
+/**
+ * Update module's configs, user permissions.
+ */
+function symposia_update_9001() {
+  update_module_configs('symposia');
+  // Remove user roles.
+  $user_roles_removal_array = [
+    'symposium_creator',
+    'symposium_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create symposium content',
+      'delete any symposium content',
+      'delete own symposium content',
+      'delete symposium revisions',
+      'edit any symposium content',
+      'edit own symposium content',
+      'revert symposium revisions',
+      'view symposium revisions',
+      'translate symposium node',
+      'use text format mini_rich_text',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_symposia cohesion_component_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+    'content_editor' => [
+      'translate symposium node',
+      'use text format mini_rich_text',
+      'edit any symposium content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_symposia cohesion_component_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+  ];
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+
+  $block_ids_array = [
+    'views_block__symposia_event_ref_symposia_block' => 'views_block:symposia-event_ref_symposia_block',
+    'views_block__symposia_upcoming_symposia_page_block' => 'views_block:symposia-upcoming_symposia_page_block',
+    'views_block__symposia_recent_symposia_block' => 'views_block:symposia-recent_symposia_block',
+    'views_block__symposia_symposia_archive_block' => 'views_block:symposia-symposia_archive_block',
+  ];
+  place_view_blocks($block_ids_array);
+}
+
+/**
+ * Update module's configs.
+ */
+function symposia_update_9002() {
+  update_module_configs('symposia');
+}
+
+/**
+ * Update Symposia View.
+ */
+function symposia_update_9003() {
+  update_module_configs('symposia');
+}
+
+/**
+ * Update Symposia Card fields.
+ */
+function symposia_update_9004() {
+  update_module_configs('symposia');
+}
+
+/**
+ * Add the 'bypass Symposium detail page' functionality.
+ */
+function symposia_update_9005() {
+  update_module_configs('symposia');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function symposia_uninstall() {
+  // Remove Symposium page node type.
+  if ($event_node_type = NodeType::load('symposium')) {
+    $event_node_type->delete();
+  }
+
+  // Remove Symposia view.
+  if ($events_view = \Drupal::service('config.factory')->getEditable('views.view.symposia')) {
+    $events_view->delete();
+  }
+
+  // Remove View Mode.
+  if ($view_mode = EntityViewMode::load('node.symposium_card_teaser')) {
+    $view_mode->delete();
+  }
+
+  // Remove Date format.
+  if ($date_format = DateFormat::load('long_date_no_time')) {
+    $date_format->delete();
+  }
+}

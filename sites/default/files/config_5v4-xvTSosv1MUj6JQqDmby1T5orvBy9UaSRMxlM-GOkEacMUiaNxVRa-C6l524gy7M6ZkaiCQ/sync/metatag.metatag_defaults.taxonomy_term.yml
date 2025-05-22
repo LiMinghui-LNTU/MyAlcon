@@ -1,0 +1,12 @@
+uuid: 199533e1-91ac-41ba-b134-5cc88558412b
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 92bXZdyYJ5xqukdfmGRr_CYcwm1vfuS8b8aJ7X_G7E0
+id: taxonomy_term
+label: 分类术语
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  title: '[term:name] | [site:name]'

@@ -1,0 +1,13 @@
+uuid: 4bd4d232-4448-4029-b14f-0b5e8850eeaa
+langcode: en
+status: true
+dependencies: {  }
+label: 'SYSTANE Pink'
+id: systane-pink
+json_values: '{"link":true,"name":"SYSTANE Pink","uid":"systane-pink","class":".coh-color-systane-pink","variable":"$coh-color-systane-pink","value":{"value":{"hex":"#d41773","rgba":"rgba(212, 23, 115, 1)"}},"wysiwyg":false,"inuse":false,"tags":[{"label":"systane","value":"systane"},{"label":"secondary","value":"secondary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 69

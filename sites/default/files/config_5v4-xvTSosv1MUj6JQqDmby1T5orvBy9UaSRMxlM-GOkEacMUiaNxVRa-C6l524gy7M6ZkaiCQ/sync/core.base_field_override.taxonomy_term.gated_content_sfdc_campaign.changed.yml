@@ -1,0 +1,18 @@
+uuid: a5de3068-4dff-4347-ade2-46aa1d884eb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+id: taxonomy_term.gated_content_sfdc_campaign.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: gated_content_sfdc_campaign
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

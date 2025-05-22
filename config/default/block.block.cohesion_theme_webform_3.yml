@@ -1,0 +1,31 @@
+uuid: a913e1e3-ee5a-49ea-965e-38bc8e947f9e
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - webform.webform.cn_contact_us
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: cohesion_theme_webform_3
+theme: cohesion_theme
+region: dx8_hidden
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Cn Contact Us'
+  label_display: '0'
+  provider: webform
+  webform_id: cn_contact_us
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    using_master_template: 0
+    negate: 0

@@ -1,0 +1,455 @@
+uuid: f7473b5c-cf17-4d0b-811f-717c2704b911
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - filter.format.cohesion
+  module:
+    - ckeditor5
+    - cohesion
+third_party_settings:
+  cohesion:
+    ssa_enabled: true
+_core:
+  default_config_hash: ytKZEez0YMVFLSZZFVb4D3T5Q9Y0q_nBn6EwQ0aRjqc
+format: cohesion
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - underline
+      - removeFormat
+      - '|'
+      - alignment
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - '|'
+      - sourceEditing
+      - '|'
+      - heading
+      - codeBlock
+      - style
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_codeBlock:
+      languages:
+        -
+          label: 'Plain text'
+          language: plaintext
+        -
+          label: C
+          language: c
+        -
+          label: 'C#'
+          language: cs
+        -
+          label: C++
+          language: cpp
+        -
+          label: CSS
+          language: css
+        -
+          label: Diff
+          language: diff
+        -
+          label: HTML
+          language: html
+        -
+          label: Java
+          language: java
+        -
+          label: JavaScript
+          language: javascript
+        -
+          label: PHP
+          language: php
+        -
+          label: Python
+          language: python
+        -
+          label: Ruby
+          language: ruby
+        -
+          label: TypeScript
+          language: typescript
+        -
+          label: XML
+          language: xml
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Example class'
+          element: '<span class="example-class">'
+        -
+          label: 'Tick li - White [inline]'
+          element: '<span class="coh-style-a-tick-li-white">'
+        -
+          label: 'Tick li - Blue [inline]'
+          element: '<span class="coh-style-a-tick-list-item-blue">'
+        -
+          label: 'Large Body Text'
+          element: '<p class="coh-style-large-body-text">'
+        -
+          label: 'Large Body Text [inline]'
+          element: '<span class="coh-style-large-body-text">'
+        -
+          label: 'Body text xtra-small'
+          element: '<p class="coh-style-a-body-text-xtra-small">'
+        -
+          label: 'Body text xtra-small [inline]'
+          element: '<span class="coh-style-a-body-text-xtra-small">'
+        -
+          label: 'Tick list item [inline]'
+          element: '<span class="coh-style-a-tick-list-inline">'
+        -
+          label: 'Desired Unordered List complete [ul]'
+          element: '<ul class="coh-style-a-desired-unordered-list-complete">'
+        -
+          label: 'Desired Unordered List complete [ol]'
+          element: '<ol class="coh-style-a-desired-unordered-list-complete">'
+        -
+          label: 'Desired Unordered List complete [dl]'
+          element: '<dl class="coh-style-a-desired-unordered-list-complete">'
+        -
+          label: 'Desired Unordered List complete [dl] [inline]'
+          element: '<span class="coh-style-a-desired-unordered-list-complete">'
+        -
+          label: 'Article Lobby Banner heading [inline]'
+          element: '<span class="coh-style-article-lobby-banner-heading">'
+        -
+          label: 'Weight 100'
+          element: '<p class="coh-style-weight-100">'
+        -
+          label: 'Weight 100 [inline]'
+          element: '<span class="coh-style-weight-100">'
+        -
+          label: 'Patient Cataract h1 [h1]'
+          element: '<h1 class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Patient Cataract h1 [h2]'
+          element: '<h2 class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Patient Cataract h1 [h3]'
+          element: '<h3 class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Patient Cataract h1 [h4]'
+          element: '<h4 class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Patient Cataract h1 [h5]'
+          element: '<h5 class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Patient Cataract h1 [h6]'
+          element: '<h6 class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Patient Cataract h1 [h6] [inline]'
+          element: '<span class="coh-style-patient-cataract-h1">'
+        -
+          label: 'Link - White'
+          element: '<a class="coh-style-a-link-white">'
+        -
+          label: 'Link - White [inline]'
+          element: '<span class="coh-style-a-link-white">'
+        -
+          label: 'Desired Numbered List [ul]'
+          element: '<ul class="coh-style-basic-numbered-list">'
+        -
+          label: 'Desired Numbered List [ol]'
+          element: '<ol class="coh-style-basic-numbered-list">'
+        -
+          label: 'Desired Numbered List [dl]'
+          element: '<dl class="coh-style-basic-numbered-list">'
+        -
+          label: 'Desired Numbered List [dl] [inline]'
+          element: '<span class="coh-style-basic-numbered-list">'
+        -
+          label: 'Body text medium'
+          element: '<p class="coh-style-a-body-text-medium">'
+        -
+          label: 'Body text medium [inline]'
+          element: '<span class="coh-style-a-body-text-medium">'
+        -
+          label: 'Cross list - Blue [ul]'
+          element: '<ul class="coh-style-a-cross-list-blue">'
+        -
+          label: 'Cross list - Blue [ol]'
+          element: '<ol class="coh-style-a-cross-list-blue">'
+        -
+          label: 'Cross list - Blue [dl]'
+          element: '<dl class="coh-style-a-cross-list-blue">'
+        -
+          label: 'Cross list - Blue [dl] [inline]'
+          element: '<span class="coh-style-a-cross-list-blue">'
+        -
+          label: 'Link text small'
+          element: '<a class="coh-style-a-link-text-small">'
+        -
+          label: 'Link text small [inline]'
+          element: '<span class="coh-style-a-link-text-small">'
+        -
+          label: 'Body text small'
+          element: '<p class="coh-style-a-body-text-small">'
+        -
+          label: 'Body text small [inline]'
+          element: '<span class="coh-style-a-body-text-small">'
+        -
+          label: 'Patient Cataract H3 [h1]'
+          element: '<h1 class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Patient Cataract H3 [h2]'
+          element: '<h2 class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Patient Cataract H3 [h3]'
+          element: '<h3 class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Patient Cataract H3 [h4]'
+          element: '<h4 class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Patient Cataract H3 [h5]'
+          element: '<h5 class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Patient Cataract H3 [h6]'
+          element: '<h6 class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Patient Cataract H3 [h6] [inline]'
+          element: '<span class="coh-style-patient-cataract-h3">'
+        -
+          label: 'Body text xtra large'
+          element: '<p class="coh-style-a-body-text-xtra-large">'
+        -
+          label: 'Body text xtra large [inline]'
+          element: '<span class="coh-style-a-body-text-xtra-large">'
+        -
+          label: 'Turquoise [inline]'
+          element: '<span class="coh-style-turquoise">'
+        -
+          label: 'Link text medium'
+          element: '<a class="coh-style-a-link-text-medium">'
+        -
+          label: 'Link text medium [inline]'
+          element: '<span class="coh-style-a-link-text-medium">'
+        -
+          label: 'Half Width'
+          element: '<p class="coh-style-half-width">'
+        -
+          label: 'Half Width [inline]'
+          element: '<span class="coh-style-half-width">'
+        -
+          label: 'Bullet tick blue [ul]'
+          element: '<ul class="coh-style-a-bullet-tick-blue">'
+        -
+          label: 'Bullet tick blue [ol]'
+          element: '<ol class="coh-style-a-bullet-tick-blue">'
+        -
+          label: 'Bullet tick blue [dl]'
+          element: '<dl class="coh-style-a-bullet-tick-blue">'
+        -
+          label: 'Bullet tick blue [dl] [inline]'
+          element: '<span class="coh-style-a-bullet-tick-blue">'
+        -
+          label: 'Tick list - Blue [ul]'
+          element: '<ul class="coh-style-tick-list---blue">'
+        -
+          label: 'Tick list - Blue [ol]'
+          element: '<ol class="coh-style-tick-list---blue">'
+        -
+          label: 'Tick list - Blue [dl]'
+          element: '<dl class="coh-style-tick-list---blue">'
+        -
+          label: 'AVS Blue [inline]'
+          element: '<span class="coh-style-avs-blue">'
+        -
+          label: 'Body text large'
+          element: '<p class="coh-style-a-body-text-large">'
+        -
+          label: 'Body text large [inline]'
+          element: '<span class="coh-style-a-body-text-large">'
+        -
+          label: 'Mice Type'
+          element: '<p class="coh-style-mice-type">'
+        -
+          label: 'Mice Type [inline]'
+          element: '<span class="coh-style-mice-type">'
+        -
+          label: 'Link text large'
+          element: '<a class="coh-style-a-link-text-large">'
+        -
+          label: 'Link text large [inline]'
+          element: '<span class="coh-style-a-link-text-large">'
+        -
+          label: 'Bullet tick white [ul]'
+          element: '<ul class="coh-style-a-bullet-tick-white">'
+        -
+          label: 'Bullet tick white [ol]'
+          element: '<ol class="coh-style-a-bullet-tick-white">'
+        -
+          label: 'Bullet tick white [dl]'
+          element: '<dl class="coh-style-a-bullet-tick-white">'
+        -
+          label: 'Bullet tick white [dl] [inline]'
+          element: '<span class="coh-style-a-bullet-tick-white">'
+        -
+          label: 'Patient Cataract H2 [h1]'
+          element: '<h1 class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Patient Cataract H2 [h2]'
+          element: '<h2 class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Patient Cataract H2 [h3]'
+          element: '<h3 class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Patient Cataract H2 [h4]'
+          element: '<h4 class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Patient Cataract H2 [h5]'
+          element: '<h5 class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Patient Cataract H2 [h6]'
+          element: '<h6 class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Patient Cataract H2 [h6] [inline]'
+          element: '<span class="coh-style-patient-cataract-h2">'
+        -
+          label: 'Text Align Center Break Left [inline]'
+          element: '<span class="coh-style-text-align-center-break-left">'
+        -
+          label: 'Heading 2 size [h1]'
+          element: '<h1 class="coh-style-heading-2-size">'
+        -
+          label: 'Heading 2 size [h2]'
+          element: '<h2 class="coh-style-heading-2-size">'
+        -
+          label: 'Heading 2 size [h3]'
+          element: '<h3 class="coh-style-heading-2-size">'
+        -
+          label: 'Heading 2 size [h4]'
+          element: '<h4 class="coh-style-heading-2-size">'
+        -
+          label: 'Heading 2 size [h5]'
+          element: '<h5 class="coh-style-heading-2-size">'
+        -
+          label: 'Heading 2 size [h6]'
+          element: '<h6 class="coh-style-heading-2-size">'
+        -
+          label: 'Heading 2 size [h6] [inline]'
+          element: '<span class="coh-style-heading-2-size">'
+        -
+          label: Black
+          element: '<span class="coh-color-black">'
+        -
+          label: 'Brand color'
+          element: '<span class="coh-color-brand-color">'
+        -
+          label: 'Alcon Blue'
+          element: '<span class="coh-color-alcon-blue">'
+        -
+          label: 'Alcon Almost Black'
+          element: '<span class="coh-color-alcon-almost-black">'
+        -
+          label: 'Primary / Alcon Light Blue'
+          element: '<span class="coh-color-primary-alcon-light-blue">'
+        -
+          label: 'Alcon Floral White'
+          element: '<span class="coh-color-alcon-floral-white">'
+        -
+          label: 'Alcon Gray'
+          element: '<span class="coh-color-alcon-gray">'
+        -
+          label: 'Alcon Gray Medium'
+          element: '<span class="coh-color-alcon-gray-medium">'
+        -
+          label: 'Alcon White Smoke'
+          element: '<span class="coh-color-alcon-white-smoke">'
+        -
+          label: 'Blue 100 Brand blue'
+          element: '<span class="coh-color-blue-100-brand-blue">'
+        -
+          label: 'Blue 120'
+          element: '<span class="coh-color-blue-120">'
+        -
+          label: 'Blue 120 (Pressed state(¿)'
+          element: '<span class="coh-color-blue-120-pressed-state">'
+        -
+          label: 'CLEAR CARE Blue'
+          element: '<span class="coh-color-clear-care-blue">'
+        -
+          label: 'CLEAR CARE Dark Purple'
+          element: '<span class="coh-color-clear-care-dark-purple">'
+        -
+          label: 'CLEAR CARE Yellow'
+          element: '<span class="coh-color-clear-care-yellow">'
+        -
+          label: 'DAILIES TOTAL1 Plum'
+          element: '<span class="coh-color-dailies-total1-plum">'
+        -
+          label: 'OPTI-FREE Gray'
+          element: '<span class="coh-color-opti-free-gray">'
+        -
+          label: 'OPTI-FREE Green Contrast Std'
+          element: '<span class="coh-color-opti-free-green-contrast-std">'
+        -
+          label: 'PRECISION Light Blue'
+          element: '<span class="coh-color-precision-light-blue">'
+        -
+          label: 'Primary / Alcon True Blue'
+          element: '<span class="coh-color-primary-alcon-true-blue">'
+        -
+          label: 'SYSTANE Blue'
+          element: '<span class="coh-color-systane-blue">'
+        -
+          label: 'SYSTANE Green'
+          element: '<span class="coh-color-systane-green">'
+        -
+          label: 'Global Directory Black'
+          element: '<span class="coh-color-global-directory-black">'
+        -
+          label: 'Global Directory Gray'
+          element: '<span class="coh-color-global-directory-gray">'
+        -
+          label: 'TOTAL Ivory'
+          element: '<span class="coh-color-total-ivory">'
+        -
+          label: 'TOTAL Soft Blue'
+          element: '<span class="coh-color-total-soft-blue">'
+        -
+          label: 'TOTAL30 Blue'
+          element: '<span class="coh-color-total30-blue">'
+        -
+          label: White
+          element: '<span class="coh-color-white">'
+    media_media:
+      allow_view_mode_override: false
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

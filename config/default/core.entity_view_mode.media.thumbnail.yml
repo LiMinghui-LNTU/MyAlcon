@@ -1,0 +1,13 @@
+uuid: 38ac8ddb-28f2-458a-b138-45690231f648
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: I96Wg1zkC_ifckgDqnlaevl6IHNCdyIMmmsckbYTeag
+id: media.thumbnail
+label: 缩略图
+description: ''
+targetEntityType: media
+cache: true

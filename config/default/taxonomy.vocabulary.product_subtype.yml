@@ -1,0 +1,10 @@
+uuid: 17db4614-993b-42f6-a54c-692796c54fd5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hLlbd_YXIJulA978bNI-cVXT6yemycsc-jY-_lC9fYI
+name: 'Product SubType'
+vid: product_subtype
+description: ''
+weight: 0

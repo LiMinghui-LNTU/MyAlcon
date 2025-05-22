@@ -1,0 +1,9 @@
+uuid: 0588e767-d3db-46cf-9c36-b712811b19cf
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5744
+label: DMB-5744
+description: ''
+excluded_entity_types: '[]'
+settings: '{"4b22ccad-bbb8-4162-8b9d-ce334f1ffcd5":{"type":"cohesion_master_templates","items":{"4b22ccad-bbb8-4162-8b9d-ce334f1ffcd5":{"type":"cohesion_master_templates"}},"checked":true}}'

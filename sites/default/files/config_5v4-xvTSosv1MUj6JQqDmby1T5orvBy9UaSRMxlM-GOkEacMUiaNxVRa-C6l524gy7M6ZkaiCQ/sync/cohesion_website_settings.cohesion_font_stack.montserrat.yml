@@ -1,0 +1,13 @@
+uuid: 7e8a4a75-e4f0-4dba-ad16-015b2c52eeb8
+langcode: en
+status: true
+dependencies: {  }
+label: Montserrat
+id: montserrat
+json_values: '{"inuse":true,"systemfont":false,"link":true,"name":"Montserrat","uid":"montserrat","class":".coh-font-montserrat","variable":"$coh-font-montserrat","fontStack":"''Montserrat'', sans-serif","smoothing":{"firefox":true,"webkit":true}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fontStacks

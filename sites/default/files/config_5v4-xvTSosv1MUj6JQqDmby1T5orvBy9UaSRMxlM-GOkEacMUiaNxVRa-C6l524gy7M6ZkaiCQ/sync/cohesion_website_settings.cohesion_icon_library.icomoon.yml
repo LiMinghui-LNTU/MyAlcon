@@ -1,0 +1,19 @@
+uuid: cc182787-084d-4a59-99f8-954cc903b1e3
+langcode: zh-hans
+status: true
+dependencies:
+  content:
+    - 'file:file:741f4ef8-80ff-4575-b626-6546e0204e22'
+    - 'file:file:90b6f008-f714-42b1-8315-c86c59aac6c0'
+    - 'file:file:e2e4c897-6398-4c78-9f52-d5fb4e71ecc5'
+    - 'file:file:ed5dd1dd-af72-426e-9150-0848c6293e87'
+    - 'file:file:f3739bd5-d35f-4b5b-952e-fdea822634d2'
+label: Fontawesome
+id: icomoon
+json_values: '{"key":"uploadIcomoon","type":"upload","provider":"icomoon","fontFamilyName":"icomoon","iconJSON":{"json":"public:\/\/cohesion\/selection.json"},"fontFiles":{"eot":{"type":"file","uri":"public:\/\/cohesion\/icomoon.eot","uuid":"aafa3621-5bed-4895-abd8-9ed5ef155a38"},"ttf":{"type":"file","uri":"public:\/\/cohesion\/icomoon.ttf","uuid":"7958f6f3-71e4-4be9-b9d9-3f2f3a9cc65f"},"woff":{"type":"file","uri":"public:\/\/cohesion\/icomoon.woff","uuid":"d5f934de-069d-4aaa-b04e-30d6f81c49cf"},"woff2":{"type":"file","uri":"public:\/\/cohesion\/icomoon.woff2","uuid":"b5efc7be-89c8-4898-aab5-4c119acef386"}},"name":"Fontawesome","fontDisplay":"auto"}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+source: null

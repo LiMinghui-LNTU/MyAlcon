@@ -1,0 +1,73 @@
+# Translation of the Virtual Booth module.
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-03 08:05-0400\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: Valtech\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:116
+msgid "Virtual Booth Hero name"
+msgstr "Virtual Booth Hero name"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:117
+msgid "Shows Virtual Booth name or referenced Event's name"
+msgstr "Shows Virtual Booth name or referenced Event's name"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:120
+msgid "Virtual Booth duration date"
+msgstr "Virtual Booth duration date"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:121
+msgid "Shows Virtual Booth or Event duration"
+msgstr "Shows Virtual Booth or Event duration"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:124
+msgid "Virtual Booth full location"
+msgstr "Virtual Booth full location"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:125
+msgid "Shows Virtual Booth location data"
+msgstr "Shows Virtual Booth location data"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.module:211
+msgid "Virtual Booth with the reference to this Event is already exists."
+msgstr "Virtual Booth with the reference to this Event is already exists."
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.info.yml:0
+msgid "Virtual Booth"
+msgstr "Virtual Booth"
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.info.yml:0
+msgid "Event Hub submodule for Virtual Booth content type."
+msgstr "Event Hub submodule for Virtual Booth content type."
+
+#: modules/custom/event_hub/modules/virtual_booth/virtual_booth.info.yml:0
+msgid "Event Hub"
+msgstr "Event Hub"
+
+#: modules/custom/event_hub/modules/virtual_booth/templates/node--virtualbooth--full.html.twig:87
+msgid "Submitted by @author_name on @date"
+msgstr "Submitted by @author_name on @date"
+
+#: modules/custom/event_hub/modules/virtual_booth/templates/node--virtualbooth--virtualbooth-card-teaser.html.twig:91
+msgid "Visit now"
+msgstr "Visit now"
+
+#: modules/custom/event_hub/modules/virtual_booth/templates/node--virtualbooth--virtualbooth-card-teaser.html.twig:93
+msgid "View details"
+msgstr "View details"
+
+#: modules/custom/event_hub/modules/virtual_booth/templates/node--virtualbooth--virtualbooth-card-teaser.html.twig:98
+msgid "Details coming soon"
+msgstr "Details coming soon"
+
+#: modules/custom/event_hub/modules/virtual_booth/templates/views-infinite-scroll-pager--virtualbooths--recent-virtualbooths-block.html.twig:11 modules/custom/event_hub/modules/virtual_booth/templates/views-infinite-scroll-pager--virtualbooths--upcoming-virtualbooths-page-block.html.twig:11
+msgid "Load more items"
+msgstr "Load more items"
+

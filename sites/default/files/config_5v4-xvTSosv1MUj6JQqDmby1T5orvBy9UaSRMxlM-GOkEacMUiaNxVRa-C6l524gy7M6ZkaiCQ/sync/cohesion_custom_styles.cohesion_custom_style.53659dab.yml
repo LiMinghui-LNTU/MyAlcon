@@ -1,0 +1,18 @@
+uuid: ac3cbd85-2785-4753-9744-399bff344cbe
+langcode: en
+status: true
+dependencies: {  }
+label: 'Hero height short'
+id: 53659dab
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"min-height":{"value":"450"},"max-width":{"value":"1440"},"margin":{"margin-top":{"value":"0"},"margin-bottom":{"value":"0"},"margin-left":{"value":"auto"},"margin-right":{"value":"auto"}}},"sm":{"min-height":{"value":"450"}},"ps":{"min-height":{"value":"300"}},"xs":{"min-height":{"value":"300"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":false},{"name":"height","active":false}]},{"formKey":"width","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":true},{"name":"width","active":false}]},{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-hero-height-short
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 182

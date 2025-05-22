@@ -1,0 +1,17 @@
+uuid: fe2e7f48-31b7-4ca9-99bc-4c5a00c36c0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: 3jE_uFdwuQtLjdtBE2UshOxQHe1GAuFSvCAk6YRMp94
+id: node.symposium_card_teaser
+label: 'Symposium Card teaser'
+description: ''
+targetEntityType: node
+cache: true

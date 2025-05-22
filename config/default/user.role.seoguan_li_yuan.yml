@@ -1,0 +1,14 @@
+uuid: 5b3c24fb-30bb-41fe-b90f-d5594fca5f2e
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 管理SEO相关的设置工作
+id: seoguan_li_yuan
+label: SEO管理员
+weight: 5
+is_admin: null
+permissions: {  }

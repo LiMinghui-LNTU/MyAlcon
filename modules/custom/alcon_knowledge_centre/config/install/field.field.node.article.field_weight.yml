@@ -1,0 +1,23 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.article
+id: node.article.field_weight
+field_name: field_weight
+entity_type: node
+bundle: article
+label: Weight
+description: 'Integer valued used by Views to control article sequencing via “Sort Criteria”.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: -100000
+  max: 1000000
+  prefix: ''
+  suffix: ''
+field_type: integer

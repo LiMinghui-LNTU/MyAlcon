@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_weight
+    - taxonomy.vocabulary.article_category_professional
+id: taxonomy_term.article_category_professional.field_weight
+field_name: field_weight
+entity_type: taxonomy_term
+bundle: article_category_professional
+label: Weight
+description: 'Integer valued used by Views to control Categories sequencing via “Sort Criteria”.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -100000
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

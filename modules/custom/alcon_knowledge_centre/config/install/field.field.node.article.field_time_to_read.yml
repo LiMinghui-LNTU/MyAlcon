@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_to_read
+    - node.type.article
+  module:
+    - text
+id: node.article.field_time_to_read
+field_name: field_time_to_read
+entity_type: node
+bundle: article
+label: 'Time to read'
+description: 'Plain text field used to store the article Time to read along with a suffix of “mins read“. i.e. <b>7 mins read</b>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

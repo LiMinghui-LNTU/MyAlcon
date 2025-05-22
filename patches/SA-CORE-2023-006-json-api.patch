@@ -1,0 +1,121 @@
+From 5088c18215db996ee5f67369df98f6219061fe5a Mon Sep 17 00:00:00 2001
+From: xjm <xjm@65776.no-reply.drupal.org>
+Date: Tue, 19 Sep 2023 12:58:16 -0500
+Subject: [PATCH] SA-CORE-2023-006 by ghostccamm, effulgentsia, larowlan, xjm,
+ pwolanin, catch, Wim Leers, mcdruid, benjifisher
+
+---
+ .../src/Normalizer/HttpExceptionNormalizer.php        | 11 ++++++++++-
+ .../jsonapi/tests/src/Functional/ResourceTestBase.php | 11 ++++++++++-
+ .../tests/src/Functional/RestJsonApiUnsupported.php   |  4 +++-
+ .../Unit/Normalizer/HttpExceptionNormalizerTest.php   |  7 +++++++
+ 4 files changed, 30 insertions(+), 3 deletions(-)
+
+diff --git a/core/modules/jsonapi/src/Normalizer/HttpExceptionNormalizer.php b/core/modules/jsonapi/src/Normalizer/HttpExceptionNormalizer.php
+index 8abd200e1862..b102b9960b0b 100644
+--- a/core/modules/jsonapi/src/Normalizer/HttpExceptionNormalizer.php
++++ b/core/modules/jsonapi/src/Normalizer/HttpExceptionNormalizer.php
+@@ -51,6 +51,12 @@ public function __construct(AccountInterface $current_user) {
+   public function normalize($object, $format = NULL, array $context = []) {
+     $cacheability = new CacheableMetadata();
+     $cacheability->addCacheableDependency($object);
++
++    $cacheability->addCacheTags(['config:system.logging']);
++    if (\Drupal::config('system.logging')->get('error_level') === ERROR_REPORTING_DISPLAY_VERBOSE) {
++      $cacheability->setCacheMaxAge(0);
++    }
++
+     return new HttpExceptionNormalizerValue($cacheability, static::rasterizeValueRecursive($this->buildErrorObjects($object)));
+   }
+ 
+@@ -89,7 +95,10 @@ protected function buildErrorObjects(HttpException $exception) {
+     if ($exception->getCode() !== 0) {
+       $error['code'] = (string) $exception->getCode();
+     }
+-    if ($this->currentUser->hasPermission('access site reports')) {
++
++    $is_verbose_reporting = \Drupal::config('system.logging')->get('error_level') === ERROR_REPORTING_DISPLAY_VERBOSE;
++    $site_report_access = $this->currentUser->hasPermission('access site reports');
++    if ($site_report_access && $is_verbose_reporting) {
+       // The following information may contain sensitive information. Only show
+       // it to authorized users.
+       $error['source'] = [
+diff --git a/core/modules/jsonapi/tests/src/Functional/ResourceTestBase.php b/core/modules/jsonapi/tests/src/Functional/ResourceTestBase.php
+index 009957306294..f00b9a4672a9 100644
+--- a/core/modules/jsonapi/tests/src/Functional/ResourceTestBase.php
++++ b/core/modules/jsonapi/tests/src/Functional/ResourceTestBase.php
+@@ -221,6 +221,8 @@ public function setUp() {
+ 
+     $this->serializer = $this->container->get('jsonapi.serializer');
+ 
++    $this->config('system.logging')->set('error_level', ERROR_REPORTING_HIDE)->save();
++
+     // Ensure the anonymous user role has no permissions at all.
+     $user_role = Role::load(RoleInterface::ANONYMOUS_ID);
+     foreach ($user_role->getPermissions() as $permission) {
+@@ -725,7 +727,14 @@ protected function assertResourceResponse($expected_status_code, $expected_docum
+     // Expected cache tags: X-Drupal-Cache-Tags header.
+     $this->assertSame($expected_cache_tags !== FALSE, $response->hasHeader('X-Drupal-Cache-Tags'));
+     if (is_array($expected_cache_tags)) {
+-      $this->assertEqualsCanonicalizing($expected_cache_tags, explode(' ', $response->getHeader('X-Drupal-Cache-Tags')[0]));
++      $actual_cache_tags = explode(' ', $response->getHeader('X-Drupal-Cache-Tags')[0]);
++
++      $tag = 'config:system.logging';
++      if (!in_array($tag, $expected_cache_tags) && in_array($tag, $actual_cache_tags)) {
++        $expected_cache_tags[] = $tag;
++      }
++
++      $this->assertEqualsCanonicalizing($expected_cache_tags, $actual_cache_tags);
+     }
+ 
+     // Expected cache contexts: X-Drupal-Cache-Contexts header.
+diff --git a/core/modules/jsonapi/tests/src/Functional/RestJsonApiUnsupported.php b/core/modules/jsonapi/tests/src/Functional/RestJsonApiUnsupported.php
+index 6ab42019e6d2..a2bf45c7118f 100644
+--- a/core/modules/jsonapi/tests/src/Functional/RestJsonApiUnsupported.php
++++ b/core/modules/jsonapi/tests/src/Functional/RestJsonApiUnsupported.php
+@@ -65,6 +65,8 @@ protected function setUpAuthorization($method) {
+   public function setUp(): void {
+     parent::setUp();
+ 
++    $this->config('system.logging')->set('error_level', ERROR_REPORTING_HIDE)->save();
++
+     // Create a "Camelids" node type.
+     NodeType::create([
+       'name' => 'Camelids',
+@@ -99,7 +101,7 @@ public function testApiJsonNotSupportedInRest() {
+       400,
+       FALSE,
+       $response,
+-      ['4xx-response', 'config:user.role.anonymous', 'http_response', 'node:1'],
++      ['4xx-response', 'config:system.logging', 'config:user.role.anonymous', 'http_response', 'node:1'],
+       ['url.query_args:_format', 'url.site', 'user.permissions'],
+       'MISS',
+       'MISS'
+diff --git a/core/modules/jsonapi/tests/src/Unit/Normalizer/HttpExceptionNormalizerTest.php b/core/modules/jsonapi/tests/src/Unit/Normalizer/HttpExceptionNormalizerTest.php
+index 928fdf8514ae..5c061fe519f2 100644
+--- a/core/modules/jsonapi/tests/src/Unit/Normalizer/HttpExceptionNormalizerTest.php
++++ b/core/modules/jsonapi/tests/src/Unit/Normalizer/HttpExceptionNormalizerTest.php
+@@ -2,6 +2,8 @@
+ 
+ namespace Drupal\Tests\jsonapi\Unit\Normalizer;
+ 
++use Drupal\Core\Config\ConfigFactory;
++use Drupal\Core\Config\ImmutableConfig;
+ use Drupal\Core\Session\AccountInterface;
+ use Drupal\jsonapi\Normalizer\HttpExceptionNormalizer;
+ use Drupal\Tests\UnitTestCase;
+@@ -26,6 +28,11 @@ public function testNormalize() {
+     $request_stack->getCurrentRequest()->willReturn(Request::create('http://localhost/'));
+     $container = $this->prophesize(ContainerInterface::class);
+     $container->get('request_stack')->willReturn($request_stack->reveal());
++    $config = $this->prophesize(ImmutableConfig::class);
++    $config->get('error_level')->willReturn(ERROR_REPORTING_DISPLAY_VERBOSE);
++    $config_factory = $this->prophesize(ConfigFactory::class);
++    $config_factory->get('system.logging')->willReturn($config->reveal());
++    $container->get('config.factory')->willReturn($config_factory->reveal());
+     \Drupal::setContainer($container->reveal());
+     $exception = new AccessDeniedHttpException('lorem', NULL, 13);
+     $current_user = $this->prophesize(AccountInterface::class);
+-- 
+GitLab
+

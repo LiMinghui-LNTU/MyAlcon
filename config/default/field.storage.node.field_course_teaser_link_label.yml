@@ -1,0 +1,26 @@
+uuid: 296d40e2-810b-4122-8e7e-ddd5f39096d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: 8eDDMSSrW_xXVijxq3ANTyeYmKzVtoZ3YkwvDghW_qc
+id: node.field_course_teaser_link_label
+field_name: field_course_teaser_link_label
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

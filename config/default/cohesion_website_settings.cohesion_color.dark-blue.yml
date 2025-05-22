@@ -1,0 +1,13 @@
+uuid: 7b755059-a745-4d3e-b9a0-50a88f9c5591
+langcode: en
+status: true
+dependencies: {  }
+label: 'Dark Blue'
+id: dark-blue
+json_values: '{"link":true,"name":"Dark Blue","uid":"dark-blue","class":".coh-color-dark-blue","variable":"$coh-color-dark-blue","value":{"value":{"hex":"#042f6c","rgba":"rgba(4, 47, 108, 1)"}},"wysiwyg":false,"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 53

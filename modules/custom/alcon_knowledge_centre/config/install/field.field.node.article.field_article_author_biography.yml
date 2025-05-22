@@ -1,0 +1,27 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_author_biography
+    - node.type.article
+    - node.type.biography_page
+id: node.article.field_article_author_biography
+field_name: field_article_author_biography
+entity_type: node
+bundle: article
+label: 'Author Biography'
+description: 'Reference field that will help to fetch all the Author Biography content like: <b><i>Authored By, Author Bio, Author Image</i></b> etc..'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      biography_page: biography_page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

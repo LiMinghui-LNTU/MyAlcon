@@ -1,0 +1,23 @@
+uuid: 363514a8-8d2d-4abd-b0d5-4a3e0be8d260
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: uQs7zS6iXfznh80KPP2EfJX1JmXujEANTZIkA5wz7mI
+name: 'Symposium page'
+type: symposium
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,13 @@
+uuid: 47d9033e-44ae-4882-b346-170a83d5602e
+langcode: en
+status: true
+dependencies: {  }
+label: 'OPTI-FREE Gray'
+id: opti-free-gray
+json_values: '{"link":true,"name":"OPTI-FREE Gray","uid":"opti-free-gray","class":".coh-color-opti-free-gray","variable":"$coh-color-opti-free-gray","value":{"value":{"hex":"#b1b3b3","rgba":"rgba(177, 179, 179, 1)"}},"wysiwyg":true,"tags":[{"label":"opti-free","value":"opti-free"},{"label":"secondary","value":"secondary"}],"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 28

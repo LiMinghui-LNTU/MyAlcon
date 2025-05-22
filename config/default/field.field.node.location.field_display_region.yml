@@ -1,0 +1,25 @@
+uuid: dc679937-2e43-411f-bd13-fd3d1dae9720
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_region
+    - node.type.location
+_core:
+  default_config_hash: 0XSt28cfHdbv8iJnHDwwBWVQ4YhAXh5SZC_zeA7tUOQ
+id: node.location.field_display_region
+field_name: field_display_region
+entity_type: node
+bundle: location
+label: 'Display region'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 是
+  off_label: 否
+field_type: boolean

@@ -1,0 +1,13 @@
+uuid: 1def6b91-32f8-45f9-80fa-833536f1282f
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Purple Secondary'
+id: precision-purple-secondary
+json_values: '{"link":true,"name":"PRECISION Purple Secondary","uid":"precision-purple-secondary","class":".coh-color-precision-purple-secondary","variable":"$coh-color-precision-purple-secondary","value":{"value":{"hex":"#483698","rgba":"rgba(72, 54, 152, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"secondary","value":"secondary"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 41

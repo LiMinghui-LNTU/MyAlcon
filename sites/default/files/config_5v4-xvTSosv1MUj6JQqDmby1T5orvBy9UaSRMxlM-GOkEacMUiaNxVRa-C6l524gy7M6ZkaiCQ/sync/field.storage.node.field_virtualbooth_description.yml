@@ -1,0 +1,21 @@
+uuid: 62e624f6-e502-47c3-afba-3bd9eca22a92
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: p1xggfyupcksescYQTeTl3_6XbkUxIQgjb5-BlwV35U
+id: node.field_virtualbooth_description
+field_name: field_virtualbooth_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

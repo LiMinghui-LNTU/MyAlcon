@@ -1,0 +1,57 @@
+uuid: 6b7d9e4b-9ea4-4fcf-9556-0b9b9bad39dd
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - views.view.image_browser
+  module:
+    - inline_entity_form
+    - lightning_media
+    - views
+_core:
+  default_config_hash: _zYw0EzR3m3U_E5xOL5ORCNPdUZCtWqhCU1gfI1kqHQ
+name: image_browser
+label: 'Image browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select Image(s)'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  44d52e51-9627-43b5-a637-3b0462041d1c:
+    id: file_upload
+    uuid: 44d52e51-9627-43b5-a637-3b0462041d1c
+    label: 上传
+    weight: -9
+    settings:
+      target_bundles: {  }
+      upload_validators: {  }
+      submit_text: Select
+      form_mode: media_browser
+      return_file: true
+  e7f78bae-bc54-4234-9d09-945dd8fc0398:
+    id: view
+    uuid: e7f78bae-bc54-4234-9d09-945dd8fc0398
+    label: 库
+    weight: -10
+    settings:
+      submit_text: 选择
+      auto_select: false
+      view: image_browser
+      view_display: entity_browser
+  b82807aa-34f0-488b-986e-f7ed13a660de:
+    id: media_image_upload
+    uuid: b82807aa-34f0-488b-986e-f7ed13a660de
+    label: 'upload svg'
+    weight: 3
+    settings:
+      submit_text: 'Select files'
+      upload_location: 'public://'
+      multiple: true
+      extensions: svg
+      media_type: image

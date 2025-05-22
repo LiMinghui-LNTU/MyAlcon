@@ -1,0 +1,22 @@
+alcon_email_validation.settings:
+  type: config_object
+  label: 'My module settings'
+  mapping:
+    api_key:
+      type: textfield
+      label: 'API key'
+    error_checkbox:
+      type: checkbox
+      label: 'Generic error message to display'
+    generic_error:
+      type: textfield
+      label: 'Generic invalid error message to display'
+    address_invalid_error:
+      type: textfield
+      label: 'Address invalid error message to display'
+    domain_invalid_error:
+      type: textfield
+      label: 'Domain invalid error message to display'
+    account_invalid_error:
+      type: textfield
+      label: 'Account invalid error message to display'

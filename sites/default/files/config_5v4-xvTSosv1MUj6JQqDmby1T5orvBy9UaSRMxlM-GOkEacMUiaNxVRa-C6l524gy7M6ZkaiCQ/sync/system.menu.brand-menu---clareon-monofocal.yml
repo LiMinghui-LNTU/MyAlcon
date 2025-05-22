@@ -1,0 +1,8 @@
+uuid: b0ce6b9c-525f-420a-8f7a-5243807f6b76
+langcode: en
+status: true
+dependencies: {  }
+id: brand-menu---clareon-monofocal
+label: 'Brand Menu - Clareon Monofocal'
+description: 'Brand Menu - Clareon Monofocal'
+locked: false

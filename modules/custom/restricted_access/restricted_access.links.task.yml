@@ -1,0 +1,6 @@
+restricted_access.url_settings:
+  route_name: restricted_access.url_settings
+  title: Restricted Access
+  base_route: restricted_access.settings
+  weight: 10
+

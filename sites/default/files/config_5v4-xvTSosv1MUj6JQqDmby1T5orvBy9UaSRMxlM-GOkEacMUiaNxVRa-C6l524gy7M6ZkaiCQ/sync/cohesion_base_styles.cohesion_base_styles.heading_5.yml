@@ -1,0 +1,16 @@
+uuid: 9ead3d5e-05de-4f9a-8d35-030bc14c8381
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+    - cohesion_website_settings.cohesion_font_stack.open-sans
+label: 'Heading 5'
+id: heading_5
+json_values: '{"preview":{"text":"<h5>Default content for ''Heading 5''.<\/h5>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h5","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-open-sans"},"font-weight":{"value":"700"},"color":{"value":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true}},"font-size":{"value":"28"},"line-height":{"value":"1.10"}},"lg":{"font-size":{"value":"26"},"line-height":{"value":"1.10"}},"sm":{"font-size":{"value":"22"},"line-height":{"value":"1.10"}},"md":{"font-size":{"value":"26"},"line-height":{"value":"1.10"}},"xs":{"font-size":{"value":"22"},"line-height":{"value":"1.10"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading 5","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"lg"},{"name":"md"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: false
+custom: null

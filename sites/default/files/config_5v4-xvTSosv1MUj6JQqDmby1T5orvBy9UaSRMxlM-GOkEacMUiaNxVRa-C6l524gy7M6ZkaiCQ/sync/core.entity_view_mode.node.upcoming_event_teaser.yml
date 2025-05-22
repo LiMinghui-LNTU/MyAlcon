@@ -1,0 +1,17 @@
+uuid: 64b51275-6d45-4679-83ae-388c1bae1cd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: AMRB1ui22uWHtALqGfiprPEdhvuTDHsR22RxV9otNH8
+id: node.upcoming_event_teaser
+label: 'Upcoming Event teaser'
+description: ''
+targetEntityType: node
+cache: true

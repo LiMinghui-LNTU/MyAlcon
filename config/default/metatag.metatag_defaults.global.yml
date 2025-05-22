@@ -1,0 +1,11 @@
+uuid: e043f6e0-8280-4acb-9a73-583acdc5dd10
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: 全局
+tags:
+  canonical_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'

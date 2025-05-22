@@ -1,0 +1,27 @@
+uuid: 3e32e830-3edb-4f5f-8ae5-190b35f14a76
+langcode: zh-hans
+status: false
+dependencies:
+  module:
+    - alcon_sitestudio_components
+    - cohesion
+  theme:
+    - cohesion_theme
+_core:
+  default_config_hash: LpgH-FoHxo0erINmnIU3DdobOxgDgNY3qRbAThI31HU
+id: libraryrequierebytimelinecomponent
+theme: cohesion_theme
+region: dx8_hidden
+weight: 38
+provider: null
+plugin: alcon_sitestudio_timeline_block
+settings:
+  id: alcon_sitestudio_timeline_block
+  label: 'Library requiere by timeline component'
+  label_display: '0'
+  provider: alcon_sitestudio_components
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

@@ -1,0 +1,13 @@
+uuid: 88309e5c-1b6c-47a8-8757-5e90fa757c68
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Solid Secondary Gold'
+id: total-solid-secondary-gold
+json_values: '{"link":true,"name":"TOTAL Solid Secondary Gold","uid":"total-solid-secondary-gold","class":".coh-color-total-solid-secondary-gold","variable":"$coh-color-total-solid-secondary-gold","value":{"value":{"hex":"#daaa00","rgba":"rgba(218, 170, 0, 1)"}},"inuse":false,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 77

@@ -1,0 +1,19 @@
+uuid: 752bd397-4575-40ca-aec4-817c52301503
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 0b3kWbpa3u6I0HjZxs38uNKBwk4qdW1BFC7gIC8UzF4
+name: course_teaser_phone
+label: 'Course Teaser Phone'
+effects:
+  956a95c8-777d-439f-bf68-af77cefa80d5:
+    uuid: 956a95c8-777d-439f-bf68-af77cefa80d5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 215
+      crop_type: focal_point

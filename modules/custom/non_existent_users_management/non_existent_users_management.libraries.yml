@@ -1,0 +1,18 @@
+node_form_tweaks:
+  js:
+    js/node_form_tweaks.js: {}
+  css:
+    theme:
+      css/node_form_tweaks.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+
+redirect_popup:
+  js:
+    js/redirect-popup.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings    

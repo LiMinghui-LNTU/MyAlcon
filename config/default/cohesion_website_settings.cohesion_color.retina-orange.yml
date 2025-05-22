@@ -1,0 +1,13 @@
+uuid: 3531113f-0f0a-4380-8208-edd6403a67ae
+langcode: en
+status: true
+dependencies: {  }
+label: 'Retina Orange'
+id: retina-orange
+json_values: '{"link":true,"name":"Retina Orange","uid":"retina-orange","class":".coh-color-retina-orange","variable":"$coh-color-retina-orange","value":{"value":{"hex":"#f58220","rgba":"rgba(245, 130, 32, 1)"}}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: null

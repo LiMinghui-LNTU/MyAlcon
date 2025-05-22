@@ -1,0 +1,24 @@
+uuid: 8119f8e0-9952-4d4f-b216-794c30b96036
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.location
+  module:
+    - text
+_core:
+  default_config_hash: 7t0tdV7cBZ6QDbTwux-IMZwqZoLVZV-CVkH4lxma9wE
+id: node.location.field_name
+field_name: field_name
+entity_type: node
+bundle: location
+label: 'Country, City'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

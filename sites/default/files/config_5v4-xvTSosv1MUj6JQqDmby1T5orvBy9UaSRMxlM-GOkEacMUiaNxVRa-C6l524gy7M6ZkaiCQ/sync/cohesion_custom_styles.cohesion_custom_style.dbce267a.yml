@@ -1,0 +1,22 @@
+uuid: cc537599-a723-4edd-9fbb-eaface2dc70b
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_scss_variable.component-width-narrow-phone
+    - cohesion_website_settings.cohesion_scss_variable.component-width-narrow-tablet
+    - cohesion_website_settings.cohesion_scss_variable.component-width-narrow-wide-desktop
+label: 'Max width - narrow'
+id: dbce267a
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"max-width":{"value":"$component-width-narrow-wide-desktop"},"width":{"value":"$component-width-narrow-wide-desktop"},"margin":{"margin-top":{"value":"0px"},"margin-bottom":{"value":"0px"},"margin-left":{"value":"auto"},"margin-right":{"value":"auto"}}},"sm":{"max-width":{"value":"$component-width-narrow-tablet"},"width":{"value":"$component-width-narrow-tablet"}},"ps":{"width":{}},"xs":{"width":{"value":"$component-width-narrow-phone"},"max-width":{"value":"$component-width-narrow-phone"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"width","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":true},{"name":"width","active":true}]},{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-max-width-narrow
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 259

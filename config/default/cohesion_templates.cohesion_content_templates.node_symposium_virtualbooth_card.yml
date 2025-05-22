@@ -1,0 +1,18 @@
+uuid: 928893c8-86de-4c11-826e-233f2f44c2bc
+langcode: en
+status: false
+dependencies: {  }
+label: 'Virtual Booth Card teaser (Node, Symposium page)'
+id: node_symposium_virtualbooth_card
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: symposium
+view_mode: virtualbooth_card_teaser
+master_template: ''

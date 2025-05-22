@@ -1,0 +1,20 @@
+uuid: e1e8e341-e796-409a-ab7d-f3f1555f9318
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.3c0fabf5
+label: 'Slider Style Right Nav'
+id: 55abb001
+json_values: '{"preview":{"text":"<p><button class=\"coh-preview\" type=\"button\">Default content for ''Button''<\/button><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"button","class":"","combinator":"","pseudo":""},"85611b49-5a02-4210-8651-e2662c4a3001":{"settings":{"element":"","class":"","combinator":"","pseudo":":before"},"styles":{"xl":{"content-image":{"imageStyle":"thumbnail_50x50_","contentImage":{"value":"[media-reference:file:2fb42f65-e65c-4e45-a05a-128aec207230]"}}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Button","selectorType":"topLevel","formDefinition":[],"items":[{"title":":before","type":"container","items":[],"form":null,"selectorType":"pseudo","uuid":"85611b49-5a02-4210-8651-e2662c4a3001","allowedTypes":["child","pseudo"],"formDefinition":[{"formKey":"content","children":[{"formKey":"image","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"contentImage","active":true},{"name":"imageStyle","active":true}]}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style--a-slider-style-right-nav
+custom_style_type: button
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-a-slider-style-left-nav
+weight: 349

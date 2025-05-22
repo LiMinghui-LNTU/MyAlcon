@@ -1,0 +1,251 @@
+<?php
+
+/**
+ * @file
+ * Hook functions for alcon gated content module.
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function alcon_gated_content_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'alcon_gated_content/alcon_gated_content';
+  if (isset($variables['node'])) {
+    $node = $variables['node'];
+    $contenttype = $node->getType();
+    if (isset($node->field_enable_gated_content)) {
+      if (!empty($node->field_enable_gated_content->getValue())) {
+        $gatedcontent = $node->field_enable_gated_content->get(0)->get('value')->getValue();
+      }
+
+      $node_id = \Drupal::routeMatch()->getRawParameter('node');
+      if ($node_id) {
+        $node = Node::load($node_id);
+        if ($node->get('field_gated_content_form')->target_id == !NULL) {
+          $gated_content_form_term = $node->get('field_gated_content_form')->target_id;
+          $gated_content_form_term_id = Term::load($gated_content_form_term);
+          $cookie_prefix = $gated_content_form_term_id->get('field_cookie_prefix')->value;
+          $gated_content_form_name = $gated_content_form_term_id->getName();
+
+          // Delete cookie.
+          if (!empty($node->field_enable_gated_content->getValue())) {
+            $gatedcontent = $node->field_enable_gated_content->get(0)->get('value')->getValue();
+          }
+          if (isset($_COOKIE[$cookie_prefix . '_gated_content'])) {
+            $dat = $_COOKIE[$cookie_prefix . '_gated_content'];
+            $data = unserialize($dat);
+            $cookie_created_date = ($data['create_date']);
+            $config = \Drupal::config('alcon_gated_content.details.settings');
+            $cookie_expire_date = $config->get('cookie_expire_date');
+            $cookie_expire_date = date("d/m/Y", strtotime($cookie_expire_date));
+
+            if ($cookie_expire_date > $cookie_created_date) {
+              setcookie($cookie_prefix . '_gated_content', "$cookie_value", time() - 3600, '/');
+              $cookie_prefix = '';
+              setcookie($cookie_prefix . 'gated_content_referer', "$cookie_value", time() - 3600, '/');
+            }
+
+          }
+          if ($gatedcontent == 1) {
+            $variables['#cache']['max-age'] = 0;
+          }
+          if ($gatedcontent == 1 &&  empty($_COOKIE[$cookie_prefix . '_gated_content'])) {
+            $model_id = $gated_content_form_term_id->get('field_modal_id')->value;
+            if (isset($model_id)) {
+              print("<div class='hide-body-content-load'></div>");
+              print("<div data-modal-open='$model_id' id='openPopup'>click</div>");
+              $display = 'yes';
+            }
+          }
+          else {
+            return;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function alcon_gated_content_form_alter(&$form, &$form_state, $form_id) {
+  if (\Drupal::routeMatch()->getRawParameter('node') == !NULL) {
+    $node_id = \Drupal::routeMatch()->getRawParameter('node');
+    $node = Node::load($node_id);
+    if (isset($node->field_gated_content_form) && $node->get('field_gated_content_form')->target_id == !NULL) {
+      $gated_content_form_tid = $node->get('field_gated_content_form')->target_id;
+      $gated_content_form_term = Term::load($gated_content_form_tid);
+      $model_id = $gated_content_form_term->get('field_modal_id')->value;
+      if (isset($form['#webform_id'])) {
+        $webform_id = $form['#webform_id'];
+        if ($webform_id == $model_id) {
+          // Country.
+          $config = \Drupal::config('alcon_gated_content.details.settings');
+          $default_country = $config->get('country');
+          $form['elements']['country']['#value'] = $default_country;
+          // Source URL.
+          $current_path = \Drupal::service('path.current')->getPath();
+          $redirectPath = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+          $form['elements']['source_url']['#value'] = $redirectPath;
+          // Gated Content Form.
+          $gated_content_form_term_name = Term::load($gated_content_form_tid)->get('name')->value;
+          $form['elements']['gated_content_form']['#value'] = $gated_content_form_term_name;
+          // Salesforce campaign.
+          if ($node->get('field_sfcd_campaign_id')->target_id == !NULL) {
+            $salesforce_campaign_tid = $node->get('field_sfcd_campaign_id')->target_id;
+            $salesforce_campaign_term_name = Term::load($salesforce_campaign_tid)->get('name')->value;
+            $form['elements']['salesforce_campaign']['#value'] = $salesforce_campaign_term_name;
+            // Salesforce campaign ID.
+            $salesforce_campaign_term = Term::load($salesforce_campaign_tid);
+            $sfdc_campaign_id = $salesforce_campaign_term->get('field_sfdc_campaign_id')->value;
+            $form['elements']['salesforce_campaign_id']['#value'] = $sfdc_campaign_id;
+          }
+          $form['#cache']['max-age'] = 0;
+          $form['actions']['submit']['#submit'] = ['alcon_gated_content_gatedform_submit_handler'];
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Submit_handler().
+ */
+function alcon_gated_content_gatedform_submit_handler($form, &$form_state) {
+  // Sfcd campaign  Id.
+  $node_id = \Drupal::routeMatch()->getRawParameter('node');
+  $node = Node::load($node_id);
+
+  $gated_content_form_term = $node->get('field_gated_content_form')->target_id;
+  $gated_content_form_term_id = Term::load($gated_content_form_term);
+  $cookie_prefix = $gated_content_form_term_id->get('field_cookie_prefix')->value;
+  $gated_content_form_name = $gated_content_form_term_id->getName();
+
+  $sfdc_campaign = '';
+  $sfdc_campaign_id = '';
+  if ($node->get('field_sfcd_campaign_id')->target_id == !NULL) {
+    $node_id = $node->get('field_sfcd_campaign_id')->target_id;
+    $campaign_term_id = Term::load($node_id);
+    if (!empty($campaign_term_id)) {
+      $sfdc_campaign = $campaign_term_id->getName();
+      $sfdc_campaign_id = $campaign_term_id->get('field_sfdc_campaign_id')->value;
+    }
+  }
+  // Name.
+  $name = $form_state->getValue('first_name');
+  // Last Name.
+  $last_name = $form_state->getValue('last_name');
+  // Email.
+  $email = $form_state->getValue('email');
+  // Clinic Name.
+  $clinic_name = $form_state->getValue('name_of_clinic_or_company');
+
+  // Country.
+  $country_value = '';
+  if ($form_state->getValue('country') == !NULL) {
+    $country_tid = $form_state->getValue('country');
+    $country_term_id = Term::load($country_tid);
+    if (!empty($country_term_id)) {
+      $country = $country_term_id->getName();
+      $country_value = $country;
+    }
+  }
+
+  // Source URL.
+  $current_path = \Drupal::service('path.current')->getPath();
+  $redirectPath = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  // Current Date.
+  // format date in 30/04/2019.
+  $current_time = \Drupal::time()->getCurrentTime('d');
+  $create_date  = \Drupal::service('date.formatter')->format($current_time, 'custom', 'd/m/Y H:i:s');
+
+  $val = [
+    'status' => TRUE,
+    'name' => $name,
+    'last_name' => $last_name,
+    'country' => $country,
+    'email' => $email,
+    'clinic_name' => $clinic_name,
+    'redirectPath' => $redirectPath,
+    'create_date' => $create_date,
+    'campaign_id' => $sfdc_campaign,
+    'cookie_prefix' => $cookie_prefix,
+    'consent_value' => $form_state->getValue('consent'),
+  ];
+  $cookie_value = serialize($val);
+
+  $config = \Drupal::config('alcon_gated_content.details.settings');
+  $cookie_time = $config->get('details');
+  $country = $config->get('country');
+
+  // Speciality.
+  $speciality = '';
+  if ($form_state->getValue('main_specialty') == !NULL) {
+    $speciality_tid = $form_state->getValue('main_specialty');
+    $speciality_term = Term::load($speciality_tid);
+    if (!empty($speciality_term)) {
+      $speciality = $speciality_term->getName();
+    }
+  }
+
+  $tealiumVisitorId = '';
+  if (isset($_COOKIE['utag_main'])) {
+    if ($_COOKIE['utag_main'] != '') {
+      $utagMain = $_COOKIE['utag_main'];
+      $utagMainArray = explode(":", $utagMain);
+      $v_id = explode("$", $utagMainArray[1]);
+      $tealiumVisitorId = $v_id[0];
+    }
+  }
+
+  $referer_url = $_SERVER['HTTP_REFERER'];
+  \Drupal::logger('alcon_gated_content_referer')->notice('<pre><code>' . print_r($referer_url, TRUE) . '</code></pre>');
+
+  $baseurl = 'https://collect.tealiumiq.com/event';
+  $headers = [
+    'Content-Type' => 'application/json',
+  ];
+  $data = [
+    "tealium_account" => "alcon",
+    "tealium_profile" => "main",
+    "tealium_datasource" => "2e7o4d",
+    "tealium_event" => "gated_content_user_signup",
+    "tealium_visitor_id" => $tealiumVisitorId,
+    "timestamp" => date('Y-m-d H:i:s'),
+    "first_name" => $name,
+    "last_name" => $last_name,
+    "specialty" => $speciality,
+    "clinic" => $clinic_name,
+    "customer_city" => $form_state->getValue('city'),
+    "customer_country" => $country_value,
+    "customer_email" => $email,
+    "marketing_consent" => $form_state->getValue('consent'),
+    "lead_type" => "Gated Cold Lead",
+    "source_url" => $referer_url ?: '',
+    "gated_content_form" => $gated_content_form_name,
+    "salesforce_campaign" => $sfdc_campaign,
+    "salesforce_campign_id" => $sfdc_campaign_id,
+    "created_date" => date('Y-m-d H:i:s'),
+    "browser_type" => $_SERVER['HTTP_USER_AGENT'],
+    "gated_content_cookie_id" => $cookie_value,
+  ];
+
+  \Drupal::logger('alcon_gated_content_submit')->notice('<pre><code>' . print_r($data, TRUE) . '</code></pre>');
+  $exchange = \Drupal::service('alcon_gated_content.guzzle_service')->post($baseurl, $headers, $data);
+
+  // Setting cookie to identify form submit.
+  setcookie($cookie_prefix . 'gated_form_submit', TRUE, strtotime('+1 minutes'), '/');
+
+  if (isset($cookie_time)) {
+    setcookie($cookie_prefix . '_gated_content', $cookie_value, strtotime('+' . $cookie_time . ' days'), '/');
+    setcookie($cookie_prefix . 'gated_content_referer', $referer_url, strtotime('+' . $cookie_time . ' days'), '/');
+  }
+  else {
+    setcookie($cookie_prefix . '_gated_content', $cookie_value, strtotime('+180 days'), '/');
+    setcookie($cookie_prefix . 'gated_content_referer', $referer_url, strtotime('+180 days'), '/');
+  }
+}

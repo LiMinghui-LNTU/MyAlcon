@@ -1,0 +1,14 @@
+uuid: 430f24b2-be05-409f-8012-00d83b2ba206
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 网站反馈
+recipients:
+  - yuntao.qi@alcon.cn
+reply: ''
+weight: 0
+message: 您的信息已被送出。
+redirect: ''

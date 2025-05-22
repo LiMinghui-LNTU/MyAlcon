@@ -1,0 +1,14 @@
+uuid: 673a8266-4875-44da-b77f-dadab0b0fbd6
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - user.role.seoguan_li_yuan
+  module:
+    - user
+id: user_remove_role_action.seoguan_li_yuan
+label: '从选择的用户中删除SEO管理员 角色'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: seoguan_li_yuan

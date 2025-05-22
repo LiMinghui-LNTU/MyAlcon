@@ -1,0 +1,13 @@
+uuid: 1706b4df-753d-4f35-a644-ad605f56a491
+langcode: en
+status: true
+dependencies: {  }
+label: 'VC CATEGORY PAGES'
+id: hlp_cat_vc_category_pages
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: true
+class: category-13
+weight: -6

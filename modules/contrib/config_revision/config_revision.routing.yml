@@ -1,0 +1,7 @@
+config_revision.settings:
+  path: '/admin/config/development/config-revision'
+  defaults:
+    _form: '\Drupal\config_revision\Form\AdminSettingsForm'
+    _title: 'Config Revision Settings'
+  requirements:
+    _permission: 'administer config_revision'

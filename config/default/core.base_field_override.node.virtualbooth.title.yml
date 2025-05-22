@@ -1,0 +1,18 @@
+uuid: ccc40938-a519-4203-8a2d-bf9ca345e353
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+id: node.virtualbooth.title
+field_name: title
+entity_type: node
+bundle: virtualbooth
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

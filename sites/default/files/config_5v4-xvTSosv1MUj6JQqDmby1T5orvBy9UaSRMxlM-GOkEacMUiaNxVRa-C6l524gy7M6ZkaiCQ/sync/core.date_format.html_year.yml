@@ -1,0 +1,10 @@
+uuid: 95349872-5bdc-4e77-a5e3-6f781ef1437d
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OjekiQuX9RbVQ2_8jOHBL94RgYLePqX7wpfNGgcQzrk
+id: html_year
+label: 'HTML 年份'
+locked: true
+pattern: 'Y'

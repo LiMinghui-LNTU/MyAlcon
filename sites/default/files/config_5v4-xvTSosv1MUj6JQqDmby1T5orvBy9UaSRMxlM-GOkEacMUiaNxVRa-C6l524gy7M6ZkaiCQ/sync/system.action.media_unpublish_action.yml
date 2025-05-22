@@ -1,0 +1,13 @@
+uuid: 7440f369-c4a5-4a9a-98f1-f1f1a06bbd7e
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: CsK6TseQ2DatEbZgbd30swOlZ28_HHwAESU2LvEnWq0
+id: media_unpublish_action
+label: 取消发布媒体
+type: media
+plugin: 'entity:unpublish_action:media'
+configuration: {  }

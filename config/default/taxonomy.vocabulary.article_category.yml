@@ -1,0 +1,10 @@
+uuid: 1475b90c-edbc-4cf4-a53a-125d90cced09
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CDbMYgEcJQ8x6OOd84W9b1sxv6HQ2Jl-bWsAz0i6f9g
+name: 'Article Category'
+vid: article_category
+description: ''
+weight: 0

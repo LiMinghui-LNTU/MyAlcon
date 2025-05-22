@@ -1,0 +1,9 @@
+uuid: 148eb6a5-620a-4417-82ce-b0c573a39bac
+langcode: en
+status: true
+dependencies: {  }
+id: pack__0
+label: 'DMB-4448 Country & language prompt'
+description: 'DMB-4448 Component Enhancement | Header Super Nav - Country & language prompt | Link to Site Directory Page.'
+excluded_entity_types: '[]'
+settings: '{"e3bbb298-c6c4-48fa-8244-ca57a1a54855":{"type":"cohesion_component","items":{"75556ff1-c6f0-48c8-b2a6-37a3a1cff6b4":{"type":"cohesion_color"},"c99d20a0-4645-4a02-afe1-cf54cf4b1b9e":{"type":"cohesion_color"},"fe22b9ba-2bf7-4cc4-808a-56ca1fcf177f":{"type":"cohesion_color"},"95ed18d4-6b02-4261-8c20-f3c99849fb86":{"type":"cohesion_color"},"8bba44d4-8d29-4d00-a15b-46a3fad0f8c9":{"type":"cohesion_color"},"8ee9c45e-32b9-4ee9-8885-3ffaace307b9":{"type":"cohesion_color"},"e3bbb298-c6c4-48fa-8244-ca57a1a54855":{"type":"cohesion_component"},"5e8c8d01-aafd-4f75-ba4e-d60e461d3906":{"type":"cohesion_component_category"},"fc5326da-5605-46e1-93e4-d4c11b4f3621":{"type":"cohesion_custom_style"},"628c6555-3143-4960-ad66-1bec6a0336ea":{"type":"cohesion_custom_style"},"5ea60c7b-56bf-47f3-960e-a618f6785b80":{"type":"cohesion_icon_library"},"138c38cc-daed-45d5-8e1f-039a8de95902":{"type":"file"},"b403bfdf-de1e-4d90-8b7e-8a5ee814d65d":{"type":"file"},"b5efc7be-89c8-4898-aab5-4c119acef386":{"type":"file"},"c682d83f-948e-4588-84ab-becc4462a556":{"type":"file"},"efa4e8ba-1d1c-4cff-84e8-6980edcce904":{"type":"file"}},"checked":true}}'

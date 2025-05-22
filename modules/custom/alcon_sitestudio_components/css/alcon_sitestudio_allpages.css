@@ -1,0 +1,52 @@
+/* DMB-4415: Add style to error message when user works with
+pagebuilder mode on legacy content v6.3 to 6.8 */
+
+.ssa-modal-dialog .ssa-modal-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ssa-modal-dialog .ssa-modal-footer button {
+  margin-top: -10px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 32px;
+  cursor: pointer;
+  appearance: none;
+  padding: 2px 15px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 4px;
+  font-weight: 700;
+  background-color: #eee;
+}
+
+body > .fade.ssa-modal.show {
+  position: fixed;
+  top: 10%;
+  height: 80%;
+  margin: 0 15%;
+  width: 70%;
+  padding: 15px;
+}
+
+body > .fade.ssa-modal.show .ssa-modal-content pre {
+  height: 110px;
+  overflow-y: scroll;
+  background-color: #eee;
+}
+
+.ssa-modal-dialog-centered .ssa-modal-content {
+  background: #fff;
+  padding: 30px;
+}
+
+.ssa-app .ssa-absolute-container .ssa-modal-dialog-centered .ssa-modal-content {
+  background: #fff;
+  padding: 3px;
+}
+
+/* DMB-4415 - END */

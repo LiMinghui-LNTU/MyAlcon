@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tablet_3_col_4_3_
+label: 'Tablet 3 Col (4:3)'
+effects:
+  81962fb0-ce6e-4816-8e76-d58b65785105:
+    uuid: 81962fb0-ce6e-4816-8e76-d58b65785105
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 216
+      height: 162
+      crop_type: focal_point

@@ -1,0 +1,19 @@
+uuid: ffa564c4-2667-4ce8-a208-b2854f5f36c4
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: CdNM5sNVtbD73GAJtQQSZv5wGwZmtBgdxN20Ahnpjp8
+name: article_teaser_phone
+label: 'Article Teaser Phone'
+effects:
+  d6e677c7-69d4-44bd-8c1d-842584ade3f2:
+    uuid: d6e677c7-69d4-44bd-8c1d-842584ade3f2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 215
+      crop_type: focal_point

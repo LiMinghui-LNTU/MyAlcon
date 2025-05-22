@@ -1,0 +1,122 @@
+<?php
+
+/**
+ * @file
+ * Module file for alcon_knowledge_centre.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function alcon_knowledge_centre_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the alcon_knowledge_centre module.
+    case 'help.page.alcon_knowledge_centre':
+      $output = '';
+      $output .= '<h2>' . t('About') . '</h2>';
+      $output .= '<p>' . t('Myalcon Knwoledge Center module is use to import the configuration of all the below items (Drupal items) to create Article Lobby listing page and Related Article page with all the required functionality. Also this module is use to alter the template for views item and custom functionality related to Knowledge Center.') . '</p>';
+      $output .= '<p>' . t('Here are the items:');
+      $output .= '<ul>';
+      $output .= '<li>Create Article Page content type with fields.</li>';
+      $output .= '<li>Create Biography Page content type with fields.</li>';
+      $output .= '<li>Create Article Category taxonomy with fields and Term items.</li>';
+      $output .= '<li>Create Article Tag taxonomy with fields and Term items.</li>';
+      $output .= '<li>Create Image style for both the Teaser Image and Article Text & Image component.</li>';
+      $output .= '<li>Create Responsive Image style.</li>';
+      $output .= '<li>Create View for Article Lobby category tab, Article Lobby listing, Related Article.</li>';
+      $output .= '<li>Block configuration for all Views.</li>';
+      $output .= '</ul>';
+
+      $output .= '<h2>' . t('Note') . '</h2>';
+      $output .= '<p>' . t('All the sitestudio stuff related to Knowledge Center will import in a site as per sitestudio standard Package export/import methopdology. All the Packages will be available in sitestudioreference ACSF Prod site in manage package section. List of items are in below:');
+      $output .= '<h3>' . t('Component:') . '</h3>';
+      $output .= '<ol>';
+      $output .= '<li>Article Hero</li>';
+      $output .= '<li>Article Footer</li>';
+      $output .= '<li>Article Text</li>';
+      $output .= '<li>Article Text and Image</li>';
+      $output .= '</ol>';
+      $output .= '<h3>' . t('Custom Styles:') . '</h3>';
+      $output .= '<ol>';
+      $output .= '<li>Article Lobby Banner heading.</li>';
+      $output .= '<li>Article lobby banner sub-heading.</li>';
+      $output .= '<li>Article Lobby Lists.</li>';
+      $output .= '<li>Article Lobby Tab.</li>';
+      $output .= '<li>Lobby - Related Article.</li>';
+      $output .= '<li>Article Hero.</li>';
+      $output .= '<li>Article Text and Image.</li>';
+      $output .= '<li>Article Footer</li>';
+      $output .= '</ol>';
+      $output .= '<h3>' . t('Content Template:') . '</h3>';
+      $output .= '<ol>';
+      $output .= '<li>Article page >> Consumer Template (Default).</li>';
+      $output .= '</ol>';
+
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function alcon_knowledge_centre_theme($existing, $type, $theme, $path) {
+  return [
+    'views_view_list__article_lobby__article_lobby' => [
+      'template' => 'views-view-list--article-lobby--article-lobby',
+      'base hook' => 'views_view_list',
+    ],
+    'views_view_list__article_lobby_professional__article_lobby' => [
+      'template' => 'views-view--article-lobby-professional--article-lobby',
+      'base hook' => 'views_view_list',
+    ],
+    'views_view_list__kc_article_lobby_category__block_1' => [
+      'template' => 'views-view-list--kc-article-lobby-category--block-1',
+      'base hook' => 'views_view_list',
+    ],
+    'views_view_list__kc_article_lobby_category_professional__block_1' => [
+      'template' => 'views-view--kc-article-lobby-category-professional--block-1',
+      'base hook' => 'views_view_list',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function alcon_knowledge_centre_page_attachments(&$variables) {
+  $variables['#attached']['library'][] = 'alcon_knowledge_centre/back_to_top';
+  $variables['#attached']['library'][] = 'alcon_knowledge_centre/article_admin';
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function alcon_knowledge_centre_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Adding custom validation for the welcome page type field.
+  if ($form_id == 'node_article_edit_form' || $form_id == 'node_article_form') {
+    $form['#validate'][] = 'alcon_knowledge_centre__article_form_validate';
+  }
+}
+
+/**
+ * Implements article_form_validation().
+ */
+function alcon_knowledge_centre__article_form_validate(&$form, FormStateInterface $form_state) {
+  if (isset($form['field_article_type'])) {
+    if ($form_state->getValue('field_article_type')[0]['value'] == 'consumer') {
+      if (empty($form_state->getValue('field_category'))) {
+        $form_state->setErrorByName('Category', t('Category cannot be empty.'));
+      }
+    }
+    if ($form_state->getValue('field_article_type')[0]['value'] == 'professional') {
+      if (empty($form_state->getValue('field_article_category_professio'))) {
+        $form_state->setErrorByName('Article Category Professional', t('Article Category Professional	cannot be empty.'));
+      }
+    }
+  }
+}

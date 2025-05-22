@@ -1,0 +1,19 @@
+uuid: 99098c36-5cd5-4c78-a8ef-73d89c6cefe9
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: i0uUxGwt7mcMj6hMImSWEDBPZ5T-bcfMVk1gkdnxZbg
+name: phone_4_3_
+label: 'Phone (4:3)'
+effects:
+  3af6be2e-2a85-443c-9dae-b4df7839fa81:
+    uuid: 3af6be2e-2a85-443c-9dae-b4df7839fa81
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 312
+      height: 234
+      crop_type: focal_point

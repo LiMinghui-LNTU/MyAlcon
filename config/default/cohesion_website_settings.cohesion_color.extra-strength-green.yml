@@ -1,0 +1,13 @@
+uuid: d8f5c6cb-121b-46fa-8eb4-36247ceef65f
+langcode: en
+status: true
+dependencies: {  }
+label: 'Extra Strength Green'
+id: extra-strength-green
+json_values: '{"link":true,"name":"Extra Strength Green","uid":"extra-strength-green","class":".coh-color-extra-strength-green","variable":"$coh-color-extra-strength-green","value":{"value":{"hex":"#00b068","rgba":"rgba(0, 176, 104, 1)"}},"wysiwyg":false,"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 55

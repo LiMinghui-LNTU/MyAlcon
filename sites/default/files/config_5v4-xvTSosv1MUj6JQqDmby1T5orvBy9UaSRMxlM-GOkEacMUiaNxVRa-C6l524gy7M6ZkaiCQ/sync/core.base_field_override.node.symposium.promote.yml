@@ -1,0 +1,22 @@
+uuid: d1d36e84-d13e-4718-b3c8-fcc200ba9206
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.symposium
+id: node.symposium.promote
+field_name: promote
+entity_type: node
+bundle: symposium
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

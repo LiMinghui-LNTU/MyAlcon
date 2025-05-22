@@ -1,0 +1,44 @@
+status: true
+dependencies:
+  config:
+    - image.style.article_teaser_desktop
+    - image.style.article_teaser_laptop
+    - image.style.article_teaser_phone
+    - image.style.article_teaser_wide_desktop
+  module:
+    - alcon_knowledge_centre
+id: article_teaser_image_style
+label: 'Article Teaser Image Style'
+image_style_mappings:
+  -
+    breakpoint_id: site_studio.images.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: article_teaser_wide_desktop
+  -
+    breakpoint_id: site_studio.images.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: article_teaser_desktop
+  -
+    breakpoint_id: site_studio.images.ls
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: article_teaser_laptop
+  -
+    breakpoint_id: site_studio.images.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: article_teaser_laptop
+  -
+    breakpoint_id: site_studio.images.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: article_teaser_phone
+  -
+    breakpoint_id: site_studio.images.ps
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: article_teaser_phone
+breakpoint_group: site_studio.images
+fallback_image_style: article_teaser_desktop

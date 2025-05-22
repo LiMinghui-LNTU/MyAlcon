@@ -1,0 +1,24 @@
+uuid: ddc77373-90a4-4cf2-8729-b0f19cb9376b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_place
+    - node.type.virtualbooth
+  module:
+    - text
+_core:
+  default_config_hash: hoMQ9Yzv3y281uTEoH8nDAUI4UEx8ln2BCufTkQkAYs
+id: node.virtualbooth.field_virtualbooth_place
+field_name: field_virtualbooth_place
+entity_type: node
+bundle: virtualbooth
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

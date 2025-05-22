@@ -1,0 +1,20 @@
+uuid: 398777a4-7853-4ec3-a6ae-3b8ba6c53590
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - node.type.location
+  module:
+    - metatag
+id: node.location.metatag
+field_name: metatag
+entity_type: node
+bundle: location
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

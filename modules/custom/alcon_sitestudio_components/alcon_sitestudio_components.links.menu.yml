@@ -1,0 +1,5 @@
+alcon_sitestudio_components.form:
+  title: 'Alcon Site Studio'
+  description: 'Is use to include libraries: javascript and css code to all pages or when specific module is used'
+  route_name: alcon_sitestudio_components.form
+  parent: 'system.admin_config_system'

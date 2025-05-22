@@ -1,0 +1,100 @@
+uuid: 663709ab-051b-4e6b-9b39-6ada5e5a6a7b
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_enable_gated_content
+    - field.field.node.page.field_gated_content_form
+    - field.field.node.page.field_layout_canvas_basic_page
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_sfcd_campaign_id
+    - field.field.node.page.field_template_selector
+    - field.field.node.page.layout_selection
+    - node.type.page
+  module:
+    - cohesion_elements
+    - cohesion_templates
+    - path
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_layout_canvas_basic_page:
+    type: cohesion_layout_builder_widget
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_template_selector:
+    type: cohesion_template_selector_widget
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_enable_gated_content: true
+  field_gated_content_form: true
+  field_meta_tags: true
+  field_sfcd_campaign_id: true
+  layout_selection: true

@@ -1,0 +1,8 @@
+# Service definition in YAML.
+services:
+  alcon_email_validation:
+    class: Drupal\alcon_email_validation\Services\ApiService
+    arguments: ['@config.factory']
+  alcon_email_validation.translation_controller:
+    class: Drupal\alcon_email_validation\Controller\AlconEmailValidationTranslationController
+    arguments: ['@language_manager']

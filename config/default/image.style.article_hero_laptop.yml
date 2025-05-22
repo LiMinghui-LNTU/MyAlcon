@@ -1,0 +1,19 @@
+uuid: e1a09921-3997-45be-bae9-4eb396531967
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: sUGLz23Nagtj1rO53peTkKzMo8KsrZ3XqZF9T2_ipOY
+name: article_hero_laptop
+label: 'Article Hero - Laptop'
+effects:
+  bf0624b6-9406-4049-8c3b-ef64b905afe7:
+    uuid: bf0624b6-9406-4049-8c3b-ef64b905afe7
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 500
+      crop_type: focal_point

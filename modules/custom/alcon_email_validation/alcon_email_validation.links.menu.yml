@@ -1,0 +1,11 @@
+alcon_email_validation.admin:
+  title: 'Email Validation Settings'
+  description: 'Configure email validation settings.'
+  parent: system.admin_config_development
+  route_name: alcon_email_validation.admin
+ 
+alcon_email_validation.translate:
+  title: 'Translate Email Validation Settings'
+  description: 'Translate email validation settings.'
+  parent: alcon_email_validation.admin
+  route_name: alcon_email_validation.translate

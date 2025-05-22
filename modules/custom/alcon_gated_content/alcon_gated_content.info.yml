@@ -1,0 +1,6 @@
+name: 'Alcon Gated Content'
+type: module
+description: 'Alcon Gated Content'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+package: 'User authentication'

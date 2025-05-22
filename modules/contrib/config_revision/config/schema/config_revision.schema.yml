@@ -1,0 +1,24 @@
+config_revision.settings:
+  type: config_object
+  label: Config Revision settings
+  mapping:
+    enabled_entity_types:
+      type: sequence
+      label: 'Entity Type IDs'
+      sequence:
+        type: string
+        label: 'Entity Type ID'
+
+config_revision.type.*:
+  type: config_entity
+  label: 'Config revision type settings'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    description:
+      type: text
+      label: 'Description'

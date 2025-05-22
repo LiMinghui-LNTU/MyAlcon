@@ -1,0 +1,21 @@
+uuid: e630d56c-1bb3-4b53-a72c-a3aa92748431
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.freshlook-deep-purple
+    - cohesion_website_settings.cohesion_font_stack.raleway
+label: brand-title-gradient
+id: 2e6ecd64
+json_values: '{"preview":{"text":"<h1 class=\"coh-preview\">Default content for ''Heading''.<\/h1>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h1","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-raleway"},"color":{"value":{"link":true,"name":"Freshlook Deep Purple","uid":"freshlook-deep-purple","class":".coh-color-freshlook-deep-purple","variable":"$coh-color-freshlook-deep-purple","value":{"hex":"#640096","rgba":"rgba(100, 0, 150, 1)"},"wysiwyg":true,"locked":true,"inuse":true,"tags":["Freshlook"]}},"font-weight":{"value":"800"},"custom-css":[{"customCss":{"value":"linear-gradient( 88deg, #880AD8 11.24%, #CD50F8 37.79%, #F59856 75%)"},"customCssProperty":{"value":"background"}},{"customCssProperty":{"value":"-webkit-background-clip"},"customCss":{"value":"text"}},{"customCssProperty":{"value":"-webkit-text-fill-color"},"customCss":{"value":"transparent"}}],"text-align":{"value":"center"},"line-height":{"value":"70px"},"font-size":{"value":"70px"},"margin":{"margin-top":{"value":"15px"},"margin-bottom":{"value":"15px"}},"text-transform":{"value":"uppercase"},"font-style":{"value":"italic"}},"sm":{"font-size":{"value":"60px"},"line-height":{"value":"60px"}},"xs":{"font-size":{"value":"40px"},"line-height":{"value":"40px"}},"ps":{"font-size":{"value":"40px"},"line-height":{"value":"40px"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":true},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]},{"formKey":"font-style-and-wrapping","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-style","active":true},{"name":"text-transform","active":true},{"name":"text-decoration","active":true},{"name":"word-wrap","active":true},{"name":"direction","active":true}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]},{"formKey":"transform-and-transition","children":[{"formKey":"transform","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"transformRotateX","active":true},{"name":"transformRotateY","active":true},{"name":"transformRotateZ","active":true},{"name":"transformTranslateX","active":true},{"name":"transformTranslateY","active":true},{"name":"transformScaleX","active":true},{"name":"transformScaleY","active":true},{"name":"transformSkewX","active":true},{"name":"transformSkewY","active":true},{"name":"transformOriginX","active":true},{"name":"transformOriginY","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-brand-title-gradient
+custom_style_type: heading
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 223

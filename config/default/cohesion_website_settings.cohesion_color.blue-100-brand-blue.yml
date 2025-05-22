@@ -1,0 +1,13 @@
+uuid: 1c746ad5-6da6-4010-bb7e-dfa2a136e1a6
+langcode: en
+status: true
+dependencies: {  }
+label: 'Blue 100 (Brand blue)'
+id: blue-100-brand-blue
+json_values: '{"link":true,"value":{"value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"}},"name":"Blue 100 Brand blue","uid":"blue-100-brand-blue","class":".coh-color-blue-100-brand-blue","variable":"$coh-color-blue-100-brand-blue","inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 8

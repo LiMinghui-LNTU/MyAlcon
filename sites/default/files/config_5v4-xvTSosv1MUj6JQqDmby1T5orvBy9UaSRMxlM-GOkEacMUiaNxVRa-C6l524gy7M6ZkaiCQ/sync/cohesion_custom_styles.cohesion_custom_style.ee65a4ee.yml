@@ -1,0 +1,18 @@
+uuid: e9646245-32fa-456f-8733-4c986b81197d
+langcode: en
+status: true
+dependencies: {  }
+label: 'Hero image full'
+id: ee65a4ee
+json_values: '{"preview":{"text":"<p><img alt=\"\" class=\"coh-preview\" data-entity-type=\"file\" data-entity-uuid=\"39475d45-0ce1-4db0-bc6e-f8ee02c30199\" src=\"\/sites\/g\/files\/rbvwei5002001dev\/files\/2020-09\/im1.PNG\" \/><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"height":{"value":"100%"},"width":{"value":"50vw"},"custom-css":[{"customCssProperty":{"value":"object-fit"},"customCss":{"value":"cover"}}]},"xs":{"height":{"value":"100%"},"width":{"value":"100vw"}},"ps":{"width":{"value":"100vw"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":false},{"name":"max-height","active":false},{"name":"height","active":true}]},{"formKey":"width","breakpoints":[{"name":"xl"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":false},{"name":"width","active":true}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-hero-image-full
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 311

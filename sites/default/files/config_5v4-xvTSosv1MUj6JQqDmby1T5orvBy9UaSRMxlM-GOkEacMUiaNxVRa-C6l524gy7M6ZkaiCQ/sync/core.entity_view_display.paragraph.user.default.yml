@@ -1,0 +1,17 @@
+uuid: 918b5f0e-aff5-44a3-8da7-2786744d2d22
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.user
+_core:
+  default_config_hash: lnkn109axN_p0s-F9NH4awny0ORtlmBkffTR76pNT6Q
+id: paragraph.user.default
+targetEntityType: paragraph
+bundle: user
+mode: default
+content: {  }
+hidden:
+  created: true
+  search_api_excerpt: true
+  uid: true

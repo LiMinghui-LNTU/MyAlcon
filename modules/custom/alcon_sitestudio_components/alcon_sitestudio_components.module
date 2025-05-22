@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains alcon_sitestudio_components.module 
+ */
+
+ /**
+ * Implements hook_theme().
+ */
+function alcon_sitestudio_components_theme() {
+  return [
+    'block_alconsitestudio_allpages' => [
+      'variables' => [
+        'enable_allpages' => '',
+        'enable_iframe' => '',
+      ],
+    ],
+    'block_alconsitestudio_iframe' => [
+      'variables' => [
+        'enable_allpages' => '',
+        'enable_iframe' => '',
+      ],
+    ],
+    'block_alconsitestudio_timeline' => [
+      'variables' => [
+        'enable_timeline' => '',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function alcon_sitestudio_components_uninstall() {
+    \Drupal::configFactory()->getEditable('block.block.libraryrequierebytimelinecomponent')->delete();
+    drupal_flush_all_caches();
+}

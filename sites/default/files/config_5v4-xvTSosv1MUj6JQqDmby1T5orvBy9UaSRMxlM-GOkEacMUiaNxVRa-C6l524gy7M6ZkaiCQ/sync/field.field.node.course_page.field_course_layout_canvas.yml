@@ -1,0 +1,25 @@
+uuid: 4b4cac1a-0de0-48fc-b59e-08240dc4a881
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_layout_canvas
+    - node.type.course_page
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: zBUWbLU_A981elKf_vDktKPEatpibGjXCLVhR6r44zI
+id: node.course_page.field_course_layout_canvas
+field_name: field_course_layout_canvas
+entity_type: node
+bundle: course_page
+label: 'Layout Canvas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cohesion_layout'
+  handler_settings: {  }
+field_type: entity_reference_revisions

@@ -1,0 +1,9 @@
+uuid: c23e7c70-7171-4b97-97b7-c5aa0ec64b65
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: L7Fm9s3OFts1EqoEZeMwKxAa7FRxN6H418WDwfav3QI
+id: administer_file_system
+label: 'Administer file system'
+route: system.file_system_settings

@@ -1,0 +1,18 @@
+uuid: 055e2fd5-7a44-4003-957e-0e5e7bbad021
+langcode: en
+status: false
+dependencies: {  }
+label: 'Slick carousel (Media)'
+id: media___any___slick
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: __any__
+view_mode: slick
+master_template: ''

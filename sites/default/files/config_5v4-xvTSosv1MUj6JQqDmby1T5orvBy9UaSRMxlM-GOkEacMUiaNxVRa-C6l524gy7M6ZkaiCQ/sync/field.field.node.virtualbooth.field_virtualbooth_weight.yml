@@ -1,0 +1,25 @@
+uuid: 8758c71c-6dd7-42b1-ba61-b0eaf9c5ae66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_weight
+    - node.type.virtualbooth
+_core:
+  default_config_hash: GDHkV8lUQnQTYMDe7yAwtznmkuA4IKNDdV3vdPRA2k0
+id: node.virtualbooth.field_virtualbooth_weight
+field_name: field_virtualbooth_weight
+entity_type: node
+bundle: virtualbooth
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

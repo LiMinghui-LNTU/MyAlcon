@@ -1,0 +1,20 @@
+uuid: 81621251-aa79-4c02-a780-76d16ed1db25
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part_19
+label: 'DMB-5789 revert part 19'
+description: 'DMB-5789 revert part 19(Text and Image - M1 (cpt_a_txt_img_m1))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "caa6d8fc-5c1d-49bc-8e2a-119dd577ebb5": {
+          "type": "cohesion_component",
+          "items": {
+              "caa6d8fc-5c1d-49bc-8e2a-119dd577ebb5": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

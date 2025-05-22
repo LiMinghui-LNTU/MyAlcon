@@ -1,0 +1,160 @@
+diff --git a/core/modules/action/src/Plugin/Action/AssignOwnerNode.php b/core/modules/action/src/Plugin/Action/AssignOwnerNode.php
+index 72dc09fb1e8..4741fde2a56 100644
+--- a/core/modules/action/src/Plugin/Action/AssignOwnerNode.php
++++ b/core/modules/action/src/Plugin/Action/AssignOwnerNode.php
+@@ -138,8 +138,7 @@ public function submitConfigurationForm(array &$form, FormStateInterface $form_s
+    */
+   public function access($object, ?AccountInterface $account = NULL, $return_as_object = FALSE) {
+     /** @var \Drupal\node\NodeInterface $object */
+-    $result = $object->access('update', $account, TRUE)
+-      ->andIf($object->getOwner()->access('edit', $account, TRUE));
++    $result = $object->access('update', $account, TRUE);
+ 
+     return $return_as_object ? $result : $result->isAllowed();
+   }
+diff --git a/core/modules/action/tests/src/Functional/ConfigurationTest.php b/core/modules/action/tests/src/Functional/ConfigurationTest.php
+index bc2d4444f53..211a4aa3d15 100644
+--- a/core/modules/action/tests/src/Functional/ConfigurationTest.php
++++ b/core/modules/action/tests/src/Functional/ConfigurationTest.php
+@@ -20,7 +20,7 @@ class ConfigurationTest extends BrowserTestBase {
+    *
+    * @var array
+    */
+-  protected static $modules = ['action'];
++  protected static $modules = ['action', 'node', 'views'];
+ 
+ 
+   /**
+@@ -101,4 +101,132 @@ public function testActionConfiguration(): void {
+     $this->assertNull($action, 'Make sure the action is gone after being deleted.');
+   }
+ 
++  /**
++   * Tests the node_assign_owner_action action.
++   */
++  public function testChangeNodeOwnerAction() {
++    // Create page and article content type.
++    $this->drupalCreateContentType(['type' => 'page', 'name' => 'Page']);
++    $this->drupalCreateContentType(['type' => 'article', 'name' => 'Article']);
++
++    // Create page titles.
++    $page_title = $this->randomMachineName();
++    $article_title = $this->randomMachineName();
++    $anon_article_title = $this->randomMachineName();
++
++    // Create a user with permission to view the actions administration pages.
++    $action_admin = $this->drupalCreateUser(['administer actions']);
++
++    // Create two users. One with permission to edit page content type and the
++    // other with permission to edit article content type.
++    $page_editor = $this->drupalCreateUser([
++      'access content overview',
++      'create page content',
++      'edit any page content',
++      'edit own page content',
++    ]);
++
++    $article_editor = $this->drupalCreateUser([
++      'access content overview',
++      'create article content',
++      'edit any article content',
++      'edit own article content',
++    ]);
++
++    // Create test nodes.
++    $this->drupalCreateNode([
++      'type' => 'page',
++      'title' => $page_title,
++      'uid' => $page_editor->id(),
++    ]);
++    $article = $this->drupalCreateNode([
++      'type' => 'article',
++      'title' => $article_title,
++    ]);
++    $this->drupalCreateNode([
++      'type' => 'article',
++      'title' => $anon_article_title,
++      'uid' => 0,
++    ]);
++
++    // Create two actions. One to assign authorship to the page editor and the
++    // other to assign authorship to the article editor.
++    $this->drupalLogin($action_admin);
++
++    // Create action to assign ownership to $page_editor.
++    $page_action_label = strtolower($this->randomMachineName());
++    $edit = [
++      'label' => $page_action_label,
++      'id' => $page_action_label,
++      'owner_uid' => $page_editor->id(),
++    ];
++    $this->drupalGet('admin/config/system/actions/add/node_assign_owner_action');
++    $this->submitForm($edit, 'Save');
++    $this->assertSession()
++      ->pageTextContains("The action has been successfully saved.");
++
++    $article_action_label = strtolower($this->randomMachineName());
++    $edit = [
++      'label' => $article_action_label,
++      'id' => $article_action_label,
++      'owner_uid' => $article_editor->id(),
++    ];
++    $this->drupalGet('admin/config/system/actions/add/node_assign_owner_action');
++    $this->submitForm($edit, 'Save');
++    $this->assertSession()
++      ->pageTextContains("The action has been successfully saved.");
++
++    // Login as the page editor and confirm the author of page content type
++    // can be changed.
++    $this->drupalLogin($page_editor);
++    $edit = [
++      'action' => $page_action_label,
++      'node_bulk_form[0]' => TRUE,
++    ];
++    $this->drupalGet('admin/content', [
++      'query' => [
++        'title' => $page_title,
++      ],
++    ]);
++    $this->submitForm($edit, 'Apply to selected items');
++    $this->assertSession()
++      ->pageTextContains("$page_action_label was applied to 1 item.");
++
++    // Confirm that the action fails for article content type due to no access.
++    $this->drupalGet('admin/content', [
++      'query' => [
++        'title' => $article_title,
++      ],
++    ]);
++    $this->submitForm($edit, 'Apply to selected items');
++    $this->assertSession()
++      ->pageTextContains("No access to execute $page_action_label on the Content " . $article->label());
++
++    // Login as the article editor and confirm the author of article content
++    // type can be changed.
++    $this->drupalLogin($article_editor);
++    $this->drupalGet('admin/content', [
++      'query' => [
++        'title' => $article_title,
++      ],
++    ]);
++    $edit = [
++      'action' => $article_action_label,
++      'node_bulk_form[0]' => TRUE,
++    ];
++    $this->submitForm($edit, 'Apply to selected items');
++    $this->assertSession()
++      ->pageTextContains("$article_action_label was applied to 1 item.");
++
++    // Confirm the action work for a node with an anonymous author.
++    $this->drupalGet('admin/content', [
++      'query' => [
++        'title' => $anon_article_title,
++      ],
++    ]);
++    $this->submitForm($edit, 'Apply to selected items');
++    $this->assertSession()
++      ->pageTextContains("$article_action_label was applied to 1 item.");
++  }
++
+ }

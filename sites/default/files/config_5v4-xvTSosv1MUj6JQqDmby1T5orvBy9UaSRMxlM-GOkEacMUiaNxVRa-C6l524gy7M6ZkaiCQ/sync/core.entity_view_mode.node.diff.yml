@@ -1,0 +1,17 @@
+uuid: 55374fd7-3c06-4870-86d4-2b2346c83487
+langcode: zh-hans
+status: false
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - node
+      - diff
+_core:
+  default_config_hash: pqZNtad5J9THcdbYjwPD4qINqvrTxnOd8KCWn6tUBRs
+id: node.diff
+label: 修订版本比较
+description: ''
+targetEntityType: node
+cache: true

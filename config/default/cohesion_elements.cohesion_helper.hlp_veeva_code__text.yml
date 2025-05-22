@@ -1,0 +1,26 @@
+uuid: 77e14e71-7a74-4524-8998-f05fd4d3be18
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.29f72bc6
+    - cohesion_custom_styles.cohesion_custom_style.53e9df41
+    - cohesion_custom_styles.cohesion_custom_style.6719c6aa
+    - cohesion_custom_styles.cohesion_custom_style.7bb1adf4
+    - cohesion_custom_styles.cohesion_custom_style.f763a575
+    - cohesion_elements.cohesion_component.cpt_a_text
+    - cohesion_elements.cohesion_helper_category.hlp_cat_uncategorized
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+label: 'Veeva code - Text'
+id: hlp_veeva_code__text
+json_values: '{"canvas":[{"uid":"cpt_a_text","type":"component","title":"Text","enabled":true,"category":"category-2","componentId":"cpt_a_text","componentType":"container","iconColor":"custom","uuid":"ca233eb8-1d9f-4eb2-b2c9-dcbf8819d832","parentUid":"root","status":{},"children":[]}],"mapper":{},"model":{"ca233eb8-1d9f-4eb2-b2c9-dcbf8819d832":{"settings":{"title":"Veeva code - Text"},"af01cd7a-833a-40fd-a8a9-f0656db075f5":{"text":"<p class=\"text-align-right\"><span class=\"coh-color-white\">Please refer to relevant product direction for use for list of indications, contraindications and warnings.<br \/>\n\u00a92023 Alcon Inc. 08\/23 EMEA-SG-2300008<\/span><\/p>\n","textFormat":"cohesion"},"897abae5-303a-4eef-943f-75b9f65132ab":"coh-style-a-max-width-wide","4914f794-8649-4c63-bd09-0f6b0ee61793":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"952f179d-b4d8-4e69-9894-e4a39346e86f":"coh-style-a-text-columns-one","9e834c9f-566d-43dd-b88d-0373b95ed01c":"","d2594a1b-6a3d-4af0-9cb4-311ce9b4cf8c":"","9620d4bd-3fc5-4f33-9a51-fe67c153963f":"","9869a998-5018-4552-9803-f16cee818fb0":"","7a56a305-cbd2-4329-b33d-fcba595e9ec4":"","1949e1e4-60b2-4705-8135-c15502fec433":"coh-style-a-padding-top-small","961f68d1-8502-4adc-8da1-90d9bfbacf48":"coh-style-a-padding-bottom-small","3d4f5794-16e1-4740-879f-0176e682ed18":"coh-style-a-padding-left-medium","8e115952-554a-4d94-b630-00bb025ba7e5":"coh-style-a-padding-right-medium"}},"previewModel":{},"variableFields":{}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_uncategorized
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

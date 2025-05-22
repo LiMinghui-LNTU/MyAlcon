@@ -1,0 +1,16 @@
+filter_settings.filter_htmlawed:
+  type: mapping
+  label: 'htmLawed filter'
+  mapping:
+    config:
+      type: string
+      label: 'Config. parameter for htmLawed'
+    spec:
+      type: string
+      label: 'Spec. parameter for htmLawed'
+    help:
+      type: string
+      label: 'Brief help tip'
+    helplong:
+      type: string
+      label: 'Long help section'

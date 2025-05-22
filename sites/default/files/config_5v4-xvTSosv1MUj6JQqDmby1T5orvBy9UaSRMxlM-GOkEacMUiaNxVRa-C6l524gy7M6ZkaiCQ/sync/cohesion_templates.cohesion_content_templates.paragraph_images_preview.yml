@@ -1,0 +1,18 @@
+uuid: 1fa78338-18cd-4dd8-ac62-238e2858abe3
+langcode: zh-hans
+status: false
+dependencies: {  }
+label: 'Preview (Paragraph, Images)'
+id: paragraph_images_preview
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: paragraph
+bundle: images
+view_mode: preview
+master_template: ''

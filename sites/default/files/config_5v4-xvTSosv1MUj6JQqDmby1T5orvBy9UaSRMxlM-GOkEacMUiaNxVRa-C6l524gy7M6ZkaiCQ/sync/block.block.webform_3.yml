@@ -1,0 +1,32 @@
+uuid: 8def0a6a-814e-44ca-a41d-276a6151fdfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.voucher
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: webform_3
+theme: cohesion_theme
+region: dx8_hidden
+weight: 35
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform With DNI'
+  label_display: '0'
+  provider: webform
+  webform_id: voucher
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    context_mapping: {  }
+    using_master_template: 0

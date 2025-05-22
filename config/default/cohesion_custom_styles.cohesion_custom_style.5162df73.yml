@@ -1,0 +1,18 @@
+uuid: c41e8c95-a6bc-47b2-b86e-e8ab3e2c13fd
+langcode: en
+status: true
+dependencies: {  }
+label: 'media Position - reverse'
+id: 5162df73
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"display":{},"flex-container":{"justify-content":{},"align-items":{},"flex-direction":{"value":"row-reverse"}}},"sm":{"flex-container":{"flex-direction":{"value":"column-reverse"}}},"ps":{"flex-container":{"flex-direction":{"value":"column-reverse"}}},"xs":{"flex-container":{"flex-direction":{"value":"column-reverse"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"flex-container","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"flex-direction","active":true},{"name":"flex-wrap","active":true},{"name":"justify-content","active":true},{"name":"justify-content-safety","active":true},{"name":"align-content","active":true},{"name":"align-content-safety","active":true},{"name":"align-items","active":true},{"name":"align-items-safety","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-media-position---reverse
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 85

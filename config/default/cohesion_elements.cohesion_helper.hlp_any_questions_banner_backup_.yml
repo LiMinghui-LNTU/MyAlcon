@@ -1,0 +1,31 @@
+uuid: 82712b6b-f4d4-4e0d-8b95-9e264d7b4cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.43c36eae
+    - cohesion_custom_styles.cohesion_custom_style.461ccbd5
+    - cohesion_custom_styles.cohesion_custom_style.63b187c4
+    - cohesion_custom_styles.cohesion_custom_style.6719c6aa
+    - cohesion_custom_styles.cohesion_custom_style.7bb1adf4
+    - cohesion_custom_styles.cohesion_custom_style.85a05632
+    - cohesion_custom_styles.cohesion_custom_style.8da1a65c
+    - cohesion_custom_styles.cohesion_custom_style.9877f87e
+    - cohesion_custom_styles.cohesion_custom_style.f763a575
+    - cohesion_elements.cohesion_component.cpt_a_txt_bkgrd_img_m1
+    - cohesion_elements.cohesion_helper_category.hlp_cat_general_helpers
+  content:
+    - 'file:file:0f7abd83-72e6-47bc-a733-122cb5b3ef45'
+label: 'Any Questions banner backup 31.07'
+id: hlp_any_questions_banner_backup_
+json_values: '{"canvas":[{"uid":"cpt_a_txt_bkgrd_img_m1","type":"component","title":"Text with Background Image - M1","enabled":true,"category":"category-2","componentId":"cpt_a_txt_bkgrd_img_m1","componentType":"container","iconColor":"custom","uuid":"dd075a72-e7c4-44b2-8da3-e952d4d01bf9","parentUid":"root","children":[]}],"mapper":{"dd075a72-e7c4-44b2-8da3-e952d4d01bf9":{}},"model":{"dd075a72-e7c4-44b2-8da3-e952d4d01bf9":{"6c7a1973-4738-40e5-b3e6-239b4b742290":{"text":"<h3 class=\"coh-style-a-tab-style-alternative-1\"><span class=\"coh-color-white\">Any Questions?<\/span><\/h3>","textFormat":"cohesion"},"e6ad30ed-c867-42c8-a171-174e30bcb10d":{"text":"","textFormat":"cohesion"},"813f48da-9f92-4bc3-a9af-96e2b3fe3d14":"Contact Us","679e273b-9e29-4d6e-949b-7afe8a97426a":"_self","d366a48f-a8dd-48a5-bc05-688fd47c520b":"","536ce25f-3a62-47d5-aa50-1e28cba967ad":"","067d3d4c-be42-4006-a45b-ec128958525d":"Button Right","c48de973-477c-4a3e-9560-c248a86dabea":"_self","dfd923e6-e81d-4eaf-8528-506429f46506":"","32775589-aa98-4736-b3ac-46142cffd8cf":"","7850523d-b357-4811-a9e0-ceaf14123bf6":"","9921302e-1099-47d1-8fe7-460b9c0bb097":"[media-reference:file:0f7abd83-72e6-47bc-a733-122cb5b3ef45]","93bf7a97-9900-4cf9-91c9-bddcc97ab23f":"Image of conference room with alcon logo screen","5a29c4b3-07e4-4d67-9f63-b4babb7ee9e1":"[media-reference:file:0f7abd83-72e6-47bc-a733-122cb5b3ef45]","26caa545-69ff-4cf7-b4dc-570a024aa47e":"coh-style-a-max-width-wide","1bab13a8-8eee-487b-a740-960529d7b857":"coh-style-a-background-image-component-height-small","fb0fa11d-af8c-4f1a-a070-545c18f8b0de":"100%","b3f9027f-89f1-4d94-944e-e00c267b4570":"coh-style-a-hero-alignment-left","2dbbf42e-13db-4a71-b098-49b14bfcf7de":"center","795339c1-50d8-41c5-994a-66f9dd4bc10d":"coh-style-a-button-inverted","03c40b6e-df68-4a6e-813f-8d8f2ae5e64b":"coh-style-a-button-inverted","a98cf2ad-ff9f-46d9-b57f-734e491a3bac":"Left","42708eea-756e-4789-b2fe-3db441795437":"","eb9db88e-9786-4658-9d5d-e9ab46c28698":"","d77169ff-7c0b-43be-9a2d-fd04c3867fc8":null,"4e64bcdf-e218-4a36-a06f-7b2cee529ec7":"","104efa25-afa1-417c-ba3e-fe98730fa26a":"coh-style-a-padding-top-small","1684434d-98e7-42df-b9f1-18b1f0838a5b":"coh-style-a-padding-bottom-small","7f6be8e4-4be3-45da-a928-9ff6f0b932cb":"coh-style-a-padding-left-large","c49fc140-5f66-403d-9e2d-d2d6c063a7d1":"coh-style-a-padding-right-large","settings":{"title":"Text with Background Image - M1"},"80f4e94a-d835-4caa-9b5b-16969c44443c":{"value":{"hex":"#f5f5f5","rgba":"rgba(245, 245, 245, 0)"}},"cec25110-f80f-4b01-81ba-87db11debf32":{"value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 0.4)"}},"32b1a67f-3ca2-4bb7-a7e3-14194f0cbb6b":"node::3256"}},"previewModel":{},"variableFields":{}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_general_helpers
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

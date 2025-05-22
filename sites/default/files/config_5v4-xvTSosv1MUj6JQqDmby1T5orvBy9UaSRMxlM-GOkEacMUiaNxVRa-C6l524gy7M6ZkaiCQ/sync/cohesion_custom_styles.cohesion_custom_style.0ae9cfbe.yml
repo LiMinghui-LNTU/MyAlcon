@@ -1,0 +1,18 @@
+uuid: 6cb6136e-5cc5-42ba-950b-f1def234fcdd
+langcode: en
+status: true
+dependencies: {  }
+label: 'Heading 4 size'
+id: 0ae9cfbe
+json_values: '{"preview":{"text":"<h1 class=\"coh-preview\">Default content for ''Heading''.<\/h1>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h1","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-size":{"value":"34"},"font-weight":{},"margin-top":[],"margin-bottom":{"value":"22"},"line-height":{"value":"1.05"},"margin":{"margin-bottom":{},"margin-top":{}}},"xs":{"font-size":[],"font-weight":{"value":"400"},"margin":{"margin-bottom":{"value":"24"}},"line-height":{"value":"1.05"}},"sm":{"font-size":[],"line-height":[]},"ps":{"font-size":{},"margin-bottom":{"value":"20"},"margin":{"margin-bottom":{},"margin-top":{}}},"lg":{"margin":{"margin-bottom":{},"margin-top":{}},"font-size":{"value":"28"},"line-height":{"value":"1.05"}},"md":{"font-size":{"value":"28"},"line-height":{"value":"1.05"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Heading","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":true},{"name":"color","active":false}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"lg"},{"name":"md"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":false},{"name":"margin-bottom","active":true},{"name":"margin-left","active":false},{"name":"margin-right","active":false},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-heading-4-size
+custom_style_type: heading
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 92

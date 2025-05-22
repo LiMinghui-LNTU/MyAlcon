@@ -1,0 +1,13 @@
+uuid: 4c5c7b2a-cc82-48dc-b9be-fe5b5879fbb8
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Light Blue'
+id: precision-light-blue
+json_values: '{"link":true,"name":"PRECISION Light Blue","uid":"precision-light-blue","class":".coh-color-precision-light-blue","variable":"$coh-color-precision-light-blue","value":{"value":{"hex":"#abcae9","rgba":"rgba(171, 202, 233, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"secondary","value":"secondary"}],"wysiwyg":true,"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 33

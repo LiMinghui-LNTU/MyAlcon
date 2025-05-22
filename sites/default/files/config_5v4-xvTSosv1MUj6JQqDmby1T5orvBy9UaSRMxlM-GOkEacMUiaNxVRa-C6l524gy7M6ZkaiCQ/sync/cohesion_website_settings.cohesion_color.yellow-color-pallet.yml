@@ -1,0 +1,13 @@
+uuid: 6fa8abe4-2061-4acb-87e6-2fa2d518f487
+langcode: en
+status: true
+dependencies: {  }
+label: 'Yellow Color Pallet'
+id: yellow-color-pallet
+json_values: '{"link":true,"name":"Yellow Color Pallet","uid":"yellow-color-pallet","class":".coh-color-yellow-color-pallet","variable":"$coh-color-yellow-color-pallet","value":{"value":{"hex":"#eced28","rgba":"rgba(236, 237, 40, 1)"}},"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 79

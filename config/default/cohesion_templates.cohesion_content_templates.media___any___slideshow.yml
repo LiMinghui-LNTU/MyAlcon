@@ -1,0 +1,18 @@
+uuid: 9196fe6e-c121-4b9c-b19e-89bb0723537c
+langcode: en
+status: false
+dependencies: {  }
+label: 'Slideshow (Media)'
+id: media___any___slideshow
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: __any__
+view_mode: slideshow
+master_template: ''

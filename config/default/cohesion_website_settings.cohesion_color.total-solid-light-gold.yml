@@ -1,0 +1,13 @@
+uuid: a0ab663f-fe90-43f9-a535-47b5f2b04b67
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Solid Light Gold'
+id: total-solid-light-gold
+json_values: '{"link":true,"name":"TOTAL Solid Light Gold","uid":"total-solid-light-gold","class":".coh-color-total-solid-light-gold","variable":"$coh-color-total-solid-light-gold","value":{"value":{"hex":"#efd19f","rgba":"rgba(239, 209, 159, 1)"}},"inuse":false,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 76

@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_teaser_feature_laptop
+label: 'Article Teaser feature Laptop'
+effects:
+  28243384-482e-4588-ac23-3d0184d39c6c:
+    uuid: 28243384-482e-4588-ac23-3d0184d39c6c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 432
+      height: 430
+      crop_type: focal_point

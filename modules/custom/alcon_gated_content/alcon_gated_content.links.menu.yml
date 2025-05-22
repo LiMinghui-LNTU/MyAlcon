@@ -1,0 +1,5 @@
+alcon_gated_content.admin:
+  title: 'Alcon Gated Content'
+  description: 'Allow to add gated content details.'
+  parent: system.admin_config_system
+  route_name: alcon_gated_content.admin

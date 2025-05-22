@@ -1,0 +1,9 @@
+uuid: 2d6f61a1-f745-4c4a-89a5-4ba70d3dd2ad
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5397
+label: DMB-5397
+description: DMB-5397
+excluded_entity_types: '[]'
+settings: '{"61cf7910-b38b-4f54-8bce-5b3e75134260":{"type":"cohesion_component","items":{"61cf7910-b38b-4f54-8bce-5b3e75134260":{"type":"cohesion_component"},"68dabb0a-13fb-4c46-b64b-066bdc26f852":{"type":"cohesion_component_category"}},"checked":true},"aaf71653-c1c0-4e41-977c-670f818c46c7":{"type":"cohesion_custom_style","items":{"aaf71653-c1c0-4e41-977c-670f818c46c7":{"type":"cohesion_custom_style"}},"checked":true},"cb09b0e6-65c4-4e46-b3aa-4e4af78ceb7b":{"type":"cohesion_custom_style","items":{"cb09b0e6-65c4-4e46-b3aa-4e4af78ceb7b":{"type":"cohesion_custom_style"}},"checked":true},"db9912e4-39d7-4e4d-83a5-875a8e45dd56":{"type":"cohesion_custom_style","items":{"db9912e4-39d7-4e4d-83a5-875a8e45dd56":{"type":"cohesion_custom_style"}},"checked":true},"83fde4b6-87ad-45b5-9f00-6d91bd2813da":{"type":"cohesion_custom_style","items":{"83fde4b6-87ad-45b5-9f00-6d91bd2813da":{"type":"cohesion_custom_style"}},"checked":true},"a41771dc-9e6c-42a9-8cd0-ab828dcd4857":{"type":"cohesion_custom_style","items":{"a41771dc-9e6c-42a9-8cd0-ab828dcd4857":{"type":"cohesion_custom_style"}},"checked":true}}'

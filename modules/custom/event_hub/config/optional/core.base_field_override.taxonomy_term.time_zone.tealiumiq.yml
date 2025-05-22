@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_zone
+id: taxonomy_term.time_zone.tealiumiq
+field_name: tealiumiq
+entity_type: taxonomy_term
+bundle: time_zone
+label: 'Tealium Tags'
+description: 'The Tealium tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

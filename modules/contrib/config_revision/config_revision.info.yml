@@ -1,0 +1,17 @@
+name: Config Revision
+type: module
+description: 'Allows to create revision for the config entities.'
+package: Configuration
+configure: config_revision.settings
+php: 8.1
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:system
+test_dependencies:
+  - webform:webform
+  - drupal:system
+
+# Information added by Drupal.org packaging script on 2025-01-04
+version: '1.0.0-beta1'
+project: 'config_revision'
+datestamp: 1736020474

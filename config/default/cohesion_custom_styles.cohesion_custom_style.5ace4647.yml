@@ -1,0 +1,18 @@
+uuid: 2f0f2b8d-aa03-416a-9deb-a890725c3319
+langcode: en
+status: true
+dependencies: {  }
+label: 'MyAlcon H3 Turquoise'
+id: 5ace4647
+json_values: '{"preview":{"text":"<h1 class=\"coh-preview\">Default content for ''Heading''.<\/h1>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h1","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-weight":{"value":"400"},"custom-css":[{"customCss":{"value":"1.625rem !important"},"customCssProperty":{"value":"font-size"}}],"color":{"value":{"value":{"hex":"#009299","rgba":"rgba(0, 146, 153, 1)"}}},"margin":{"margin-top":{"value":"16"},"margin-bottom":{"value":"16"}}},"ps":{"custom-css":[{"customCssProperty":{"value":"font-size"},"customCss":{"value":"1.375rem !important"}}]},"sm":{"margin":{"margin-top":{"value":"0"},"margin-bottom":{"value":"0"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":true},{"name":"color","active":true}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"},{"name":"sm"}],"activeFields":[{"name":"margin-equal","active":true},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":true},{"name":"margin-block-end","active":true},{"name":"margin-inline-start","active":true},{"name":"margin-inline-end","active":true}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"},{"name":"ps"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-myalcon-h3-turquoise
+custom_style_type: heading
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 22

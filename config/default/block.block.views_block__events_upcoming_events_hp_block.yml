@@ -1,0 +1,24 @@
+uuid: 78123e65-da15-48d0-80cd-f0c622868a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - views
+  theme:
+    - cohesion_theme
+id: views_block__events_upcoming_events_hp_block
+theme: cohesion_theme
+region: dx8_hidden
+weight: 29
+provider: null
+plugin: 'views_block:events-upcoming_events_hp_block'
+settings:
+  id: 'views_block:events-upcoming_events_hp_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

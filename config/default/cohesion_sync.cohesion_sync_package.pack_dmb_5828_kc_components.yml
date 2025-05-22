@@ -1,0 +1,29 @@
+uuid: 4189f8db-717d-47ec-b33b-cb20dc432d6a
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5828_kc_components
+label: 'DMB-5828 KC components'
+description: ''
+excluded_entity_types: '[]'
+settings: |
+  {
+      "c9563495-aca1-49a4-bef8-ebebd101c32e": {
+          "type": "cohesion_component",
+          "items": {
+              "c9563495-aca1-49a4-bef8-ebebd101c32e": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      },
+      "3b7bcc41-5592-409c-a87a-fb40031a27db": {
+          "type": "cohesion_component",
+          "items": {
+              "3b7bcc41-5592-409c-a87a-fb40031a27db": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

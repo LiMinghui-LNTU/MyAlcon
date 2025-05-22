@@ -1,0 +1,30 @@
+uuid: fc6ff81e-b00e-4a46-a990-db86e3a0eeab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.professional-level-2---refractiv
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: professionallevel2refractive
+theme: cohesion_theme
+region: dx8_hidden
+weight: 16
+provider: null
+plugin: 'system_menu_block:professional-level-2---refractiv'
+settings:
+  id: 'system_menu_block:professional-level-2---refractiv'
+  label: 'Professional Level 2 - Refractive'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

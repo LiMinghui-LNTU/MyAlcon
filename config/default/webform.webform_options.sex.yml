@@ -1,0 +1,16 @@
+uuid: ba5ca3d6-ef79-48bb-a6a4-f830e11fd246
+langcode: zh-hans
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: WRpxpwYpfcO_i0so7BV4QXxXlbPiSVppYmAV6DAz4c0
+id: sex
+label: 性别
+category: Demographic
+likert: false
+options: |
+  Male: Male
+  Female: Female

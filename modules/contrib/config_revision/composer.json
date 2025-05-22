@@ -1,0 +1,27 @@
+{
+  "name": "drupal/config_revision",
+  "description": "Allows to create revision for the config entities.",
+  "type": "drupal-module",
+  "homepage": "http://drupal.org/project/config_revision",
+  "authors": [
+    {
+      "name": "Jibran Ijaz",
+      "homepage": "https://www.drupal.org/u/jibran",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/config_revision",
+    "irc": "irc://irc.freenode.org/drupal-contribute",
+    "source": "http://cgit.drupalcode.org/config_revision"
+  },
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "require": {
+      "php": ">=8.1.0",
+    "drupal/core": "^10 || ^11"
+  },
+  "require-dev": {
+      "drupal/webform": "^6"
+  }
+}

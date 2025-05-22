@@ -1,0 +1,9 @@
+uuid: 8fe12be2-88e0-4432-9acb-06bfa7e1f2a9
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2q2utr64_esqpIf4zs8AQlwD4Qx4E7zlyq3vx64o6u8
+id: administer_error_logs
+label: 'Administer error logs'
+route: dblog.overview

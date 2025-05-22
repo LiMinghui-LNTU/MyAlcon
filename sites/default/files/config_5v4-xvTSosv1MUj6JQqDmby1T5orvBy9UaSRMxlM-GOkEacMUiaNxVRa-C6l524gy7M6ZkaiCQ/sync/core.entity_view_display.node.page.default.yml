@@ -1,0 +1,46 @@
+uuid: 512bf74a-29ae-422f-acaa-f5850edc6a2c
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_enable_gated_content
+    - field.field.node.page.field_gated_content_form
+    - field.field.node.page.field_layout_canvas_basic_page
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_sfcd_campaign_id
+    - field.field.node.page.field_template_selector
+    - field.field.node.page.layout_selection
+    - node.type.page
+  module:
+    - cohesion_elements
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_layout_canvas_basic_page:
+    type: cohesion_entity_reference_revisions_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_enable_gated_content: true
+  field_gated_content_form: true
+  field_meta_tags: true
+  field_sfcd_campaign_id: true
+  field_template_selector: true
+  langcode: true
+  layout_selection: true
+  search_api_excerpt: true

@@ -1,0 +1,24 @@
+uuid: 3add9841-b7b8-4167-b416-a7c3a8fc688c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_name
+    - node.type.virtualbooth
+  module:
+    - text
+_core:
+  default_config_hash: HsqauEVxOIJu4OO48_fskzOsA4M5D2Yxu_hUaU0qnZA
+id: node.virtualbooth.field_virtualbooth_name
+field_name: field_virtualbooth_name
+entity_type: node
+bundle: virtualbooth
+label: 'Virtual Booth Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

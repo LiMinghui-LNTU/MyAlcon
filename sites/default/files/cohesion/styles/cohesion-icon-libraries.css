@@ -1,0 +1,14 @@
+[data-icon-icomoon] {
+  font-family: "icomoon", serif;
+}
+[data-icon-icomoon]:after {
+  font-family: "icomoon", serif;
+  content: attr(data-icon-icomoon);
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/sites/default/files/cohesion/icomoon.eot");
+  src: url("/sites/default/files/cohesion/icomoon.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/cohesion/icomoon.woff2") format("woff2"), url("/sites/default/files/cohesion/icomoon.woff") format("woff"), url("/sites/default/files/cohesion/icomoon.ttf") format("truetype");
+  font-display: auto;
+}

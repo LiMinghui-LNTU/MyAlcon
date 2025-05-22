@@ -1,0 +1,18 @@
+uuid: 5e3ced2f-76ea-40ef-8b7f-90a722961e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.commercial_page
+id: node.commercial_page.changed
+field_name: changed
+entity_type: node
+bundle: commercial_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

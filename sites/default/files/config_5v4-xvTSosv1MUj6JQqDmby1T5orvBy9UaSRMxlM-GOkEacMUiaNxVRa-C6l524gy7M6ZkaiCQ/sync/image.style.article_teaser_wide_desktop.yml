@@ -1,0 +1,19 @@
+uuid: 4eea9084-345a-44bb-9780-114a26441786
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: LKmp8EesNFEla683SXmuvI-Q9i_T4iWstTMZSy3I1CY
+name: article_teaser_wide_desktop
+label: 'Article Teaser Wide Desktop'
+effects:
+  71fddd2c-5a72-4efe-bddc-ddf721ec1153:
+    uuid: 71fddd2c-5a72-4efe-bddc-ddf721ec1153
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 416
+      height: 215
+      crop_type: focal_point

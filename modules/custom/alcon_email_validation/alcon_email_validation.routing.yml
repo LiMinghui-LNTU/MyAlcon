@@ -1,0 +1,23 @@
+alcon_email_validation.admin:
+  path: '/admin/config/development/email-validation'
+  defaults:
+    _form: '\Drupal\alcon_email_validation\Form\EmailValidateForm'
+    _title: 'Email Validation Settings'
+  requirements:
+    _permission: 'administer site configuration'
+ 
+alcon_email_validation.translate:
+  path: '/admin/config/development/email-validation/translate'
+  defaults:
+    _controller: '\Drupal\alcon_email_validation\Controller\AlconEmailValidationTranslationController::overview'
+    _title: 'Translate'
+  requirements:
+    _permission: 'translate configuration'
+ 
+alcon_email_validation.translate_form:
+  path: '/admin/config/development/email-validation/translate/{langcode}'
+  defaults:
+    _form: '\Drupal\alcon_email_validation\Form\AlconEmailValidationTranslationForm'
+    _title: 'Translate Email Validation Settings'
+  requirements:
+    _permission: 'translate configuration'

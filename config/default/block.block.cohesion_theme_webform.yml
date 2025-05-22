@@ -1,0 +1,31 @@
+uuid: 00d07fb4-4bd0-4f99-a2e7-01ac6c86e338
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.gated_content_form_standard
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: cohesion_theme_webform
+theme: cohesion_theme
+region: dx8_hidden
+weight: 33
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform - Gated Content Form - Standard'
+  label_display: '0'
+  provider: webform
+  webform_id: gated_content_form_standard
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

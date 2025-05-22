@@ -1,0 +1,98 @@
+uuid: 58c96c74-3884-4187-9338-adfea42a9cea
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5569
+label: DMB-5569
+description: 'View Enhancement | Article Lobby'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "1b260235-7c23-42f9-9e88-62a53fe5a652": {
+          "type": "cohesion_content_templates",
+          "items": {
+              "1b260235-7c23-42f9-9e88-62a53fe5a652": {
+                  "type": "cohesion_content_templates"
+              }
+          },
+          "checked": true
+      },
+      "3962b686-71c0-47fa-b520-41d31642a838": {
+          "type": "taxonomy_vocabulary",
+          "items": {
+              "8d18388d-7d07-4ede-9252-bf1518a29026": {
+                  "type": "field_config"
+              },
+              "d7d35da2-cee0-4a2b-9bf5-45c4fdeeb641": {
+                  "type": "field_config"
+              },
+              "dfe993e8-6f22-4471-ae50-c2fdcf873a93": {
+                  "type": "field_config"
+              },
+              "21d4f4c5-9bb9-4f7a-ad1d-099bba44d415": {
+                  "type": "field_storage_config"
+              },
+              "359719d2-41cd-422c-a1ad-4e9e2d59a2c8": {
+                  "type": "field_storage_config"
+              },
+              "f50b6131-a993-4267-961e-6e8fcb39c6df": {
+                  "type": "field_storage_config"
+              },
+              "3962b686-71c0-47fa-b520-41d31642a838": {
+                  "type": "taxonomy_vocabulary"
+              }
+          },
+          "checked": true
+      },
+      "bee99e56-c02b-4708-8f67-5ccfcd8c9780": {
+          "type": "view",
+          "items": {
+              "bee99e56-c02b-4708-8f67-5ccfcd8c9780": {
+                  "type": "view"
+              }
+          },
+          "checked": true
+      },
+      "cab7f488-213b-42da-8e9b-84f698540e29": {
+          "type": "cohesion_custom_style",
+          "items": {
+              "8bba44d4-8d29-4d00-a15b-46a3fad0f8c9": {
+                  "type": "cohesion_color"
+              },
+              "75556ff1-c6f0-48c8-b2a6-37a3a1cff6b4": {
+                  "type": "cohesion_color"
+              },
+              "a0b09e5a-6764-4c8c-9ff8-28ca89eeafdc": {
+                  "type": "cohesion_color"
+              },
+              "cab7f488-213b-42da-8e9b-84f698540e29": {
+                  "type": "cohesion_custom_style"
+              },
+              "f6b81860-65c5-4073-9e77-d765e6b1b115": {
+                  "type": "cohesion_font_stack"
+              },
+              "cc182787-084d-4a59-99f8-954cc903b1e3": {
+                  "type": "cohesion_icon_library"
+              },
+              "138c38cc-daed-45d5-8e1f-039a8de95902": {
+                  "type": "file"
+              },
+              "b403bfdf-de1e-4d90-8b7e-8a5ee814d65d": {
+                  "type": "file"
+              },
+              "b5efc7be-89c8-4898-aab5-4c119acef386": {
+                  "type": "file"
+              },
+              "c682d83f-948e-4588-84ab-becc4462a556": {
+                  "type": "file"
+              },
+              "efa4e8ba-1d1c-4cff-84e8-6980edcce904": {
+                  "type": "file"
+              },
+              "db0015c9-4ce3-4e25-8f5a-d0c959939437": {
+                  "type": "file"
+              }
+          },
+          "checked": true
+      }
+  }

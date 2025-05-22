@@ -1,0 +1,13 @@
+uuid: 9327f9b7-9edb-4f27-9f05-609f2cbd47a4
+langcode: en
+status: true
+dependencies: {  }
+label: 'DAILIES TOTAL1 Plum'
+id: dailies-total1-plum
+json_values: '{"link":true,"name":"DAILIES TOTAL1 Plum","uid":"dailies-total1-plum","class":".coh-color-dailies-total1-plum","variable":"$coh-color-dailies-total1-plum","value":{"value":{"hex":"#6b4c4c","rgba":"rgba(107, 76, 76, 1)"}},"inuse":true,"wysiwyg":true,"tags":[{"label":"total","value":"total"},{"label":"primary","value":"primary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 14

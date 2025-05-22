@@ -1,0 +1,14 @@
+uuid: ba9d307c-be9d-4621-802a-a25b04dd4092
+langcode: zh-hans
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8rVcRXLnTAEoWs7zl8du-7RIUnayqUcGYnvb3JT21-o
+id: time_zones
+label: 时区
+category: 日期和时间
+likert: false
+options: ''

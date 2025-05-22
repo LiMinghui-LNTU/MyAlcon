@@ -1,0 +1,13 @@
+uuid: 70b3e1d1-c965-4b80-879f-b4ceac72db0a
+langcode: en
+status: true
+dependencies: {  }
+label: Link-color
+id: link-color
+json_values: '{"link":true,"name":"Link-color","uid":"link-color","class":".coh-color-link-color","variable":"$coh-color-link-color","value":{"value":{"hex":"#000619","rgba":"rgba(0, 6, 25, 0.5)"}},"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 60

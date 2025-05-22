@@ -1,0 +1,8 @@
+uuid: 17ec395f-b33d-4119-9bbf-43107733cafe
+langcode: en
+status: true
+dependencies: {  }
+name: 'Brand Name'
+vid: brand
+description: ''
+weight: 0

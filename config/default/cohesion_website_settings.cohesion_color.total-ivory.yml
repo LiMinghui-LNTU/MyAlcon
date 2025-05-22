@@ -1,0 +1,13 @@
+uuid: a9ee4373-d27b-4003-93fa-847114beb81e
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Ivory'
+id: total-ivory
+json_values: '{"link":true,"name":"TOTAL Ivory","uid":"total-ivory","class":".coh-color-total-ivory","variable":"$coh-color-total-ivory","value":{"value":{"hex":"#f1e6b2","rgba":"rgba(241, 230, 178, 1)"}},"inuse":true,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 17

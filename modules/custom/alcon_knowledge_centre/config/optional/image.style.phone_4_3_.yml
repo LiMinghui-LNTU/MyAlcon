@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: phone_4_3_
+label: 'Phone (4:3)'
+effects:
+  3af6be2e-2a85-443c-9dae-b4df7839fa81:
+    uuid: 3af6be2e-2a85-443c-9dae-b4df7839fa81
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 312
+      height: 234
+      crop_type: focal_point

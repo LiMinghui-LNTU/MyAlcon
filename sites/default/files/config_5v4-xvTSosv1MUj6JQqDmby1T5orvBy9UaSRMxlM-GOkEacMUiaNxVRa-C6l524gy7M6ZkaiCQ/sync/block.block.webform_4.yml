@@ -1,0 +1,32 @@
+uuid: c7f3c868-5a1e-40b9-a10e-c7f9e24fcbe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.voucher_form_without_dni
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: webform_4
+theme: cohesion_theme
+region: dx8_hidden
+weight: 36
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform Without DNI'
+  label_display: '0'
+  provider: webform
+  webform_id: voucher_form_without_dni
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    context_mapping: {  }
+    using_master_template: 0

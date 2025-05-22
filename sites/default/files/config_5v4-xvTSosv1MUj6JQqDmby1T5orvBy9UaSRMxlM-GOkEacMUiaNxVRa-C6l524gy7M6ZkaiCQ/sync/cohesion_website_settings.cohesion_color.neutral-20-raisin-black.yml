@@ -1,0 +1,13 @@
+uuid: 6f427ea0-6847-4b73-a7dc-086a7b1054fe
+langcode: en
+status: true
+dependencies: {  }
+label: 'Neutral 20 (Raisin Black)'
+id: neutral-20-raisin-black
+json_values: '{"link":true,"value":{"value":{"hex":"#d5d5d5","rgba":"rgba(213, 213, 213, 1)"}},"name":"Neutral 20 Raisin Black","uid":"neutral-20-raisin-black","class":".coh-color-neutral-20-raisin-black","variable":"$coh-color-neutral-20-raisin-black","inuse":true,"tags":[{"label":"neutral","value":"neutral"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 36

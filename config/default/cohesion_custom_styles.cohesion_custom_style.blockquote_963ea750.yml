@@ -1,0 +1,18 @@
+uuid: f8474311-e213-4c0d-9869-319de7bb930f
+langcode: en
+status: true
+dependencies: {  }
+label: Testimonial
+id: blockquote_963ea750
+json_values: '{"preview":{"text":"<blockquote class=\"coh-preview\">Default content for ''Block quote''.<\/blockquote>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"blockquote","class":"","combinator":"","pseudo":""},"styles":{"xl":{"padding":{"padding-left":{}}},"xs":{"padding":{"padding-left":{"value":"0"}}}},"75479acc-0251-492d-adf5-a16ef0fec069":{"settings":{"element":"","class":"","combinator":"","pseudo":":before"},"styles":{"xl":{"content-string":{"contentType":{}}},"xs":{"content-string":{"contentType":{"value":"none"}}}}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":":before","type":"container","items":[],"selectorType":"pseudo","formDefinition":[{"formKey":"content","children":[{"formKey":"strings-counters-quotes-urls-and-attributes","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"contentType","active":true},{"name":"contentString","active":true},{"name":"counterString","active":true},{"name":"customString","active":true}]}]}],"uuid":"75479acc-0251-492d-adf5-a16ef0fec069"}],"title":"Block quote","formDefinition":[{"formKey":"layout","children":[{"formKey":"padding","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"padding-equal","active":false},{"name":"padding-top","active":false},{"name":"padding-bottom","active":false},{"name":"padding-left","active":true},{"name":"padding-right","active":false}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-testimonial
+custom_style_type: blockquote
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 321

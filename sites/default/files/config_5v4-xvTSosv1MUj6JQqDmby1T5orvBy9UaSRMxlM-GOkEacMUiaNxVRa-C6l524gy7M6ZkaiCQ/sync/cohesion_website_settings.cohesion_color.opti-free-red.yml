@@ -1,0 +1,13 @@
+uuid: 2a2492fc-e1f0-45a5-8343-74db9e6fd621
+langcode: en
+status: true
+dependencies: {  }
+label: 'OPTI-FREE Red'
+id: opti-free-red
+json_values: '{"link":true,"name":"OPTI-FREE Red","uid":"opti-free-red","class":".coh-color-opti-free-red","variable":"$coh-color-opti-free-red","value":{"value":{"hex":"#cc0033","rgba":"rgba(204, 0, 51, 1)"}},"wysiwyg":false,"tags":[{"label":"opti-free","value":"opti-free"},{"label":"secondary","value":"secondary"}],"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 35

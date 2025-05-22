@@ -1,0 +1,17 @@
+alcon_gated_content.admin:
+  path: '/admin/config/system/gated-content'
+  defaults:
+    _form: '\Drupal\alcon_gated_content\Form\HeaderForm'
+    _title: 'Gated Content Settings'
+  requirements:
+    _permission: 'alcon_gated_content_settings'
+alcon_gated_content.send_tealium:
+  path: '/sendtealium'
+  defaults:
+    _controller: 'Drupal\alcon_gated_content\Controller\TealiumController::sendTealiumEvent'
+    _title: 'Sendtealium'
+  requirements:
+      # No need to restrict the access
+    _access: 'TRUE'
+  options:
+    no_cache: 'TRUE'

@@ -1,0 +1,76 @@
+label: 'Article Lobby Professional'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Article Lobby Professional'
+      fields:
+        nid:
+          separator: ', '
+        field_teaser_image:
+          separator: ', '
+        field_teaser_image_1:
+          separator: ', '
+        tid:
+          separator: ', '
+        field_article_category_professio:
+          separator: ', '
+        field_category_color:
+          settings:
+            selector: 'body .article--category-[term:tid]'
+            property: background-color
+          separator: ', '
+        field_category_font_color:
+          alter:
+            text: '{{ field_category_font_color__color }} '
+          settings:
+            selector: 'body .article--category-[term:tid]'
+            property: color
+          separator: ', '
+        field_article_title:
+          separator: ', '
+        field_short_description:
+          separator: ', '
+        field_article_authored_by:
+          separator: ', '
+        field_article_authored_on:
+          alter:
+            text: '{{ field_article_authored_by }} . {{ field_article_authored_on }}'
+          settings:
+            date_format: 'F j, Y'
+          separator: ', '
+        field_time_to_read:
+          separator: ', '
+        field_featured:
+          separator: ', '
+        field_weight:
+          alter:
+            text: 'Weight: {{ field_weight__value }}'
+          separator: ', '
+        view_node:
+          text: 'View topic'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: cohesion
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+            filter:
+              field_article_category_professio_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Any -|All topics'
+      footer:
+        area:
+          content:
+            value: '<div class="back-to-top"><span class="top-scroller" id="scroll-top">{{ ''Back to top''|trans }}</span></div>'
+  article_lobby:
+    display_title: 'KC Article Lobby Block professional'
+    display_options:
+      block_description: 'Article Lobby Block Professional'

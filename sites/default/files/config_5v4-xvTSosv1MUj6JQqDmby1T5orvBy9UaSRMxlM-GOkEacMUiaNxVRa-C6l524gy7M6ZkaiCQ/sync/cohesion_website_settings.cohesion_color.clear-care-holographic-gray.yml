@@ -1,0 +1,13 @@
+uuid: 131f4065-c3ec-495e-8af8-81a7f737b9c5
+langcode: en
+status: true
+dependencies: {  }
+label: 'CLEAR CARE Holographic / Gray'
+id: clear-care-holographic-gray
+json_values: '{"link":true,"name":"CLEAR CARE Holographic \/ Gray","uid":"clear-care-holographic-gray","class":".coh-color-clear-care-holographic-gray","variable":"$coh-color-clear-care-holographic-gray","wysiwyg":false,"tags":[{"label":"clear-care","value":"clear-care"},{"label":"secondary","value":"secondary"}],"inuse":false,"value":{"value":{"hex":"#bbbdbf","rgba":"rgba(187, 189, 191, 1)"}}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 15

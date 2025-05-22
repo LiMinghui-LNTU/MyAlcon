@@ -1,0 +1,9 @@
+uuid: e8928da4-a432-439d-a015-7c393ebf0ace
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_4633
+label: DMB-4633
+description: "Symposium Hero\r\nButton\r\nUpcoming Events View (Homepage)\r\nUpcoming Event teaser"
+excluded_entity_types: '[]'
+settings: '{"2257ed73-7c25-4533-bbc4-5c5e412aa86d":{"type":"cohesion_component","items":{"2257ed73-7c25-4533-bbc4-5c5e412aa86d":{"type":"cohesion_component"},"43fc06f9-36b8-4bb5-b6a2-69246bda7f3d":{"type":"cohesion_component_category"},"9fa403c6-5576-4c92-b951-5d288a040336":{"type":"cohesion_custom_style"}},"checked":true},"b57cbd84-9660-4e93-b207-4bd381c4044c":{"type":"cohesion_component","items":{"b57cbd84-9660-4e93-b207-4bd381c4044c":{"type":"cohesion_component"},"92a4ca96-393a-4f8c-96d5-7f28757eb954":{"type":"cohesion_component_category"}},"checked":true},"79898668-41f5-454a-8399-a8d21d30f953":{"type":"cohesion_custom_style","items":{"79898668-41f5-454a-8399-a8d21d30f953":{"type":"cohesion_custom_style"}},"checked":true},"ef7fe7de-9241-405a-a7ab-fc2ba7bcee0b":{"type":"cohesion_custom_style","items":{"ef7fe7de-9241-405a-a7ab-fc2ba7bcee0b":{"type":"cohesion_custom_style"}},"checked":true}}'

@@ -1,0 +1,13 @@
+uuid: e922d10a-d8ba-44f9-9df3-58165d960667
+langcode: en
+status: true
+dependencies: {  }
+label: Montserrat
+id: 0541a2c4116d10c453181c10de2b2e2b
+json_values: '{"type":"import","url":"https:\/\/xml.alcon.com\/fonts\/montserrat\/v25\/montserrat-v25.css","name":"Montserrat","uid":"0541a2c4116d10c453181c10de2b2e2b"}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fonts

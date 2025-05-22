@@ -1,0 +1,27 @@
+uuid: 703d3a39-13cb-4255-8038-8a1590600363
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_weight
+    - node.type.course_page
+_core:
+  default_config_hash: BgkRUvGZTIvhMrBSUWE71FEqAsaCfrjz7xX9-HtBUok
+id: node.course_page.field_course_weight
+field_name: field_course_weight
+entity_type: node
+bundle: course_page
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: -100000
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

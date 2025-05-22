@@ -1,0 +1,20 @@
+uuid: df8836bb-8b5e-4d6f-8988-34b1c06c6ca3
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part12
+label: 'DMB-5789 revert part12'
+description: 'DMB-5789 revert part12(Card with Image Text Button for container with 5 cards (cpt_a_card_img_txt_btn_c5c))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "0acd4f73-e4c0-495f-83dd-673d19b42e9a": {
+          "type": "cohesion_component",
+          "items": {
+              "0acd4f73-e4c0-495f-83dd-673d19b42e9a": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

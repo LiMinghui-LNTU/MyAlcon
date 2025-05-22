@@ -1,0 +1,25 @@
+uuid: 3c7f08e4-1675-4e51-adfc-9eb034e62207
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - metatag
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+_core:
+  default_config_hash: cGVuwhuJJAO-zLj7OPgEdrZgDNYR7_QUawAJciGkkvg
+id: node.field_event_meta_tags
+field_name: field_event_meta_tags
+entity_type: node
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 8a24f0f5-44d9-4305-b315-87ed78ef6520
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - claro
+_core:
+  default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
+id: claro_help
+theme: claro
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: 帮助
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,70 @@
+{% set coh_instance_class %}{{ coh_instanceid() }}{% endset %}{{ attach_library('cohesion/global_libraries.responsiveJs') }} {{ attach_library('cohesion/global_libraries.windowscroll') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/element_templates.drupal-menu') }} {{ attach_library('cohesion/global_libraries.matchHeight') }} {{ attach_library('cohesion/global_libraries.parallax_scrolling') }} {{ attach_library('cohesion/global_libraries.cohMatchHeights') }} {{ attach_library('cohesion/element_templates.read-more') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/element_templates.row-for-columns') }} {{ attach_library('cohesion/coh_element_container') }} <nav class="coh-container ssa-component coh-component ssa-component-instance-{{componentUuid}} coh-component-instance-{{componentUuid}} {{ coh_instance_class }} coh-ce-cpt_submenu_cta-b72ede2" > <div class="coh-row coh-row-xl coh-row-visible-xl" data-coh-row-match-heights="{&quot;xl&quot;:{&quot;target&quot;:&quot;none&quot;}}"> <div class="coh-row-inner"> <div class="coh-column coh-visible-xs coh-col-xs-6 coh-visible-ps coh-col-ps-6 coh-visible-md coh-col-md-9 coh-col-md-push-0 coh-col-md-pull-0 coh-col-md-offset-0 coh-visible-xl coh-col-xl-10" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container {{ coh_instance_class }} coh-ce-cpt_submenu_cta-d0e1edf" > {{ attach_library('cohesion/coh_element_drupal_menu') }} {{ render_menu('supernav-brand-menus', 'menu_tpl_submenu', false, 1) }} </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_submenu_cta-74a036aa" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <div class="coh-read-more js-coh-read-more" data-coh-settings='{ "breakpoints": {"xl":{"animationType":"none","visibility":"hidden"}},"buttonTextCollapsed":"{{ getComponentFieldValue("db8d53ef-b33a-4cb2-803d-86fd0a9a9231") | raw }}","buttonTextExpanded":"{{ getComponentFieldValue("933817b2-71e7-4f9c-9aea-6bc293306271") | raw }}" }'> <div class="coh-read-more-inner coh-hidden-xl"> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container {{ coh_instance_class }} coh-ce-cpt_submenu_cta-6b967ff0" > {{ attach_library('cohesion/coh_element_drupal_menu') }} {{ render_menu('supernav-brand-menus', 'menu_tpl_submenu', false, 1) }} </div> </div> <button class="coh-read-more-btn coh-style-brand-outline-menu-button" aria-haspopup="true" type="button">&nbsp;</button> </div> </div> </div> <div class="coh-column coh-ce-cpt_submenu_cta-adf7f5cb coh-visible-xs coh-col-xs-6 coh-visible-ps coh-col-ps-6 coh-visible-md coh-col-md-3 coh-visible-xl coh-col-xl-2" > {{ attach_library('cohesion/coh_element_link') }} <a href="{% set entityId %}{{ getComponentFieldValue("1109da25-08c6-4f07-b248-0799e7f02afc") | raw }}{% endset %}{% if entityId != '' %}{{ path_renderer(entityId) }}{% endif %}" class="coh-link coh-style-brand-primary-menu-button" target="_self" > {{ getComponentFieldValue("a40c1d84-eca5-402e-b533-e2baaf0c8e0c") | raw }}    </a> </div> </div> </div> </nav> 
+{% set compiledCSS %}<style>{% if getComponentFieldValue("a550b076-0f3c-430c-bdc8-891b6d4a62b1") is not empty %}.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-b72ede2 {
+{% if getComponentFieldValue("a550b076-0f3c-430c-bdc8-891b6d4a62b1") is not empty %}   {% if getComponentFieldValue("a550b076-0f3c-430c-bdc8-891b6d4a62b1") is not empty %} background-color: {{ getComponentFieldValue("a550b076-0f3c-430c-bdc8-891b6d4a62b1") | raw }};{% endif %}{% endif %}
+}{% endif %}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf {
+  text-align: right;
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf {
+    display: none;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf {
+    display: none;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf .coh-style-brand-menu-list-item {
+  color: rgb(0, 176, 104);
+}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf .coh-style-brand-menu-list-item .coh-link {
+{% if getComponentFieldValue("eb40b0d0-3c0c-461e-bb9d-8f29e9c219c0") is not empty %}   {% if getComponentFieldValue("eb40b0d0-3c0c-461e-bb9d-8f29e9c219c0") is not empty %} color: {{ getComponentFieldValue("eb40b0d0-3c0c-461e-bb9d-8f29e9c219c0") | raw }};{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-d0e1edf .coh-style-brand-menu-list-item .coh-link:hover {
+{% if getComponentFieldValue("4ff962fb-a0d8-4e5c-b9cf-eff0937ddcae") is not empty %}   {% if getComponentFieldValue("4ff962fb-a0d8-4e5c-b9cf-eff0937ddcae") is not empty %} color: {{ getComponentFieldValue("4ff962fb-a0d8-4e5c-b9cf-eff0937ddcae") | raw }};{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-6b967ff0 {
+  position: absolute;
+  top: 56px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+{% if getComponentFieldValue("35d170aa-2c63-4dcb-bc05-ad5b866e5f8e") is not empty %}   {% if getComponentFieldValue("35d170aa-2c63-4dcb-bc05-ad5b866e5f8e") is not empty %} background-color: {{ getComponentFieldValue("35d170aa-2c63-4dcb-bc05-ad5b866e5f8e") | raw }};{% endif %}{% endif %}
+  margin-left: -15px;
+  z-index: 10;
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-6b967ff0 {
+    min-width: 200%;
+    position: absolute;
+    top: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-6b967ff0 {
+    min-width: 200%;
+    position: absolute;
+    top: 50px;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-6b967ff0 {
+    min-width: 200%;
+    position: absolute;
+    top: 50px;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-6b967ff0 .coh-menu-list-item .coh-link {
+{% if getComponentFieldValue("b781bfd4-e934-4b61-b259-f43ecd6f31ce") is not empty %}   {% if getComponentFieldValue("b781bfd4-e934-4b61-b259-f43ecd6f31ce") is not empty %} color: {{ getComponentFieldValue("b781bfd4-e934-4b61-b259-f43ecd6f31ce") | raw }};{% endif %}{% endif %}
+}
+.{{ coh_instance_class }}.coh-ce-cpt_submenu_cta-6b967ff0 .coh-menu-list-item .coh-link:hover {
+{% if getComponentFieldValue("2f04b386-10db-4d8e-879e-0cf1d26b6d34") is not empty %}   {% if getComponentFieldValue("2f04b386-10db-4d8e-879e-0cf1d26b6d34") is not empty %} color: {{ getComponentFieldValue("2f04b386-10db-4d8e-879e-0cf1d26b6d34") | raw }};{% endif %}{% endif %}
+}
+</style>{% endset %}{{ renderInlineStyle(compiledCSS) | raw }}

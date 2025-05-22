@@ -1,0 +1,139 @@
+diff --git a/src/Form/SecKitSettingsForm.php b/src/Form/SecKitSettingsForm.php
+index f908077..2f6dbdd 100644
+--- a/src/Form/SecKitSettingsForm.php
++++ b/src/Form/SecKitSettingsForm.php
+@@ -189,7 +189,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP default-src directive.
+     $form['seckit_xss']['csp']['default-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.default-src'),
+       '#title' => 'default-src',
+       '#description' => $this->t("Specify security policy for all types of content, which are not specified further (frame-ancestors excepted). Default is 'self'."),
+@@ -197,7 +197,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP script-src directive.
+     $form['seckit_xss']['csp']['script-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.script-src'),
+       '#title' => 'script-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
+@@ -205,7 +205,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP object-src directive.
+     $form['seckit_xss']['csp']['object-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.object-src'),
+       '#title' => 'object-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;object&gt;, &lt;embed&gt; and &lt;applet&gt; elements.'),
+@@ -213,7 +213,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP style-src directive.
+     $form['seckit_xss']['csp']['style-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.style-src'),
+       '#title' => 'style-src',
+       '#description' => $this->t('Specify trustworthy sources for stylesheets. Note, that inline stylesheets and style attributes of HTML elements are allowed.'),
+@@ -221,7 +221,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP img-src directive.
+     $form['seckit_xss']['csp']['img-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.img-src'),
+       '#title' => 'img-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;img&gt; elements.'),
+@@ -229,7 +229,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP media-src directive.
+     $form['seckit_xss']['csp']['media-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.media-src'),
+       '#title' => 'media-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;audio&gt; and &lt;video&gt; elements.'),
+@@ -237,7 +237,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP frame-src directive.
+     $form['seckit_xss']['csp']['frame-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.frame-src'),
+       '#title' => 'frame-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;iframe&gt; and &lt;frame&gt; elements. This directive is deprecated and will be replaced by child-src. It is recommended to use the both the frame-src and child-src directives until all browsers you support recognize the child-src directive.'),
+@@ -245,7 +245,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP frame-ancestors directive.
+     $form['seckit_xss']['csp']['frame-ancestors'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.frame-ancestors'),
+       '#title' => 'frame-ancestors',
+       '#description' => $this->t("Specify trustworthy hosts which are allowed to embed this site's resources via &lt;iframe&gt;, &lt;frame&gt;, &lt;object&gt;, &lt;embed&gt; and &lt;applet&gt; elements."),
+@@ -253,7 +253,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP child-src directive.
+     $form['seckit_xss']['csp']['child-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.child-src'),
+       '#title' => 'child-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;iframe&gt; and &lt;frame&gt; elements as well as for loading Workers.'),
+@@ -261,7 +261,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP font-src directive.
+     $form['seckit_xss']['csp']['font-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.font-src'),
+       '#title' => 'font-src',
+       '#description' => $this->t('Specify trustworthy sources for @font-src CSS loads.'),
+@@ -269,7 +269,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+     // CSP connect-src directive.
+     $form['seckit_xss']['csp']['connect-src'] = [
+       '#type' => 'textfield',
+-      '#maxlength' => 1024,
++      '#maxlength' => 3072,
+       '#default_value' => $config->get('seckit_xss.csp.connect-src'),
+       '#title' => 'connect-src',
+       '#description' => $this->t('Specify trustworthy sources for XMLHttpRequest, WebSocket and EventSource connections.'),
+@@ -354,7 +354,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+       '#title' => $this->t('Allow requests from'),
+       '#default_value' => $config->get('seckit_csrf.origin_whitelist'),
+       '#size' => 90,
+-      '#maxlength' => 255,
++      '#maxlength' => 3072,
+       '#description' => $this->t('Comma separated list of trustworthy sources. Do not enter your website URL - it is automatically added. Syntax of the source is: [protocol] :// [host] : [port] . E.g, http://example.com, https://example.com, https://www.example.com, http://www.example.com:8080'),
+     ];
+ 
+@@ -616,7 +616,7 @@ class SecKitSettingsForm extends ConfigFormBase {
+       '#title' => $this->t('Policy'),
+       '#default_value' => $config->get('seckit_fp.feature_policy_policy'),
+       '#size' => 90,
+-      '#maxlength' => 255,
++      '#maxlength' => 3072,
+       '#description' => $this->t('Specify the policy to be sent out with Feature-Policy headers.'),
+     ];
+ 
+@@ -814,14 +814,14 @@ class SecKitSettingsForm extends ConfigFormBase {
+    */
+   protected function buildAttributeList(
+     array &$list = [],
+-      array $rawAttributes = [],
+-      $currentName = '') {
++    array $rawAttributes = [],
++          $currentName = '') {
+     foreach ($rawAttributes as $key => $rawAttribute) {
+       $name = $currentName ? $currentName . '.' . $key : $key;
+       if (in_array(
+         $name,
+         ['op', 'form_id', 'form_token', 'form_build_id', 'submit']
+-        )) {
++      )) {
+         continue;
+       }
+       if (is_array($rawAttribute)) {

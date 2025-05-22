@@ -1,0 +1,512 @@
+uuid: b4524aaa-f004-4271-b72f-5e1d2031bea2
+langcode: en
+status: open
+dependencies:
+  module:
+    - salesforce_integration
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: surgical_lead_generation
+title: 'Surgical Lead Generation'
+description: ''
+categories:
+  - 'Sales Force'
+elements: |-
+  FIRSTNAME:
+    '#type': textfield
+    '#title': 'First Name'
+    '#title_display': before
+    '#placeholder': 'Input text'
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  LASTNAME:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#title_display': before
+    '#placeholder': 'Input text'
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  email:
+    '#type': email
+    '#title': Email
+    '#title_display': before
+    '#placeholder': 'Input text'
+    '#required': true
+    '#required_error': 'This is a required field'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  MAIN_SPECIALITY:
+    '#type': select
+    '#title': 'Main Specialty'
+    '#title_display': before
+    '#options':
+      'Ophthalmologist - Cataract Surgeon': 'Ophthalmologist - Cataract Surgeon'
+      'Ophthalmologist - General Practice': 'Ophthalmologist - General Practice'
+      'Ophthalmologist - Glaucoma Surgeon': 'Ophthalmologist - Glaucoma Surgeon'
+      'Ophthalmologist - Refractive Surgeon': 'Ophthalmologist - Refractive Surgeon'
+      'Ophthalmologist - Vitreoretinal Surgeon': 'Ophthalmologist - Vitreoretinal Surgeon'
+      'Optician / Orthoptist': 'Optician / Orthoptist'
+      Optometrist: Optometrist
+      Other: Other
+      Pharmacist: Pharmacist
+      'Pharmacy Staff': 'Pharmacy Staff'
+      'Resident - Ophthalmology': 'Resident - Ophthalmology'
+      'Staff - Contact Lens Technician / Optical': 'Staff - Contact Lens Technician / Optical'
+      'Staff - Nurse / Surgical Technician': 'Staff - Nurse / Surgical Technician'
+      'Staff - Ophthalmology Office': 'Staff - Ophthalmology Office'
+      'Student - Nurse / Technician': 'Student - Nurse / Technician'
+      'Student - Ophthalmology': 'Student - Ophthalmology'
+      'Student - Optometry/ Orthoptist / Optician': 'Student - Optometry/ Orthoptist / Optician'
+    '#empty_option': 'Select a speciality'
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  country:
+    '#type': webform_address
+    '#title': Country
+    '#required': true
+    '#address__access': false
+    '#address_2__access': false
+    '#city__access': false
+    '#state_province__access': false
+    '#postal_code__access': false
+    '#country__title_display': before
+    '#country__required': true
+  COUNTRY:
+    '#type': hidden
+    '#title': COUNTRY
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  City:
+    '#type': textfield
+    '#title': City
+    '#title_display': before
+    '#placeholder': 'Input text'
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  CLINIC:
+    '#type': textfield
+    '#title': 'Name of clinic or company'
+    '#title_display': before
+    '#placeholder': 'Input text'
+    '#required': true
+    '#required_error': 'This field is required.'
+    '#format_items': comma
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  reason:
+    '#type': checkboxes
+    '#title': 'Reason for contact:'
+    '#options':
+      'I would like to receive additional product information': 'I would like to receive additional product information'
+      'I would like to schedule a product demonstration': 'I would like to schedule a product demonstration'
+      'I would like to learn more about Alcon''s commercial offerings ': 'I would like to learn more about Alcon''s commercial offerings '
+      'I would like to speak to an Alcon Representative': 'I would like to speak to an Alcon Representative'
+    '#required': true
+    '#required_error': 'Please select a reason.'
+    '#format': custom
+    '#format_html': '{{ item.value }}'
+    '#format_text': '{{ item.value }}'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  agree:
+    '#type': checkbox
+    '#title': "By accepting through ticking the box, you consent to join our mailing list to receive information and news from Alcon on promotional and product Information, events and trainings, the Alcon Newsletter(s) and the Alcon Experience Academy. You can opt out of receiving these messages from Alcon at any time through clicking on the unsubscribe link included in emails. If you would like more information on Alcon and our approach to privacy please see our privacy policy,\_here."
+    '#description': 'By accepting through ticking the box, you consent to join our mailing list to receive information and news from Alcon on promotional and product Information, events and trainings, the Alcon Newsletter(s) and the Alcon Experience Academy. You can opt out of receiving these messages from Alcon at any time through clicking on the unsubscribe link included in emails. If you would like more information on Alcon and our approach to privacy please see our privacy policy, <a href="http://www.google.com" target="_blank">here</a>.<span style="color:#a22020">*</span>'
+    '#title_display': invisible
+    '#description_display': after
+    '#required': true
+    '#required_error': 'Please check this checkbox'
+    '#wrapper_attributes':
+      class:
+        - consent--checkbox-wrapper
+    '#attributes':
+      class:
+        - consent--checkbox
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  CONSENT:
+    '#type': hidden
+    '#title': CONSENT
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  REASON_CONTACT:
+    '#type': hidden
+    '#title': 'Reason of contact'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+  URL:
+    '#type': hidden
+    '#title': URL
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+css: ''
+javascript: |-
+  jQuery(document).ready(function($){
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1);
+    if(hashes != window.location.href){
+      $("input[name=URL]").val(hashes);
+    }  
+    $('form.webform-submission-surgical-lead-generation-form').on('submit',function(e){
+      // Prevent form submission.
+      e.preventDefault();
+      // Country Field Value.
+      var country = $('select[name="country[country]"]').val();
+      if (country.length > 0) {
+        $("input[name=COUNTRY]").val(country);
+      }
+      // Reason Field Value.
+      var rsn = [];
+    $("#edit-reason input:checkbox:checked").map(function(){
+      rsn.push($(this).val());
+    });
+      $("input[name=REASON_CONTACT]").val(rsn.join(", "));
+      // Consent Field Value.
+      var con = $("input:checkbox[name=agree]:checked").val();
+      if(con == 1) {
+        $("input[name=CONSENT]").val('TRUE');
+      }else{
+        $("input[name=CONSENT]").val('FALSE');
+      }
+      // Submit the form.
+      e.currentTarget.submit();
+    });
+  });
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes:
+    class:
+      - coh-style-surgical-lead-generation
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: url
+  confirmation_url: '[site:url]/thank-you'
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: true
+  results_disabled_ignore: true
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  salesforce_integration_webform_handler:
+    id: salesforce_webform_handler
+    handler_id: salesforce_integration_webform_handler
+    label: 'Salesforce Integration Webform Handler'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        country: country
+        reason: reason
+        agree: agree
+      custom_data: ''
+      custom_options: ''
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: ''
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_created_url: ''
+      draft_created_custom_data: ''
+      draft_updated_url: ''
+      draft_updated_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+      error_url: ''
+variants: {  }

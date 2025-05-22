@@ -1,0 +1,465 @@
+uuid: a59ca6d1-0d35-4b9f-955a-4f43ce8683ed
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.image_browser
+    - entity_browser.browser.test_files
+    - entity_browser.browser.test_files1
+    - entity_browser.browser.test_files_ajax
+    - entity_browser.browser.test_nodes
+    - filter.format.basic_html
+    - filter.format.cohesion
+    - filter.format.dx8
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - filter.format.rich_text
+    - filter.format.webform_default
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.instagram
+    - media.type.remote_video
+    - media.type.tweet
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - node.type.paragraphed_content_demo
+    - node.type.webform
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
+  module:
+    - block
+    - block_content
+    - cohesion
+    - cohesion_base_styles
+    - cohesion_breakpoint_indicator
+    - cohesion_custom_styles
+    - cohesion_elements
+    - cohesion_style_guide
+    - cohesion_style_helpers
+    - cohesion_sync
+    - cohesion_templates
+    - cohesion_website_settings
+    - comment
+    - config
+    - config_perms
+    - config_split
+    - config_translation
+    - contact
+    - content_moderation
+    - content_translation
+    - context_ui
+    - contextual
+    - cookiepro
+    - crop
+    - disable_language
+    - embed
+    - entity_browser
+    - entity_reference_revisions
+    - entity_usage
+    - field_ui
+    - file
+    - filter
+    - help
+    - image
+    - imce
+    - language
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_builder_styles
+    - locale
+    - media
+    - metatag
+    - new_relic_rpm
+    - node
+    - panelizer
+    - panels
+    - panels_ipe
+    - paragraphs
+    - path
+    - quickedit
+    - responsive_image
+    - rest
+    - search
+    - search_api
+    - shortcut
+    - sitestudio_page_builder
+    - system
+    - taxonomy
+    - toolbar
+    - update
+    - views_ui
+    - webform
+    - webform_node
+    - webform_submission_log
+    - workflows
+id: site_builder
+label: 'Site Builder'
+weight: 4
+is_admin: null
+permissions:
+  - 'Administer date-time'
+  - 'Administer error logs'
+  - 'Administer file system'
+  - 'access administration pages'
+  - 'access analytics'
+  - 'access animate on view'
+  - 'access any webform configuration'
+  - 'access cohesion breakpoint indicator'
+  - 'access cohesion sync'
+  - 'access color_picker'
+  - 'access component builder elements group'
+  - 'access component content'
+  - 'access components'
+  - 'access content'
+  - 'access content elements group'
+  - 'access content overview'
+  - 'access context visibility'
+  - 'access contextual links'
+  - 'access custom elements group'
+  - 'access drupal core elements group'
+  - 'access elements'
+  - 'access entity usage statistics'
+  - 'access fields'
+  - 'access files overview'
+  - 'access form fields fields group'
+  - 'access form help fields group'
+  - 'access form layout fields group'
+  - 'access help pages'
+  - 'access helpers'
+  - 'access hide no data'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access interactive elements group'
+  - 'access layout elements group'
+  - 'access markup'
+  - 'access media elements group'
+  - 'access media overview'
+  - 'access menu elements group'
+  - 'access own webform configuration'
+  - 'access panels in-place editing'
+  - 'access seo'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access styles'
+  - 'access taxonomy overview'
+  - 'access test_files entity browser pages'
+  - 'access test_files1 entity browser pages'
+  - 'access test_files_ajax entity browser pages'
+  - 'access test_nodes entity browser pages'
+  - 'access tokens'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'access view elements group'
+  - 'access visual page builder'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'administer account settings'
+  - 'administer advanced pane settings'
+  - 'administer base styles'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer cohesion'
+  - 'administer cohesion settings'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer component categories'
+  - 'administer component content'
+  - 'administer components'
+  - 'administer config permissions'
+  - 'administer configuration split'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer content templates'
+  - 'administer content translation'
+  - 'administer content types'
+  - 'administer contexts'
+  - 'administer crop'
+  - 'administer crop types'
+  - 'administer custom styles'
+  - 'administer display modes'
+  - 'administer embed buttons'
+  - 'administer entity browsers'
+  - 'administer entity usage'
+  - 'administer filters'
+  - 'administer front end settings'
+  - 'administer helper categories'
+  - 'administer helpers'
+  - 'administer image styles'
+  - 'administer imce'
+  - 'administer languages'
+  - 'administer master templates'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer menu templates'
+  - 'administer meta tags'
+  - 'administer modules'
+  - 'administer new relic rpm'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer pane access'
+  - 'administer panelizer'
+  - 'administer panelizer node article content'
+  - 'administer panelizer node article defaults'
+  - 'administer panelizer node article layout'
+  - 'administer panelizer node article revert'
+  - 'administer panelizer node entity_browser_test content'
+  - 'administer panelizer node entity_browser_test defaults'
+  - 'administer panelizer node entity_browser_test layout'
+  - 'administer panelizer node entity_browser_test revert'
+  - 'administer panelizer node page content'
+  - 'administer panelizer node page defaults'
+  - 'administer panelizer node page layout'
+  - 'administer panelizer node page revert'
+  - 'administer panelizer node paragraphed_content_demo content'
+  - 'administer panelizer node paragraphed_content_demo defaults'
+  - 'administer panelizer node paragraphed_content_demo layout'
+  - 'administer panelizer node paragraphed_content_demo revert'
+  - 'administer panelizer node webform content'
+  - 'administer panelizer node webform defaults'
+  - 'administer panelizer node webform layout'
+  - 'administer panelizer node webform revert'
+  - 'administer panelizer taxonomy_term tags content'
+  - 'administer panelizer taxonomy_term tags defaults'
+  - 'administer panelizer taxonomy_term tags layout'
+  - 'administer panelizer taxonomy_term tags revert'
+  - 'administer panelizer user user content'
+  - 'administer panelizer user user defaults'
+  - 'administer panelizer user user layout'
+  - 'administer panelizer user user revert'
+  - 'administer panels layouts'
+  - 'administer panels styles'
+  - 'administer paragraph display'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer permissions'
+  - 'administer responsive images'
+  - 'administer rest resources'
+  - 'administer search'
+  - 'administer search_api'
+  - 'administer shortcuts'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer style helpers'
+  - 'administer style_guide'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer view templates'
+  - 'administer views'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'administer website settings'
+  - 'administer workflows'
+  - 'bypass node access'
+  - 'bypass xss cohesion'
+  - 'cancel account'
+  - 'change own username'
+  - 'configure any layout'
+  - 'configure layout builder restrictions'
+  - cookiepro_settings
+  - 'create and edit custom blocks'
+  - 'create article content'
+  - 'create audio media'
+  - 'create content in disabled language'
+  - 'create content translations'
+  - 'create document media'
+  - 'create image media'
+  - 'create instagram media'
+  - 'create media'
+  - 'create new relic rpm deployments'
+  - 'create page content'
+  - 'create paragraphed_content_demo content'
+  - 'create remote_video media'
+  - 'create terms in tags'
+  - 'create tweet media'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'create webform content'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any audio media revisions'
+  - 'delete any document media'
+  - 'delete any document media revisions'
+  - 'delete any file'
+  - 'delete any image media'
+  - 'delete any image media revisions'
+  - 'delete any instagram media'
+  - 'delete any instagram media revisions'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any paragraphed_content_demo content'
+  - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
+  - 'delete any tweet media'
+  - 'delete any tweet media revisions'
+  - 'delete any video media'
+  - 'delete any video media revisions'
+  - 'delete any webform'
+  - 'delete any webform content'
+  - 'delete any webform submission'
+  - 'delete article revisions'
+  - 'delete content translations'
+  - 'delete media'
+  - 'delete orphan revisions'
+  - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own instagram media'
+  - 'delete own page content'
+  - 'delete own paragraphed_content_demo content'
+  - 'delete own remote_video media'
+  - 'delete own tweet media'
+  - 'delete own video media'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'delete own webform submission'
+  - 'delete page revisions'
+  - 'delete paragraphed_content_demo revisions'
+  - 'delete terms in tags'
+  - 'delete webform revisions'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any instagram media'
+  - 'edit any page content'
+  - 'edit any paragraphed_content_demo content'
+  - 'edit any remote_video media'
+  - 'edit any tweet media'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit any webform content'
+  - 'edit any webform submission'
+  - 'edit behavior plugin settings'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own instagram media'
+  - 'edit own page content'
+  - 'edit own paragraphed_content_demo content'
+  - 'edit own remote_video media'
+  - 'edit own tweet media'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit own webform submission'
+  - 'edit terms in tags'
+  - 'edit webform assets'
+  - 'edit webform source'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'edit webform twig'
+  - 'edit webform variants'
+  - 'export configuration'
+  - 'import configuration'
+  - 'link to any page'
+  - 'manage layout builder style groups'
+  - 'manage layout builder styles'
+  - 'perform batch updates entity usage'
+  - 'revert all revisions'
+  - 'revert any audio media revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
+  - 'revert any instagram media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any tweet media revisions'
+  - 'revert any video media revisions'
+  - 'revert article revisions'
+  - 'revert page revisions'
+  - 'revert paragraphed_content_demo revisions'
+  - 'revert webform revisions'
+  - 'search content'
+  - 'select account cancellation method'
+  - 'set panelizer default'
+  - 'switch shortcut sets'
+  - 'synchronize configuration'
+  - 'translate any entity'
+  - 'translate configuration'
+  - 'translate editable entities'
+  - 'translate interface'
+  - 'translate paragraph'
+  - 'translate paragraphed_content_demo node'
+  - 'update any media'
+  - 'update content translations'
+  - 'update media'
+  - 'use advanced search'
+  - 'use custom component builder'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'use ipe with page manager'
+  - 'use panels caching features'
+  - 'use panels dashboard'
+  - 'use panels locks'
+  - 'use text format basic_html'
+  - 'use text format cohesion'
+  - 'use text format dx8'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'use text format rich_text'
+  - 'use text format webform_default'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any instagram media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any tweet media revisions'
+  - 'view any unpublished content'
+  - 'view any video media revisions'
+  - 'view any webform submission'
+  - 'view article revisions'
+  - 'view disabled languages'
+  - 'view latest version'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own webform submission'
+  - 'view page revisions'
+  - 'view pane admin links'
+  - 'view paragraphed_content_demo revisions'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view update notifications'
+  - 'view user email addresses'
+  - 'view webform revisions'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

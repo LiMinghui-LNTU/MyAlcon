@@ -1,0 +1,13 @@
+uuid: 62085342-b2d6-4315-986b-8981af87b45c
+langcode: en
+status: true
+dependencies: {  }
+label: 'Cyan 10'
+id: cyan-10
+json_values: '{"link":true,"value":{"value":{"hex":"#bcedff","rgba":"rgba(188, 237, 255, 1)"}},"name":"Cyan 10","uid":"cyan-10","class":".coh-color-cyan-10","variable":"$coh-color-cyan-10","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 18

@@ -1,0 +1,8 @@
+uuid: 5e54d035-df92-4334-8958-6b7d457513d3
+langcode: en
+status: true
+dependencies: {  }
+id: level-1
+label: 'Level 1'
+description: 'This provides the ability to add menu to the level one of Supernav.'
+locked: false

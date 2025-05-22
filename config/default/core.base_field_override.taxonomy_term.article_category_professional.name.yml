@@ -1,0 +1,18 @@
+uuid: c8152ef7-cc10-4693-816d-29c4263a66ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.article_category_professional
+id: taxonomy_term.article_category_professional.name
+field_name: name
+entity_type: taxonomy_term
+bundle: article_category_professional
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

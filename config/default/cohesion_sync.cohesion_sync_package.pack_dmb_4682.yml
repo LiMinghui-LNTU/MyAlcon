@@ -1,0 +1,9 @@
+uuid: 7aba0f94-0543-4b52-98cc-6b5e66b53334
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_4682
+label: DMB-4682
+description: 'Supernav - Footer Legal'
+excluded_entity_types: '[]'
+settings: '{"5f7a439d-ffaa-49f3-a21b-73e417c1c434":{"type":"cohesion_component","items":{"5f7a439d-ffaa-49f3-a21b-73e417c1c434":{"type":"cohesion_component"},"5e8c8d01-aafd-4f75-ba4e-d60e461d3906":{"type":"cohesion_component_category"}},"checked":true}}'

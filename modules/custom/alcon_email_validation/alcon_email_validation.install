@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Uninstall functions for alcon_email_validation module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function alcon_email_validation_uninstall() {
+  \Drupal::service('config.factory')
+    ->getEditable('alcon_email_validation.settings')
+    ->delete();
+}

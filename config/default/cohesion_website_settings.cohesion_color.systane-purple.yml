@@ -1,0 +1,13 @@
+uuid: 3c281816-3df3-4bd9-8874-a642b4ae1e02
+langcode: en
+status: true
+dependencies: {  }
+label: 'SYSTANE Purple'
+id: systane-purple
+json_values: '{"link":true,"name":"SYSTANE Purple","uid":"systane-purple","class":".coh-color-systane-purple","variable":"$coh-color-systane-purple","value":{"value":{"hex":"#5c068c","rgba":"rgba(92, 6, 140, 1)"}},"wysiwyg":false,"inuse":false,"tags":[{"label":"systane","value":"systane"},{"label":"primary","value":"primary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 70

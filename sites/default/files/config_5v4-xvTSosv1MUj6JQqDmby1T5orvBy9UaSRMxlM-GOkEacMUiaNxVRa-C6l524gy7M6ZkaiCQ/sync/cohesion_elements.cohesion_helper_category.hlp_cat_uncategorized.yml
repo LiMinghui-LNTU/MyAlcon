@@ -1,0 +1,13 @@
+uuid: 78f56202-9c2a-47e5-a290-369e144183c0
+langcode: en
+status: true
+dependencies: {  }
+label: Uncategorized
+id: hlp_cat_uncategorized
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: true
+class: category-6
+weight: 2

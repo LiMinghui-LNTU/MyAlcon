@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_author_image_desktop
+label: 'Article Author Image - Desktop'
+effects:
+  a21e6f2d-8fd7-4674-b453-84a26b81ae00:
+    uuid: a21e6f2d-8fd7-4674-b453-84a26b81ae00
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 80
+      crop_type: focal_point

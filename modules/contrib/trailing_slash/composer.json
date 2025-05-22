@@ -1,0 +1,36 @@
+{
+    "name": "drupal/trailing_slash",
+    "description": "Adds trailing slashes to all URLs you want.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "keywords": ["Drupal"],
+    "homepage": "https://www.drupal.org/project/trailing_slash",
+    "authors": [
+        {
+            "name": "Martín (mgzrobles)",
+            "homepage": "https://www.drupal.org/u/mgzrobles",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Pappu Kumar Singh (pappuksingh)",
+            "homepage": "https://www.drupal.org/u/pappuksingh",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Maksim Kulichkin (SAVEL)",
+            "homepage": "https://www.drupal.org/u/savel",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Viktor Holovachek (AstonVictor)",
+            "homepage": "https://www.drupal.org/u/astonvictor",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/trailing_slash",
+        "source": "https://git.drupalcode.org/project/trailing_slash"
+    },
+    "require": { }
+}

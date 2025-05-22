@@ -1,0 +1,20 @@
+uuid: b315c43f-c576-4dda-849f-bbc7688dd5f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_font_stack.open-sans
+label: 'Patient Cataract H2'
+id: fecce364
+json_values: '{"preview":{"text":"<h1 class=\"coh-preview\">Default content for ''Heading''.<\/h1>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h1","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-open-sans"},"font-weight":{"value":"300"},"font-size":{"value":"46"},"color":{"value":{"value":{"hex":"#009299","rgba":"rgba(0, 146, 153, 1)"}}}},"md":{"font-size":{"value":"36"}},"xs":{"font-size":{"value":"28"}},"sm":{"font-size":{"value":"28"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"md"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":false},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-patient-cataract-h2
+custom_style_type: heading
+available_in_wysiwyg: true
+available_in_wysiwyg_inline: true
+parent: null
+weight: 20

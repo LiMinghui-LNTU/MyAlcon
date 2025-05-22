@@ -1,0 +1,24 @@
+uuid: 3dd2f2d8-3f54-4e54-a1b0-90aca1083043
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symposium_name
+    - node.type.symposium
+  module:
+    - text
+_core:
+  default_config_hash: HKRoJs_xaplE8eGXdX9VzRvJT4zLihf7fCte-nr0Otc
+id: node.symposium.field_symposium_name
+field_name: field_symposium_name
+entity_type: node
+bundle: symposium
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

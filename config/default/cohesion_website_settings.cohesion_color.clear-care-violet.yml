@@ -1,0 +1,13 @@
+uuid: 5f9f704e-ea98-4e50-9187-73fec9628d37
+langcode: en
+status: true
+dependencies: {  }
+label: 'CLEAR CARE Violet'
+id: clear-care-violet
+json_values: '{"link":true,"name":"CLEAR CARE Violet","uid":"clear-care-violet","class":".coh-color-clear-care-violet","variable":"$coh-color-clear-care-violet","value":{"value":{"hex":"#330099","rgba":"rgba(51, 0, 153, 1)"}},"wysiwyg":false,"tags":[{"label":"clear-care","value":"clear-care"},{"label":"primary","value":"primary"}],"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 11

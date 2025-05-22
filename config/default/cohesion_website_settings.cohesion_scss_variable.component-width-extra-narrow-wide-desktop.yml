@@ -1,0 +1,13 @@
+uuid: 3661a036-4940-415c-a425-4a5c763434e5
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: component-width-extra-narrow-wide-desktop
+json_values: '{"uid":"component-width-extra-narrow-wide-desktop","value":"32%","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 6

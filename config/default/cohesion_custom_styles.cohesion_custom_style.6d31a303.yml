@@ -1,0 +1,18 @@
+uuid: e289e14c-6c97-4d6c-80f4-8845cc44df04
+langcode: en
+status: true
+dependencies: {  }
+label: 'Dropzone Style Large'
+id: 6d31a303
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"margin":{"margin-left":{"value":"60"},"margin-right":{"value":"60"},"margin-top":{"value":"60"},"margin-bottom":{"value":"60"}}},"xs":{"margin":{"margin-top":{"value":"10"},"margin-bottom":{"value":"10"},"margin-left":{"value":"10"},"margin-right":{"value":"10"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-dropzone-size-large
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 177

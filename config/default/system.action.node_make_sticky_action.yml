@@ -1,0 +1,13 @@
+uuid: 6cbc708b-cc77-4164-a914-6afc0edb79bf
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 使内容置顶
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

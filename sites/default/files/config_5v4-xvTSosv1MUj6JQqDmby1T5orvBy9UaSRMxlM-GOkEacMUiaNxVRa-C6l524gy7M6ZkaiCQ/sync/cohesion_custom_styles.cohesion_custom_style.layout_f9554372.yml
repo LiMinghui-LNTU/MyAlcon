@@ -1,0 +1,18 @@
+uuid: a03cae42-7c6c-4683-9ddd-0a3875fed49b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Padding - small'
+id: layout_f9554372
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"padding":{"padding-top":{},"padding-bottom":{},"padding-equal":{}}},"ps":{"padding":{"padding-top":{},"padding-bottom":{}}},"md":{"padding":{"padding-top":{},"padding-bottom":{},"padding-equal":{}}},"xs":{"padding":{"padding-equal":{"value":"24"}}},"lg":{"padding":{"padding-equal":{"value":"32"}}}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"padding","breakpoints":[{"name":"lg"},{"name":"xs"}],"activeFields":[{"name":"padding-equal","active":true},{"name":"padding-top","active":false},{"name":"padding-bottom","active":false},{"name":"padding-left","active":false},{"name":"padding-right","active":false}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-padding---small
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 282

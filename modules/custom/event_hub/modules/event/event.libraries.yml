@@ -1,0 +1,12 @@
+slider:
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - slick/slick
+
+events-filter:
+  js:
+    js/events-filter.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,13 @@
+uuid: d125bcdf-4c7f-40ec-97f8-a27aacd41712
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: border-medium
+json_values: '{"uid":"border-medium","value":"4","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 1

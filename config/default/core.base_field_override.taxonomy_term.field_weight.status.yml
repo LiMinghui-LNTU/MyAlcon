@@ -1,0 +1,22 @@
+uuid: 41a8839f-8979-4e63-adfd-720972f83142
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.field_weight
+id: taxonomy_term.field_weight.status
+field_name: status
+entity_type: taxonomy_term
+bundle: field_weight
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 9c891e15-2b4e-4f39-93fa-a7ecf0d9aab8
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part18
+label: 'DMB-5789 new nb part18'
+description: 'DMB-5789 new nb part18(Panel List Card for VB)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "4940b63f-3014-45ae-b9f1-e0f87b1c5fb5": {
+          "type": "cohesion_component",
+          "items": {
+              "4940b63f-3014-45ae-b9f1-e0f87b1c5fb5": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

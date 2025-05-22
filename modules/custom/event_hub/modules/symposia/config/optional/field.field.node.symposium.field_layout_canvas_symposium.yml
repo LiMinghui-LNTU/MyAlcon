@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout_canvas_symposium
+    - node.type.symposium
+  module:
+    - cohesion_elements
+id: node.symposium.field_layout_canvas_symposium
+field_name: field_layout_canvas_symposium
+entity_type: node
+bundle: symposium
+label: 'Layout canvas'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cohesion_layout'
+  access_elements: '0'
+  handler_settings: {  }
+field_type: cohesion_entity_reference_revisions

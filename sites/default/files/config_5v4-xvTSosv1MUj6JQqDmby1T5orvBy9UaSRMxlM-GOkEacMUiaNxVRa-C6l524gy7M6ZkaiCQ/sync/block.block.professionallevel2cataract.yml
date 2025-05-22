@@ -1,0 +1,30 @@
+uuid: 3895d532-91f3-4a74-b4c9-39433ae3ba1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.professional-level-2---cataract
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: professionallevel2cataract
+theme: cohesion_theme
+region: dx8_hidden
+weight: 13
+provider: null
+plugin: 'system_menu_block:professional-level-2---cataract'
+settings:
+  id: 'system_menu_block:professional-level-2---cataract'
+  label: 'Professional Level 2 - Cataract'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

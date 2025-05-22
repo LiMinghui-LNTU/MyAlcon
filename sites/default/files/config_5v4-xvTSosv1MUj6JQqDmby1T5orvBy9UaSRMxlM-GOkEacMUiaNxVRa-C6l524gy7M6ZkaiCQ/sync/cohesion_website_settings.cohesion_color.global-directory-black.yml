@@ -1,0 +1,13 @@
+uuid: 402bea4e-c849-41cd-8c76-dd86c4051881
+langcode: en
+status: true
+dependencies: {  }
+label: 'Global Directory Black'
+id: global-directory-black
+json_values: '{"link":true,"value":{"value":{"hex":"#232323","rgba":"rgba(35, 35, 35, 1)"}},"name":"Global Directory Black","uid":"global-directory-black","class":".coh-color-global-directory-black","variable":"$coh-color-global-directory-black","inuse":false,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 83

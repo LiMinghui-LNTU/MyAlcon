@@ -1,0 +1,7 @@
+alcon_sitestudio_components.form:
+  path: '/admin/config/system/alcon_sitestudio_components_config'
+  defaults:
+    _form: '\Drupal\alcon_sitestudio_components\Form\AlconSitestudioComponentsForm'
+    _title: 'Alcon Site Studio Settings'
+  requirements:
+    _permission: 'administer site configuration'

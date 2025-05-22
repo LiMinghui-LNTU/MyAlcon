@@ -1,0 +1,13 @@
+uuid: c8a40c8f-849c-4d40-830a-cc574ff5f92c
+langcode: en
+status: true
+dependencies: {  }
+label: 'Color 1'
+id: color-1
+json_values: '{"value":{"value":{"hex":"#28a9e0","rgba":"rgba(40, 169, 224, 1)"}},"name":"Color 1","uid":"color-1","class":".coh-color-color-1","variable":"$coh-color-color-1","wysiwyg":false,"inuse":true,"link":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 50

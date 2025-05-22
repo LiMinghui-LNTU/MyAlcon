@@ -1,0 +1,30 @@
+uuid: c2c85581-0b92-4a67-91c1-8d2eb53b5a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.professional-level-1
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: professionallevel1
+theme: cohesion_theme
+region: dx8_hidden
+weight: 40
+provider: null
+plugin: 'system_menu_block:professional-level-1'
+settings:
+  id: 'system_menu_block:professional-level-1'
+  label: 'Professional Level 1'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

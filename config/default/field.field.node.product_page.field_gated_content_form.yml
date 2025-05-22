@@ -1,0 +1,29 @@
+uuid: c857ccc4-a5b3-4e51-9e70-8eda396be15b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gated_content_form
+    - node.type.product_page
+    - taxonomy.vocabulary.gated_content_form
+id: node.product_page.field_gated_content_form
+field_name: field_gated_content_form
+entity_type: node
+bundle: product_page
+label: 'Gated Content Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gated_content_form: gated_content_form
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

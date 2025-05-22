@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_teaser_phone
+label: 'Article Teaser Phone'
+effects:
+  d6e677c7-69d4-44bd-8c1d-842584ade3f2:
+    uuid: d6e677c7-69d4-44bd-8c1d-842584ade3f2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 215
+      crop_type: focal_point

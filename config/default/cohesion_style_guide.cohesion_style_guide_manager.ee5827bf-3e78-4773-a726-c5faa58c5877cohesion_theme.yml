@@ -1,0 +1,18 @@
+uuid: 5746f2bc-fca7-4cdd-b6d1-630e65557f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_style_guide.cohesion_style_guide.buttons
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+    - cohesion_website_settings.cohesion_color.white
+label: 'Buttons Site Studio minimal'
+id: ee5827bf-3e78-4773-a726-c5faa58c5877cohesion_theme
+json_values: '{"model":{"ee5827bf-3e78-4773-a726-c5faa58c5877":{"c36bdb59-fb10-44e7-a683-561d78f753d3":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true},"1be16051-790f-4563-8be3-bf4ca8a87313":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"70d2fa96-9a92-4367-ba47-ec0b46fc2348":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"11e36056-7a73-440f-84c2-d83c967b103c":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"207c68b3-9e54-40ec-abda-18701c869cd6":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true},"80895c66-a77b-40e3-850f-62ddab368641":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true}}},"changedFields":["model.ee5827bf-3e78-4773-a726-c5faa58c5877.c36bdb59-fb10-44e7-a683-561d78f753d3","model.ee5827bf-3e78-4773-a726-c5faa58c5877.1be16051-790f-4563-8be3-bf4ca8a87313","model.ee5827bf-3e78-4773-a726-c5faa58c5877.70d2fa96-9a92-4367-ba47-ec0b46fc2348","model.ee5827bf-3e78-4773-a726-c5faa58c5877.11e36056-7a73-440f-84c2-d83c967b103c","model.ee5827bf-3e78-4773-a726-c5faa58c5877.207c68b3-9e54-40ec-abda-18701c869cd6","model.ee5827bf-3e78-4773-a726-c5faa58c5877.80895c66-a77b-40e3-850f-62ddab368641"]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+theme: cohesion_theme
+style_guide_uuid: ee5827bf-3e78-4773-a726-c5faa58c5877

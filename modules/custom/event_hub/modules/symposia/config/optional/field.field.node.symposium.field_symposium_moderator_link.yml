@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symposium_moderator_link
+    - node.type.symposium
+  module:
+    - link
+id: node.symposium.field_symposium_moderator_link
+field_name: field_symposium_moderator_link
+entity_type: node
+bundle: symposium
+label: 'Moderator link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

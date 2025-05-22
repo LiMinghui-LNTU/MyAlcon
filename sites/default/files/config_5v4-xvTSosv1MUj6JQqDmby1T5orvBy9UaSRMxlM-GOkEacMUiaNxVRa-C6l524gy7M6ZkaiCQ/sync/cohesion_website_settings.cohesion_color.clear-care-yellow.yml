@@ -1,0 +1,13 @@
+uuid: cb926085-46c9-4749-b4a3-38aa2319287d
+langcode: en
+status: true
+dependencies: {  }
+label: 'CLEAR CARE Yellow'
+id: clear-care-yellow
+json_values: '{"link":true,"name":"CLEAR CARE Yellow","uid":"clear-care-yellow","class":".coh-color-clear-care-yellow","variable":"$coh-color-clear-care-yellow","value":{"value":{"hex":"#ecb32a","rgba":"rgba(236, 179, 42, 1)"}},"wysiwyg":true,"tags":[{"label":"clear-care","value":"clear-care"},{"label":"secondary","value":"secondary"}],"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 10

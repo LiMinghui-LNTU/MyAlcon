@@ -1,0 +1,17 @@
+uuid: 8af9c8e1-9137-478c-a454-baccecc09f78
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nested_paragraph
+_core:
+  default_config_hash: VwQ43rfoFoQwqTEQIx9eK41wlMFzh5c7fKze-Rk06SM
+id: paragraph.nested_paragraph.default
+targetEntityType: paragraph
+bundle: nested_paragraph
+mode: default
+content: {  }
+hidden:
+  created: true
+  search_api_excerpt: true
+  uid: true

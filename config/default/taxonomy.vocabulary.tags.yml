@@ -1,0 +1,10 @@
+uuid: d101e872-0009-4c3b-972a-2685b49139ca
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: 标签
+vid: tags
+description: 用标签将相似的文章分门别类。
+weight: 0

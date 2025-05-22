@@ -1,0 +1,22 @@
+uuid: e55b3cf5-36d9-4df5-9666-2d8dd6252cd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: 8sVu0oidlpptK9E_uxjuN2T9pRAA4CehisoTP_rahaQ
+name: 'Feed Data Page'
+type: feed_data_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

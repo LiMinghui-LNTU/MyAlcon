@@ -1,0 +1,18 @@
+uuid: 63b1c032-4b52-4e95-99ee-4b47335cf6a0
+langcode: en
+status: false
+dependencies: {  }
+label: 'Full content (Node, Commercial Page)'
+id: node_commercial_page_full
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: commercial_page
+view_mode: full
+master_template: ''

@@ -1,0 +1,35 @@
+uuid: 02ea0619-b010-432b-a62b-5758b7554e83
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.05ec9ce4
+    - cohesion_custom_styles.cohesion_custom_style.18aa1269
+    - cohesion_custom_styles.cohesion_custom_style.29f72bc6
+    - cohesion_custom_styles.cohesion_custom_style.53e9df41
+    - cohesion_custom_styles.cohesion_custom_style.630e0fc1
+    - cohesion_custom_styles.cohesion_custom_style.63b187c4
+    - cohesion_custom_styles.cohesion_custom_style.6580c294
+    - cohesion_custom_styles.cohesion_custom_style.6719c6aa
+    - cohesion_custom_styles.cohesion_custom_style.689c5f79
+    - cohesion_custom_styles.cohesion_custom_style.7bb1adf4
+    - cohesion_custom_styles.cohesion_custom_style.859291b0
+    - cohesion_custom_styles.cohesion_custom_style.9877f87e
+    - cohesion_custom_styles.cohesion_custom_style.cfb513cc
+    - cohesion_custom_styles.cohesion_custom_style.e1b6191c
+    - cohesion_elements.cohesion_component.cpt_a_card_container
+    - cohesion_elements.cohesion_component.cpt_a_card_img_txt_btn
+    - cohesion_elements.cohesion_helper_category.hlp_cat_general_helpers
+label: 'AEC Registration Details component helper'
+id: hlp_aec_registration_details_com
+json_values: '{"canvas":[{"uid":"cpt_a_card_container","type":"component","title":"Card container","enabled":true,"category":"category-4","componentId":"cpt_a_card_container","componentType":"container","iconColor":"custom","uuid":"49b7a996-a1b8-4d4e-9034-59bb839b5c86","status":{"collapsed":false},"parentUid":"root","children":[{"type":"container","uid":"component-drop-zone","mimicParent":true,"parentUid":"cpt_a_card_container","title":"Component drop zone","selected":false,"status":{"collapsed":false,"disabled":false},"uuid":"1ba5c9b4-71fe-42db-b991-c0f34cc153c6","dropzoneId":"fef1f7d8-ff35-4d95-a172-4c1057a446bb","isContainer":true,"children":[{"uid":"cpt_a_card_img_txt_btn","type":"component","title":"Card with Image Text Button","enabled":true,"category":"category-11","componentId":"cpt_a_card_img_txt_btn","componentType":"column","iconColor":"custom","uuid":"bdfee16d-1368-456f-9c99-35673f69af5d","parentUid":"component-drop-zone","children":[]}]}]}],"mapper":{"49b7a996-a1b8-4d4e-9034-59bb839b5c86":{},"1ba5c9b4-71fe-42db-b991-c0f34cc153c6":{},"bdfee16d-1368-456f-9c99-35673f69af5d":{}},"model":{"49b7a996-a1b8-4d4e-9034-59bb839b5c86":{"813a0a12-df92-443f-b8f5-a33ed2c69aed":{"text":"","textFormat":"cohesion"},"0c630547-25a7-4116-96c8-ceff040e7fab":{"text":"","textFormat":"cohesion"},"be8a985f-572d-4a56-8da7-7eb51d584e16":"coh-style-a-max-width-wide","e18fa9d0-ea94-4b75-bad7-906b3f4632b3":"left","f44ba4ae-ab39-4631-89f2-432c4bf4a6b0":"coh-style-a-padding-top-medium","ba97fcf9-d577-4ad1-ac46-4d54fcec57fd":"coh-style-a-padding-bottom-medium","985e0e11-41dc-48cf-a9d3-3a7137d18aa7":"coh-style-a-padding-left-large","5e9c0280-1b79-4003-b898-df15cac0d767":"coh-style-a-padding-right-large","f67d59e5-a6c5-486b-812f-a14e4c035047":"","37bed1a0-9970-4bcf-9143-394604fea8fc":"","8c7fc39a-38e5-4eef-859e-aa78143ac44b":"","db547d19-d6b5-4935-85c1-1e3c4444dbc2":"","0588437f-9b22-426f-8555-d13bf575dec6":"","4d3ad30f-c199-45f5-98f0-d4482b34b7c3":"","05e1a8cf-0305-4f4b-a2eb-a59a4fb5d164":"","777de6c0-20b6-4054-83fd-77c56764f780":"","settings":{"title":"Card container"}},"1ba5c9b4-71fe-42db-b991-c0f34cc153c6":{"settings":{"title":"Drop ''Card items'' here.","dropzoneHideSelector":"","styles":{"xl":{"jsSettings":{"matchHeight":{"targetElement":"children-with-class-name","class":"a-match-height-desktop"}}}}}},"bdfee16d-1368-456f-9c99-35673f69af5d":{"6ab64b79-1e9e-4990-ba53-5e82f6dfc91f":{"text":"<drupal-media data-entity-type=\"media\" data-entity-uuid=\"3f59d1ba-08dc-410a-9f0a-31b37790aaf6\" data-align=\"left\">&nbsp;<\/drupal-media><p style=\"padding-left:70px;padding-top:15px;\"><span class=\"coh-color-primary-alcon-true-blue\"><strong>REGISTRATION DETAILS<\/strong><\/span><br><br><span class=\"coh-color-alcon-almost-black\">Registration for this course is by invitation. If you are interested in this course, please contact your local Alcon representative.<\/span><\/p>","textFormat":"cohesion"},"f11777ee-8552-41f4-9c9c-8726447d88a4":"Button One","95cae407-13f7-4156-b4e8-fb05f7dc93f9":"_self","764541aa-3d1c-4aa0-96a6-4e44c6b1154a":"","9e778a46-c661-4490-816c-f0ef5f1881fa":"12","4f5ef6d6-5eef-4b76-85f2-d8afa12039a3":"12","7cc27244-7641-4f12-881c-8db63847dca5":"12","319604c9-9ae5-4f4a-8679-1f29ab5f7044":false,"6bfe9651-2b2b-4441-8946-dde69a287786":false,"aa930a6a-ebb1-4abe-a46d-538c561e9c2e":false,"336edacb-7774-4e0d-99ad-1147c139a072":"","cd690a7f-f16a-4566-bc00-0fcd58288e61":{"value":{"hex":"#f3f7fc","rgba":"rgba(243, 247, 252, 1)"}},"a87e64c5-977b-4b99-851c-297b69ff053c":"coh-style-a-card-medium-full","ee02c698-f225-495e-bf93-a2875a702995":"coh-style-a-primary-card-cta","38795777-ce3d-4852-885c-87aafb14a58b":"Left","47667588-40e1-4b44-a91e-172687e7ac92":"coh-style-a-border-top-fine","c9ba3295-74e8-4ff2-b45b-408a61daa694":"coh-style-a-border-bottom-fine","72c52824-7e86-4f85-9836-bbdd7aaf8596":"coh-style-a-border-left-fine","fd673120-f58d-430a-8382-8b2b30578bfa":"coh-style-a-border-right-fine","8124e38b-0ad8-4764-b8b9-9618282b91cf":{"value":{"hex":"#80a8f0","rgba":"rgba(128, 168, 240, 1)"}},"e18b561f-f790-49b0-8b87-5ec7153e5a5c":"solid","c24e267a-8cbc-4078-831b-ee76add2a972":null,"be1b772f-5d56-4fe5-b439-47a00d939ac8":"coh-style-a-padding-bottom-small","2694c829-d214-4a47-8073-983dbc34d62e":"coh-style-a-padding-left-medium","bcf0cd30-715c-47fa-979a-fe47db4d792d":"coh-style-a-padding-right-medium","9fc9c156-7c69-42c4-8df1-5d18047dee0c":"300px","settings":{"title":"Card with Image Text Button"}}},"previewModel":{},"variableFields":{}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_general_helpers
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

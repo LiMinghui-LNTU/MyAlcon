@@ -1,0 +1,12 @@
+name: Virtual Booth
+type: module
+description: Event Hub submodule for Virtual Booth content type.
+package: Event Hub
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+'interface translation project': virtual_booth
+'interface translation server pattern':
+  modules/custom/event_hub/modules/virtual_booth/translations/virtual_booth.po
+dependencies:
+  - event
+  - media

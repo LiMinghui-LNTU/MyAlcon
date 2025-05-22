@@ -1,0 +1,11 @@
+uuid: a5e6ec14-2e0e-4b35-85b8-2c04514e357d
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3UIiYanpaojRQR_MLcmaOBTXo5mH-T4CGoTEmr7Rv2M
+id: entire_site
+label: 'Entire Site (do not use)'
+type: EntireSite
+config:
+  name: 'Entire Site (do not use)'

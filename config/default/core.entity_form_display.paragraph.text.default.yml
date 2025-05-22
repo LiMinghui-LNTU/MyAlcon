@@ -1,0 +1,22 @@
+uuid: 21c20da7-1bcf-422b-a21f-11c384553ec9
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.text
+_core:
+  default_config_hash: PU6YrnYRag6BEAdQN8pT6DS1F2c2kWe3F0ZwzRhl6K4
+id: paragraph.text.default
+targetEntityType: paragraph
+bundle: text
+mode: default
+content:
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

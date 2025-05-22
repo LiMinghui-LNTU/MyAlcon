@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.symposium_card_teaser
+    - field.field.node.symposium.field_bypass_symposium_detail
+    - field.field.node.symposium.field_layout_canvas_symposium
+    - field.field.node.symposium.field_symposium_end_date
+    - field.field.node.symposium.field_symposium_event_reference
+    - field.field.node.symposium.field_symposium_meta_tags
+    - field.field.node.symposium.field_symposium_moderator
+    - field.field.node.symposium.field_symposium_moderator_link
+    - field.field.node.symposium.field_symposium_name
+    - field.field.node.symposium.field_symposium_place
+    - field.field.node.symposium.field_symposium_register_link
+    - field.field.node.symposium.field_symposium_start_date
+    - field.field.node.symposium.field_symposium_teaser_image
+    - field.field.node.symposium.field_symposium_watch_link
+    - field.field.node.symposium.field_symposium_weight
+    - field.field.node.symposium.field_template_selector_symposiu
+    - image.style.upcoming_event_teaser
+    - node.type.symposium
+  module:
+    - datetime
+    - layout_builder
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.symposium.symposium_card_teaser
+targetEntityType: node
+bundle: symposium
+mode: symposium_card_teaser
+content:
+  field_symposium_end_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long_date_no_time
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_symposium_moderator:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_symposium_name:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_symposium_start_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long_date_no_time
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_symposium_teaser_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: upcoming_event_teaser
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_bypass_symposium_detail: true
+  field_layout_canvas_symposium: true
+  field_symposium_event_reference: true
+  field_symposium_meta_tags: true
+  field_symposium_moderator_link: true
+  field_symposium_place: true
+  field_symposium_register_link: true
+  field_symposium_watch_link: true
+  field_symposium_weight: true
+  field_template_selector_symposiu: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

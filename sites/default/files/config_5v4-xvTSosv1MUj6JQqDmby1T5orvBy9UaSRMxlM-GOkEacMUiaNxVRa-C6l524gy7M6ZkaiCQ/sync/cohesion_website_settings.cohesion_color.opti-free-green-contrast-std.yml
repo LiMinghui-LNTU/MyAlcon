@@ -1,0 +1,13 @@
+uuid: f13d7bc4-fc43-4827-89b1-23c0e742e5a0
+langcode: en
+status: true
+dependencies: {  }
+label: 'OPTI-FREE Green Contrast Std'
+id: opti-free-green-contrast-std
+json_values: '{"link":true,"name":"OPTI-FREE Green Contrast Std","uid":"opti-free-green-contrast-std","class":".coh-color-opti-free-green-contrast-std","variable":"$coh-color-opti-free-green-contrast-std","wysiwyg":true,"value":{"value":{"hex":"#006631","rgba":"rgba(0, 102, 49, 1)"}},"tags":[{"label":"opti-free","value":"opti-free"},{"label":"primary","value":"primary"}],"inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 31

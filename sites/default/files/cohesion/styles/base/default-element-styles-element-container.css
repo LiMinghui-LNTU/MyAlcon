@@ -1,0 +1,54 @@
+.coh-container {
+  display: block;
+}
+.coh-container:before, .coh-container:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.coh-container-boxed {
+  margin: 0 auto;
+  max-width: 92rem;
+}
+@media (max-width: 1599px) {
+  .coh-container-boxed {
+    max-width: none;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+@media (max-width: 1169px) {
+  .coh-container-boxed {
+    max-width: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 1023px) {
+  .coh-container-boxed {
+    max-width: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .coh-container-boxed {
+    max-width: none;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width: 564px) {
+  .coh-container-boxed {
+    max-width: none;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+.coh-container-boxed .coh-container-boxed {
+  margin-right: auto;
+  margin-left: auto;
+}
+.dx8-aov {
+  visibility: hidden;
+}

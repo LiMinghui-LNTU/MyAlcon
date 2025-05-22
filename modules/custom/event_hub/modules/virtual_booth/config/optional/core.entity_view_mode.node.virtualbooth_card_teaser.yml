@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.virtualbooth_card_teaser
+label: 'Virtual Booth Card teaser'
+targetEntityType: node
+cache: true

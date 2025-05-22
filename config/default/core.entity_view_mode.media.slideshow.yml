@@ -1,0 +1,13 @@
+uuid: 02aef33d-e104-4837-88ed-8192448a46fd
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: ssTEDxHl--oa62ZacqX_BSgSdPkAXqGQHPZzvRQflEc
+id: media.slideshow
+label: 幻灯片
+description: ''
+targetEntityType: media
+cache: true

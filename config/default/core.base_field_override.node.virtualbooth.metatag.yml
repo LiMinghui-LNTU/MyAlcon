@@ -1,0 +1,20 @@
+uuid: 5c71503d-2d77-444d-ab38-997b94cc04a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+  module:
+    - metatag
+id: node.virtualbooth.metatag
+field_name: metatag
+entity_type: node
+bundle: virtualbooth
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

@@ -1,0 +1,6 @@
+name: 'Non-existent ACSF User Management'
+type: module
+description: 'Make website users blocked that are blocked or non-existent in ACSF user management console'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+package: 'User Management'

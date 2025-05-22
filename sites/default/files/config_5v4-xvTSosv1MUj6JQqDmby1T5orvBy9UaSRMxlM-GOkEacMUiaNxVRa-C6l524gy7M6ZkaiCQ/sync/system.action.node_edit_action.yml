@@ -1,0 +1,14 @@
+uuid: dab46dd7-988f-413d-8bf9-b39a5403c962
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+    - views_bulk_edit
+_core:
+  default_config_hash: 0vLpSGhoYOPeREkfW-7bDeJOwEfW3zeG3nUBwUgsKQI
+id: node_edit_action
+label: 编辑内容
+type: node
+plugin: 'entity:edit_action:node'
+configuration: {  }

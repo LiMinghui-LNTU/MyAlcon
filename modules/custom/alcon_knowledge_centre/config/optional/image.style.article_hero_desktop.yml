@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_hero_desktop
+label: 'Article Hero - Desktop'
+effects:
+  a4b51ee2-be53-42c4-b2d7-55bebf1e1a08:
+    uuid: a4b51ee2-be53-42c4-b2d7-55bebf1e1a08
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 500
+      crop_type: focal_point

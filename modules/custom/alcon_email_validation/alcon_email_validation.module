@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * @file
+ * Add or update email validation settings.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\webform\Entity\Webform;
+
+/**
+ * Implements hook_help().
+ */
+function alcon_email_validation_help($route_name, RouteMatchInterface $route_match) {
+  $email_field_config = \Drupal::config('alcon_email_validation.settings')->get();
+  switch ($route_name) {
+    case 'help.page.alcon_email_validation':
+      $output = '<h2>' . t('About') . '</h2>';
+      $output .= '<p>' . t('This module allows you to add or update Email Validation settings.') . '</p>';
+      $output .= '<h2>' . t('Uses') . '</h2>';
+      $output .= '<p>' . t('Add or update Email Validation API key & Error message') . '</p>';
+      // phpcs:ignore
+      $output .= '<p>' . t('Dynamic email validation error messages:') . '</p>' . '<ul>' . '<li>' . t($email_field_config['generic_error']) . '</li>' . '<li>' . t($email_field_config['address_invalid_error']) . '</li>' . '<li>' . t($email_field_config['domain_invalid_error']) . '</li>' . '<li>' . t($email_field_config['account_invalid_error']) . '</li>' . '</ul>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Add custom validate function.
+ */
+function alcon_email_validation_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  if (strpos($form_id, 'webform_') === 0 && !empty($form['elements'])) {
+    // $form['#validate'][] = 'alcon_email_validation_form_validate';
+    $form['email']['#element_validate'][] = 'alcon_email_validation_form_validate';
+  }
+}
+
+/**
+ * Implements hook_form_validate().
+ *
+ * Check user email using email validation service.
+ */
+function alcon_email_validation_form_validate(&$form, FormStateInterface $form_state) {
+  $webform_submission = $form_state->getFormObject()->getEntity();
+  $webform = $webform_submission->getWebform();
+  $webform_id = $webform->id();
+  $webform_object = Webform::load($webform_id);
+  $elements = $webform_object->getElementsDecodedAndFlattened();
+  $validation = \Drupal::service('alcon_email_validation');
+  $email_field_config = \Drupal::config('alcon_email_validation.settings')->get();
+
+  foreach ($elements as $element_root => $element) {
+    if ($element['#type'] == 'email') {
+      $email = $form_state->getValue($element_root);
+      if (!preg_match('/^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,})$/i', $email)) {
+        $form_state->setErrorByName($element_root, 'Please enter a valid email address.');
+      }
+      else {
+        $status = $validation->sendRequest($email);
+        $response_body = json_decode($status->getBody());
+        $status_category = $response_body->results->category;
+        $array = ['email_address_invalid', 'email_domain_invalid', 'email_account_invalid'];
+        if (in_array($status_category, $array)) {
+          $generic_error_check = $email_field_config['error_checkbox'];
+          $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+          if ($generic_error_check == 1) {
+            if (isset($email_field_config['generic_error'][$language])) {
+              $form_state->setErrorByName($element_root, $email_field_config['generic_error'][$language]);
+            }
+            else {
+              $form_state->setErrorByName($element_root, $email_field_config['generic_error']['default']);
+            }
+          }
+          elseif ($status_category == 'email_address_invalid') {
+            if (isset($email_field_config['address_invalid_error'][$language])) {
+              $form_state->setErrorByName($element_root, $email_field_config['address_invalid_error'][$language]);
+            }
+            else {
+              $form_state->setErrorByName($element_root, $email_field_config['address_invalid_error']['default']);
+            }
+          }
+          elseif ($status_category == 'email_domain_invalid') {
+            if (isset($email_field_config['domain_invalid_error'][$language])) {
+              $form_state->setErrorByName($element_root, $email_field_config['domain_invalid_error'][$language]);
+            }
+            else {
+              $form_state->setErrorByName($element_root, $email_field_config['domain_invalid_error']['default']);
+            }
+          }
+          elseif ($status_category == 'email_account_invalid') {
+            if (isset($email_field_config['account_invalid_error'][$language])) {
+              $form_state->setErrorByName($element_root, $email_field_config['account_invalid_error'][$language]);
+            }
+            else {
+              $form_state->setErrorByName($element_root, $email_field_config['account_invalid_error']['default']);
+            }
+          }
+        }
+      }
+    }
+  }
+}

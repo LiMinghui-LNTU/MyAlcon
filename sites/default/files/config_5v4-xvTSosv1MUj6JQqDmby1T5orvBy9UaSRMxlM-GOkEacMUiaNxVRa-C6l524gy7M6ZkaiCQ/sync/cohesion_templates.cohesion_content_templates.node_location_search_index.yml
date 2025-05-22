@@ -1,0 +1,18 @@
+uuid: d0da1c06-6fdb-4cbf-b9d0-dace277d489c
+langcode: en
+status: false
+dependencies: {  }
+label: 'Search index (Node, Location page)'
+id: node_location_search_index
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: location
+view_mode: search_index
+master_template: ''

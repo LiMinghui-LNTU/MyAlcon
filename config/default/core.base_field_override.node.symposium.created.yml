@@ -1,0 +1,18 @@
+uuid: 9daaa4ed-f5ba-46f9-9114-5e9edad34717
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.symposium
+id: node.symposium.created
+field_name: created
+entity_type: node
+bundle: symposium
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

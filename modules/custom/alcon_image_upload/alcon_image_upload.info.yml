@@ -1,0 +1,5 @@
+name: Custom Image Upload Restrictions
+type: module
+description: Restricts type and size of files uploaded
+package: User Interface
+core_version_requirement: ^8 || ^9 || ^10

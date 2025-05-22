@@ -1,0 +1,46 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.virtualbooth.field_layout_canvas_virtualbooth
+    - field.field.node.virtualbooth.field_template_selector_vb
+    - field.field.node.virtualbooth.field_vb_event_reference
+    - field.field.node.virtualbooth.field_vb_meta_tags
+    - field.field.node.virtualbooth.field_virtualbooth_description
+    - field.field.node.virtualbooth.field_virtualbooth_end_date
+    - field.field.node.virtualbooth.field_virtualbooth_name
+    - field.field.node.virtualbooth.field_virtualbooth_place
+    - field.field.node.virtualbooth.field_virtualbooth_register_link
+    - field.field.node.virtualbooth.field_virtualbooth_start_date
+    - field.field.node.virtualbooth.field_virtualbooth_teaser_image
+    - field.field.node.virtualbooth.field_virtualbooth_weight
+    - node.type.virtualbooth
+  module:
+    - user
+id: node.virtualbooth.teaser
+targetEntityType: node
+bundle: virtualbooth
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  field_layout_canvas_virtualbooth: true
+  field_template_selector_vb: true
+  field_vb_event_reference: true
+  field_vb_meta_tags: true
+  field_virtualbooth_description: true
+  field_virtualbooth_end_date: true
+  field_virtualbooth_name: true
+  field_virtualbooth_place: true
+  field_virtualbooth_register_link: true
+  field_virtualbooth_start_date: true
+  field_virtualbooth_teaser_image: true
+  field_virtualbooth_weight: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: 62be6cad-1b83-4f7e-9c12-2f5e2da29f66
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.light-2
+label: 'Container theme - light 2'
+id: layout_5655f79f
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"background-color":{}},"xs":{"background-color":{"value":{"value":{"hex":"#e6e8ee","rgba":"rgba(230, 232, 238, 1)"},"name":"Light 2","uid":"light-2","class":".coh-color-light-2","variable":"$coh-color-light-2","wysiwyg":true,"inuse":true}}}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"background","children":[{"formKey":"background-color","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"background-color","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-container-theme---light-2
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 73

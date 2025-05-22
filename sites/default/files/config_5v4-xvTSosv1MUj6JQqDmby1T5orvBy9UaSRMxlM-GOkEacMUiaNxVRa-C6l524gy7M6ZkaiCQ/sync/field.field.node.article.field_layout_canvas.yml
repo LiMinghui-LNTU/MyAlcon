@@ -1,0 +1,26 @@
+uuid: 9342bb9d-b9b1-4f07-8e08-12cdab211c47
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout_canvas
+    - node.type.article
+  module:
+    - cohesion_elements
+_core:
+  default_config_hash: r3tJIRARmKxINyrGg4zlru36k0inBuJAOOwBlUO8OBw
+id: node.article.field_layout_canvas
+field_name: field_layout_canvas
+entity_type: node
+bundle: article
+label: 'Layout Canvas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cohesion_layout'
+  handler_settings: {  }
+  access_elements: '0'
+field_type: cohesion_entity_reference_revisions

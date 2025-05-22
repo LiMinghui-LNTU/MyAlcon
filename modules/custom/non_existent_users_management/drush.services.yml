@@ -1,0 +1,11 @@
+services:
+  non_existent_users_management.commands:
+    class: Drupal\non_existent_users_management\Commands\ManageUsersCommands
+    tags:
+      - { name: drush.command }
+    arguments: ['@request_stack', '@entity_type.manager', '@logger.factory', '@http_client', '@module_handler', '@module_installer', '@language_manager', '@entity_field.manager', '@entity_display.repository', '@entity_type.bundle.info', '@database', '@file.usage', '@config.factory']
+  non_existent_users_management.language:
+    class: Drupal\non_existent_users_management\Commands\LanguageTranslationCustomCommand
+    tags:
+      - { name: drush.command }
+    arguments: ['@entity_type.manager', '@entity_field.manager', '@config.factory']

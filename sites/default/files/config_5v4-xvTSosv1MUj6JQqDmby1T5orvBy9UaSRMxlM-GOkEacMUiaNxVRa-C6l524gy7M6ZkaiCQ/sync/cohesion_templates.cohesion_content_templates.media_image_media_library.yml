@@ -1,0 +1,18 @@
+uuid: 86b65710-2c63-4c96-8110-546f02c1302b
+langcode: en
+status: false
+dependencies: {  }
+label: 'Media library (Media, Image)'
+id: media_image_media_library
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: media
+bundle: image
+view_mode: media_library
+master_template: ''

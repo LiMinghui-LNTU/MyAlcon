@@ -1,0 +1,13 @@
+diff --git a/trailing_slash.module b/trailing_slash.module
+index f3c7193..782c689 100644
+--- a/trailing_slash.module
++++ b/trailing_slash.module
+@@ -2,7 +2,7 @@
+ 
+ use Drupal\Core\Routing\RouteMatchInterface;
+ 
+-define('TRAILING_SLASH_MINIMUM_PHP', '7.1');
++define('TRAILING_SLASH_MINIMUM_PHP', '8.1');
+ 
+ /**
+  * Implements hook_help().

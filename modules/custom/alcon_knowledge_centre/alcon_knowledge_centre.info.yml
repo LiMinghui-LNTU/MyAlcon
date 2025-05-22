@@ -1,0 +1,36 @@
+name: Alcon Knowledge Centre 
+type: module
+description: This module is used to import all the capabilities or configuration related to Knowledge Centre project.
+core: 8.x
+package: Alcon
+dependencies:
+  - block
+  - cohesion
+  - cohesion_elements
+  - cohesion_templates
+  - content_moderation
+  - ctools
+  - color
+  - color_field
+  - context
+  - datetime
+  - entity_browser
+  - field
+  - field_group
+  - focal_point
+  - image
+  - imce
+  - lightning_media
+  - lightning_workflow
+  - menu_ui
+  - metatag
+  - node
+  - path
+  - svg_image
+  - text
+  - responsive_image
+  - taxonomy
+  - views
+  - better_exposed_filters
+
+core_version_requirement: ^8 || ^9 || ^10

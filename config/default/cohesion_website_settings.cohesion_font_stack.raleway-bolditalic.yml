@@ -1,0 +1,13 @@
+uuid: 3a640e3b-6683-4ed3-adb8-3c6c80c37e8e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Raleway BoldItalic'
+id: raleway-bolditalic
+json_values: '{"inuse":true,"systemfont":false,"link":true,"name":"Raleway BoldItalic","uid":"raleway-bolditalic","class":".coh-font-raleway-bolditalic","variable":"$coh-font-raleway-bolditalic","fontStack":"Raleway-BoldItalic"}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fontStacks

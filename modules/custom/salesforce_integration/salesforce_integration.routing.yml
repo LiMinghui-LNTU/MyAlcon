@@ -1,0 +1,23 @@
+salesforce_integration.settings:
+  path: '/admin/config/salesforce/settings'
+  defaults:
+    _form: '\Drupal\salesforce_integration\Form\ApiSettingsForm'
+    _title: 'Configure Salesforce API settings, etc.'
+  requirements:
+    _permission: 'administer site configuration'
+
+webtocase_integration.settings:
+  path: '/admin/config/webtocase/settings'
+  defaults:
+    _form: '\Drupal\salesforce_integration\Form\WebToCaseSettingsForm'
+    _title: 'Configure WebTOCase API settings, etc.'
+  requirements:
+    _permission: 'administer site configuration'
+
+marketingcloud_integration.settings:
+  path: '/admin/config/marketingcloud/settings'
+  defaults:
+    _form: '\Drupal\salesforce_integration\Form\MarketingcloudApiSettingsForm'
+    _title: 'Configure Marketingcloud API settings, etc.'
+  requirements:
+    _permission: 'administer site configuration'

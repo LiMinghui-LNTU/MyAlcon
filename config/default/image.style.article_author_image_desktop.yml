@@ -1,0 +1,19 @@
+uuid: 098dbf74-cdaf-4792-9f29-5194d3dc8acc
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 3FCxiMWF6d5RScJbIHfy-_BQrchuK2zIkTWjBVheqm8
+name: article_author_image_desktop
+label: 'Article Author Image - Desktop'
+effects:
+  a21e6f2d-8fd7-4674-b453-84a26b81ae00:
+    uuid: a21e6f2d-8fd7-4674-b453-84a26b81ae00
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 80
+      crop_type: focal_point

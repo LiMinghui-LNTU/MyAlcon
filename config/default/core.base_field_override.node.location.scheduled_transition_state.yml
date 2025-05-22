@@ -1,0 +1,18 @@
+uuid: 64fe22c5-60d1-4da4-88a4-55eb3dc3af7c
+langcode: zh-hans
+status: true
+dependencies:
+  config:
+    - node.type.location
+id: node.location.scheduled_transition_state
+field_name: scheduled_transition_state
+entity_type: node
+bundle: location
+label: 'Scheduled transition state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

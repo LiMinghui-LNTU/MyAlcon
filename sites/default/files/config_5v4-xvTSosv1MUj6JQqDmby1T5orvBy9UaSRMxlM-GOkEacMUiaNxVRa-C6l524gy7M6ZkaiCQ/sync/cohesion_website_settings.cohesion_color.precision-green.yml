@@ -1,0 +1,13 @@
+uuid: 391cf921-a887-454f-9fdc-da37a7ad7244
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Green'
+id: precision-green
+json_values: '{"link":true,"name":"PRECISION Green","uid":"precision-green","class":".coh-color-precision-green","variable":"$coh-color-precision-green","value":{"value":{"hex":"#6bcaba","rgba":"rgba(107, 202, 186, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"primary","value":"primary"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 38

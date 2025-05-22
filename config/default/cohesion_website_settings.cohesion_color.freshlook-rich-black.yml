@@ -1,0 +1,13 @@
+uuid: 854a4251-69cf-401b-bac3-ba752a53570f
+langcode: en
+status: true
+dependencies: {  }
+label: 'Freshlook Rich Black'
+id: freshlook-rich-black
+json_values: '{"link":true,"name":"Freshlook Rich Black","uid":"freshlook-rich-black","class":".coh-color-freshlook-rich-black","variable":"$coh-color-freshlook-rich-black","value":{"value":{"hex":"#1c0634","rgba":"rgba(28, 6, 52, 1)"}},"tags":[{"label":"freshlook","value":"freshlook"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 27

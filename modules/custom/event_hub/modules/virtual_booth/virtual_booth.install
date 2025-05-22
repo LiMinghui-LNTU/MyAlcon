@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Virtual Booth module.
+ */
+
+use Drupal\node\Entity\NodeType;
+use Drupal\user\Entity\Role;
+use Drupal\image\Entity\ImageStyle;
+
+/**
+ * Implements hook_install().
+ */
+function virtual_booth_install() {
+// Remove user roles.
+  $user_roles_removal_array = [
+    'virtualbooth_creator',
+    'virtualbooth_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create virtualbooth content',
+      'delete any virtualbooth content',
+      'delete own virtualbooth content',
+      'delete virtualbooth revisions',
+      'edit any virtualbooth content',
+      'edit own virtualbooth content',
+      'revert virtualbooth revisions',
+      'view virtualbooth revisions',
+      'translate virtualbooth node',
+      'use text format mini_rich_text',
+      'access cpt_cat_virtualbooth cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+    'content_editor' => [
+      'translate virtualbooth node',
+      'use text format mini_rich_text',
+      'edit any virtualbooth content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_virtualbooth cohesion_component_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+  ];
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+
+  $block_ids_array = [
+    'views_block__virtualbooths_recent_virtualbooths_block' => 'views_block:virtualbooths-recent_virtualbooths_block',
+    'views_block__virtualbooths_upcoming_virtualbooths_page_block' => 'views_block:virtualbooths-upcoming_virtualbooths_page_block',
+  ];
+  place_view_blocks($block_ids_array);
+}
+
+/**
+ * Install new Image Style.
+ */
+function virtual_booth_update_9001() {
+  update_module_configs('virtual_booth');
+}
+
+/**
+ * Create VB Views blocks, update configs.
+ */
+function virtual_booth_update_9002() {
+  update_module_configs('virtual_booth');
+
+  $block_ids_array = [
+    'views_block__virtualbooths_recent_virtualbooths_block' => 'views_block:virtualbooths-recent_virtualbooths_block',
+    'views_block__virtualbooths_upcoming_virtualbooths_page_block' => 'views_block:virtualbooths-upcoming_virtualbooths_page_block',
+  ];
+  place_view_blocks($block_ids_array);
+}
+
+/**
+ * Update Virtual Booth View, update user permissions.
+ */
+function virtual_booth_update_9003() {
+  update_module_configs('virtual_booth');
+
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create virtualbooth content',
+      'delete any virtualbooth content',
+      'delete own virtualbooth content',
+      'delete virtualbooth revisions',
+      'edit any virtualbooth content',
+      'edit own virtualbooth content',
+      'revert virtualbooth revisions',
+      'view virtualbooth revisions',
+      'translate virtualbooth node',
+      'use text format mini_rich_text',
+      'access cpt_cat_virtualbooth cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+    'content_editor' => [
+      'translate virtualbooth node',
+      'use text format mini_rich_text',
+      'edit any virtualbooth content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+      'access cpt_cat_virtualbooth cohesion_component_category group',
+      'access cpt_cat_slider_section_component cohesion_component_category group',
+    ],
+  ];
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+}
+
+/**
+ * Create the "Document URL" entity view display & view mode for Media entity.
+ */
+function virtual_booth_update_9004() {
+  update_module_configs('virtual_booth');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function virtual_booth_uninstall() {
+  // Remove Virtual Booth page node type.
+  if ($event_node_type = NodeType::load('virtualbooth')) {
+    $event_node_type->delete();
+  }
+
+  // Remove Image Styles.
+  $image_styles = [
+    'thumbnail_48_48',
+  ];
+  foreach ($image_styles as $image_style_name) {
+    if ($image_style = ImageStyle::load($image_style_name)) {
+      $image_style->delete();
+    }
+  }
+}

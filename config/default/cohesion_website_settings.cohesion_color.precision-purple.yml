@@ -1,0 +1,13 @@
+uuid: 48494b9c-2eb7-4b58-9579-205e5722788c
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Purple'
+id: precision-purple
+json_values: '{"link":true,"name":"PRECISION Purple","uid":"precision-purple","class":".coh-color-precision-purple","variable":"$coh-color-precision-purple","value":{"value":{"hex":"#84329b","rgba":"rgba(132, 50, 155, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"primary","value":"primary"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 40

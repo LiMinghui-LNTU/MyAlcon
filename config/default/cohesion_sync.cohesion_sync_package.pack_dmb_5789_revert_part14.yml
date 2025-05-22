@@ -1,0 +1,20 @@
+uuid: 0decfeb7-c1b9-4aa1-b3fc-9280b29ac504
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part14
+label: 'DMB-5789 revert part14'
+description: 'DMB-5789 revert part14 (Button (cpt_a_button))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "b57cbd84-9660-4e93-b207-4bd381c4044c": {
+          "type": "cohesion_component",
+          "items": {
+              "b57cbd84-9660-4e93-b207-4bd381c4044c": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

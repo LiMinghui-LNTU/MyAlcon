@@ -1,0 +1,13 @@
+uuid: ada577c7-fd3d-4a55-a0c1-0cda04560118
+langcode: en
+status: true
+dependencies: {  }
+label: 'Alcon White Smoke'
+id: alcon-white-smoke
+json_values: '{"link":true,"name":"Alcon White Smoke","uid":"alcon-white-smoke","class":".coh-color-alcon-white-smoke","variable":"$coh-color-alcon-white-smoke","value":{"value":{"hex":"#f2f2f2","rgba":"rgba(242, 242, 242, 1)"}},"inuse":true,"wysiwyg":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 8

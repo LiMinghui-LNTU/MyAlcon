@@ -1,0 +1,20 @@
+uuid: 471d0e68-41cc-4b0e-9715-1190d314ff01
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.commercial_page
+  module:
+    - path
+id: node.commercial_page.path
+field_name: path
+entity_type: node
+bundle: commercial_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,15 @@
+uuid: 28f62f35-9d2c-4c24-918e-1b830d2f63a5
+langcode: en
+status: true
+dependencies: {  }
+name: coh_small_landscape
+label: 'Small landscape (568x352)'
+effects:
+  32912a93-65b3-4afb-ba69-a171137bcd76:
+    uuid: 32912a93-65b3-4afb-ba69-a171137bcd76
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 568
+      height: 352
+      anchor: center-center

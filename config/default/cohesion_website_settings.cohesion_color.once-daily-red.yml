@@ -1,0 +1,13 @@
+uuid: 487f1670-1cf9-4f39-84c6-f2aa6224cc54
+langcode: en
+status: true
+dependencies: {  }
+label: 'Once Daily Red'
+id: once-daily-red
+json_values: '{"link":true,"name":"Once Daily Red","uid":"once-daily-red","class":".coh-color-once-daily-red","variable":"$coh-color-once-daily-red","value":{"value":{"hex":"#eb002b","rgba":"rgba(235, 0, 43, 1)"}},"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 63

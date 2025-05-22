@@ -1,0 +1,9 @@
+restricted_access.url_settings:
+  path: '/admin/config/restricted_access/url_settings'
+  defaults:
+    _form: '\Drupal\restricted_access\Form\UrlSettingsForm'
+    _title: 'Restricted Access'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

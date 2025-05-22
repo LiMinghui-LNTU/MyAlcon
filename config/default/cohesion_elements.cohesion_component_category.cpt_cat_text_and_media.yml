@@ -1,0 +1,14 @@
+uuid: 3802f574-86b7-427c-9fbb-9626fca21aed
+langcode: en
+status: true
+dependencies: {  }
+label: 'TEXT AND MEDIA'
+id: cpt_cat_text_and_media
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-2
+weight: -9

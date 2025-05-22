@@ -1,0 +1,20 @@
+uuid: e6a42413-e34c-45f6-8cb4-f020772a84b1
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part10
+label: 'DMB-5789 revert part10'
+description: 'DMB-5789 revert part10(Text and uStudio (cpt_a_txt_ustudio))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "0ea114dc-0d20-4e95-b3f5-5aa6f03d4305": {
+          "type": "cohesion_component",
+          "items": {
+              "0ea114dc-0d20-4e95-b3f5-5aa6f03d4305": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

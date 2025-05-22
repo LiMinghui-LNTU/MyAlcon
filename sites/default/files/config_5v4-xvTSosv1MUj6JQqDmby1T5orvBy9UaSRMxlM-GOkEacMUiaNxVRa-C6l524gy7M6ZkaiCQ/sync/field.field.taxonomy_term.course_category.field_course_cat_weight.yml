@@ -1,0 +1,27 @@
+uuid: 5e9e4168-ad20-44e4-9771-61e31fc0ebc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_course_cat_weight
+    - taxonomy.vocabulary.course_category
+_core:
+  default_config_hash: aPtu7tfzXpDQiykWLneNyM6CiDlOnyX0au3VTeaAlv0
+id: taxonomy_term.course_category.field_course_cat_weight
+field_name: field_course_cat_weight
+entity_type: taxonomy_term
+bundle: course_category
+label: Weight
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: -100000
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

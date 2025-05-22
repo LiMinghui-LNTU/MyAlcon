@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: phone_landscape_3_col_4_3_
+label: 'Phone landscape 3 Col (4:3)'
+effects:
+  ecfc5dcd-2721-4ccd-b635-68dbb1a81286:
+    uuid: ecfc5dcd-2721-4ccd-b635-68dbb1a81286
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 312
+      height: 234
+      crop_type: focal_point

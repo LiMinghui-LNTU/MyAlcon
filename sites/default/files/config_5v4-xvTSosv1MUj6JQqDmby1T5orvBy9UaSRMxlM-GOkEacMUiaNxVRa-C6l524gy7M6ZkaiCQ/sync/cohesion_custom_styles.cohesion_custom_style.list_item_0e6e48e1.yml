@@ -1,0 +1,21 @@
+uuid: 43ce469e-e50a-4975-8c93-add9d0bda60e
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.list_item_df0fe2c3
+    - cohesion_website_settings.cohesion_icon_library.icomoon
+label: 'Social icon - twitter'
+id: list_item_0e6e48e1
+json_values: '{"preview":{"text":"<ul>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n<\/ul>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"li,dd,dt","class":"","combinator":"","pseudo":""},"52ca59c4-60d7-45cf-8d52-245f0e54a645":{"settings":{"element":"","class":"","combinator":"","pseudo":":before"},"styles":{"xl":{"content-icon":{"contentIcon":{}}},"xs":{"content-icon":{"contentIcon":{"value":{"fontFamily":"icomoon","iconName":"61593"}}}}}},"0a991641-aa4f-4287-b428-b93b6b3de52a":{"settings":{"element":"a","class":"","combinator":"","pseudo":""},"styles":{}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":"a","type":"container","items":[{"title":":before","type":"container","items":[],"selectorType":"pseudo","formDefinition":[{"formKey":"content","children":[{"formKey":"icon","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"contentIcon","active":true}]}]}],"uuid":"52ca59c4-60d7-45cf-8d52-245f0e54a645"}],"selectorType":"child","model":"a","originalLabel":"Child selector","formDefinition":[],"uuid":"0a991641-aa4f-4287-b428-b93b6b3de52a"}],"title":"List item","formDefinition":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-social-icon---twitter
+custom_style_type: list_item
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-social-icon
+weight: 332

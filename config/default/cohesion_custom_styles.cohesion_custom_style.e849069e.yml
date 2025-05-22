@@ -1,0 +1,20 @@
+uuid: f9c23fa8-6fff-4b99-8960-793bb6a15c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+label: 'Paragraph in place for Header Tag 2'
+id: e849069e
+json_values: '{"preview":{"text":"<p class=\"coh-preview\">Default content for ''Paragraph''.<\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"p","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-weight":{"value":"500"},"color":{"value":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true}},"font-size":{"value":"44"},"line-height":{"value":"1.15"}},"xs":{"font-weight":{"value":"500"},"color":{"value":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true}},"font-size":{"value":"30"},"line-height":{"value":"1.15"}},"lg":{"font-size":{"value":"40"},"line-height":{"value":"1.15"}},"sm":{"font-size":{"value":"30"},"line-height":{"value":"1.15"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Paragraph","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"lg"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-paragraph-in-place-for-header-tag-h2
+custom_style_type: paragraph
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 0

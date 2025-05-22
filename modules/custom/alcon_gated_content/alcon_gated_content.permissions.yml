@@ -1,0 +1,4 @@
+alcon_gated_content_settings:
+  title: 'Administer Gated content'
+  description: 'Users who have this permission can Administer gated content from the site.'
+  restrict access: TRUE

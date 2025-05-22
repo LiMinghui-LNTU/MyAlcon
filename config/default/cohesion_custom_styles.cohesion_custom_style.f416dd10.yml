@@ -1,0 +1,18 @@
+uuid: a8204aaf-1803-496d-b014-872ddff208d1
+langcode: en
+status: true
+dependencies: {  }
+label: 'button border none'
+id: f416dd10
+json_values: '{"preview":{"text":"<p><button class=\"coh-preview\" type=\"button\">Default content for ''Button''<\/button><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"button","class":"","combinator":"","pseudo":""},"e1fa140b-85e7-4e48-a9b1-d1c26cf0acc9":{"settings":{"element":"","class":"","combinator":"","pseudo":":hover"},"styles":{}},"styles":{"xl":{"custom-css":[{"customCssProperty":{"value":"border"},"customCss":{"value":"none"}}]}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Button","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]},{"formKey":"background","children":[{"formKey":"background-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"background-color","active":true}]}]},{"formKey":"layout","children":[{"formKey":"padding","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"padding-equal","active":false},{"name":"padding-top","active":true},{"name":"padding-bottom","active":true},{"name":"padding-left","active":true},{"name":"padding-right","active":true},{"name":"padding-block-start","active":false},{"name":"padding-block-end","active":false},{"name":"padding-inline-start","active":false},{"name":"padding-inline-end","active":false}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[{"title":":hover","type":"container","items":[],"selectorType":"pseudo","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]},{"formKey":"background","children":[{"formKey":"background-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"background-color","active":true}]}]}],"form":null,"allowedTypes":["child","pseudo"],"uuid":"e1fa140b-85e7-4e48-a9b1-d1c26cf0acc9"}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-button-border-none
+custom_style_type: button
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 82

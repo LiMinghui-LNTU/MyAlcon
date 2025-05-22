@@ -1,0 +1,20 @@
+uuid: 8292f7c2-37d2-4855-9ad9-8a00ee4a0cdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.alcon-gray
+label: 'Mice Type'
+id: f4a3a7d8
+json_values: '{"preview":{"text":"<p class=\"coh-preview\">Default content for ''Paragraph''.<\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"p","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-weight":{"value":"400"},"font-size":{"value":"0.75rem"},"line-height":{"value":"1.25"},"color":{"value":{"link":true,"name":"Alcon Gray","uid":"alcon-gray","class":".coh-color-alcon-gray","variable":"$coh-color-alcon-gray","value":{"hex":"#818181","rgba":"rgba(129, 129, 129, 1)"},"inuse":false,"wysiwyg":true}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Paragraph","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":true},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-mice-type
+custom_style_type: paragraph
+available_in_wysiwyg: true
+available_in_wysiwyg_inline: true
+parent: null
+weight: 6

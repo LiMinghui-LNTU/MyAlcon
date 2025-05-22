@@ -1,0 +1,18 @@
+uuid: c4f8a5a6-c07e-4185-96d9-5497059c4cb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.virtualbooth
+target_entity_type_id: node
+target_bundle: virtualbooth
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 7120fd6f-2db3-4cb4-9c24-307c2b8ad7f8
+langcode: zh-hans
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
+id: zxx
+label: 不适用
+direction: ltr
+weight: 4
+locked: true

@@ -1,0 +1,30 @@
+uuid: b52d6c09-4894-4a53-b727-e15b6f9c8c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.professional-footer-column-1
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: footercolumn1professional
+theme: cohesion_theme
+region: dx8_hidden
+weight: -3
+provider: null
+plugin: 'system_menu_block:professional-footer-column-1'
+settings:
+  id: 'system_menu_block:professional-footer-column-1'
+  label: 'Footer Column 1(Professional)'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

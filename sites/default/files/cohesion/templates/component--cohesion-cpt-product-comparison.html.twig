@@ -1,0 +1,1095 @@
+{% set coh_instance_class %}{{ coh_instanceid() }}{% endset %}{{ attach_library('cohesion/global_libraries.responsiveJs') }} {{ attach_library('cohesion/global_libraries.windowscroll') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/global_libraries.matchHeight') }} {{ attach_library('cohesion/global_libraries.parallax_scrolling') }} {{ attach_library('cohesion/global_libraries.cohMatchHeights') }} {{ attach_library('cohesion/element_templates.image') }} {{ attach_library('cohesion/element_templates.row-for-columns') }} {{ attach_library('cohesion/element_templates.link') }} {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container ssa-component coh-component ssa-component-instance-{{componentUuid}} coh-component-instance-{{componentUuid}} {{ coh_instance_class }} coh-ce-cpt_product_comparison-a27b8600" > <div class="coh-row global-heading-row coh-ce-cpt_product_comparison-a2415e42 coh-row-xl coh-row-visible-xl" data-coh-row-match-heights="{&quot;xl&quot;:{&quot;target&quot;:&quot;none&quot;}}"> <div class="coh-row-inner"> <div class="coh-column {{ coh_instance_class }} coh-ce-cpt_product_comparison-b4e9da87 coh-col-xl" > <h2 class="coh-heading {{ getComponentFieldValue("3f5ef5d1-214f-48c4-aa49-22d2ba638be6") | raw }} {{ coh_instance_class }} coh-ce-cpt_product_comparison-fa9e498a" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('9eb7aa53-95ef-4df8-961a-0467ffddb056', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("9eb7aa53-95ef-4df8-961a-0467ffddb056") | raw }} </h2> </div> <div class="coh-column coh-ce-cpt_product_comparison-b4042ac2 coh-col-xl" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-collection-{{ getComponentFieldValue("c9db7536-187a-46f0-b299-2f07a50b2a0e") | raw }} coh-ce-cpt_product_comparison-f107969b" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-one products-two {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }} {{ coh_instance_class }} coh-ce-cpt_product_comparison-3785fa56" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-d10a25be" > {{ attach_library('cohesion/coh_element_image') }} <img class="coh-image coh-ce-cpt_product_comparison-5e8f79a1 coh-image-responsive-xl" src="{% set src %}{{ getComponentFieldValue("c6d12024-1616-41f4-8b39-ab9797ddd44f") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" {% if getComponentFieldValue('3aa48307-671a-42e2-9f69-585ea6b2681b') == '' %}alt{% else %}alt="{{ getComponentFieldValue("3aa48307-671a-42e2-9f69-585ea6b2681b") | raw }}"{% endif %} /> </div> <h6 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-25b28519" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('33969215-5adb-46e6-96ad-e09c5d1a4c35', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("33969215-5adb-46e6-96ad-e09c5d1a4c35") | raw }} </h6> </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-two products-two {{ coh_instance_class }} coh-ce-cpt_product_comparison-6deba644" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-d10a25be" > {{ attach_library('cohesion/coh_element_image') }} <img class="coh-image coh-ce-cpt_product_comparison-85305640 coh-image-responsive-xl" src="{% set src %}{{ getComponentFieldValue("1c14d97d-b63f-4d86-b107-24684ec62e5f") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" {% if getComponentFieldValue('3590a4f3-8581-41d7-bca2-22b74ce55b5c') == '' %}alt{% else %}alt="{{ getComponentFieldValue("3590a4f3-8581-41d7-bca2-22b74ce55b5c") | raw }}"{% endif %} /> </div> <h6 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-8cd968b" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('e2012032-a17b-495a-af38-a4a6b798c98f', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("e2012032-a17b-495a-af38-a4a6b798c98f") | raw }} </h6> </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-three coh-style-column-hide products-two {{ coh_instance_class }} coh-ce-cpt_product_comparison-901f17ec" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-11c78802" > {% set hideData %}{{ getComponentFieldValue('ff1434e4-adc5-4fae-a8a5-482026e5f7f3', '') }}{% endset %} {% if hideData is null or hideData|trim != '' %} {{ attach_library('cohesion/coh_element_image') }} <img class="coh-image coh-ce-cpt_product_comparison-5e8f79a1 coh-image-responsive-xl" src="{% set src %}{{ getComponentFieldValue("ff1434e4-adc5-4fae-a8a5-482026e5f7f3") | raw }}{% endset %}{% set imagestyle %}{% endset %}{{ cohesion_image_style(src, imagestyle) }}" {% if getComponentFieldValue('3b2d386a-d3c0-4255-b8ca-ac23a526d332') == '' %}alt{% else %}alt="{{ getComponentFieldValue("3b2d386a-d3c0-4255-b8ca-ac23a526d332") | raw }}"{% endif %} /> {% endif %} </div> {% set hideData %}{% verbatim %}product_heading_third{% endverbatim %}{% endset %} {% if hideData is null or hideData|trim != '' %} <h6 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-8f73a588" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('f7faa00a-8746-4a43-8d05-bb82f8434ea3', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("f7faa00a-8746-4a43-8d05-bb82f8434ea3") | raw }} </h6> {% endif %} </div> </div> </div> </div> </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container mobile-dropdown-container coh-ce-cpt_product_comparison-d3643f7b" > <div class="coh-row product-collection-{{ getComponentFieldValue("c9db7536-187a-46f0-b299-2f07a50b2a0e") | raw }} coh-ce-cpt_product_comparison-a0f56206 coh-row-xl coh-row-visible-xl" data-coh-row-match-heights="{&quot;xl&quot;:{&quot;target&quot;:&quot;none&quot;}}"> <div class="coh-row-inner"> <div class="coh-column coh-ce-cpt_product_comparison-f6ae3202 coh-col-xl" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-cf14410" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button {{ coh_instance_class }} coh-ce-cpt_product_comparison-861f3aa2 coh-interaction" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;toggle-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;&quot;,&quot;interactionScope&quot;:&quot;document&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {{ getComponentFieldValue("fc51522c-3840-4bf8-a552-b5352ccca229") | raw }}</button> </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container acc-button-first-container coh-style-column-hide active-btn {{ coh_instance_class }} coh-ce-cpt_product_comparison-715d2ca2" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button active-button btn-one coh-ce-cpt_product_comparison-1b025185 coh-interaction" title="button" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-three&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-two&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-one&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-three&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]},"ps":{"buttonAnimation":[{"animationType":"none"}]},"xs":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}Product 1{% endtrans -%}</button> {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button active-button btn-two coh-ce-cpt_product_comparison-50b1fd1c coh-interaction" title="button" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-three&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-two&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-one&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]},"ps":{"buttonAnimation":[{"animationType":"none"}]},"xs":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}Product 2{% endtrans -%}</button> {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button btn-three coh-ce-cpt_product_comparison-4af9f900 coh-interaction" title="button" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-one&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-two&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-three&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-first-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container .btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]},"ps":{"buttonAnimation":[{"animationType":"none"}]},"xs":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}Product 3{% endtrans -%}</button> </div> </div> <div class="coh-column coh-ce-cpt_product_comparison-f6ae3202 coh-col-xl" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-cf14410" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button {{ coh_instance_class }} coh-ce-cpt_product_comparison-c05a0747 coh-interaction" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;toggle-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;&quot;,&quot;interactionScope&quot;:&quot;document&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {{ getComponentFieldValue("fc51522c-3840-4bf8-a552-b5352ccca229") | raw }}</button> </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container acc-button-second-container coh-style-column-hide active-btn {{ coh_instance_class }} coh-ce-cpt_product_comparison-715d2ca2" > {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button active-button btn-one coh-ce-cpt_product_comparison-1b025185 coh-interaction" title="button" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-three&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-two&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-one&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]},"ps":{"buttonAnimation":[{"animationType":"none"}]},"xs":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}Product 1{% endtrans -%}</button> {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button active-button btn-two coh-ce-cpt_product_comparison-50b1fd1c coh-interaction" title="button" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-three&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-two&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-one&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-three&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;modifierName&quot;:&quot;active-button&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-one&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;modifierName&quot;:&quot;active-button&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-two&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]},"ps":{"buttonAnimation":[{"animationType":"none"}]},"xs":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}Product 2{% endtrans -%}</button> {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} {{ attach_library('cohesion/global_libraries.jquery_ui_effect_none') }} <button class="coh-button btn-three coh-ce-cpt_product_comparison-4af9f900 coh-interaction" title="button" data-interaction-modifiers="[{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-one&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-two&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.product-collection-3 .product-three&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.acc-button-second-container&quot;,&quot;interactionTarget&quot;:&quot;.btn-three&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;document&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-second-container&quot;,&quot;modifierName&quot;:&quot;coh-style-column-hide&quot;},{&quot;modifierType&quot;:&quot;remove-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-one&quot;,&quot;modifierName&quot;:&quot;active-button&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-two&quot;,&quot;modifierName&quot;:&quot;active-button&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;},{&quot;modifierType&quot;:&quot;add-modifier&quot;,&quot;interactionScope&quot;:&quot;parent&quot;,&quot;modifierName&quot;:&quot;active-button&quot;,&quot;interactionTarget&quot;:&quot;.acc-button-first-container .btn-three&quot;,&quot;interactionParent&quot;:&quot;.product-collection-3&quot;}]" data-coh-settings='{ "xl":{"buttonAnimation":[{"animationType":"none"}]},"ps":{"buttonAnimation":[{"animationType":"none"}]},"xs":{"buttonAnimation":[{"animationType":"none"}]} }' type="button"> {%- trans with {"langcode": get_content_language() } %}Product 3{% endtrans -%}</button> </div> </div> </div> </div> </div> <div class="coh-row coh-ce-cpt_product_comparison-503ec2f8 coh-row-xl coh-row-visible-xl" data-coh-row-match-heights="{&quot;xl&quot;:{&quot;target&quot;:&quot;none&quot;}}"> <div class="coh-row-inner"> <div class="coh-column coh-col-xl coh-col-xl-push-0 coh-col-xl-pull-0 coh-col-xl-offset-0" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-collection-{{ getComponentFieldValue("c9db7536-187a-46f0-b299-2f07a50b2a0e") | raw }} coh-ce-cpt_product_comparison-2a632268" > {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-288c9dfe" > <h1 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-3f76fe8a" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('69a7fec9-1685-4f29-adda-ed42e0d00c1a', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("69a7fec9-1685-4f29-adda-ed42e0d00c1a") | raw }} </h1> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-one mob-view-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-f6cdf55b" > {% set inlineElementContent %}{{ getComponentFieldValue("69a7fec9-1685-4f29-adda-ed42e0d00c1a") | raw }}{% endset %} <H2 class="coh-inline-element product-one coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("69a7fec9-1685-4f29-adda-ed42e0d00c1a") | raw }}{% endset %} <H2 class="coh-inline-element product-two coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("69a7fec9-1685-4f29-adda-ed42e0d00c1a") | raw }}{% endset %} <H2 class="coh-inline-element product-three coh-style-column-hide coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> </div> {{ getComponentFieldValue("fd51c297-63c8-44fb-9c62-e3fad7c4acec") }} </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-2d6b270d" > <h1 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-853ae98" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('f1ea9920-4faa-45ac-b571-ce0e4722e502', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("f1ea9920-4faa-45ac-b571-ce0e4722e502") | raw }} </h1> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-two mob-view-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-3893aaa3" > {% set inlineElementContent %}{{ getComponentFieldValue("f1ea9920-4faa-45ac-b571-ce0e4722e502") | raw }}{% endset %} <H2 class="coh-inline-element product-one coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("f1ea9920-4faa-45ac-b571-ce0e4722e502") | raw }}{% endset %} <H2 class="coh-inline-element product-two coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("f1ea9920-4faa-45ac-b571-ce0e4722e502") | raw }}{% endset %} <H2 class="coh-inline-element product-three coh-style-column-hide coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> </div> {{ getComponentFieldValue("a619025f-3649-4b81-bc73-3047fb30a418") }} </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-dc989a32" > <h1 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-853ae98" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('1918ad80-b62b-4cbc-837b-218da6d56b68', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("1918ad80-b62b-4cbc-837b-218da6d56b68") | raw }} </h1> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container product-three coh-style-column-hide mob-view-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-ab2bc387" > {% set inlineElementContent %}{{ getComponentFieldValue("1918ad80-b62b-4cbc-837b-218da6d56b68") | raw }}{% endset %} <H2 class="coh-inline-element product-one coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("1918ad80-b62b-4cbc-837b-218da6d56b68") | raw }}{% endset %} <H2 class="coh-inline-element product-two coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("1918ad80-b62b-4cbc-837b-218da6d56b68") | raw }}{% endset %} <H2 class="coh-inline-element product-three coh-style-column-hide coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> </div> {{ getComponentFieldValue("0f14c54e-835c-43f3-8578-7476eb9dbb4e") }} </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container coh-ce-cpt_product_comparison-dde8ae15" > <h1 class="coh-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-853ae98" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('0ca45b82-952d-4e38-99e8-a08b0b09796a', 'Array') }}" data-ssa-form-type="form-input"{% endif %} > {{ getComponentFieldValue("0ca45b82-952d-4e38-99e8-a08b0b09796a") | raw }} </h1> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container mob-view-heading {{ coh_instance_class }} coh-ce-cpt_product_comparison-73b7ebe8" > {% set inlineElementContent %}{{ getComponentFieldValue("0ca45b82-952d-4e38-99e8-a08b0b09796a") | raw }}{% endset %} <H2 class="coh-inline-element product-one coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("0ca45b82-952d-4e38-99e8-a08b0b09796a") | raw }}{% endset %} <H2 class="coh-inline-element product-two coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> {% set inlineElementContent %}{{ getComponentFieldValue("0ca45b82-952d-4e38-99e8-a08b0b09796a") | raw }}{% endset %} <H2 class="coh-inline-element product-three coh-style-column-hide coh-style-text-columns---three"> {{- inlineElementContent -}} </H2> </div> {{ getComponentFieldValue("2bcc5423-8a00-4c23-8733-d9f8838bdc36") }} </div> </div> {{ attach_library('cohesion/coh_element_container') }} <div class="coh-container" > {{ attach_library('cohesion/coh_element_wysiwyg') }} <div class="coh-wysiwyg coh-ce-cpt_product_comparison-73b1ffde" {% if user.hasPermission('access visual page builder') and component_content is not defined %} data-ssa-field-uuid="{{ render_field_uuid('b336fc2c-c83f-4089-9de8-741191964a7c', 'Array') }}" data-ssa-form-type="form-wysiwyg"{% endif %} > {% set wysiwyg %}{{ getComponentFieldValue('b336fc2c-c83f-4089-9de8-741191964a7c', '#text') }}{% endset %} {% set text_format %}{{ getComponentFieldValue('b336fc2c-c83f-4089-9de8-741191964a7c', '#textFormat') }}{% endset %} {% set token_text %}{{ getComponentFieldValue('b336fc2c-c83f-4089-9de8-741191964a7c', '') }}{% endset %} {{ format_wysiwyg(wysiwyg, text_format, token_text) }} </div> </div> </div> </div> </div> </div> 
+{% set compiledCSS %}<style>.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 {
+{% if getComponentFieldValue("34abaec3-6cd6-47b1-b2f0-b7e627994be5") is not empty %}   {% if getComponentFieldValue("34abaec3-6cd6-47b1-b2f0-b7e627994be5") is not empty %} background-color: {{ getComponentFieldValue("34abaec3-6cd6-47b1-b2f0-b7e627994be5") | raw }};{% endif %}{% endif %}
+  padding-top: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .products-two {
+  width: 50%;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .products-two {
+    width: 50%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .products-two {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .products-two {
+    width: 48%;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .products-two {
+    width: 48%;
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 h2.product-three {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 h2.product-three {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 h2.product-three {
+    display: none;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 h2.product-three {
+    display: none;
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .mob-view-heading h2 {
+    width: 50%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .mob-view-heading h2 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .mob-view-heading h2 {
+    width: 50%;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .mob-view-heading h2 {
+    width: 50%;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .product-criteria-wrap h6 {
+  width: 40%;
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .product-criteria-wrap .coh-container {
+  width: 30%;
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .mobile-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .product-collection-2 .mobile-dropdown {
+    display: none;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .global-heading-row .coh-row-inner {
+  min-height: 16.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .global-heading-row .coh-row-inner {
+    width: auto;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .global-heading-row .coh-row-inner {
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .global-heading-row .coh-row-inner {
+    width: auto;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-a27b8600 .global-heading-row .coh-row-inner {
+    width: auto;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-b4e9da87 {
+  -webkit-box-flex: 40%;
+  -webkit-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+{% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %}   {% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %} -webkit-box-align: {{ getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %}   {% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %} -webkit-align-items: {{ getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %}       {% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %} -ms-flex-align: {{ getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %}           {% if getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") is not empty %} align-items: {{ getComponentFieldValue("ee766031-7c07-48b6-80ba-4141aa926cea") | raw }};{% endif %}{% endif %}
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-b4e9da87 {
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-b4e9da87 {
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-b4e9da87 {
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-b4e9da87 {
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-fa9e498a {
+{% if getComponentFieldValue("fc74a761-f638-45a4-aa6e-274f98fc9215") is not empty %}   {% if getComponentFieldValue("fc74a761-f638-45a4-aa6e-274f98fc9215") is not empty %} color: {{ getComponentFieldValue("fc74a761-f638-45a4-aa6e-274f98fc9215") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("3f5ef5d1-214f-48c4-aa49-22d2ba638be6") is not empty %}   {% if getComponentFieldValue("3f5ef5d1-214f-48c4-aa49-22d2ba638be6") is not empty %} font-size: {{ getComponentFieldValue("3f5ef5d1-214f-48c4-aa49-22d2ba638be6") | raw }};{% endif %}{% endif %}
+  word-wrap: break-word;
+{% if getComponentFieldValue("e49be6b5-8b97-40f2-af6b-96ef00ccfe69") is not empty %}   {% if getComponentFieldValue("e49be6b5-8b97-40f2-af6b-96ef00ccfe69") is not empty %} text-align: {{ getComponentFieldValue("e49be6b5-8b97-40f2-af6b-96ef00ccfe69") | raw }};{% endif %}{% endif %}
+  width: 100%;
+  max-width: 100%;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-fa9e498a {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-fa9e498a {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-fa9e498a {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 2.1875rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-fa9e498a {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 2.1875rem;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56 {
+  min-width: 33%;
+  max-width: 100%;
+  width: 33%;
+  padding-left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}   {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} -webkit-flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}       {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} -ms-flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}           {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56 {
+    width: 33.3%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56 {
+    width: 33.3%;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56 {
+    width: 48%;
+    padding-right: 0;
+    padding-left: 0%;
+    margin-right: 4%;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56 {
+    width: 48%;
+    padding-right: 0;
+    padding-left: 0%;
+    margin-right: 4%;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56:first-child {
+    padding-left: 0;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3785fa56:first-child {
+    padding-left: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-25b28519 {
+{% if getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") is not empty %}   {% if getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") is not empty %} font-size: {{ getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") | raw }};{% endif %}{% endif %}
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin-top: 20px;
+  margin-bottom: 20px;
+{% if getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") is not empty %}   {% if getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") is not empty %} text-align: {{ getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") is not empty %}   {% if getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") is not empty %} color: {{ getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") | raw }};{% endif %}{% endif %}
+  font-weight: 700;
+  line-height: initial;
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644 {
+  min-width: 33%;
+  max-width: 100%;
+  width: 33%;
+  padding-left: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}   {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} -webkit-flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}       {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} -ms-flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}           {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644 {
+    width: 33.3%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644 {
+    width: 33.3%;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644 {
+    width: 48%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644 {
+    width: 48%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644:last-child {
+    padding-right: 0;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644:last-child {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644:first-child {
+    padding-left: 0;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-6deba644:first-child {
+    padding-left: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-8cd968b {
+{% if getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") is not empty %}   {% if getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") is not empty %} font-size: {{ getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") | raw }};{% endif %}{% endif %}
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+{% if getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") is not empty %}   {% if getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") is not empty %} text-align: {{ getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") | raw }};{% endif %}{% endif %}
+  font-weight: 700;
+{% if getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") is not empty %}   {% if getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") is not empty %} color: {{ getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") | raw }};{% endif %}{% endif %}
+  line-height: initial;
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec {
+  min-width: 33%;
+  max-width: 100%;
+  width: 33%;
+  padding-left: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}   {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} -webkit-flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}       {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} -ms-flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %}           {% if getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") is not empty %} flex-direction: {{ getComponentFieldValue("cad9085f-3f9d-40b8-8d05-66bfc01abb37") | raw }};{% endif %}{% endif %}
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec {
+    width: 33.3%;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec {
+    width: 33.3%;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec {
+    width: 48%;
+    padding-right: 0%;
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1.25rem;
+    margin-left: 4%;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec {
+    width: 48%;
+    padding-right: 0%;
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1.25rem;
+    margin-left: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec:last-child {
+    padding-right: 0;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-901f17ec:last-child {
+    padding-right: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-8f73a588 {
+{% if getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") is not empty %}   {% if getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") is not empty %} font-size: {{ getComponentFieldValue("97816325-b018-4072-8bc4-fc3a20fa1e7c") | raw }};{% endif %}{% endif %}
+  word-wrap: break-word;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+{% if getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") is not empty %}   {% if getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") is not empty %} text-align: {{ getComponentFieldValue("9b7b2288-1f9d-4b92-8927-4bf120a21c20") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") is not empty %}   {% if getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") is not empty %} color: {{ getComponentFieldValue("b125e889-0565-4355-850c-b52538842056") | raw }};{% endif %}{% endif %}
+  font-weight: 700;
+  line-height: initial;
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-861f3aa2 {
+    font-size: 0.875rem;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-width: 0.0625rem;
+    -webkit-border-radius: 1.5625rem;
+            border-radius: 1.5625rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+{% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %} {% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %}     {% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %} color: {{ getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") | raw }};{% endif %}{% endif %}{% endif %}
+{% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %} {% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %}     {% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %} background-color: {{ getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") | raw }};{% endif %}{% endif %}{% endif %}
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-861f3aa2 {
+    font-size: 0.875rem;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-width: 0.0625rem;
+    -webkit-border-radius: 1.5625rem;
+            border-radius: 1.5625rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    {% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %} color: {{ getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") | raw }};{% endif %}
+    {% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %} background-color: {{ getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") | raw }};{% endif %}
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-861f3aa2:after {
+{% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %} {% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %}     {% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %} background-image: url("{% set src %}{{ processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) }}{% endset %}{% set imagestyle %}crop_thumbnail{% endset %}{{ cohesion_image_style(src, imagestyle)}}");{% endif %}{% endif %}{% endif %}
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    margin-left: 0.625rem;
+    content: " ";
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-861f3aa2:after {
+    {% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %} background-image: url("{% set src %}{{ processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) }}{% endset %}{% set imagestyle %}crop_thumbnail{% endset %}{{ cohesion_image_style(src, imagestyle)}}");{% endif %}
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    margin-left: 0.625rem;
+    content: " ";
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 {
+    border-width: 0.0625rem;
+    -webkit-border-radius: 0.3125rem;
+            border-radius: 0.3125rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 {
+    border-width: 0.0625rem;
+    -webkit-border-radius: 0.3125rem;
+            border-radius: 0.3125rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .coh-button {
+    text-align: center;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 0;
+    padding-bottom: 0.625rem;
+    padding-left: 0;
+    margin-bottom: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-border-radius: 0.3125rem;
+            border-radius: 0.3125rem;
+{% if getComponentFieldValue("fef74948-8b5a-4166-b651-ac1b4c4afafc") is not empty %} {% if getComponentFieldValue("fef74948-8b5a-4166-b651-ac1b4c4afafc") is not empty %}     {% if getComponentFieldValue("fef74948-8b5a-4166-b651-ac1b4c4afafc") is not empty %} background-color: {{ getComponentFieldValue("fef74948-8b5a-4166-b651-ac1b4c4afafc") | raw }};{% endif %}{% endif %}{% endif %}
+{% if getComponentFieldValue("09f77715-e9b4-4eca-b1ef-ebce89eca990") is not empty %} {% if getComponentFieldValue("09f77715-e9b4-4eca-b1ef-ebce89eca990") is not empty %}     {% if getComponentFieldValue("09f77715-e9b4-4eca-b1ef-ebce89eca990") is not empty %} color: {{ getComponentFieldValue("09f77715-e9b4-4eca-b1ef-ebce89eca990") | raw }};{% endif %}{% endif %}{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .coh-button {
+    text-align: center;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 0;
+    padding-bottom: 0.625rem;
+    padding-left: 0;
+    margin-bottom: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-border-radius: 0.3125rem;
+            border-radius: 0.3125rem;
+    {% if getComponentFieldValue("fef74948-8b5a-4166-b651-ac1b4c4afafc") is not empty %} background-color: {{ getComponentFieldValue("fef74948-8b5a-4166-b651-ac1b4c4afafc") | raw }};{% endif %}
+    {% if getComponentFieldValue("09f77715-e9b4-4eca-b1ef-ebce89eca990") is not empty %} color: {{ getComponentFieldValue("09f77715-e9b4-4eca-b1ef-ebce89eca990") | raw }};{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .coh-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 169, 224);
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .coh-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 169, 224);
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .coh-button:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .coh-button:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .active-button {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-715d2ca2 .active-button {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-c05a0747 {
+    font-size: 0.875rem;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-width: 0.0625rem;
+    -webkit-border-radius: 1.5625rem;
+            border-radius: 1.5625rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+{% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %} {% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %}     {% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %} color: {{ getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") | raw }};{% endif %}{% endif %}{% endif %}
+{% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %} {% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %}     {% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %} background-color: {{ getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") | raw }};{% endif %}{% endif %}{% endif %}
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-c05a0747 {
+    font-size: 0.875rem;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-width: 0.0625rem;
+    -webkit-border-radius: 1.5625rem;
+            border-radius: 1.5625rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    {% if getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") is not empty %} color: {{ getComponentFieldValue("e7512d4a-92a9-43a8-853a-580e62472448") | raw }};{% endif %}
+    {% if getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") is not empty %} background-color: {{ getComponentFieldValue("2fff93c8-8da9-4a6d-8446-b7dac0b239a6") | raw }};{% endif %}
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-c05a0747:after {
+{% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %} {% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %}     {% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %} background-image: url("{% set src %}{{ processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) }}{% endset %}{% set imagestyle %}crop_thumbnail{% endset %}{{ cohesion_image_style(src, imagestyle)}}");{% endif %}{% endif %}{% endif %}
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    margin-left: 0.625rem;
+    content: " ";
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-c05a0747:after {
+    {% if processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) is not empty %} background-image: url("{% set src %}{{ processtoken("[media-reference:file:7992880b-ba8d-4ad1-9914-0ad008f831d2]", {"media-reference": media_reference}, _context, true) }}{% endset %}{% set imagestyle %}crop_thumbnail{% endset %}{{ cohesion_image_style(src, imagestyle)}}");{% endif %}
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    margin-left: 0.625rem;
+    content: " ";
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3f76fe8a {
+{% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %}   {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("1d985d43-3113-4e64-ba44-49cbfee95eb7") is not empty %}   {% if getComponentFieldValue("1d985d43-3113-4e64-ba44-49cbfee95eb7") is not empty %} font-size: {{ getComponentFieldValue("1d985d43-3113-4e64-ba44-49cbfee95eb7") | raw }};{% endif %}{% endif %}
+  margin-bottom: 1.25rem;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3f76fe8a {
+    margin-left: 0;
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3f76fe8a {
+    margin-left: 0;
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3f76fe8a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3f76fe8a {
+    margin-left: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b {
+  display: none;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b h2 {
+    width: 32%;
+    margin-bottom: 0;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+{% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %}     {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b h2 {
+    margin-bottom: 0;
+    margin-left: 2%;
+    width: 32%;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b h2 {
+    width: 50%;
+    margin-bottom: 0;
+    margin-left: 0%;
+    text-align: center;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b h2 {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b h2:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-f6cdf55b h2:first-child {
+    margin-left: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-853ae98 {
+{% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %}   {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}{% endif %}
+{% if getComponentFieldValue("1d985d43-3113-4e64-ba44-49cbfee95eb7") is not empty %}   {% if getComponentFieldValue("1d985d43-3113-4e64-ba44-49cbfee95eb7") is not empty %} font-size: {{ getComponentFieldValue("1d985d43-3113-4e64-ba44-49cbfee95eb7") | raw }};{% endif %}{% endif %}
+  margin-bottom: 1.25rem;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-853ae98 {
+    margin-left: 0;
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-853ae98 {
+    margin-left: 0;
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-853ae98 {
+    margin-left: 0;
+    display: none;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-853ae98 {
+    margin-left: 0;
+    display: none;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 {
+  display: none;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 h2 {
+    width: 32%;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+{% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %}     {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 h2 {
+    width: 32%;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 h2 {
+    width: 50%;
+    margin-bottom: 0;
+    text-align: center;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 h2 {
+    width: 50%;
+    margin-bottom: 0;
+    text-align: center;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 h2:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-3893aaa3 h2:first-child {
+    margin-left: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 {
+  display: none;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 h2 {
+    width: 32%;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+{% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %}     {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 h2 {
+    width: 32%;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-count: 0;
+       -moz-column-count: 0;
+            column-count: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 h2 {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 h2 {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 h2:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-ab2bc387 h2:first-child {
+    margin-left: 0;
+  }
+}
+.{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 {
+  display: none;
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 h2 {
+    width: 32%;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+{% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %}     {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 h2 {
+    width: 32%;
+    margin-left: 2%;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 767px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 h2 {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 564px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 h2 {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 0;
+    {% if getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") is not empty %} color: {{ getComponentFieldValue("d8b87d1c-5b9d-4677-b8f4-e39be895377d") | raw }};{% endif %}
+  }
+}
+@media (max-width: 1169px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 h2:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .{{ coh_instance_class }}.coh-ce-cpt_product_comparison-73b7ebe8 h2:first-child {
+    margin-left: 0;
+  }
+}
+</style>{% endset %}{{ renderInlineStyle(compiledCSS) | raw }}

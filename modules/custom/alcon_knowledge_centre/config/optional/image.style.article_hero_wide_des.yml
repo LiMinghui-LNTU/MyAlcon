@@ -1,0 +1,15 @@
+status: true
+dependencies:
+  module:
+    - focal_point
+name: article_hero_wide_des
+label: 'Article Hero - Wide Desktop'
+effects:
+  c3ca45c7-2117-4d40-9313-f976e3a307cc:
+    uuid: c3ca45c7-2117-4d40-9313-f976e3a307cc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 500
+      crop_type: focal_point

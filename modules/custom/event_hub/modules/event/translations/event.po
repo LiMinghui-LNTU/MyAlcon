@@ -1,0 +1,109 @@
+# Translation of the Event module.
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.1\n"
+"POT-Creation-Date: 2023-11-03 06:33-0400\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: Valtech\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: modules/custom/event_hub/modules/event/event.module:125
+msgid "Event duration date"
+msgstr "Event duration date"
+
+#: modules/custom/event_hub/modules/event/event.module:126
+msgid "Combines Event Start & End date"
+msgstr "Combines Event Start & End date"
+
+#: modules/custom/event_hub/modules/event/event.module:129
+msgid "Event Full name"
+msgstr "Event Full name"
+
+#: modules/custom/event_hub/modules/event/event.module:130
+msgid "Combines Event Short name & Extended name"
+msgstr "Combines Event Short name & Extended name"
+
+#: modules/custom/event_hub/modules/event/event.module:133
+msgid "No Event Full name"
+msgstr "No Event Full name"
+
+#: modules/custom/event_hub/modules/event/event.module:134
+msgid "Shows if an Event has the Full name or not"
+msgstr "Shows if an Event has the Full name or not"
+
+#: modules/custom/event_hub/modules/event/event.module:137
+msgid "Location Region country"
+msgstr "Location Region country"
+
+#: modules/custom/event_hub/modules/event/event.module:138
+msgid "Combines Region and \"Country, City\" fields of location"
+msgstr "Combines Region and \"Country, City\" fields of location"
+
+#: modules/custom/event_hub/modules/event/event.module:179
+msgid "Register now"
+msgstr "Register now"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0
+msgid "Phone images"
+msgstr "Phone images"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0;0;0;0;0;0
+msgid "site_studio.event_hub.images"
+msgstr "site_studio.event_hub.images"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0
+msgid "Phone Landscape images"
+msgstr "Phone Landscape images"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0
+msgid "Tablet images"
+msgstr "Tablet images"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0
+msgid "Laptop images"
+msgstr "Laptop images"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0
+msgid "Desktop images"
+msgstr "Desktop images"
+
+#: modules/custom/event_hub/modules/event/event.breakpoints.yml:0
+msgid "Wide Desktop images"
+msgstr "Wide Desktop images"
+
+#: modules/custom/event_hub/modules/event/event.info.yml:0
+msgid "Event"
+msgstr "Event"
+
+#: modules/custom/event_hub/modules/event/event.info.yml:0
+msgid "Event Hub submodule for Event content type."
+msgstr "Event Hub submodule for Event content type."
+
+#: modules/custom/event_hub/modules/event/event.info.yml:0
+msgid "Event Hub"
+msgstr "Event Hub"
+
+#: modules/custom/event_hub/modules/event/templates/node--event--teaser.html.twig:31
+msgid "See more"
+msgstr "See more"
+
+#: modules/custom/event_hub/modules/event/templates/node--event--upcoming-event-teaser.html.twig:95
+msgid "View details"
+msgstr "View details"
+
+#: modules/custom/event_hub/modules/event/templates/node--event--upcoming-event-teaser.html.twig:99
+msgid "Details coming soon"
+msgstr "Details coming soon"
+
+#: modules/custom/event_hub/modules/event/templates/views-infinite-scroll-pager--events--browse-past-events-block.html.twig:11 modules/custom/event_hub/modules/event/templates/views-infinite-scroll-pager--events--upcoming-events-page-block.html.twig:11
+msgid "Load more items"
+msgstr "Load more items"
+
+#: modules/custom/event_hub/modules/event/templates/views-view-unformatted--events--browse-past-events-block.html.twig:36 modules/custom/event_hub/modules/event/templates/views-view-unformatted--events--featured-events-block.html.twig:37 modules/custom/event_hub/modules/event/templates/views-view-unformatted--events--upcoming-events-hp-block.html.twig:36
+msgid "Swipe to view next"
+msgstr "Swipe to view next"
+

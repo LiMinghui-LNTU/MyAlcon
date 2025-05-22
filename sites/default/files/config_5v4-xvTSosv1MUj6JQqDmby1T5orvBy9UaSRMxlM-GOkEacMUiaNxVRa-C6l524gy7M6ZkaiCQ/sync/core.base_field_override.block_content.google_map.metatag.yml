@@ -1,0 +1,20 @@
+uuid: 44c06e1d-2a06-4ec8-a431-01b7434a6f99
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.google_map
+  module:
+    - metatag
+id: block_content.google_map.metatag
+field_name: metatag
+entity_type: block_content
+bundle: google_map
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

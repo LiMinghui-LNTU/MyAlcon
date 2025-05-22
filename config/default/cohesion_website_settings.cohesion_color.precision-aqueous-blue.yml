@@ -1,0 +1,13 @@
+uuid: 8571f443-a946-44a4-9571-e52c532472b0
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Aqueous Blue'
+id: precision-aqueous-blue
+json_values: '{"link":true,"name":"PRECISION Aqueous Blue","uid":"precision-aqueous-blue","class":".coh-color-precision-aqueous-blue","variable":"$coh-color-precision-aqueous-blue","value":{"value":{"hex":"#6a6dcd","rgba":"rgba(106, 109, 205, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"secondary","value":"secondary"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 37

@@ -1,0 +1,25 @@
+uuid: f99d3676-2ed9-436a-aeb1-a8846f6b48e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.feed_data_page
+  module:
+    - feeds
+_core:
+  default_config_hash: qFDKP-leV1fiOTmpa0ORlTG1HMnftyOuLFWEevDKaDQ
+id: node.feed_data_page.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: feed_data_page
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

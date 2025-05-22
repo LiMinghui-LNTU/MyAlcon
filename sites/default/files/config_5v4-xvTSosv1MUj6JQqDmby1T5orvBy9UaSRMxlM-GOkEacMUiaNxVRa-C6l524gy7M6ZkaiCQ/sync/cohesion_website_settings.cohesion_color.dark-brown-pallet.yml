@@ -1,0 +1,13 @@
+uuid: cd3fcc5f-1117-4128-8cb8-e5e3e99f7e17
+langcode: en
+status: true
+dependencies: {  }
+label: 'Dark Brown Pallet'
+id: dark-brown-pallet
+json_values: '{"link":true,"value":{"value":{"hex":"#5e380a","rgba":"rgba(94, 56, 10, 1)"}},"name":"Dark Brown Pallet","uid":"dark-brown-pallet","class":".coh-color-dark-brown-pallet","variable":"$coh-color-dark-brown-pallet","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 54

@@ -1,0 +1,23 @@
+uuid: dadd1fb4-7f43-459c-8476-1354b4c81b0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_workflow
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  lightning_workflow:
+    workflow: editorial
+_core:
+  default_config_hash: OLsvRKXO6OPmJNDJD5Bknpb8XZHcdKzja2yz4kEknnQ
+name: 'Event page'
+type: event
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

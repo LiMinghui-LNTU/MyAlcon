@@ -1,0 +1,20 @@
+uuid: 53edc703-22d7-4bf4-9e2e-99996ebfd2dc
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part_3
+label: 'DMB-5789 revert part 3'
+description: 'DMB-5789 revert part 3(Hero M2 - Text with Background Image (cpt_a_hero_m2_txt_bkgrd_img))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "d9dccdcb-1b4a-4132-9b57-acb59a397eef": {
+          "type": "cohesion_component",
+          "items": {
+              "d9dccdcb-1b4a-4132-9b57-acb59a397eef": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

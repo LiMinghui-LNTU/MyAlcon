@@ -1,0 +1,20 @@
+uuid: 11745585-9cca-457b-8f0f-46d71629230b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.article_category_professional
+  module:
+    - path
+id: taxonomy_term.article_category_professional.path
+field_name: path
+entity_type: taxonomy_term
+bundle: article_category_professional
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

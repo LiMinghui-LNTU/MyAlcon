@@ -1,0 +1,22 @@
+uuid: 4113b1cc-ac0a-48f6-b022-1c899897deea
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_elements.cohesion_component.cpt_copyright
+    - cohesion_elements.cohesion_helper_category.hlp_cat_general_helpers
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+    - cohesion_website_settings.cohesion_color.white
+label: 'Veeva AEC veeva component helper'
+id: hlp_veeva_aec_veeva_component_he
+json_values: '{"canvas":[{"uid":"cpt_copyright","type":"component","title":"Copyright","enabled":true,"category":"category-10","componentId":"cpt_copyright","componentType":"container","iconColor":"custom","uuid":"ed453673-76d4-4d8b-8b7a-fb781f4b04c4","parentUid":"root","children":[]}],"mapper":{"ed453673-76d4-4d8b-8b7a-fb781f4b04c4":{}},"model":{"ed453673-76d4-4d8b-8b7a-fb781f4b04c4":{"f1eeabbc-13b6-412a-9fe9-9ce25aa0dc9e":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true},"f94a6785-ed6e-47ff-a322-ba070a4bc1bf":"auto","1cf0a4b1-31cb-4e9a-bfc3-b59d6742b8c8":{"textFormat":"cohesion"},"fe600660-4354-4b23-bfef-99db7cbab4f2":"","b23b10c4-448e-486b-b72a-44568cf616b7":"","a2731a95-050e-4f91-a614-8adff7acb8a3":"right","fdc9583a-794d-40dd-930d-4eaf85cdba79":"","3c604e02-79a5-4c59-8e1f-c1e8bb88d1f4":"","f1a8f383-baaa-47c7-82ff-392438e84ed5":"","62dee661-af6d-40e0-8bda-a34d0ec7f8d8":"","97938610-c674-4400-8bd4-76202ffc0abf":"12","a63b478a-4e8a-4db1-bd97-29a397f845dd":"\u00a9 2024 Alcon Inc. IMG-XXX-23XXXXX","c775fea4-a328-4110-89cc-383663455970":"100%","88f19929-fa2a-4c46-b9fd-a202255f1386":"right","b080c509-8ef0-4ef1-abb1-8612a1680557":"25","ed998460-299f-4834-b186-57277d2264ed":"25","ba8286d3-e64e-404c-8f15-796c8a98c32e":"25","a9ac74ab-0309-4a23-9fba-38c61c486627":"25","ccdccd92-c1e8-427a-b59c-9510afe790b5":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true},"67c04871-288e-4274-ac7e-73158cc6d433":"16","21f0e242-99fe-4abc-b2e0-f4a89ab239b8":"550","settings":{"title":"Copyright"}}},"previewModel":{"ed453673-76d4-4d8b-8b7a-fb781f4b04c4":{}},"variableFields":{"ed453673-76d4-4d8b-8b7a-fb781f4b04c4":[]}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_general_helpers
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

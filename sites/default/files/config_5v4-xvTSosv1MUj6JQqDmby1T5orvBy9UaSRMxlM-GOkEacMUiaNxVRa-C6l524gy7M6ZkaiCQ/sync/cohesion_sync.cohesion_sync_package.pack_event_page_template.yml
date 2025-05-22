@@ -1,0 +1,9 @@
+uuid: e66f4245-df3f-4528-a909-e73bfbb11f10
+langcode: en
+status: true
+dependencies: {  }
+id: pack_event_page_template
+label: 'Event page template'
+description: ''
+excluded_entity_types: '[]'
+settings: '{"53b70538-652c-40b8-a3a3-289d5b4c1696":{"type":"cohesion_content_templates","items":{"4fd52b1b-6546-47c3-afa9-e554c0c85e21":{"type":"cohesion_component"},"e172aa94-91e2-4ba5-ba46-4676c1a9f1f1":{"type":"cohesion_component"},"82486cb8-c339-4b9c-b4ec-d8e1e5ad7b96":{"type":"cohesion_component"},"a28c329c-cc0a-4ecc-81d1-04cbf9843a25":{"type":"cohesion_component_category"},"a83d6b64-d2c4-47c8-8772-715eaba653d0":{"type":"cohesion_component_category"},"5e8c8d01-aafd-4f75-ba4e-d60e461d3906":{"type":"cohesion_component_category"},"53b70538-652c-40b8-a3a3-289d5b4c1696":{"type":"cohesion_content_templates"},"4b22ccad-bbb8-4162-8b9d-ce334f1ffcd5":{"type":"cohesion_master_templates"}},"checked":true}}'

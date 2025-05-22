@@ -1,0 +1,13 @@
+uuid: c1a50abe-8362-4224-8c7a-6a1d5d45e95b
+langcode: zh-hans
+status: true
+dependencies:
+  enforced:
+    module:
+      - lightning_media_slideshow
+_core:
+  default_config_hash: 1po0dPtmem85m2UbxUrU6srsrl9uLcI9sE60FLyb2ho
+id: media_slideshow
+label: 幻灯片
+revision: 0
+description: 'A slideshow or carousel of media items.'

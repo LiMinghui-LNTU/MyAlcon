@@ -1,0 +1,17 @@
+uuid: 176557d8-39d5-4ae3-8efa-e3bd460b90ee
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: r9BvsGA9JAG5zaYqtbzbZghEK9eaUIw8HJK4NDUgT-Y
+name: thumbnail_48_48
+label: 'Thumbnail (48x48)'
+effects:
+  0a5909ef-7972-4941-bef8-da44254080b5:
+    uuid: 0a5909ef-7972-4941-bef8-da44254080b5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 48
+      height: 48
+      anchor: center-center

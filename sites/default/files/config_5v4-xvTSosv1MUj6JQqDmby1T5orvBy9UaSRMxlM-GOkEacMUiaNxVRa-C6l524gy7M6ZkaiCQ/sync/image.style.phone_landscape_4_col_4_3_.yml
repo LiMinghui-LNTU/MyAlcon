@@ -1,0 +1,19 @@
+uuid: e6d44d4d-d03c-4865-bce7-1a23f3cdd78c
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: hbcstKFKUEZBumCe7jRu5RuBr0lF83MR7aAN0tCaIhA
+name: phone_landscape_4_col_4_3_
+label: 'Phone landscape 4 Col (4:3)'
+effects:
+  9ca263cf-0eb2-41f0-bccc-ec248a935815:
+    uuid: 9ca263cf-0eb2-41f0-bccc-ec248a935815
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 312
+      height: 234
+      crop_type: focal_point

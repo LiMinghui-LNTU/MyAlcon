@@ -1,0 +1,35 @@
+uuid: 7d78820a-bea3-4233-86de-553d772489c3
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5828_kc_custom_styles
+label: 'DMB-5828 KC custom styles'
+description: ''
+excluded_entity_types: '[]'
+settings: |
+  {
+      "18aa9185-20cc-42de-a7ce-bbfef4dd4b66": {
+          "type": "cohesion_custom_style",
+          "items": {
+              "18aa9185-20cc-42de-a7ce-bbfef4dd4b66": {
+                  "type": "cohesion_custom_style"
+              }
+          },
+          "checked": true
+      },
+      "cab7f488-213b-42da-8e9b-84f698540e29": {
+          "type": "cohesion_custom_style",
+          "items": {
+              "cab7f488-213b-42da-8e9b-84f698540e29": {
+                  "type": "cohesion_custom_style"
+              },
+              "2189e38d-c7cd-45f6-bd69-f24d6c1461b6": {
+                  "type": "file"
+              },
+              "b173e970-6987-4add-87a2-a3cbf7570f8c": {
+                  "type": "file"
+              }
+          },
+          "checked": true
+      }
+  }

@@ -1,0 +1,17 @@
+uuid: 665885d1-cbe0-4055-9452-59b2fb85c8c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.layout_486ae7b3
+label: 'Master template - Boxed'
+id: 79d2f5ce
+json_values: '{"canvas":[{"type":"container","uid":"container","title":"Container","status":{"collapsed":false},"parentIndex":1,"uuid":"ce547a03-d486-494b-bee4-ed7470bddc21","parentUid":"root","children":[{"type":"item","uid":"drupal-region","title":"Region","status":{"collapsed":true},"parentIndex":4,"uuid":"6d0973a3-b786-44c7-baa3-328dd2c70015","parentUid":"container","children":[]}]}],"mapper":{"ce547a03-d486-494b-bee4-ed7470bddc21":{"settings":{"formDefinition":[{"formKey":"container-settings","children":[{"formKey":"container-width","breakpoints":[],"activeFields":[{"name":"width","active":true}]},{"formKey":"common-link-animation","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"linkAnimation","active":true},{"name":"animationType","active":true},{"name":"animationScope","active":true},{"name":"animationParent","active":true},{"name":"animationTarget","active":true},{"name":"animationScale","active":true},{"name":"animationDirection","active":true},{"name":"animationDirection","active":true},{"name":"animationDirection","active":true},{"name":"animationDistance","active":true},{"name":"animationPieces","active":true},{"name":"animationOrigin","active":true},{"name":"animationFoldHeight","active":true},{"name":"animationHorizontalFirst","active":true},{"name":"animationIterations","active":true},{"name":"animationEasing","active":true},{"name":"animationDuration","active":true}]},{"formKey":"common-link-modifier","breakpoints":[],"activeFields":[{"name":"modifier","active":true},{"name":"modifierType","active":true},{"name":"interactionScope","active":true},{"name":"interactionParent","active":true},{"name":"interactionTarget","active":true},{"name":"modifierName","active":true}]},{"formKey":"container-style","breakpoints":[],"activeFields":[{"name":"customStyle","active":true},{"name":"customStyle","active":true}]}]}],"selectorType":"topLevel","form":null,"items":[]}},"6d0973a3-b786-44c7-baa3-328dd2c70015":{}},"model":{"ce547a03-d486-494b-bee4-ed7470bddc21":{"settings":{"title":"Container","width":"fluid","customStyle":[{"customStyle":"coh-style-padding-top-bottom---medium"}],"styles":{"xl":{"settings,styles,xl,linkAnimation":[{"animationType":"none","animationScope":"document","animationScale":null,"animationDirection":"up","animationOrigin":"top,center","animationHorizontalFirst":false,"animationEasing":"swing"}]}},"settings":{"width":"fluid","customStyle":[{"customStyle":""}]}},"context-visibility":{"contextVisibility":{"condition":"ALL"}},"styles":{"settings":{"element":"container"}},"isVariableMode":false},"6d0973a3-b786-44c7-baa3-328dd2c70015":{"context-visibility":{"contextVisibility":{"condition":"ALL"}},"styles":{"settings":{"element":"region"}},"settings":{"region":{"theme":"cohesion_theme","type":"content"},"title":"Content region"}}},"previewModel":{"ce547a03-d486-494b-bee4-ed7470bddc21":{}},"variableFields":{"ce547a03-d486-494b-bee4-ed7470bddc21":[]},"meta":{"fieldHistory":[]}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+custom: false
+twig_template: page--cohesion--79d2f5ce
+default: false

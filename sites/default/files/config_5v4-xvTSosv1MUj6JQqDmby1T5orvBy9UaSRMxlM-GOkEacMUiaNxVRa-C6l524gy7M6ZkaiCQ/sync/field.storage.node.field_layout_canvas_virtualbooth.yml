@@ -1,0 +1,22 @@
+uuid: a63d2e6e-d4d2-4d6b-8c56-55d30f8705aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion_elements
+    - node
+_core:
+  default_config_hash: jnSBpjbxi0AMsWRN0Xt4909HXqaSVxuHYPe6MkV5-l8
+id: node.field_layout_canvas_virtualbooth
+field_name: field_layout_canvas_virtualbooth
+entity_type: node
+type: cohesion_entity_reference_revisions
+settings:
+  target_type: cohesion_layout
+module: cohesion_elements
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

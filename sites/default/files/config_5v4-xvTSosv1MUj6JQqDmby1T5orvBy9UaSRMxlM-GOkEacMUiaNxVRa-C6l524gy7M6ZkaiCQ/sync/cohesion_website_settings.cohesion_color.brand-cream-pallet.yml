@@ -1,0 +1,13 @@
+uuid: 9016ca6b-0a16-4792-8527-05ca31f9039b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Brand - Cream Pallet'
+id: brand-cream-pallet
+json_values: '{"link":true,"name":"Brand - Cream Pallet","uid":"brand-cream-pallet","class":".coh-color-brand-cream-pallet","variable":"$coh-color-brand-cream-pallet","value":{"value":{"hex":"#efd19f","rgba":"rgba(239, 209, 159, 1)"}},"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 21

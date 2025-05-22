@@ -1,0 +1,32 @@
+uuid: 5441b80c-1d8f-4412-8c1d-3cffe99e14e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.practitioner_details
+  module:
+    - cohesion
+    - webform
+  theme:
+    - cohesion_theme
+id: webform_2
+theme: cohesion_theme
+region: dx8_hidden
+weight: 12
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Practitioner Form'
+  label_display: '0'
+  provider: webform
+  webform_id: practitioner_details
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    context_mapping: {  }
+    using_master_template: 0

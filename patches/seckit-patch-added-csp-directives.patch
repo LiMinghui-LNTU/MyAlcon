@@ -1,0 +1,161 @@
+diff --git a/config/install/seckit.settings.yml b/config/install/seckit.settings.yml
+index 65618dd..f1dd0bd 100644
+--- a/config/install/seckit.settings.yml
++++ b/config/install/seckit.settings.yml
+@@ -7,6 +7,12 @@ seckit_xss:
+     report-only: FALSE
+     default-src: ''
+     script-src: ''
++    script-src-elem: ''
++    script-src-attr: ''
++    style-src: ''
++    style-src-elem: ''
++    style-src-attr: ''
++    worker-src: ''
+     object-src: ''
+     img-src: ''
+     media-src: ''
+diff --git a/config/schema/seckit.schema.yml b/config/schema/seckit.schema.yml
+index 40d060a..9ad3732 100644
+--- a/config/schema/seckit.schema.yml
++++ b/config/schema/seckit.schema.yml
+@@ -32,6 +32,21 @@ seckit.settings:
+             script-src:
+               type: string
+               label: 'Script src'
++            script-src-elem:
++              type: string
++              label: 'Script src elem'
++            script-src-attr:
++              type: string
++              label: 'Script src attr'
++            style-src-elem:
++              type: string
++              label: 'Style src elem'
++            style-src-attr:
++              type: string
++              label: 'Style src attr'
++            worker-src:
++              type: string
++              label: 'Worker src'
+             object-src:
+               type: string
+               label: 'Object src'
+diff --git a/js/seckit.listener.js b/js/seckit.listener.js
+index 72e76fd..441039a 100644
+--- a/js/seckit.listener.js
++++ b/js/seckit.listener.js
+@@ -103,6 +103,11 @@ function _seckit_csp_remove_attributes(context) {
+     $('#edit-seckit-xss-csp-font-src', context).removeAttr('disabled');
+     $('#edit-seckit-xss-csp-connect-src', context).removeAttr('disabled');
+     $('#edit-seckit-xss-csp-report-uri', context).removeAttr('disabled');
++    $('#edit-seckit-xss-csp-script-src-elem', context).removeAttr('disabled');
++    $('#edit-seckit-xss-csp-script-src-attr', context).removeAttr('disabled');
++    $('#edit-seckit-xss-csp-style-src-elem', context).removeAttr('disabled');
++    $('#edit-seckit-xss-csp-style-src-attr', context).removeAttr('disabled');
++    $('#edit-seckit-xss-csp-worker-src', context).removeAttr('disabled');
+   })(jQuery);
+ }
+ 
+@@ -123,6 +128,11 @@ function _seckit_csp_add_attributes(context) {
+     $('#edit-seckit-xss-csp-font-src', context).attr('disabled', 'disabled');
+     $('#edit-seckit-xss-csp-connect-src', context).attr('disabled', 'disabled');
+     $('#edit-seckit-xss-csp-report-uri', context).attr('disabled', 'disabled');
++    $('#edit-seckit-xss-csp-script-src-elem', context).attr('disabled', 'disabled');
++    $('#edit-seckit-xss-csp-script-src-attr', context).attr('disabled', 'disabled');
++    $('#edit-seckit-xss-csp-style-src-elem', context).attr('disabled', 'disabled');
++    $('#edit-seckit-xss-csp-style-src-attr', context).attr('disabled', 'disabled');
++    $('#edit-seckit-xss-csp-worker-src', context).attr('disabled', 'disabled');
+   })(jQuery);
+ }
+ 
+diff --git a/src/EventSubscriber/SecKitEventSubscriber.php b/src/EventSubscriber/SecKitEventSubscriber.php
+index ab98f92..632b6f4 100644
+--- a/src/EventSubscriber/SecKitEventSubscriber.php
++++ b/src/EventSubscriber/SecKitEventSubscriber.php
+@@ -212,6 +212,11 @@ class SecKitEventSubscriber implements EventSubscriberInterface {
+     $csp_connect_src = $this->config->get('seckit_xss.csp.connect-src');
+     $csp_report_uri = $this->config->get('seckit_xss.csp.report-uri');
+     $csp_upgrade_req = $this->config->get('seckit_xss.csp.upgrade-req');
++    $csp_script_src_elem = $this->config->get('seckit_xss.csp.script-src-elem');
++    $csp_script_src_attr = $this->config->get('seckit_xss.csp.script-src-attr');
++    $csp_style_src_elem = $this->config->get('seckit_xss.csp.style-src-elem');
++    $csp_style_src_attr = $this->config->get('seckit_xss.csp.style-src-attr');
++    $csp_worker_src = $this->config->get('seckit_xss.csp.worker-src');
+     // $csp_policy_uri = $this->config->get('seckit_xss.csp.policy-uri');
+     // Prepare directives.
+     $directives = [];
+@@ -255,6 +260,22 @@ class SecKitEventSubscriber implements EventSubscriberInterface {
+     if ($csp_connect_src) {
+       $directives[] = "connect-src $csp_connect_src";
+     }
++    if ($csp_script_src_elem) {
++      $nonce = base64_encode(random_bytes(16));
++      $directives[] = "script-src-elem 'nonce-$nonce' $csp_script_src_elem";
++    }
++    if ($csp_script_src_attr) {
++      $directives[] = "script-src-attr $csp_script_src_attr";
++    }
++    if ($csp_style_src_elem) {
++      $directives[] = "style-src-elem $csp_style_src_elem";
++    }
++    if ($csp_style_src_attr) {
++      $directives[] = "style-src-attr $csp_style_src_attr";
++    }
++    if ($csp_worker_src) {
++      $directives[] = "worker-src $csp_worker_src";
++    }
+     if ($csp_report_uri) {
+       $base_path = '';
+       if (!UrlHelper::isExternal($csp_report_uri)) {
+diff --git a/src/Form/SecKitSettingsForm.php b/src/Form/SecKitSettingsForm.php
+index f908077..db3cc61 100644
+--- a/src/Form/SecKitSettingsForm.php
++++ b/src/Form/SecKitSettingsForm.php
+@@ -202,6 +202,46 @@ class SecKitSettingsForm extends ConfigFormBase {
+       '#title' => 'script-src',
+       '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
+     ];
++    // CSP script-src-elem directive.
++    $form['seckit_xss']['csp']['script-src-elem'] = [
++      '#type' => 'textfield',
++      '#maxlength' => 1024,
++      '#default_value' => $config->get('seckit_xss.csp.script-src-elem'),
++      '#title' => 'script-src-elem',
++      '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
++    ];
++    // CSP script-src-attr directive.
++    $form['seckit_xss']['csp']['script-src-attr'] = [
++      '#type' => 'textfield',
++      '#maxlength' => 1024,
++      '#default_value' => $config->get('seckit_xss.csp.script-src-attr'),
++      '#title' => 'script-src-attr',
++      '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
++    ];
++    // CSP style-src-elem directive.
++    $form['seckit_xss']['csp']['style-src-elem'] = [
++      '#type' => 'textfield',
++      '#maxlength' => 1024,
++      '#default_value' => $config->get('seckit_xss.csp.style-src-elem'),
++      '#title' => 'style-src-elem',
++      '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
++    ];
++    // CSP style-src-attr directive.
++    $form['seckit_xss']['csp']['style-src-attr'] = [
++      '#type' => 'textfield',
++      '#maxlength' => 1024,
++      '#default_value' => $config->get('seckit_xss.csp.style-src-attr'),
++      '#title' => 'style-src-attr',
++      '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
++    ];
++    // CSP worker-src directive.
++    $form['seckit_xss']['csp']['worker-attr'] = [
++      '#type' => 'textfield',
++      '#maxlength' => 1024,
++      '#default_value' => $config->get('seckit_xss.csp.worker-attr'),
++      '#title' => 'worker-attr',
++      '#description' => $this->t('Specify trustworthy sources for &lt;script&gt; elements.'),
++    ];
+     // CSP object-src directive.
+     $form['seckit_xss']['csp']['object-src'] = [
+       '#type' => 'textfield',

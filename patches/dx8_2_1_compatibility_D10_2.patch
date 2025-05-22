@@ -1,0 +1,267 @@
+diff --git a/dx8/modules/cohesion_sync/drush.services.yml b/dx8/modules/cohesion_sync/drush.services.yml
+index c982190..a8962c6 100644
+--- a/dx8/modules/cohesion_sync/drush.services.yml
++++ b/dx8/modules/cohesion_sync/drush.services.yml
+@@ -20,12 +20,20 @@ services:
+   cohesion_sync.commands.import:
+     class: \Drupal\cohesion_sync\Commands\CohesionSyncImportCommand
+     arguments:
+-      - '@config.import.commands'
+       - '@config.storage'
+       - '@cohesion.rebuild_inuse_batch'
+       - '@event_dispatcher'
+       - '@cohesion_sync.sync_import'
+       - '@cohesion_usage.update_manager'
++      - '@config.manager'
++      - '@lock'
++      - '@config.typed'
++      - '@module_handler'
++      - '@module_installer'
++      - '@theme_handler'
++      - '@string_translation'
++      - '@extension.list.module'
++      - '@cache.config'
+     tags:
+       - { name: drush.command }
+ 
+diff --git a/dx8/modules/cohesion_sync/src/Commands/CohesionSyncImportCommand.php b/dx8/modules/cohesion_sync/src/Commands/CohesionSyncImportCommand.php
+index aa7d687..2d46f3e 100644
+--- a/dx8/modules/cohesion_sync/src/Commands/CohesionSyncImportCommand.php
++++ b/dx8/modules/cohesion_sync/src/Commands/CohesionSyncImportCommand.php
+@@ -14,12 +14,21 @@ use Drupal\cohesion_sync\Exception\UnsupportedFileFormatException;
+ use Drupal\cohesion_sync\Services\SyncImport;
+ use Drupal\cohesion_website_settings\Controller\WebsiteSettingsController;
+ use Drupal\config\StorageReplaceDataWrapper;
++use Drupal\Core\Cache\CacheBackendInterface;
++use Drupal\Core\Config\ConfigImporter;
++use Drupal\Core\Config\ConfigManagerInterface;
+ use Drupal\Core\Config\StorageComparerInterface;
+ use Drupal\Core\Config\StorageInterface;
++use Drupal\Core\Config\TypedConfigManagerInterface;
++use Drupal\Core\Extension\ModuleExtensionList;
++use Drupal\Core\Extension\ModuleHandlerInterface;
++use Drupal\Core\Extension\ModuleInstallerInterface;
++use Drupal\Core\Extension\ThemeHandlerInterface;
++use Drupal\Core\Lock\LockBackendInterface;
+ use Drupal\Core\Site\Settings;
++use Drupal\Core\StringTranslation\TranslationInterface;
+ use Drush\Commands\DrushCommands;
+ use Drush\Drupal\Commands\config\ConfigCommands;
+-use Drush\Drupal\Commands\config\ConfigImportCommands;
+ use Drush\Exceptions\UserAbortException;
+ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+ 
+@@ -37,13 +46,6 @@ class CohesionSyncImportCommand extends DrushCommands {
+    */
+   protected $configStorage;
+ 
+-  /**
+-   * Drush ConfigImportsCommands service.
+-   *
+-   * @var \Drush\Drupal\Commands\config\ConfigImportCommands
+-   */
+-  protected $configImportCommands;
+-
+   /**
+    * RebuildInUseBatch.
+    *
+@@ -67,7 +69,7 @@ class CohesionSyncImportCommand extends DrushCommands {
+ 
+ 
+   /**
+-   * The usage update manager service
++   * The usage update manager service.
+    *
+    * @var \Drupal\cohesion\UsageUpdateManager
+    */
+@@ -76,8 +78,6 @@ class CohesionSyncImportCommand extends DrushCommands {
+   /**
+    * CohesionSyncImportCommand constructor.
+    *
+-   * @param \Drush\Drupal\Commands\config\ConfigImportCommands $configImportCommands
+-   *   Drush config import commands service.
+    * @param \Drupal\Core\Config\StorageInterface $configStorage
+    *   Config storage service.
+    * @param \Drupal\cohesion\Services\RebuildInuseBatch $rebuildInuseBatch
+@@ -87,23 +87,57 @@ class CohesionSyncImportCommand extends DrushCommands {
+    * @param \Drupal\cohesion_sync\Services\SyncImport $sync_import;
+    *   The sync import service.
+    * @param \Drupal\cohesion\UsageUpdateManager $usageUpdateManager
+-   *   The usage update manager
++   *   The usage update manager.
++   * @param \Drupal\Core\Config\ConfigManagerInterface $configManager
++   *   The config manager interface service.
++   * @param \Drupal\Core\Lock\LockBackendInterface $lock
++   *   The Lock backend interface service.
++   * @param \Drupal\Core\Config\TypedConfigManagerInterface $typedConfig
++   *   The types config manager interface service.
++   * @param \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler
++   *   The Moduler handler service.
++   * @param \Drupal\Core\Extension\ModuleInstallerInterface $moduleInstaller
++   *   The module installer service.
++   * @param \Drupal\Core\Extension\ThemeHandlerInterface $themeHandler
++   *   The Theme handler service.
++   * @param \Drupal\Core\StringTranslation\TranslationInterface $stringTranslation
++   *   The Translation interface service.
++   * @param \Drupal\Core\Extension\ModuleExtensionList $extensionListModule
++   *   The extension list module service.
++   * @param \Drupal\Core\Cache\CacheBackendInterface $configCache
++   *   The config cache service.
+    */
+   public function __construct(
+-    ConfigImportCommands $configImportCommands,
+     StorageInterface $configStorage,
+     RebuildInuseBatch $rebuildInuseBatch,
+     EventDispatcherInterface $dispatcher,
+     SyncImport $sync_import,
+-    UsageUpdateManager $usageUpdateManager
++    UsageUpdateManager $usageUpdateManager,
++    ConfigManagerInterface $configManager,
++    LockBackendInterface $lock,
++    TypedConfigManagerInterface $typedConfig,
++    ModuleHandlerInterface $moduleHandler,
++    ModuleInstallerInterface $moduleInstaller,
++    ThemeHandlerInterface $themeHandler,
++    TranslationInterface $stringTranslation,
++    ModuleExtensionList $extensionListModule,
++    CacheBackendInterface $configCache,
+   ) {
+     parent::__construct();
+-    $this->configImportCommands = $configImportCommands;
+     $this->configStorage = $configStorage;
+     $this->rebuildInuseBatch = $rebuildInuseBatch;
+     $this->dispatcher = $dispatcher;
+     $this->syncImport = $sync_import;
+     $this->usageUpdateManager = $usageUpdateManager;
++    $this->configManager = $configManager;
++    $this->lock = $lock;
++    $this->typedConfigManager = $typedConfig;
++    $this->moduleHandler = $moduleHandler;
++    $this->moduleInstaller = $moduleInstaller;
++    $this->themeHandler = $themeHandler;
++    $this->stringTranslation = $stringTranslation;
++    $this->moduleExtensionList = $extensionListModule;
++    $this->configCache = $configCache;
+   }
+ 
+   /**
+@@ -149,7 +183,8 @@ class CohesionSyncImportCommand extends DrushCommands {
+     $files = $source_storage->getFiles();
+     try {
+       $this->handleFileSync($files, $path);
+-    } catch (\Exception $e) {
++    }
++    catch (\Exception $e) {
+       $this->yell($e->getMessage());
+       return CommandResult::exitCode(self::EXIT_FAILURE);
+     }
+@@ -183,7 +218,7 @@ class CohesionSyncImportCommand extends DrushCommands {
+           throw new UserAbortException();
+         }
+       }
+-      drush_op([$this->configImportCommands, 'doImport'], $storage_comparer);
++      drush_op([$this, 'doImport'], $storage_comparer);
+     }
+     else {
+       $this->yell('There are no new or updated config entities to import.');
+@@ -200,7 +235,7 @@ class CohesionSyncImportCommand extends DrushCommands {
+    * @param array $change_list
+    *   List of changes.
+    * @param array $in_use_list
+-   *  List of entities to rebuild the "in use" (coh_usage) table for
++   *   List of entities to rebuild the "in use" (coh_usage) table for.
+    *
+    * @return \Consolidation\AnnotatedCommand\CommandResult
+    *   Returns success regardless if the rebuild is required or not.
+@@ -228,7 +263,7 @@ class CohesionSyncImportCommand extends DrushCommands {
+       $this->rebuildInuseBatch->run($rebuild_list);
+     }
+ 
+-    if(!empty($in_use_list)) {
++    if (!empty($in_use_list)) {
+       $batch = [
+         'title' => t('Rebuilding in use entities'),
+         'operations' => [
+@@ -274,6 +309,7 @@ class CohesionSyncImportCommand extends DrushCommands {
+    * @param array $data
+    *
+    * @return void
++   *
+    * @throws \Exception
+    */
+   protected function validatePackageFile(array $data, string $filename) {
+@@ -296,4 +332,74 @@ class CohesionSyncImportCommand extends DrushCommands {
+     return (bool) preg_match(self::LEGACY_FORMAT_PATTERN, $filename);
+   }
+ 
++  /**
++   * @param \Drupal\Core\Config\StorageComparerInterface $storage_comparer
++   *
++   * @return void
++   * @throws \Exception
++   */
++  public function doImport(StorageComparerInterface $storage_comparer): void {
++    $config_importer = new ConfigImporter(
++      $storage_comparer,
++      $this->dispatcher,
++      $this->configManager,
++      $this->lock,
++      $this->typedConfigManager,
++      $this->moduleHandler,
++      $this->moduleInstaller,
++      $this->themeHandler,
++      $this->stringTranslation,
++      $this->moduleExtensionList
++    );
++    if ($config_importer->alreadyImporting()) {
++      $this->logger()->warning('Another request may be synchronizing configuration already.');
++    }
++    else {
++      try {
++        // This is the contents of \Drupal\Core\Config\ConfigImporter::import.
++        // Copied here so we can log progress.
++        if ($config_importer->hasUnprocessedConfigurationChanges()) {
++          $sync_steps = $config_importer->initialize();
++          foreach ($sync_steps as $step) {
++            $context = [];
++            do {
++              $config_importer->doSyncStep($step, $context);
++              if (isset($context['message'])) {
++                $this->logger()->notice(str_replace('Synchronizing', 'Synchronized', (string) $context['message']));
++              }
++
++              // Installing and uninstalling modules might trigger
++              // batch operations. Let's process them here.
++              // @see \Drush\Commands\pm\PmCommands::install()
++              if ($step === 'processExtensions' && batch_get()) {
++                drush_backend_batch_process();
++              }
++            } while ($context['finished'] < 1);
++          }
++          // Clear the cache of the active config storage.
++          $this->configCache->deleteAll();
++        }
++        if ($config_importer->getErrors()) {
++          throw new ConfigException('Errors occurred during import');
++        }
++        else {
++          $this->logger()->success('The configuration was imported successfully.');
++        }
++      }
++      catch (ConfigException $e) {
++        // Return a negative result for UI purposes. We do not differentiate
++        // between an actual synchronization error and a failed lock, because
++        // concurrent synchronizations are an edge-case happening only when
++        // multiple developers or site builders attempt to do it without
++        // coordinating.
++        $message = 'The import failed due to the following reasons:' . "\n";
++        $message .= implode("\n", $config_importer->getErrors());
++
++        $variables = Error::decodeException($e);
++        $this->logger()->log(LogLevel::ERROR, $message, $variables);
++        throw new \Exception($message, $e->getCode(), $e);
++      }
++    }
++  }
++
+ }

@@ -1,0 +1,14 @@
+uuid: 5d8fa257-abc9-4f8d-a62b-03d2b65d7f8f
+langcode: en
+status: true
+dependencies: {  }
+label: FORMS
+id: cpt_cat_forms
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-8
+weight: -1

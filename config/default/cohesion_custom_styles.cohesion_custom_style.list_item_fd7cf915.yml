@@ -1,0 +1,21 @@
+uuid: d6a84275-2615-4f93-b631-d080b893fc59
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.list_item_df0fe2c3
+    - cohesion_website_settings.cohesion_icon_library.icomoon
+label: 'Social icon - facebook'
+id: list_item_fd7cf915
+json_values: '{"preview":{"text":"<ul>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n<\/ul>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"li,dd,dt","class":"","combinator":"","pseudo":""},"4fb2903f-2c9f-407a-95ca-33918005d5b0":{"settings":{"element":"","class":"","combinator":"","pseudo":":before"},"styles":{"xl":{"content-icon":{"contentIcon":{}}},"xs":{"content-icon":{"contentIcon":{"value":{"fontFamily":"icomoon","iconName":"61594"}}}}}},"72b611ca-8068-46a7-8635-0df94fb9aea7":{"settings":{"element":"a","class":"","combinator":"","pseudo":""},"styles":{}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":"a","type":"container","items":[{"title":":before","type":"container","items":[],"selectorType":"pseudo","formDefinition":[{"formKey":"content","children":[{"formKey":"icon","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"contentIcon","active":true}]}]}],"uuid":"4fb2903f-2c9f-407a-95ca-33918005d5b0"}],"selectorType":"child","model":"a","originalLabel":"Child selector","formDefinition":[],"uuid":"72b611ca-8068-46a7-8635-0df94fb9aea7"}],"title":"List item","formDefinition":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-social-icon---facebook
+custom_style_type: list_item
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-social-icon
+weight: 330

@@ -1,0 +1,21 @@
+uuid: a5b96dee-a6b3-4664-bf46-779f58e9b249
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gated_content_sfdc_campaign
+  module:
+    - text
+id: taxonomy_term.gated_content_sfdc_campaign.description
+field_name: description
+entity_type: taxonomy_term
+bundle: gated_content_sfdc_campaign
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

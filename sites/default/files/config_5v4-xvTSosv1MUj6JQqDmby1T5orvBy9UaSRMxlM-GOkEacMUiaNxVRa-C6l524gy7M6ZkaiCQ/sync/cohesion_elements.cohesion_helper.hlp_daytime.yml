@@ -1,0 +1,29 @@
+uuid: dd004165-25fd-4802-b00c-b1f199e0e1c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.63b187c4
+    - cohesion_custom_styles.cohesion_custom_style.7bb1adf4
+    - cohesion_custom_styles.cohesion_custom_style.9877f87e
+    - cohesion_custom_styles.cohesion_custom_style.e5474089
+    - cohesion_elements.cohesion_component.cpt_a_img_img
+    - cohesion_elements.cohesion_helper_category.hlp_cat_uncategorized
+  content:
+    - 'file:file:135db2dd-54af-4854-b973-32c9b4500352'
+    - 'file:file:8b1f4a9f-590e-411d-9ef8-63e653f8899c'
+    - 'file:file:ccad46b8-1259-4c94-8851-2cc002a11840'
+    - 'file:file:f71aa860-1f9e-4d25-8a54-1d3b3e7f7311'
+label: Daytime
+id: hlp_daytime
+json_values: '{"canvas":[{"uid":"cpt_a_img_img","type":"component","title":"Image and Image","enabled":true,"category":"category-2","componentId":"cpt_a_img_img","componentType":"container","uuid":"70cfc1c4-19a2-41d8-951d-73ed6de5440c","parentUid":"root","children":[]}],"mapper":{},"model":{"70cfc1c4-19a2-41d8-951d-73ed6de5440c":{"settings":{"title":"Offer Your Patients Excellent Vision at Every Meaningful Distance"},"fbf42f6e-1275-42f2-a8ab-09b61bd6a46a":{"text":"<h3 class=\"text-align-center\" style=\"font-weight: 100;\">Offer Your Patients Excellent Vision at Every Meaningful Distance<sup>1<\/sup><\/h3>\n\n<p>&nbsp;<\/p>\n","textFormat":"cohesion"},"18a56196-fd7a-4a8f-9fab-1bc8592c8f53":{"text":"","textFormat":"cohesion"},"09e0370c-2837-4666-8082-d6f5fd983976":"[media-reference:file:ccad46b8-1259-4c94-8851-2cc002a11840]","fa943a71-7115-44c6-a801-a6ab79c1be38":"Coffee shop with a view from the counter of coffee machines and other ingredients. A laptop is open on the countertop and an individual\u2019s hand holds up a coffee mug to the right of the laptop screen.The image has 3 circles that zoom in on different aspects of the image. One of the circles is on the laptop screen to showcase an intermediate view with the Monofocal lens. Another circle is on the coffee mug to showcase a near view with the Monofocal lens. The last circle is on the caf\u00e9 menu board, to showcase a far view with the Monofocal lens.","93feb980-19cc-43a9-b117-28c961fc5681":"[media-reference:file:8b1f4a9f-590e-411d-9ef8-63e653f8899c]","dd108c42-fed9-496c-b8f7-f19e11d311bb":"[media-reference:file:135db2dd-54af-4854-b973-32c9b4500352]","d9e589df-d1e4-4b1d-8e80-5080ebe3f754":"Coffee shop with a view from the counter of coffee machines and other ingredients. A laptop is open on the countertop and an individual\u2019s hand holds up a coffee mug to the right of the laptop screen. The image has 3 circles that zoom in on different aspects of the image. One of the circles is on the laptop screen to showcase an intermediate view with the AcrySof IQ PanOptix lens. Another circle is on the coffee mug to showcase a near view with the AcrySof IQ PanOptix lens. The last circle is on the caf\u00e9 menu board, to showcase a far view with the AcrySof IQ PanOptix lens","3cc839ef-8b08-4bd9-a029-65cf8eae6f9e":"[media-reference:file:f71aa860-1f9e-4d25-8a54-1d3b3e7f7311]","10ebf2b2-1603-49b3-9868-4a78604c646c":"coh-style-a-max-width-wide","78f215eb-9636-4bc6-888f-d1373b334e73":"coh-style-a-image-size-full-contain","76da65e4-f4be-41ea-bf8f-1d6a5e0932ab":"center","656489cc-5814-47d0-b6e1-f280a3467063":"center","65bf0697-8f46-4269-8034-b15f7c1c8bcb":true,"bce4b4bf-e68b-46ac-8dcf-e1e541b5a360":"center","66fde242-e554-495e-8ca8-74ad4e50601b":"center","f60fa6f9-e382-4890-90d0-e4124272cefb":true,"4984fd11-8788-4299-a9b4-345ce1561b06":"solid","c52a9aa1-d68e-4979-a79e-7b464850c403":"","3158c80f-0ab6-46c4-aac6-5e1fb42aa3b6":"","3ef120a6-e6e9-4446-a455-74182dbb38bb":"","e94858d8-ef1e-4439-a07f-3d482e6b8282":"","bde6420b-7d2d-40dc-a30b-442c54be9503":"","24e3e165-0f70-41c3-9a27-df81acad9294":"","3cc1ed50-9f6a-4442-b094-b55325fee7a8":"coh-style-a-padding-left-large","ea779937-edfb-40ff-bc88-5641299452f2":"coh-style-a-padding-right-large"}},"previewModel":{"70cfc1c4-19a2-41d8-951d-73ed6de5440c":{}},"variableFields":{"70cfc1c4-19a2-41d8-951d-73ed6de5440c":[]}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_uncategorized
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

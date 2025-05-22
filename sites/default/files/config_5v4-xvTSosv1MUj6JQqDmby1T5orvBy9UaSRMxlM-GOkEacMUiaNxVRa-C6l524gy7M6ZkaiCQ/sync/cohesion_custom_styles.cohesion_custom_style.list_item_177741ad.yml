@@ -1,0 +1,21 @@
+uuid: f695dfd1-1ce0-4908-8523-e2e9d8d38f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.list_item_df0fe2c3
+    - cohesion_website_settings.cohesion_icon_library.icomoon
+label: 'Social icon - linkedin'
+id: list_item_177741ad
+json_values: '{"preview":{"text":"<ul>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n\t<li class=\"coh-preview coh-style-social-icon\"><a>&nbsp;<\/a><\/li>\n<\/ul>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"li,dd,dt","class":"","combinator":"","pseudo":""},"67a8e24a-18ec-41f1-8326-7c276e017532":{"settings":{"element":"","class":"","combinator":"","pseudo":":before"},"styles":{"xl":{"content-icon":{"contentIcon":{}}},"xs":{"content-icon":{"contentIcon":{"value":{"fontFamily":"icomoon","iconName":"61665"}}}}}},"c55a8b72-f52a-467b-a725-f32af9ba2878":{"settings":{"element":"a","class":"","combinator":"","pseudo":""},"styles":{}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":"a","type":"container","items":[{"title":":before","type":"container","items":[],"selectorType":"pseudo","formDefinition":[{"formKey":"content","children":[{"formKey":"icon","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"contentIcon","active":true}]}]}],"uuid":"67a8e24a-18ec-41f1-8326-7c276e017532"}],"selectorType":"child","model":"a","originalLabel":"Child selector","formDefinition":[],"uuid":"c55a8b72-f52a-467b-a725-f32af9ba2878"}],"title":"List item","formDefinition":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-social-icon---linkedin
+custom_style_type: list_item
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: .coh-style-social-icon
+weight: 331

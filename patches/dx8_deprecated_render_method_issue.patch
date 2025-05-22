@@ -1,0 +1,36 @@
+diff --git a/dx8/modules/cohesion_elements/src/ComponentContentListBuilder.php b/dx8/modules/cohesion_elements/src/ComponentContentListBuilder.php
+index 140b7fb..03dbc19 100644
+--- a/dx8/modules/cohesion_elements/src/ComponentContentListBuilder.php
++++ b/dx8/modules/cohesion_elements/src/ComponentContentListBuilder.php
+@@ -22,6 +22,13 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
+  */
+ class ComponentContentListBuilder extends EntityListBuilder {
+ 
++  /**
++   * The renderer.
++   *
++   * @var \Drupal\Core\Render\RendererInterface
++   */
++  private RendererInterface $renderer;
++
+   /**
+    * The date formatter service.
+    *
+@@ -54,7 +61,7 @@ class ComponentContentListBuilder extends EntityListBuilder {
+ 
+     $this->dateFormatter = $date_formatter;
+     $this->redirectDestination = $redirect_destination;
+-    $this->render = $renderer;
++    $this->renderer = $renderer;
+   }
+ 
+   /**
+@@ -187,7 +194,7 @@ class ComponentContentListBuilder extends EntityListBuilder {
+       ];
+     }
+ 
+-    return $this->render->render($markup);
++    return $this->renderer->render($markup);
+   }
+ 
+ }

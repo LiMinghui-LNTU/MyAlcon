@@ -1,0 +1,25 @@
+uuid: 58ff044e-3a5a-4ce0-b4c6-76d1e1cf924e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_featured
+    - node.type.event
+_core:
+  default_config_hash: 8Zo9C9x3M5Ng_b163xfJRaol-aFrlX-7oafhM8WoVIY
+id: node.event.field_event_featured
+field_name: field_event_featured
+entity_type: node
+bundle: event
+label: Featured
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: 22bb00c2-f539-4267-92ec-63ca14009505
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion
+    - language
+  theme:
+    - cohesion_theme
+id: languageswitcher_2
+theme: cohesion_theme
+region: dx8_hidden
+weight: 4
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: 0
+    context_mapping: {  }
+    using_master_template: 0
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

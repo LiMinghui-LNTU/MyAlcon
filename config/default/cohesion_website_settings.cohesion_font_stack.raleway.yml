@@ -1,0 +1,13 @@
+uuid: 26b2851b-0c57-4b50-8733-3f2d5eafefe5
+langcode: en
+status: true
+dependencies: {  }
+label: Raleway
+id: raleway
+json_values: '{"inuse":true,"systemfont":false,"link":true,"name":"Raleway","uid":"raleway","class":".coh-font-raleway","variable":"$coh-font-raleway","fontStack":"''Raleway'', sans-serif","smoothing":{"firefox":true,"webkit":true}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fontStacks

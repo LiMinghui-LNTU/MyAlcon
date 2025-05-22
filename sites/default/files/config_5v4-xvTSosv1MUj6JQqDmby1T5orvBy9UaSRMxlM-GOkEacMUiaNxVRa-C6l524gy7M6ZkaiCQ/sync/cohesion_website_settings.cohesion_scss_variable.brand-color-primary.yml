@@ -1,0 +1,13 @@
+uuid: 791332cb-428d-4461-8786-9118a2c9b0e1
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: brand-color-primary
+json_values: '{"uid":"brand-color-primary","value":"#003595","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 4

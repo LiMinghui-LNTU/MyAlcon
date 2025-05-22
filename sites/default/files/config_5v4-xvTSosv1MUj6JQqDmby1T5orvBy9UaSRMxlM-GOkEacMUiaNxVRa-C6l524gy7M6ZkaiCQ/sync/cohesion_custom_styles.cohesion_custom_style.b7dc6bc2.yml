@@ -1,0 +1,18 @@
+uuid: e6b7c281-dfaf-4cb1-b95b-308319bf2d3b
+langcode: en
+status: true
+dependencies: {  }
+label: 'media size - with Padding'
+id: b7dc6bc2
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"display":{},"max-height":{"value":"100%"},"height":{"value":"auto"},"custom-css":[{"customCssProperty":{"value":""},"customCss":{"value":""}}],"padding":{"padding-equal":{"value":"3rem"}},"min-height":{"value":"22rem"}},"ps":{"min-height":{"value":"100%"},"max-height":{"value":"100%"},"height":{"value":"100%"}},"sm":{"min-height":{"value":"100%"},"max-height":{"value":"100%"},"height":{"value":"100%"}}},"ac429ee1-4d41-4c00-9aa9-3298b6a720a1":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"custom-css":[{"customCssProperty":{"value":"object-fit"},"customCss":{"value":"cover"}}]},"sm":{"custom-css":[{"customCssProperty":{"value":"object-fit"},"customCss":{"value":"contain"}}]}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":"img","type":"container","items":[],"form":null,"selectorType":"child","model":"img","uuid":"ac429ee1-4d41-4c00-9aa9-3298b6a720a1","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"},{"name":"sm"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}]}],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"sm"},{"name":"ps"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":true},{"name":"height","active":true}]},{"formKey":"padding","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"padding-equal","active":true},{"name":"padding-top","active":true},{"name":"padding-bottom","active":true},{"name":"padding-left","active":true},{"name":"padding-right","active":true},{"name":"padding-block-start","active":false},{"name":"padding-block-end","active":false},{"name":"padding-inline-start","active":false},{"name":"padding-inline-end","active":false}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-media-size---with-padding
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 86

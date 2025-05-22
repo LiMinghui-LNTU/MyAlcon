@@ -1,0 +1,5 @@
+event_hub.settings:
+  title: 'Event Hub settings'
+  description: 'Configurations for Event Hub module.'
+  route_name: event_hub.settings
+  parent: 'system.admin_config'

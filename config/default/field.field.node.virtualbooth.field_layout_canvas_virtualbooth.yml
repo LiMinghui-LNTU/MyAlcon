@@ -1,0 +1,26 @@
+uuid: d37cc987-e148-4d24-a37e-dffe63e99d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout_canvas_virtualbooth
+    - node.type.virtualbooth
+  module:
+    - cohesion_elements
+_core:
+  default_config_hash: e42y9SH-SkP8KVr6_On36tDr2Z4vuV2QJg869KwQa1I
+id: node.virtualbooth.field_layout_canvas_virtualbooth
+field_name: field_layout_canvas_virtualbooth
+entity_type: node
+bundle: virtualbooth
+label: 'Layout canvas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cohesion_layout'
+  handler_settings: {  }
+  access_elements: '0'
+field_type: cohesion_entity_reference_revisions

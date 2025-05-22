@@ -1,0 +1,22 @@
+uuid: 0e75153d-07ec-431e-bfb0-64c17562b0e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.eb6258da
+    - cohesion_website_settings.cohesion_color.freshlook-vibrant-purple
+    - cohesion_website_settings.cohesion_font_stack.raleway
+label: brand-title-primarycolor
+id: eb6258da
+json_values: '{"preview":{"text":"<h1 class=\"coh-preview\"><span class=\"coh-style-brand-title-primarycolor\"><span class=\"coh-color-primary-color\">Default content for ''Heading''.<\/span><\/span><\/h1>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h1","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-raleway"},"font-weight":{"value":"800"},"font-style":{"value":"italic"},"text-transform":{"value":"uppercase"},"color":{"value":{"link":true,"name":"Freshlook Vibrant Purple","uid":"freshlook-vibrant-purple","class":".coh-color-freshlook-vibrant-purple","variable":"$coh-color-freshlook-vibrant-purple","value":{"hex":"#7526f4","rgba":"rgba(117, 38, 244, 1)"},"wysiwyg":true,"locked":true,"inuse":true,"tags":["Freshlook"]}},"margin":{"margin-top":{"value":"15px"},"margin-bottom":{"value":"15px"}},"word-wrap":{"value":"normal"},"custom-css":[{"customCssProperty":{"value":"-webkit-font-smoothing"},"customCss":{"value":"antialiased"}}],"font-size":{"value":"70px"},"line-height":{"value":"65px"},"text-align":{"value":"center"}},"md":{"font-size":{"value":"55px"},"line-height":{"value":"54px"},"text-align":{"value":"center"}},"xs":{"font-size":{"value":"40px"},"line-height":{"value":"40px"},"text-align":{"value":"center"},"font-family":{"value":"$coh-font-raleway"},"font-weight":{"value":"800"},"color":{"value":{"link":true,"name":"Freshlook Vibrant Purple","uid":"freshlook-vibrant-purple","class":".coh-color-freshlook-vibrant-purple","variable":"$coh-color-freshlook-vibrant-purple","value":{"hex":"#7526f4","rgba":"rgba(117, 38, 244, 1)"},"wysiwyg":true,"locked":true,"inuse":true,"tags":["Freshlook"]}}},"sm":{"font-size":{"value":"50px"},"line-height":{"value":"49px"},"text-align":{"value":"center"}},"lg":{"font-size":{"value":"60px"},"line-height":{"value":"58px"},"text-align":{"value":"center"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"lg"},{"name":"md"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":true},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]},{"formKey":"font-style-and-wrapping","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-style","active":true},{"name":"text-transform","active":true},{"name":"text-decoration","active":true},{"name":"word-wrap","active":true},{"name":"direction","active":true}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"custom-css","active":true},{"name":"customCssProperty","active":true},{"name":"customCss","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-brand-title-primarycolor
+custom_style_type: heading
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 212

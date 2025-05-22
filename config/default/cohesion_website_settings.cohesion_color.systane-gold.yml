@@ -1,0 +1,13 @@
+uuid: d0efbf78-7dbc-411e-9ea6-2c73024418fe
+langcode: en
+status: true
+dependencies: {  }
+label: 'SYSTANE Gold'
+id: systane-gold
+json_values: '{"link":true,"name":"SYSTANE Gold","uid":"systane-gold","class":".coh-color-systane-gold","variable":"$coh-color-systane-gold","value":{"value":{"hex":"#ecbb4c","rgba":"rgba(236, 187, 76, 1)"}},"wysiwyg":false,"inuse":false,"tags":[{"label":"systane","value":"systane"},{"label":"secondary","value":"secondary"}]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 66

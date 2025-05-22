@@ -1,0 +1,18 @@
+uuid: 37511f16-a84b-4da9-8a22-4d581da1cdf6
+langcode: en
+status: true
+dependencies: {  }
+label: 'Hero image small'
+id: d73c31dc
+json_values: '{"preview":{"text":"<p><img alt=\"\" class=\"coh-preview\" data-entity-type=\"file\" data-entity-uuid=\"39475d45-0ce1-4db0-bc6e-f8ee02c30199\" src=\"\/sites\/g\/files\/rbvwei5002001dev\/files\/2020-09\/im1.PNG\" \/><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"width":{"value":"auto"},"max-height":{"value":"200"},"max-width":{"value":"360"}},"xs":{"max-height":{"value":"160"},"max-width":{"value":"260"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":false},{"name":"max-height","active":true},{"name":"height","active":false}]},{"formKey":"width","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":true},{"name":"width","active":true}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-a-hero-image-small
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 313

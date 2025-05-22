@@ -1,0 +1,88 @@
+<?php
+
+/**
+ * @file
+ * Alcon image upload restrictions.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\file\Entity\File;
+use Drupal\webform\Element\WebformEmailBase;
+
+/**
+ * Implements hook_file_validate()
+ */
+
+function alcon_image_upload_file_validate(\Drupal\file\FileInterface $file) {
+  $errors = [];
+
+  // Restrcition for below image types.
+  $validate_file_type = file_validate_extensions($file, 'jpg png jpeg gif');
+
+  if (empty($validate_file_type)) {
+    // Get filename without extension first as $file doesnt provide.
+    $file_name = basename($file->getFilename());
+    $file_name_no_extention = preg_replace("/\.[^.]+$/", "", $file_name);
+
+    // Along with alphanumeric allow below special characters.
+    $aValid = array('-', '_');
+    if(!ctype_alnum(str_replace($aValid, '', $file_name_no_extention))) {
+      $errors[] = t("Special characters ([@!.#$%^&*()<>?/|}{~:]) not allowed in a file, Rename to alpha numeric and upload");
+    }
+
+    // Validate file size.
+    if ($file->getSize() > 2097152) {
+      $errors[] = t("The file's size exceeds the 2MB. Please reduce the file size and try again.");
+    }
+ 
+    // Validate filename length.
+    if (strlen($file_name_no_extention) > 255) {
+      $errors[] = t("The file's name exceeds the 255 characters limit. Please rename the file and try again.");
+    }
+  }
+  return $errors;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function alcon_image_upload_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  // Check if the form is a webform.
+  if (strpos($form_id, 'webform_') === 0) {
+    // Check if the form has an email field.
+    $elements = isset($form['elements']) ? $form['elements'] : $form;
+
+    // Enter the foreach loop only if 'elements' is not empty.
+    if (!empty($elements)) {
+      foreach (Element::children($elements) as $key) {
+        if (!empty($elements[$key]['#type']) && $elements[$key]['#type'] == 'email') {
+          // Add custom validation function for the email field.
+          $form[$key]['#element_validate'][] = 'alcon_image_upload_email_validation';
+          // Store the webform key in a custom property.
+          $form[$key]['#webform_key'] = $elements[$key]['#webform_key'];
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Custom validation function for email fields.
+ */
+function alcon_image_upload_email_validation(array &$element, FormStateInterface $form_state, array &$complete_form) {
+  // Check if the webform key is set in the element.
+  if (isset($element['#webform_key'])) {
+    // Retrieve the webform key from the custom property.
+    $webform_key = $element['#webform_key'];
+
+    // Retrieve the email field value using the dynamic key.
+    $value = $form_state->getValue($webform_key);
+
+    // Validate the email format only if the value is not empty.
+    if (!empty($value) && !preg_match('/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $value)) {
+      // Set an error if the email format is invalid.
+        $form_state->setErrorByName('messages--error', t('Invalid Email: @value. Please enter a valid email address.', ['@value' => $value]));
+    }
+  }
+}

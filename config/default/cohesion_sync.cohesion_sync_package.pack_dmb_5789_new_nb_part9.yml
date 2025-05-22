@@ -1,0 +1,20 @@
+uuid: 97b003c3-2e19-4366-b85a-8290d05fb106
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part9
+label: 'DMB-5789 new nb part9'
+description: 'DMB-5789 new nb part9(Text and Image - M1)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "caa6d8fc-5c1d-49bc-8e2a-119dd577ebb5": {
+          "type": "cohesion_component",
+          "items": {
+              "caa6d8fc-5c1d-49bc-8e2a-119dd577ebb5": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

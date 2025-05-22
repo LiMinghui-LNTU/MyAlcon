@@ -1,0 +1,14 @@
+uuid: 87ff43cc-d699-457f-87c3-b462b6c0c3e2
+langcode: zh-hans
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Mb_L3vE-0IBZH5s2rjpk2LNn0QHClQP9AARQdCmVLt4
+id: translations
+label: 翻译
+category: 语言
+likert: false
+options: ''

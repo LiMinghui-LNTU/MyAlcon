@@ -1,0 +1,13 @@
+uuid: 16b612e5-fd22-4ec8-968c-544b757cd20e
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: border-fine
+json_values: '{"uid":"border-fine","value":"2","inuse":true}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 0

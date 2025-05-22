@@ -1,0 +1,20 @@
+uuid: 9bb03396-d2aa-44d8-8864-5a5ae5ac9f5b
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_revert_part15
+label: 'DMB-5789 revert part15'
+description: 'DMB-5789 revert part15(Card with Image Text Button (cpt_a_card_img_txt_btn_1))'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "61d6b680-354a-4bbc-b1ee-b02238bfa49b": {
+          "type": "cohesion_component",
+          "items": {
+              "61d6b680-354a-4bbc-b1ee-b02238bfa49b": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

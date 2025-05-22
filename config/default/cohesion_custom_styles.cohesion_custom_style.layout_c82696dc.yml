@@ -1,0 +1,18 @@
+uuid: 5fde7c79-40fe-4076-bdbf-9b0b75f3a39c
+langcode: en
+status: true
+dependencies: {  }
+label: 'Position - vertical center'
+id: layout_c82696dc
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"display":{},"flex-container":{"justify-content":{},"align-items":{}}},"xs":{"display":{"value":"flex"},"flex-container":{"align-items":{"value":"center"}}}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"display","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"display","active":true},{"name":"visibility","active":false},{"name":"overflow","active":false},{"name":"overflow-x","active":false},{"name":"overflow-y","active":false}]},{"formKey":"flex-container","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"flex-direction","active":false},{"name":"flex-wrap","active":false},{"name":"justify-content","active":false},{"name":"justify-content-safety","active":true},{"name":"align-content","active":false},{"name":"align-content-safety","active":true},{"name":"align-items","active":true},{"name":"align-items-safety","active":true}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-position---vertical-center
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 289

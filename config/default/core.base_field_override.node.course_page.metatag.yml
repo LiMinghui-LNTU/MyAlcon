@@ -1,0 +1,20 @@
+uuid: 130f2852-8dc6-47db-a433-077dc615bd7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.course_page
+  module:
+    - metatag
+id: node.course_page.metatag
+field_name: metatag
+entity_type: node
+bundle: course_page
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

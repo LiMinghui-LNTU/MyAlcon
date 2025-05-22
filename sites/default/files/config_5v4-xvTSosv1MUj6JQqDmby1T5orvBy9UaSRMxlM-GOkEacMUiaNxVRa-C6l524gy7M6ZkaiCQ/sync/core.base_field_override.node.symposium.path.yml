@@ -1,0 +1,20 @@
+uuid: c5496db6-b490-4f9c-98ba-ead670a2f9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.symposium
+  module:
+    - path
+id: node.symposium.path
+field_name: path
+entity_type: node
+bundle: symposium
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

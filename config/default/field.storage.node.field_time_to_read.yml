@@ -1,0 +1,20 @@
+uuid: 7ac23d3e-97d0-47da-ae4d-4f55a8b0b211
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_time_to_read
+field_name: field_time_to_read
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

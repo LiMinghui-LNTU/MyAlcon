@@ -1,0 +1,108 @@
+<?php
+
+/**
+ * @file
+ * Install, uninstall and update hooks for translatable_menu_link_uri.
+ */
+
+use Drupal\Core\Utility\Error;
+
+/**
+ * Set the overridden link options to the same as the parent link.
+ */
+function translatable_menu_link_uri_update_8001() {
+  $database = Drupal::database();
+
+  $tables = [
+    'menu_link_content_data',
+    'menu_link_content_field_revision',
+  ];
+
+  foreach ($tables as $table) {
+    $fields = [
+      'id',
+      'link__options',
+      'link_override__options',
+    ];
+
+    // Check the fields to be selected before updating it.
+    if (!_translatable_menu_link_check_fields($table, $fields)) {
+      continue;
+    }
+
+    $menu_links = $database->select($table, 'mlcd')
+      ->fields('mlcd', $fields)
+      ->execute()
+      ->fetchAll();
+
+    if (empty($menu_links)) {
+      continue;
+    }
+
+    $updates = [];
+    foreach ($menu_links as $link) {
+      if ($link->link__options !== $link->link_override__options) {
+        // Only replace the value if it's not already set to an array.
+        if (unserialize($link->link_override__options, ['allowed_classes' => FALSE])) {
+          continue;
+        }
+
+        $updates[$link->id] = $link->link__options;
+      }
+    }
+
+    if (!empty($updates)) {
+      foreach ($updates as $key => $value) {
+        $database->update($table)
+          ->fields(['link_override__options' => $value])
+          ->condition('id', $key)
+          ->execute();
+      }
+    }
+  }
+}
+
+
+/**
+ * Update field link_override storage definition for existing fields.
+ */
+function translatable_menu_link_uri_update_9001(&$sandbox) {
+  $logger = \Drupal::logger('translatable_menu_link_uri');
+  try {
+    $definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+    $last_installed_schema_repository = \Drupal::service('entity.last_installed_schema.repository');
+    $entity_type = $definition_update_manager
+      ->getEntityType('menu_link_content');
+    $field_storage_definitions = $last_installed_schema_repository
+      ->getLastInstalledFieldStorageDefinitions('menu_link_content');
+    $field_storage_definitions['link_override']->setRevisionable(TRUE);
+    $definition_update_manager
+      ->updateFieldableEntityType($entity_type, $field_storage_definitions, $sandbox);
+  }
+  catch (Throwable $e) {
+    Error::logException($logger, $e);
+  }
+ }
+
+
+/**
+ * Validate if the fields exists on the table to be updated or not.
+ *
+ * @param string $table
+ *   The table to be checked.
+ * @param array $fields
+ *   A simple array with all the fields names.
+ *
+ * @return bool
+ *   Returns TRUE if all the fields exists on the table, otherwise FALSE.
+ */
+function _translatable_menu_link_check_fields(string $table, array $fields): bool {
+  $database = \Drupal::database();
+  foreach ($fields as $field) {
+    if (!$database->schema()->fieldExists($table, $field)) {
+      return FALSE;
+    }
+  }
+  return TRUE;
+
+}

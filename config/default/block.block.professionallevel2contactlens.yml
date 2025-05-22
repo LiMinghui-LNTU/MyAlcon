@@ -1,0 +1,30 @@
+uuid: d695d1bb-86e4-4eca-9063-97c38b11809d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.professional-level-2---contact-l
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: professionallevel2contactlens
+theme: cohesion_theme
+region: dx8_hidden
+weight: 14
+provider: null
+plugin: 'system_menu_block:professional-level-2---contact-l'
+settings:
+  id: 'system_menu_block:professional-level-2---contact-l'
+  label: 'Professional Level 2 - Contact Lens'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0

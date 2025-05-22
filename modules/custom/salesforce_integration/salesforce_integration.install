@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Install file.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function salesforce_integration_8001() {
+  $old_config = \Drupal::configFactory()->getEditable('salesforce_api_settings.settings');
+  $new_config = \Drupal::configFactory()->getEditable('salesforce_integration.salesforce_integration_settings');
+  $new_config->set('salesforce_integration', $old_config->get('salesforce_api_settings'));
+  $new_config->save();
+  $old_config->delete();
+}
+
+ /*
+  * Implements hook_uninstall().
+  */
+ function salesforce_integration_uninstall() {
+  \Drupal::configFactory()->getEditable('salesforce_api_settings.settings')->delete();
+  \Drupal::configFactory()->getEditable('salesforce_integration.salesforce_integration_settings')->delete();
+ }

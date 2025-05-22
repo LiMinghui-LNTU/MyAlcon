@@ -1,0 +1,16 @@
+name: Event Hub
+type: module
+description: Module for event-related content creation.
+package: Event Hub
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+'interface translation project': event_hub
+'interface translation server pattern':
+  modules/custom/event_hub/translations/event_hub.po
+dependencies:
+  - node
+  - taxonomy
+  - content_translation
+  - field_group
+  - path
+  - cohesion_elements

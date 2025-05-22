@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: event_teaser_desktop
+label: 'Event Teaser Desktop'
+effects:
+  c428ce6b-6243-40fa-97fa-92ceadee5342:
+    uuid: c428ce6b-6243-40fa-97fa-92ceadee5342
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 528
+      height: 500
+      crop_type: focal_point

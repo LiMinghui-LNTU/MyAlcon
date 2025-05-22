@@ -1,0 +1,22 @@
+uuid: 8ba75606-c107-4b83-80d9-eee67b0d87ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion_elements
+    - node
+_core:
+  default_config_hash: qP7ITqqbEE96cSnYiLZ_AePFtaYHSB_mwBHGc_OgcR4
+id: node.field_layout_canvas_symposium
+field_name: field_layout_canvas_symposium
+entity_type: node
+type: cohesion_entity_reference_revisions
+settings:
+  target_type: cohesion_layout
+module: cohesion_elements
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

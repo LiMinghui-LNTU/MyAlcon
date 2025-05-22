@@ -1,0 +1,13 @@
+uuid: 9efce1ad-747d-43d0-b6d8-4f960c1b9596
+langcode: en
+status: true
+dependencies: {  }
+label: 'Smart Value Teal'
+id: smart-value-teal
+json_values: '{"link":true,"name":"Smart Value Teal","uid":"smart-value-teal","class":".coh-color-smart-value-teal","variable":"$coh-color-smart-value-teal","value":{"value":{"hex":"#61b0bc","rgba":"rgba(97, 176, 188, 1)"}},"tags":[{"label":"smart","value":"smart"},{"label":"secondary","value":"secondary"}],"inuse":false,"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 48

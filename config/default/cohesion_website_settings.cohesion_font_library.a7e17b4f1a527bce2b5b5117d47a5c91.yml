@@ -1,0 +1,13 @@
+uuid: ab6eb125-5fdd-4296-be9d-3372851ea166
+langcode: en
+status: true
+dependencies: {  }
+label: 'Roboto and Playfair'
+id: a7e17b4f1a527bce2b5b5117d47a5c91
+json_values: '{"type":"import","name":"Roboto and Playfair","url":"https:\/\/xml.alcon.com\/fonts\/playfairdisplay\/v30\/playfairdisplay-v30.css","uid":"a7e17b4f1a527bce2b5b5117d47a5c91"}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+source: fonts

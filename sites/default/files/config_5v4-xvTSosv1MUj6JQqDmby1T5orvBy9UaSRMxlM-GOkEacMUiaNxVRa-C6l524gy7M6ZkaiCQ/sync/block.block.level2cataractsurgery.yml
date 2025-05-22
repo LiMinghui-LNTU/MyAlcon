@@ -1,0 +1,31 @@
+uuid: 08a922fc-21d7-476f-b5c3-77ddea835d20
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.level-2---cataract-surgery
+  module:
+    - cohesion
+    - system
+  theme:
+    - cohesion_theme
+id: level2cataractsurgery
+theme: cohesion_theme
+region: dx8_hidden
+weight: 6
+provider: null
+plugin: 'system_menu_block:level-2---cataract-surgery'
+settings:
+  id: 'system_menu_block:level-2---cataract-surgery'
+  label: 'Level 2 - Cataract Surgery'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    context_mapping: {  }
+    using_master_template: 0

@@ -1,0 +1,19 @@
+uuid: b7b128db-151a-4a1f-9c7a-1f70fc604e07
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: XM76rYOYb6Dw26oGNS5AifU7v2XneFtYVkJH0TUGCng
+name: article_hero_wide_des
+label: 'Article Hero - Wide Desktop'
+effects:
+  c3ca45c7-2117-4d40-9313-f976e3a307cc:
+    uuid: c3ca45c7-2117-4d40-9313-f976e3a307cc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 500
+      crop_type: focal_point

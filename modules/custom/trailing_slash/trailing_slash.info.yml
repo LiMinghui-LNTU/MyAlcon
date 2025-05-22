@@ -1,0 +1,7 @@
+name: Trailing Slash
+description: Adds trailing slashes to Drupal URLs.
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:language
+configure: trailing_slash.admin_settings_form

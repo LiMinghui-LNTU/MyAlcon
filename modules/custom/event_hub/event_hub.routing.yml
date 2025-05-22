@@ -1,0 +1,7 @@
+event_hub.settings:
+  path: '/admin/config/event-hub'
+  defaults:
+    _title: 'Event Hub Settings'
+    _form: 'Drupal\event_hub\Form\SettingsForm'
+  requirements:
+    _permission: 'access administration pages'

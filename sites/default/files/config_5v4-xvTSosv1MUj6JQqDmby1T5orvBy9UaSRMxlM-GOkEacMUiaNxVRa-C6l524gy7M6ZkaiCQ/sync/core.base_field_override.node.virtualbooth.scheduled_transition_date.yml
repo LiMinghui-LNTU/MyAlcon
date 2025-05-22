@@ -1,0 +1,20 @@
+uuid: 42afa401-4ddd-4284-b012-0c4c3626693f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtualbooth
+  module:
+    - datetime
+id: node.virtualbooth.scheduled_transition_date
+field_name: scheduled_transition_date
+entity_type: node
+bundle: virtualbooth
+label: 'Scheduled transition date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

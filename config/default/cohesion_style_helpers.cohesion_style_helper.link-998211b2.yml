@@ -1,0 +1,15 @@
+uuid: cad57c35-a2be-4768-96c5-8763250daed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+label: 'Link - White'
+id: link-998211b2
+json_values: '{"preview":{"text":"<p><a href=\"#\">Default content for ''Link''.<\/a><\/p>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"a","class":"","combinator":"","pseudo":""},"styles":{"xl":{"color":{"value":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true}}},"xs":{"transitions":[{"transitionProperty":{"value":"color"},"transitionDuration":{"value":300},"transitionTimingFunction":{"value":"ease"}}]}},"7d2165ac-9ec3-4d47-b76f-bf1f35c4ea3f":{"settings":{"element":"","class":"","combinator":"","pseudo":":hover"},"styles":{"xl":{"color":{}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[{"title":":hover","type":"container","items":[],"selectorType":"pseudo","formDefinition":[],"uuid":"7d2165ac-9ec3-4d47-b76f-bf1f35c4ea3f","form":null,"allowedTypes":["child","pseudo"]}],"title":"Link","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"},{"name":"xs"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":false},{"name":"color","active":true}]}]},{"formKey":"transform-and-transition","children":[{"formKey":"transition","breakpoints":[{"name":"xs"}],"activeFields":[{"name":"transitions","active":true},{"name":"transitionProperty","active":true},{"name":"transitionCustomProperty","active":true},{"name":"transitionDuration","active":true},{"name":"transitionTimingFunction","active":true},{"name":"transitionDelay","active":false}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+custom_style_type: link

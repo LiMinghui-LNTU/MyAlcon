@@ -1,0 +1,18 @@
+uuid: 16f96764-5ae2-45e9-bcf6-08b89390999b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Brand - Heading H5 (16px)'
+id: fe7b9a2a
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Generic''.<\/div>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-size":{"value":"16px"},"font-weight":{"value":"400"}},"xs":{"font-size":{"value":"16px"}},"ps":{"font-size":{"value":"16px"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Layout","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":false},{"name":"font-weight","active":true},{"name":"color","active":false}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":false},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-brand---heading-h5-16px-
+custom_style_type: generic
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 148

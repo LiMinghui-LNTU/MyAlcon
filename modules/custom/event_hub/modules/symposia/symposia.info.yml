@@ -1,0 +1,11 @@
+name: Symposia
+type: module
+description: Event Hub submodule for Symposium content type.
+package: Event Hub
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+'interface translation project': symposia
+'interface translation server pattern':
+  modules/custom/event_hub/modules/symposia/translations/symposia.po
+dependencies:
+  - event

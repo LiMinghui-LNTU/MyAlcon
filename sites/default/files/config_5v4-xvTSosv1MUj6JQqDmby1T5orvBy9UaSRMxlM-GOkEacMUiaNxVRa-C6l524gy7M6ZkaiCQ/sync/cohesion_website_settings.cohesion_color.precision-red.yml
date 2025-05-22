@@ -1,0 +1,13 @@
+uuid: 8110d24c-f938-4be7-b9d4-840a05a4defd
+langcode: en
+status: true
+dependencies: {  }
+label: 'PRECISION Red'
+id: precision-red
+json_values: '{"link":true,"name":"PRECISION Red","uid":"precision-red","class":".coh-color-precision-red","variable":"$coh-color-precision-red","value":{"value":{"hex":"#af272f","rgba":"rgba(175, 39, 47, 1)"}},"tags":[{"label":"precision","value":"precision"},{"label":"secondary","value":"secondary"}],"wysiwyg":false,"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 42

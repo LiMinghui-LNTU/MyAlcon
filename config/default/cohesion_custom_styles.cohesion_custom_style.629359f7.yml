@@ -1,0 +1,18 @@
+uuid: 6721be4a-a5a3-4722-9e49-4d5cd94470df
+langcode: en
+status: true
+dependencies: {  }
+label: 'Desired Numbered List'
+id: 629359f7
+json_values: '{"preview":{"text":"<p><strong>Unordered list<\/strong><\/p>\n<ul class=\"coh-preview\">\n  <li>List item 1<\/li>\n  <li>List item 2<\/li>\n  <li>List item 3<\/li>\n<\/ul>\n<p><strong>Ordered list<\/strong><\/p>\n<ol class=\"coh-preview\">\n  <li>List item 1<\/li>\n  <li>List item 2<\/li>\n  <li>List item 3<\/li>\n<\/ol>\n<p><strong>Description list<\/strong><\/p>\n<dl class=\"coh-preview\">\n  <dt>List term 1<\/dt>\n  <dd>List description 1<\/dd>\n  <dt>List term 2<\/dt>\n  <dd>List description 2<\/dd>\n  <dt>List term 3<\/dt>\n  <dd>List description 3<\/dd>\n<\/dl>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"ul,ol,dl"},"styles":{"xl":{"ordered-list":{"list-style-type":{"value":"decimal"},"list-style-position":{"value":"inside"}},"line-height":{"value":"1.5rem"},"margin":{"margin-top":{"value":"8px"},"margin-bottom":{"value":"8px"},"margin-left":{"value":""}},"custom-css":[{"customCssProperty":{"value":""},"customCss":{"value":""}}]}},"1567c0e9-41ee-4988-a7c2-ff12cb1a9b89":{"styles":{"xl":{"margin":{"margin-left":{"value":"32px"}}}},"settings":{"element":"li"}}},"previewModel":{},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Default","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":false},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]},{"formKey":"list-style","children":[{"formKey":"ordered-list","activeFields":[{"name":"list-style-type","active":true},{"name":"list-style-image","active":true},{"name":"list-style-position","active":true}],"breakpoints":[{"name":"xl"}]}]},{"formKey":"font","children":[{"formKey":"font-sizing-and-alignment","activeFields":[{"name":"font-size","active":false},{"name":"line-height","active":true},{"name":"text-align","active":false},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}],"breakpoints":[{"name":"xl"}]}]},{"formKey":"custom-css","children":[{"formKey":"css-property-and-css-value","activeFields":[{"name":"customCssProperty","active":true},{"name":"customCss","active":true}],"breakpoints":[{"name":"xl"}]}]}],"items":[{"title":"li","type":"container","items":[],"selectorType":"child","uuid":"1567c0e9-41ee-4988-a7c2-ff12cb1a9b89","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"layout","children":[{"formKey":"margin","activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":false},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}],"breakpoints":[{"name":"xl"}]}]}],"model":"li"}]}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-basic-numbered-list
+custom_style_type: list
+available_in_wysiwyg: true
+available_in_wysiwyg_inline: true
+parent: null
+weight: 0

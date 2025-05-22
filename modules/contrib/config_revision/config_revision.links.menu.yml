@@ -1,0 +1,5 @@
+config_revision.settings:
+  title: 'Configuration revision settings'
+  description: 'Enable configuration revision for config entity.'
+  route_name: config_revision.settings
+  parent: system.admin_config_development

@@ -1,0 +1,20 @@
+uuid: ad4f8464-2060-4e8e-a7de-9971efebbb9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.article_category_professional
+  module:
+    - metatag
+id: taxonomy_term.article_category_professional.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: article_category_professional
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

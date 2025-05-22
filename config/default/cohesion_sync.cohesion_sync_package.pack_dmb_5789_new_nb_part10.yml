@@ -1,0 +1,20 @@
+uuid: e06da317-91a3-4cc8-964d-1a2609c82645
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_part10
+label: 'DMB-5789 new nb part10'
+description: 'DMB-5789 new nb part10(Text and Text)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "37ba5c02-798c-4ffe-bda8-0229a05bbf45": {
+          "type": "cohesion_component",
+          "items": {
+              "37ba5c02-798c-4ffe-bda8-0229a05bbf45": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

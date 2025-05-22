@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.location
+id: node.location.tealiumiq
+field_name: tealiumiq
+entity_type: node
+bundle: location
+label: 'Tealium Tags'
+description: 'The Tealium tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

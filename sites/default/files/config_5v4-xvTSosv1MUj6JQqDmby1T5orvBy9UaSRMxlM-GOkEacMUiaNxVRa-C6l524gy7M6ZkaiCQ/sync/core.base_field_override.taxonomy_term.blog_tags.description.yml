@@ -1,0 +1,21 @@
+uuid: de6faa08-2553-473d-b72d-b7a6a77fe7ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.blog_tags
+  module:
+    - text
+id: taxonomy_term.blog_tags.description
+field_name: description
+entity_type: taxonomy_term
+bundle: blog_tags
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

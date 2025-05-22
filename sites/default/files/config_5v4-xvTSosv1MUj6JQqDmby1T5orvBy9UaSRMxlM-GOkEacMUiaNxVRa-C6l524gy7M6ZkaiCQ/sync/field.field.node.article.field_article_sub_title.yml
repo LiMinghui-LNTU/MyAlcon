@@ -1,0 +1,22 @@
+uuid: c69e4094-78ee-4f23-b3bc-891264ebb2ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_sub_title
+    - node.type.article
+  module:
+    - text
+id: node.article.field_article_sub_title
+field_name: field_article_sub_title
+entity_type: node
+bundle: article
+label: 'Article Sub-title'
+description: 'Plain text field used to store the article Sub-Title which must have the ability to add HTML tags such as "sup", "sub".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

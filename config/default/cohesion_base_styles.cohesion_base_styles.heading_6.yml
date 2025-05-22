@@ -1,0 +1,16 @@
+uuid: 2246c9fb-5b98-4887-aa28-e74e7428fdd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_website_settings.cohesion_color.primary-alcon-true-blue
+    - cohesion_website_settings.cohesion_font_stack.open-sans
+label: 'Heading 6'
+id: heading_6
+json_values: '{"preview":{"text":"<h6>Default content for ''Heading 6''.<\/h6>\n","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"h6","class":"","combinator":"","pseudo":""},"styles":{"xl":{"font-family":{"value":"$coh-font-open-sans"},"font-weight":{"value":"600"},"color":{"value":{"link":true,"name":"Primary \/ Alcon True Blue","uid":"primary-alcon-true-blue","class":".coh-color-primary-alcon-true-blue","variable":"$coh-color-primary-alcon-true-blue","value":{"hex":"#003595","rgba":"rgba(0, 53, 149, 1)"},"inuse":true,"wysiwyg":true}},"font-size":{"value":"28"},"line-height":{"value":"1.05"}},"lg":{"font-size":{"value":"22"},"line-height":{"value":"1.05"}},"xs":{"font-size":{"value":"20"},"line-height":{"value":"1.05"}},"sm":{"font-size":{"value":"22"},"line-height":{"value":"1.05"}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Heading 6","selectorType":"topLevel","formDefinition":[{"formKey":"font","children":[{"formKey":"font-and-color","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"font-family","active":true},{"name":"font-weight","active":true},{"name":"color","active":true}]},{"formKey":"font-sizing-and-alignment","breakpoints":[{"name":"xl"},{"name":"lg"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"font-size","active":true},{"name":"line-height","active":true},{"name":"text-align","active":true},{"name":"letter-spacing","active":false},{"name":"word-spacing","active":false},{"name":"text-indent","active":false}]}]},{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":true},{"name":"margin-bottom","active":true},{"name":"margin-left","active":true},{"name":"margin-right","active":true},{"name":"margin-block-start","active":false},{"name":"margin-block-end","active":false},{"name":"margin-inline-start","active":false},{"name":"margin-inline-end","active":false}]}]}],"items":[],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: false
+custom: null

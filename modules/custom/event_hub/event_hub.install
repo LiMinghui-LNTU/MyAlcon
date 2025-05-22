@@ -1,0 +1,244 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Event Hub module.
+ */
+
+use Drupal\taxonomy\Entity\Vocabulary;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\node\Entity\NodeType;
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_install().
+ */
+function event_hub_install() {
+  if (Vocabulary::load('region')) {
+    // Create region terms.
+    $regions_array = [
+      'Africa',
+      'Europe',
+      'Middle-East',
+      'North America',
+      'Asia-Pacific',
+    ];
+    foreach ($regions_array as $region_name) {
+      $term = Term::create([
+        'vid' => 'region',
+        'name' => $region_name,
+      ]);
+      $term->enforceIsNew();
+      $term->save();
+    }
+  }
+  if (Vocabulary::load('time_zone')) {
+    // Create Time Zone terms.
+    $time_zones_array = [
+      'UTC-12:00',
+      'UTC-11:00',
+      'UTC-10:00',
+      'UTC-09:30',
+      'UTC-09:00',
+      'UTC-08:00',
+      'UTC-07:00',
+      'UTC-06:00',
+      'UTC-05:00',
+      'UTC-04:00',
+      'UTC-03:30',
+      'UTC-03:00',
+      'UTC-02:00',
+      'UTC-00:00',
+      'UTC+01:00',
+      'UTC+02:00',
+      'UTC+03:00',
+      'UTC+03:30',
+      'UTC+04:00',
+      'UTC+04:30',
+      'UTC+05:00',
+      'UTC+05:30',
+      'UTC+05:45',
+      'UTC+06:00',
+      'UTC+06:30',
+      'UTC+07:00',
+      'UTC+08:00',
+      'UTC+08:45',
+      'UTC+09:00',
+      'UTC+10:00',
+      'UTC+10:30',
+      'UTC+11:00',
+      'UTC+12:45',
+      'UTC+13:00',
+      'UTC+14:00',
+    ];
+    foreach ($time_zones_array as $time_zone_name) {
+      $term = Term::create([
+        'vid' => 'time_zone',
+        'name' => $time_zone_name,
+      ]);
+      $term->enforceIsNew();
+      $term->save();
+    }
+  }
+
+  // Remove user roles.
+  $user_roles_removal_array = [
+    'location_creator',
+    'location_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create location content',
+      'delete any location content',
+      'delete own location content',
+      'delete location revisions',
+      'edit any location content',
+      'edit own location content',
+      'revert location revisions',
+      'view location revisions',
+      'create terms in region',
+      'create terms in time zone',
+      'delete terms in region',
+      'delete terms in time zone',
+      'edit terms in region',
+      'edit terms in time zone',
+      'translate location node',
+      'translate region taxonomy term',
+      'use text format mini_rich_text',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+    ],
+    'content_editor' => [
+      'translate location node',
+      'translate region taxonomy term',
+      'use text format mini_rich_text',
+      'edit any location content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+    ],
+  ];
+
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+
+  // Show region by default.
+  \Drupal::state()->set('event_hub.display_region', TRUE);
+}
+
+/**
+ * Update module's configs, user permissions.
+ */
+function event_hub_update_9001() {
+  update_module_configs('event_hub');
+
+  // Remove user roles.
+  $user_roles_removal_array = [
+    'location_creator',
+    'location_reviewer',
+  ];
+  foreach ($user_roles_removal_array as $user_role_name) {
+    if ($user_role = Role::load($user_role_name)) {
+      $user_role->delete();
+    }
+  }
+
+  // Update permissions for existing builder/editor roles.
+  $user_roles_update_array = [
+    'site_builder' => [
+      'create location content',
+      'delete any location content',
+      'delete own location content',
+      'delete location revisions',
+      'edit any location content',
+      'edit own location content',
+      'revert location revisions',
+      'view location revisions',
+      'create terms in region',
+      'create terms in time zone',
+      'delete terms in region',
+      'delete terms in time zone',
+      'edit terms in region',
+      'edit terms in time zone',
+      'translate location node',
+      'translate region taxonomy term',
+      'use text format mini_rich_text',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+    ],
+    'content_editor' => [
+      'translate location node',
+      'translate region taxonomy term',
+      'use text format mini_rich_text',
+      'edit any location content',
+      'access cpt_cat_event cohesion_component_category group',
+      'access hlp_cat_event_hub cohesion_helper_category group',
+    ],
+  ];
+
+  foreach ($user_roles_update_array as $user_role_name => $permissions_array) {
+    if ($user_role = Role::load($user_role_name)) {
+      foreach ($permissions_array as $permission) {
+        if (!$user_role->hasPermission($permission)) {
+          $user_role->grantPermission($permission);
+        }
+      }
+      $user_role->save();
+    }
+  }
+}
+
+/**
+ * Make 'Start date' and 'End date' fields required.
+ */
+function event_hub_update_9002() {
+  update_module_configs('event_hub');
+}
+
+/**
+ * Remove 'Display region' field from the 'Location' content type.
+ */
+function event_hub_update_9003() {
+  update_module_configs('event_hub');
+  \Drupal::state()->set('event_hub.display_region', TRUE);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+/**
+ * Implements hook_uninstall().
+ */
+function event_hub_uninstall() {
+  // Remove Region and Time Zone taxonomy vocabularies.
+  $term_vocabularies_array = [
+    'region',
+    'time_zone',
+  ];
+  foreach ($term_vocabularies_array as $vocabulary_name) {
+    if ($vocabulary = Vocabulary::load($vocabulary_name)) {
+      $vocabulary->delete();
+    }
+  }
+
+  // Remove Location node type.
+  if ($location_node_type = NodeType::load('location')) {
+    $location_node_type->delete();
+  }
+
+  \Drupal::state()->delete('event_hub.display_region');
+}

@@ -1,0 +1,14 @@
+uuid: 43fc06f9-36b8-4bb5-b6a2-69246bda7f3d
+langcode: en
+status: true
+dependencies: {  }
+label: SYMPOSIA
+id: cpt_cat_symposia
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-11
+weight: 5

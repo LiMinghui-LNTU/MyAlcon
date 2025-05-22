@@ -1,0 +1,42 @@
+uuid: 8f4ed54a-4eed-4cab-8561-ce197b9187f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.brand-menu---clareon-autonome
+  module:
+    - cohesion
+    - context
+    - system
+  theme:
+    - cohesion_theme
+id: brandmenuclareonautonome
+theme: cohesion_theme
+region: dx8_hidden
+weight: -30
+provider: null
+plugin: 'system_menu_block:brand-menu---clareon-autonome'
+settings:
+  id: 'system_menu_block:brand-menu---clareon-autonome'
+  label: 'Brand Menu - Clareon Autonome'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  cohesion_master_template:
+    id: cohesion_master_template
+    negate: false
+    using_master_template: 0
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

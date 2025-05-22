@@ -1,0 +1,23 @@
+uuid: 71857296-653d-4f24-9f4d-1193aa708486
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vb_meta_tags
+    - node.type.virtualbooth
+  module:
+    - metatag
+_core:
+  default_config_hash: B1nbWJnKyFpV857oACFoAs1necZeom7oykCYO81ObMc
+id: node.virtualbooth.field_vb_meta_tags
+field_name: field_vb_meta_tags
+entity_type: node
+bundle: virtualbooth
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

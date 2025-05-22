@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_authored_by
+    - node.type.biography_page
+  module:
+    - text
+id: node.biography_page.field_article_authored_by
+field_name: field_article_authored_by
+entity_type: node
+bundle: biography_page
+label: 'Article Authored by'
+description: 'Plain text field used to store the article <b>Author</b> along with a prefix of “Written by“. <i>i.e. Written by Narcisse Günay</i>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

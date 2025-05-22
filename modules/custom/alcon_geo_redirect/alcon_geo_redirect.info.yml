@@ -1,0 +1,7 @@
+name: Alcon Geo Redirect
+description: Allows you to add the geo redirect script on overall site from the front-end.
+package: Alcon
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+
+configure: alcon_geo_redirect.admin

@@ -1,0 +1,8 @@
+uuid: 7dc43c27-5857-4702-97e5-dda2cc8f9192
+langcode: en
+status: true
+dependencies: {  }
+id: brand-menu---ngenuity
+label: 'Brand Menu - Ngenuity'
+description: ''
+locked: false

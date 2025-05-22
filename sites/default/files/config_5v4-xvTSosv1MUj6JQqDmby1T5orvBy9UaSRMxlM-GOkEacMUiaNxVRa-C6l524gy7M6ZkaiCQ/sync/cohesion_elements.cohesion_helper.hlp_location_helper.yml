@@ -1,0 +1,38 @@
+uuid: a6e3b996-eac6-4314-962c-6c04a77bf46d
+langcode: en
+status: true
+dependencies:
+  config:
+    - cohesion_custom_styles.cohesion_custom_style.05ec9ce4
+    - cohesion_custom_styles.cohesion_custom_style.18f36444
+    - cohesion_custom_styles.cohesion_custom_style.1aed8e0a
+    - cohesion_custom_styles.cohesion_custom_style.3cc50df2
+    - cohesion_custom_styles.cohesion_custom_style.43c36eae
+    - cohesion_custom_styles.cohesion_custom_style.63b187c4
+    - cohesion_custom_styles.cohesion_custom_style.6580c294
+    - cohesion_custom_styles.cohesion_custom_style.6719c6aa
+    - cohesion_custom_styles.cohesion_custom_style.7bb1adf4
+    - cohesion_custom_styles.cohesion_custom_style.8f62c36b
+    - cohesion_custom_styles.cohesion_custom_style.9877f87e
+    - cohesion_custom_styles.cohesion_custom_style.bc6d5301
+    - cohesion_custom_styles.cohesion_custom_style.bd5d0455
+    - cohesion_custom_styles.cohesion_custom_style.f763a575
+    - cohesion_elements.cohesion_component.cpt_a_card_container
+    - cohesion_elements.cohesion_component.cpt_a_txt_img
+    - cohesion_elements.cohesion_helper_category.hlp_cat_general_helpers
+    - cohesion_website_settings.cohesion_color.white
+  content:
+    - 'file:file:914f44a2-4a19-41ea-8358-b03e26a5dde6'
+label: 'Location helper'
+id: hlp_location_helper
+json_values: '{"canvas":[{"uid":"cpt_a_card_container","type":"component","title":"Card container","enabled":true,"category":"category-4","componentId":"cpt_a_card_container","componentType":"container","iconColor":"custom","uuid":"5726fb6d-eeac-4979-8f04-989a2b00aa15","status":{"collapsed":false},"parentUid":"root","children":[{"type":"container","uid":"component-drop-zone","mimicParent":true,"parentUid":"cpt_a_card_container","title":"Component drop zone","selected":false,"status":{"collapsed":false,"disabled":false},"uuid":"77114f0b-72a0-4269-9982-ba51f44d4d13","dropzoneId":"fef1f7d8-ff35-4d95-a172-4c1057a446bb","isContainer":true,"children":[{"uid":"cpt_a_txt_img","type":"component","title":"Text and Image","enabled":true,"category":"category-2","componentId":"cpt_a_txt_img","componentType":"container","iconColor":"custom","uuid":"2f6f1712-ecd2-447d-94b0-eb34c8ce587a","parentUid":"component-drop-zone","status":{},"children":[]}]}]}],"mapper":{"5726fb6d-eeac-4979-8f04-989a2b00aa15":{},"77114f0b-72a0-4269-9982-ba51f44d4d13":{},"2f6f1712-ecd2-447d-94b0-eb34c8ce587a":{}},"model":{"5726fb6d-eeac-4979-8f04-989a2b00aa15":{"813a0a12-df92-443f-b8f5-a33ed2c69aed":{"text":"","textFormat":"cohesion"},"0c630547-25a7-4116-96c8-ceff040e7fab":{"text":"","textFormat":"cohesion"},"be8a985f-572d-4a56-8da7-7eb51d584e16":"coh-style-a-max-width-wide","e18fa9d0-ea94-4b75-bad7-906b3f4632b3":"center","f44ba4ae-ab39-4631-89f2-432c4bf4a6b0":"coh-style-a-padding-top-medium","ba97fcf9-d577-4ad1-ac46-4d54fcec57fd":"coh-style-a-padding-bottom-medium","985e0e11-41dc-48cf-a9d3-3a7137d18aa7":"coh-style-a-padding-left-large","5e9c0280-1b79-4003-b898-df15cac0d767":"coh-style-a-padding-right-large","f67d59e5-a6c5-486b-812f-a14e4c035047":"","37bed1a0-9970-4bcf-9143-394604fea8fc":"","8c7fc39a-38e5-4eef-859e-aa78143ac44b":"","db547d19-d6b5-4935-85c1-1e3c4444dbc2":"","0588437f-9b22-426f-8555-d13bf575dec6":"","4d3ad30f-c199-45f5-98f0-d4482b34b7c3":"","05e1a8cf-0305-4f4b-a2eb-a59a4fb5d164":"","777de6c0-20b6-4054-83fd-77c56764f780":"","settings":{"title":"Card container"},"d3ad3753-4ed3-4745-a776-145742a4924f":{"value":{"hex":"#f6f6f7","rgba":"rgba(246, 246, 247, 1)"}}},"77114f0b-72a0-4269-9982-ba51f44d4d13":{"settings":{"title":"Drop ''Card items'' here.","dropzoneHideSelector":"","styles":{"xl":{"jsSettings":{"matchHeight":{"targetElement":"children-with-class-name","class":"a-match-height-desktop"}}}}}},"2f6f1712-ecd2-447d-94b0-eb34c8ce587a":{"62646cca-d3da-44cd-9813-410ac87c60a1":{"text":"<h5>Location<\/h5><p>&nbsp;<\/p><p class=\"coh-style-large-body-text\"><span class=\"coh-color-alcon-almost-black\">World Trade Center Almeda Park<\/span><\/p><p class=\"coh-style-large-body-text\"><span class=\"coh-color-alcon-almost-black\">Pla\u00e7a de La Pau s\/n.<\/span><\/p><p class=\"coh-style-large-body-text\"><span class=\"coh-color-alcon-almost-black\">Building 8, 3rd Floor<\/span><\/p><p class=\"coh-style-large-body-text\"><span class=\"coh-color-alcon-almost-black\">08940 Cornell\u00e1 de Llobregat<\/span><\/p><p class=\"coh-style-large-body-text\"><span class=\"coh-color-alcon-almost-black\">Barcelona, Spain<\/span><\/p>","textFormat":"cohesion"},"89a0ca14-7ca8-4c4a-8ae2-93f70fa8b42a":{"text":"","textFormat":"cohesion"},"65b95211-10d8-4c04-b165-444c91504765":"See All Courses","d11448d2-8e80-42a2-8128-921d0110ce3c":"_self","8d21b992-4eb0-418f-9b9d-d673e1a990cc":"","7ee07bb1-3e45-4dde-a7ca-a010c80974b0":"","d05921b8-aff7-44c5-9572-5c14b2ab2217":"Button Right","783489a1-1454-4a95-916f-86488e98eea9":"_self","5bbbfb6e-ad93-45bc-ad6b-b24759ce932b":"","3cf75a1a-2434-4d3c-85cd-faf1d2853789":"","08332398-f809-4255-b850-27dd0bc498c1":"","9d0e4cef-e2d5-49f9-bbb5-34e1890569fb":"[media-reference:file:914f44a2-4a19-41ea-8358-b03e26a5dde6]","a6a41e41-aa6b-4b30-9534-3332642e2191":"Map image","f44e6c1e-16bd-4d99-8f77-085dadb24bfb":"[media-reference:file:914f44a2-4a19-41ea-8358-b03e26a5dde6]","9bd6a37d-78f0-4526-bb60-2dae01fc59e6":"coh-style-a-component-height-small","b06cba82-8719-48c4-b967-12fad94b0f7b":"center","93422db4-840e-4f0f-b84e-61e3fc356f71":"coh-style-a-button-primary","98fa2520-0c4a-43c2-a689-4e39adbb8291":"coh-style-a-button-inverted","dc7fd04b-1e76-4cb7-8ab5-5a60ac7679c8":"Left","94be91c0-f64b-4b01-bea4-6a32841f1958":"coh-style-a-image-size-full-cover","ca3520f4-392e-428c-ae64-c991d6602e03":"center","931860c4-ecfa-470a-811c-3c2541045652":"center","1f254e6c-db18-41e3-8e75-1bfcafc990b1":false,"5a1f6422-cf68-4579-9e61-1456b14c8d23":"2","9fd8a075-3cd2-4b45-b04d-67e4ae704e98":"2","674610db-33ed-4661-b295-fb8d4d16eebc":false,"3cc5892e-2f97-4a90-9621-2223a70ac24d":"","35c6da4b-8fa5-4cba-80c6-be9c991ac049":"","2b959955-d4a6-4e19-b914-8e05f76a94f1":"","4b48823c-9acf-482d-93a8-f6c4102d8f7f":"","7fd87ce9-3167-4d7e-82a6-3b67327f2f97":"solid","8ba49f5b-a588-46a1-a282-52e18701e3e4":"","d9b513ce-2e5f-4f4d-8e63-7ad8cae7e176":"","e52a975a-df1c-448c-8632-cd44da698910":"","725e364a-f90d-4aa9-8f02-b5f423ab17d7":"","97c10915-6fb8-414f-bb38-b41e90743a65":"none","884e7ef4-3f90-44e4-b791-75f951542805":"","2e118b05-3f4b-4260-840f-2ba2272fdd2e":"","46d2dd86-593a-4a62-8b7d-f3867b16f344":"","25321a37-571e-4809-acaa-84b23f0a93ae":"coh-style-a-padding-right-small","cae3fe3e-f8b1-4553-9ae4-c931fae0ffee":"coh-style-a-padding-top-small","5d181409-ad47-44b7-a346-9ffcfc0ba9b2":"coh-style-a-padding-bottom-small","93e83fdc-6fda-4d8a-9e7d-4ae7e17e4aea":"coh-style-a-padding-left-small","a8c00c99-80e0-4534-851c-b73fb0f981cf":"coh-style-a-padding-right-small","6f846f45-cac2-410e-a3dc-7dd4df924315":"","7d15d917-5161-4948-8b2c-f606e89ded3f":"","bb54f416-cd25-4369-9aa7-820ab86bdf8d":"","76490558-7b53-49e9-8384-98d1d074334d":"","settings":{"title":"Text and Image"},"c1bca64a-56e8-4d2d-907c-3b66ec3724cb":{"name":"White","uid":"white","value":{"hex":"#ffffff","rgba":"rgba(255, 255, 255, 1)"},"wysiwyg":true,"class":".coh-color-white","variable":"$coh-color-white","inuse":true,"link":true}}},"previewModel":{},"variableFields":{}}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+category: hlp_cat_general_helpers
+preview_image: ''
+entity_type_access: {  }
+bundle_access: {  }
+weight: null

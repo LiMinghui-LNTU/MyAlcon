@@ -1,0 +1,19 @@
+uuid: fd2c1194-b8be-40ed-ad98-218f85a38066
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: Le6yL0UcdZw2SxEj7StTFp1Cudl4oNo8RrygLSvDD2I
+name: tablet_4_col_4_3_
+label: 'Tablet 4 Col (4:3)'
+effects:
+  740ec7d3-23cd-4b38-a5b1-1ed5d7ec7661:
+    uuid: 740ec7d3-23cd-4b38-a5b1-1ed5d7ec7661
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 296
+      height: 222
+      crop_type: focal_point

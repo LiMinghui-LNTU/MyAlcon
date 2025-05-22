@@ -1,0 +1,19 @@
+uuid: 7eb9ac0c-5948-42f8-b925-bf945f2b2ab0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cookie_prefix
+    - taxonomy.vocabulary.gated_content_form
+id: taxonomy_term.gated_content_form.field_cookie_prefix
+field_name: field_cookie_prefix
+entity_type: taxonomy_term
+bundle: gated_content_form
+label: 'Cookie Prefix'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

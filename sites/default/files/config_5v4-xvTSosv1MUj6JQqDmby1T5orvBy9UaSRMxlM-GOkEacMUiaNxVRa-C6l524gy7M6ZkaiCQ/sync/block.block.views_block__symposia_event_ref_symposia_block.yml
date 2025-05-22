@@ -1,0 +1,24 @@
+uuid: 413f58d1-f35f-4ea2-913f-3f63718bc515
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.symposia
+  module:
+    - views
+  theme:
+    - cohesion_theme
+id: views_block__symposia_event_ref_symposia_block
+theme: cohesion_theme
+region: dx8_hidden
+weight: 28
+provider: null
+plugin: 'views_block:symposia-event_ref_symposia_block'
+settings:
+  id: 'views_block:symposia-event_ref_symposia_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

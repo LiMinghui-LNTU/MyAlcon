@@ -1,0 +1,18 @@
+uuid: ba61a380-bb12-4a80-9ec0-690b93d63cef
+langcode: en
+status: true
+dependencies: {  }
+label: three-col-min-hight
+id: d531e2e7
+json_values: '{"preview":{"text":"","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"img","class":"","combinator":"","pseudo":""},"styles":{"xl":{"width":{"value":"33%"}}},"7f90f30b-31ea-45a2-8192-07dfb546c035":{"settings":{"element":".col-min-hight","class":"","combinator":"","pseudo":""},"styles":{"xl":{"min-height":{"value":"18em"},"max-height":{"value":""},"height":{"value":"250"}},"md":{"min-height":{"value":"14em"},"max-height":{"value":""},"height":{"value":"auto"}},"sm":{"min-height":{"value":"13em"},"max-height":{"value":""},"height":{"value":"auto"}},"ps":{"min-height":{"value":"7em"},"height":{"value":"auto"}},"xs":{"min-height":{"value":"7em"},"height":{"value":"auto"}}}}},"variableFields":[]}'
+json_mapper: '{"styles":{"title":"Image","selectorType":"topLevel","formDefinition":[{"formKey":"layout","children":[{"formKey":"width","breakpoints":[{"name":"xl"}],"activeFields":[{"name":"min-width","active":false},{"name":"max-width","active":false},{"name":"width","active":true}]}]}],"items":[{"title":".col-min-hight","type":"container","items":[],"form":null,"selectorType":"child","model":".col-min-hight","uuid":"7f90f30b-31ea-45a2-8192-07dfb546c035","allowedTypes":["child","pseudo","modifier"],"formDefinition":[{"formKey":"layout","children":[{"formKey":"height","breakpoints":[{"name":"xl"},{"name":"md"},{"name":"sm"},{"name":"ps"},{"name":"xs"}],"activeFields":[{"name":"min-height","active":true},{"name":"max-height","active":true},{"name":"height","active":true}]}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-three-col-min-hight
+custom_style_type: image
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 30

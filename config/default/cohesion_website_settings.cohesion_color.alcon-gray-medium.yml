@@ -1,0 +1,13 @@
+uuid: 865fcff6-ac30-4906-bae0-d3dc3bb9378f
+langcode: en
+status: true
+dependencies: {  }
+label: 'Alcon Gray Medium'
+id: alcon-gray-medium
+json_values: '{"link":true,"name":"Alcon Gray Medium","uid":"alcon-gray-medium","class":".coh-color-alcon-gray-medium","variable":"$coh-color-alcon-gray-medium","wysiwyg":true,"value":{"value":{"hex":"#6b6b6b","rgba":"rgba(107, 107, 107, 1)"}},"inuse":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 7

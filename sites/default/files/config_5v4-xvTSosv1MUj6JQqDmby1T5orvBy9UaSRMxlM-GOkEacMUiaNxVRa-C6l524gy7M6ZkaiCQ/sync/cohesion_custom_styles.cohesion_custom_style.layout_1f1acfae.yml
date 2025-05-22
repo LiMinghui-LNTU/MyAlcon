@@ -1,0 +1,18 @@
+uuid: 2921a1f1-69bf-46f2-a13e-2e55a0167a3b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Margin bottom - medium'
+id: layout_1f1acfae
+json_values: '{"preview":{"text":"<div class=\"coh-preview\">Default content for ''Layout''.<\/div>","textFormat":"cohesion","background":{"value":{"rgba":"rgba(255,255,255,1)"}}},"styles":{"settings":{"element":"div","class":"","combinator":"","pseudo":""},"styles":{"xl":{"margin":{"margin-top":{},"margin-bottom":{}}},"lg":{"margin":{"margin-top":{},"margin-bottom":{"value":"64"}}},"sm":{"margin":{"margin-top":{},"margin-bottom":{"value":"48"}}},"ps":{"margin":{"margin-top":{},"margin-bottom":{}}},"md":{"margin":{"margin-bottom":{}}},"xs":{"margin":{"margin-bottom":{"value":"40"}}}}}}'
+json_mapper: '{"styles":{"selectorType":"topLevel","items":[],"title":"Layout","formDefinition":[{"formKey":"layout","children":[{"formKey":"margin","breakpoints":[{"name":"lg"},{"name":"sm"},{"name":"xs"}],"activeFields":[{"name":"margin-equal","active":false},{"name":"margin-top","active":false},{"name":"margin-bottom","active":true},{"name":"margin-left","active":false},{"name":"margin-right","active":false}]}]}],"form":null}}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+class_name: .coh-style-margin-bottom---medium
+custom_style_type: layout
+available_in_wysiwyg: false
+available_in_wysiwyg_inline: false
+parent: null
+weight: 249

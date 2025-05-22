@@ -1,0 +1,406 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Event module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function event_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables, $hook) {
+  $view = $variables['view'];
+  $view_id = $view->id();
+  $view_display = $view->current_display;
+
+  $suggestions[] = $hook . '__' . $view_id;
+  $suggestions[] = $hook . '__' . $view_id . '__' . $view_display;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function event_theme_suggestions_views_view_alter(array &$suggestions, array $variables, $hook) {
+  $view = $variables['view'];
+  $view_id = $view->id();
+  $view_display = $view->current_display;
+
+  $suggestions[] = $hook . '__' . $view_id;
+  $suggestions[] = $hook . '__' . $view_id . '__' . $view_display;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function event_theme_suggestions_views_infinite_scroll_pager_alter(array &$suggestions, array $variables, $hook) {
+  $view = $variables['view'];
+  $view_id = $view->id();
+  $view_display = $view->current_display;
+
+  $suggestions[] = $hook . '__' . $view_id;
+  $suggestions[] = $hook . '__' . $view_id . '__' . $view_display;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function event_theme() {
+  return [
+    'node__event__teaser' => [
+      'base hook' => 'node',
+    ],
+    'node__event__upcoming_event_teaser' => [
+      'base hook' => 'node',
+    ],
+    'field__field_event_short_name' => [
+      'base hook' => 'field',
+    ],
+    'field__field_event_extended_name' => [
+      'base hook' => 'field',
+    ],
+    'views_view__events' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view__events__upcoming_events_page_block' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view__events__browse_past_events_block' => [
+      'base hook' => 'views_view',
+    ],
+    'views_view_unformatted__events__recent_events_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__events__featured_events_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__events__upcoming_events_hp_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__events__browse_past_events_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_view_unformatted__events__upcoming_events_page_block' => [
+      'base hook' => 'views_view_unformatted',
+    ],
+    'views_infinite_scroll_pager__events__upcoming_events_page_block' => [
+      'base hook' => 'views_infinite_scroll_pager',
+    ],
+    'views_infinite_scroll_pager__events__browse_past_events_block' => [
+      'base hook' => 'views_infinite_scroll_pager',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function event_form_VIEWS_EXPOSED_FORM_alter(&$form, FormStateInterface $form_state) {
+  $exposed_region_forms = [
+    'views-exposed-form-events-upcoming-events-page-block',
+    'views-exposed-form-events-browse-past-events-block',
+  ];
+  if (in_array($form['#id'], $exposed_region_forms)) {
+    $display_region = \Drupal::state()->get('event_hub.display_region', TRUE);
+    if (!$display_region) {
+      unset($form['region']);
+    }
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function event_token_info() {
+  $info['tokens']['node']['event_duration_date'] = [
+    'name' => t('Event duration date'),
+    'description' => t('Combines Event Start & End date'),
+  ];
+  $info['tokens']['node']['event_full_name'] = [
+    'name' => t('Event Full name'),
+    'description' => t('Combines Event Short name & Extended name'),
+  ];
+  $info['tokens']['node']['no_event_full_name'] = [
+    'name' => t('No Event Full name'),
+    'description' => t('Shows if an Event has the Full name or not'),
+  ];
+  $info['tokens']['node']['location_region_country'] = [
+    'name' => t('Location Region country'),
+    'description' => t('Combines Region and "Country, City" fields of location'),
+  ];
+
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function event_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+  $replacements = [];
+
+  if ($type == 'node' && !empty($data['node'])) {
+    if (!empty($tokens['event_duration_date'])) {
+      $original = $tokens['event_duration_date'];
+      $replacements[$original] = get_entity_duration_date($data['node']);
+    }
+    if (!empty($tokens['event_full_name'])) {
+      $original = $tokens['event_full_name'];
+      $replacements[$original] = get_event_full_name($data['node']);
+    }
+    if (!empty($tokens['no_event_full_name'])) {
+      $original = $tokens['no_event_full_name'];
+      $extended_name = get_field_value($data['node'], 'field_event_extended_name');
+      $replacements[$original] = empty($extended_name) ? TRUE : FALSE;
+    }
+    if (!empty($tokens['location_region_country'])) {
+      $original = $tokens['location_region_country'];
+      $replacements[$original] = get_location_region_country($data['node']);
+    }
+  }
+
+  return $replacements;
+}
+
+/**
+ * Implement hook_tokens_alter().
+ */
+function event_tokens_alter(&$replacements, $context, BubbleableMetadata $bubbleable_metadata) {
+  if (isset($replacements['[node:field_event_register_link:title]'])) {
+    if (empty($replacements['[node:field_event_register_link:title]'])) {
+      $replacements['[node:field_event_register_link:title]'] = t('Register now');
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_node_HOOK().
+ */
+function event_preprocess_node__EVENT__TEASER(&$variables) {
+  $node = $variables['node'];
+  $variables['event_duration'] = get_entity_duration_date($node);
+  $variables['event_full_name'] = get_event_full_name($node);
+  if (!$node->get('field_event_location')->isEmpty()) {
+    $location = $node->get('field_event_location')->entity;
+    $variables['location_region'] = get_location_region_country($location);
+  }
+}
+
+/**
+ * Implements hook_preprocess_node_HOOK().
+ */
+function event_preprocess_node__EVENT__UPCOMING_EVENT_TEASER(&$variables) {
+  $node = $variables['node'];
+  $variables['event_duration'] = get_entity_duration_date($node);
+  if (!$node->get('field_event_location')->isEmpty()) {
+    $location = $node->get('field_event_location')->entity;
+    $variables['location_region'] = get_location_region_country($location);
+  }
+  $moderation_state = $node->get('moderation_state')->getString();
+  $variables['state_' . $moderation_state] = TRUE;
+}
+
+/**
+ * Function that generates the correct format of entity (Event) duration
+ * based on entity's start & end dates.
+ *
+ * @param Node $node
+ *   Event node for processing.
+ *
+ * @param string $start_field_name
+ *   Field name for Start date field. Default to 'field_event_start_date'.
+ *
+ * @param string $end_field_name
+ *   Field name for End date field. Default to 'field_event_end_date'.
+ *
+ * @return string
+ *   Event duration date in the correct format.
+ */
+function get_entity_duration_date(Node $node, $start_field_name = 'field_event_start_date', $end_field_name = 'field_event_end_date') {
+  $result = '';
+
+  $start_date = get_field_value($node, $start_field_name);
+  $end_date = get_field_value($node, $end_field_name);
+
+  if (!empty($start_date)) {
+    $formatter = Drupal::service('date.formatter');
+    $start_date = strtotime($start_date);
+
+    if (!empty($end_date)) {
+      $end_date = strtotime($end_date);
+      $start_year = $formatter->format($start_date, 'custom', 'Y');
+      $start_month = $formatter->format($start_date, 'custom', 'F');
+      $start_day = $formatter->format($start_date, 'custom', 'd');
+      $end_year = $formatter->format($end_date, 'custom', 'Y');
+      $end_month = $formatter->format($end_date, 'custom', 'F');
+      $end_day = $formatter->format($end_date, 'custom', 'd');
+
+      if ($start_year != $end_year) {
+        $start_formatted = $formatter->format($start_date, 'custom', 'F d, Y');
+        $end_formatted = $formatter->format($end_date, 'custom', 'F d, Y');
+        $result = "$start_formatted - $end_formatted";
+      }
+      elseif ($start_month != $end_month) {
+        $result = "$start_month $start_day - $end_month $end_day, $end_year";
+      }
+      elseif ($start_day != $end_day) {
+        $result = "$end_month $start_day - $end_day, $end_year";
+      }
+      else {
+        $result = $formatter->format($start_date, 'custom', 'F d, Y');
+      }
+    }
+    else {
+      $result = $formatter->format($start_date, 'custom', 'F d, Y');
+    }
+  }
+
+  return $result;
+}
+
+/**
+ * Function that combines Event short name and Extended name into one string.
+ *
+ * @param Node $node
+ *   Event node for processing.
+ *
+ * @return string
+ *   Full name of the Event
+ */
+function get_event_full_name($node) {
+  $short_name = get_field_value($node, 'field_event_short_name');
+  $extended_name = get_field_value($node, 'field_event_extended_name');
+
+  return !empty($extended_name) ? "$short_name - $extended_name" : $short_name;
+}
+
+/**
+ * Function that combines Region and "Country, City" fields of location.
+ *
+ * @param Node $node
+ *   Location node for processing.
+ *
+ * @return string
+ *   Correct Region, County, City string.
+ */
+function get_location_region_country($node) {
+  $result = '';
+
+  if ($node->getType() == 'location') {
+    $show_region = \Drupal::state()->get('event_hub.display_region', TRUE);
+    $country_city = get_field_value($node, 'field_name');
+
+    if (!empty($country_city)) {
+      $result = $country_city;
+    }
+    if ($show_region) {
+      $region_tid = get_field_value($node, 'field_region', 'target_id');
+      if (!empty($region_tid)) {
+        $region_term = Term::load($region_tid);
+        if ($region_term instanceof Term) {
+          $region = $region_term->getName();
+          $result = !empty($country_city) ? "$region, $country_city" : $region;
+        }
+      }
+    }
+  }
+
+  return $result;
+}
+
+/**
+ * Simple function for retrieving a single value from a field.
+ *
+ * @param EntityInterface $entity
+ *   Entity from which a value should be got.
+ * @param string $field_name
+ *   Machine name of a field.
+ * @param string $value_type
+ *   Type of value for returning. Can be 'value', 'target_id', 'uri', 'title'.
+ *   'value' by default.
+ *
+ * @return false|mixed
+ *   Returns field value if field exists and is not empty.
+ *   Returns FALSE otherwise.
+ */
+function get_field_value($entity, $field_name, $value_type = 'value') {
+  $result = FALSE;
+
+  if ($entity->hasField($field_name)) {
+    if (!$entity->get($field_name)->isEmpty()) {
+      if ($value_type == 'target_id') {
+        $result = $entity->get($field_name)->target_id;
+      }
+      elseif ($value_type == 'uri') {
+        $result = $entity->get($field_name)->uri;
+      }
+      elseif ( $value_type == 'title') {
+        $result = $entity->get($field_name)->title;
+      }
+      else {
+        $result = $entity->get($field_name)->value;
+      }
+    }
+  }
+
+  return $result;
+}
+
+/**
+ * Check if datetime fields in Entity object have the same date or not.
+ * If the day is the same - returns TRUE, otherwise - FALSE.
+ * If only one field is present - returns TRUE.
+ *
+ * @param EntityInterface $entity
+ *   Entity object from where we should compare datetime fields.
+ * @param string $field_one
+ *   Machine name of the first datetime field.
+ * @param string $field_two
+ *   Machine name of the first datetime field.
+ *
+ * @return bool
+ *   Boolean value that shows if two datetime values have the same day or not.
+ */
+function datetime_fields_have_same_day($entity, $field_one, $field_two) {
+  if ($entity->hasField($field_one) && $entity->hasField($field_two)) {
+    if (!$entity->get($field_one)->isEmpty()
+      && !$entity->get($field_two)->isEmpty()) {
+
+      $start_time = strtotime($entity->get($field_one)->value);
+      $end_time = strtotime($entity->get($field_two)->value);
+
+      $formatter = \Drupal::service('date.formatter');
+      $start_date = $formatter->format($start_time, 'custom', 'd.m.Y');
+      $end_date = $formatter->format($end_time, 'custom', 'd.m.Y');
+      return $start_date == $end_date;
+    }
+  }
+
+  return TRUE;
+}
+
+/**
+ * Checks if timestamp is a midnight.
+ * Returns TRUE if date is a midnight, otherwise returns FALSE.
+ *
+ * @param int $timestamp
+ *   Date in UNIX timestamp format.
+ *
+ * @return bool
+ *   Result of check whether the date is midnight or not.
+ */
+function timestamp_is_midnight($timestamp) {
+  $date_formatter = Drupal::service('date.formatter');
+  $zero_hour = $date_formatter->format($timestamp, 'custom', 'H') == 0;
+  $zero_min = $date_formatter->format($timestamp, 'custom', 'i') == 0;
+
+  return $zero_hour && $zero_min;
+}

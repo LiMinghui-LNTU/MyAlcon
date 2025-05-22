@@ -1,0 +1,20 @@
+uuid: e36b7e97-33fc-4762-8abd-4732209093fd
+langcode: en
+status: true
+dependencies: {  }
+id: pack_dmb_5789_new_nb_p1
+label: 'DMB 5789 new NB p1'
+description: 'DMB 5789 new NB p1(Hero M1 - Text with Background Image)'
+excluded_entity_types: '[]'
+settings: |
+  {
+      "a5f65d6d-b415-40fa-8e66-fe74f6069679": {
+          "type": "cohesion_component",
+          "items": {
+              "a5f65d6d-b415-40fa-8e66-fe74f6069679": {
+                  "type": "cohesion_component"
+              }
+          },
+          "checked": true
+      }
+  }

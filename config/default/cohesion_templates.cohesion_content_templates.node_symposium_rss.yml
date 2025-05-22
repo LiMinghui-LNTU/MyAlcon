@@ -1,0 +1,18 @@
+uuid: a39da816-a1b7-4fc5-8a3c-bb0414f7863e
+langcode: en
+status: false
+dependencies: {  }
+label: 'RSS (Node, Symposium page)'
+id: node_symposium_rss
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: symposium
+view_mode: rss
+master_template: ''

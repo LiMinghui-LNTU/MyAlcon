@@ -1,0 +1,20 @@
+uuid: d52e08e6-58d4-431e-b53a-649a00fb2633
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+  module:
+    - datetime
+id: media.instagram.scheduled_transition_date
+field_name: scheduled_transition_date
+entity_type: media
+bundle: instagram
+label: 'Scheduled transition date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

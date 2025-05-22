@@ -1,0 +1,18 @@
+uuid: 581a5392-de27-4067-bb3e-f84e027f0d10
+langcode: en
+status: false
+dependencies: {  }
+label: 'Virtual Booth Card teaser (Node, Article page)'
+id: node_article_virtualbooth_card_t
+json_values: '{"canvas":[],"mapper":null,"model":[]}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+modified: false
+selectable: false
+custom: false
+twig_template: null
+default: false
+entity_type: node
+bundle: article
+view_mode: virtualbooth_card_teaser
+master_template: ''

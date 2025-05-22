@@ -1,0 +1,13 @@
+uuid: c45b8347-8d37-484b-adfc-2689ac7172ca
+langcode: en
+status: true
+dependencies: {  }
+label: 'TOTAL Light Blue'
+id: total-light-blue
+json_values: '{"link":true,"name":"TOTAL Light Blue","uid":"total-light-blue","class":".coh-color-total-light-blue","variable":"$coh-color-total-light-blue","value":{"value":{"hex":"#8bbee8","rgba":"rgba(139, 190, 232, 1)"}},"inuse":false,"tags":[{"label":"total","value":"total"},{"label":"secondary","value":"secondary"}],"wysiwyg":false}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: true
+selectable: true
+weight: 73

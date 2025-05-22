@@ -1,0 +1,13 @@
+uuid: 3bb3042c-3fab-4553-ba1b-e2ae80c4ec4e
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: nh83qNNrmWE-CDdHz2MdFOAk60T9mzv3R-MaKfZR2jw
+id: media_publish_action
+label: 发布媒体
+type: media
+plugin: 'entity:publish_action:media'
+configuration: {  }

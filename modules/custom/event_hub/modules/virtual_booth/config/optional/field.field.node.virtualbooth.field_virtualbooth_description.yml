@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtualbooth_description
+    - node.type.virtualbooth
+  module:
+    - text
+id: node.virtualbooth.field_virtualbooth_description
+field_name: field_virtualbooth_description
+entity_type: node
+bundle: virtualbooth
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
